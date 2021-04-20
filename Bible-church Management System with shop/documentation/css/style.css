@@ -1,0 +1,169 @@
+/***********
+
+Bible - Church Management System 1.5
+Version - 1.5
+Author - OneZeroArt
+Author URL - https://codecanyon.net/user/onezeroart/portfolio
+Description - This documentation is build for Bible - Church Management System 
+
+***********/
+
+body{
+	font-family: 'Roboto Slab', serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+	color:#6a6a6a;
+}
+
+hr {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+p {    
+    line-height: 28px;
+    letter-spacing: 0px;
+    color: #868686;
+}
+
+li {
+    margin-bottom: 8px;
+    padding-left: 10px;
+    color: #757575;
+}
+
+.title{
+	padding:25px 0;	
+}
+
+.material-icons {    
+    vertical-align: middle;
+    margin-top: -4px;
+}
+
+.wall {
+    background-image: url(../images/bg.jpg);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.topbar {
+    padding: 25px;
+    float: left;
+    width: 100%;
+}
+
+.logo {
+    width: 20%;
+    float: left;
+}
+
+.menu {
+    width: 40%;
+    float: right;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #fff;
+    background: #c6c6c624;
+    padding: 12px;
+    border-radius: 3px;
+}
+
+/************************************************/
+
+.bottombar {
+    padding: 130px 0 0 0;
+    float: left;
+    width: 100%;
+}
+
+.bottombar .title {
+    font-size: 55px;
+    margin-bottom: 100px;
+}
+
+/**************************************************/
+.sidebar-menu {
+    margin: 0;
+    padding: 50px 100px;
+    /* position: fixed; */
+    /* top: 0; */
+}
+
+.fixed {
+    position: fixed;
+    top: 40px;
+    left: 30px;
+    padding: 0 5px;
+    height: 550px;
+    overflow-y: scroll;
+    width: 300px;
+}
+
+.sidebar-menu.fixed li a {    
+    word-wrap: break-word;
+    width: 275px;
+}
+
+.sidebar-menu.fixed li a:hover {    
+    word-wrap: break-word;
+    width: 275px;
+}
+
+.sidebar-menu li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-menu li a {
+    margin: 0;
+    padding: 8px 0;
+    float: left;
+    width: 100%;
+    color: #757575;
+}
+
+.sidebar-menu li a:hover {
+    margin: 0;
+    padding: 8px 0;
+    float: left;
+    width: 100%;
+    color: #007bff;
+}
+
+/***********************************************/
+
+.right-side h1.title {
+    margin: 0;
+    padding: 50px 0;
+}
+
+a.scroll {
+    margin: 25px 50px;
+    padding: 10px 18px;
+    position: fixed;
+    z-index: 10000;
+    bottom: 0;
+    right: 0;
+    background: #f7f7f7;
+    border-radius: 5px;
+}
+
+
+/* Custom Css For Lightbox */
+img.img-fluid.width-30-percent {
+    width: 25%;
+    margin: 1rem;
+  }
+  
+  .grid-item { width: 200px; }
+  .grid-item--width2 { width: 400px; }
+
+
+

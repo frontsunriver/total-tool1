@@ -1,0 +1,138 @@
+// ................bootstrap_caption_carousel
+
+
+  
+
+.carousel-caption.caption2{
+    left:auto;
+
+}
+.carousel-caption{
+    position: absolute;
+    top: 30%;
+    right: 12%;
+
+    .text-deco1{
+        width: 411px;
+        float: right;
+        h2{
+            font-size: 11rem;
+            position: absolute;
+            line-height: 93px;
+            margin: 0;
+            opacity: 0.4;
+        }
+            h1{
+                color:black;
+                font-family: $font-family-base-bold;
+                font-size: 7rem;
+                line-height: 85px;
+                text-align: center;
+                position: relative;
+                z-index: 99999;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+     
+            }
+
+        
+        p{
+            font-size: 40px;
+            font-family: $font-family-base;
+            position: relative;
+            text-align: center;
+            margin: 0;
+            line-height: 1.5;
+            color: black;
+        }
+        .btn{
+            position: relative;
+            bottom: -25px;
+        }
+    }
+
+    // ...caption-two....
+   
+    .text-deco2{
+        width: 411px;
+        text-align: center;
+        h2{
+            font-size: 11rem;
+            position: absolute;
+            line-height: 93px;
+            margin: 0;
+            opacity: 0.4;
+        }
+            h1{
+                color:black;
+                font-family: $font-family-base-bold;
+                font-size: 5rem;
+                line-height: 85px;
+                text-align: center;
+             
+                z-index: 99999;
+              
+                margin: 0;
+                span{
+                    color: red;
+                }
+            }
+
+        
+        p{
+            font-size: 25px;
+            font-family: $font-family-base;
+          
+            text-align: center;
+            margin: 0;
+            line-height: 1.5;
+            color: black;
+        }
+        .btn{
+            position: relative;
+            bottom: -25px;
+        }
+    }
+
+   // ...caption-three....
+    .text-deco3{
+        width: 500px;
+        text-align: center;
+        h2{
+            font-size: 11rem;
+            position: absolute;
+            line-height: 45px;
+            margin: 0;
+            opacity: 0.4;
+        }
+            h1{
+                color:black;
+                font-family: $font-family-base-bold;
+                font-size: 40px;
+                line-height: 1.5;
+                text-align: center;
+             
+                z-index: 99999;
+              
+                margin: 0;
+                span{
+                    color: red;
+                }
+            }
+
+        
+        p{
+            font-size: 25px;
+            font-family: $font-family-base;
+          
+            text-align: center;
+            margin: 0;
+            line-height: 1.5;
+            color: black;
+        }
+        
+    }
+    
+      
+    }

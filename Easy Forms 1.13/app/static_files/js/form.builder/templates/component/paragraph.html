@@ -1,0 +1,7 @@
+{{ if(field.containerClass) { }}<!-- Paragraph Text -->
+<div class="{{= field.containerClass }}">
+    <p{{ if(field.cssClass) { }} class="{{= field.cssClass }}" {{ } }}>{{= field.text }}</p>
+</div>
+{{ } else { }}<!-- Paragraph Text -->
+<p{{ if(field.cssClass) { }} class="{{= field.cssClass }}"{{ } }}>{{= field.text }}</p>
+{{ } }}

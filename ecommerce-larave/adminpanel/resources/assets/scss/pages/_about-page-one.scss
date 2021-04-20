@@ -1,0 +1,160 @@
+// ....compare....
+
+.aboutus-content-one{
+
+    margin-top: 30px;
+    
+    h1{
+      font-size: 1.2rem;
+      margin-bottom: 15px;
+    }
+    .peragraph{
+       margin-top: 15px;
+    }
+    .profile-div{
+        background-color: white;
+        margin-bottom: 30px;
+        .media-main{
+            .media{
+              .rounded-circle{
+                margin-right: 15px;
+              }
+                .media-body{
+                    h4{
+                        small{
+                            color: $gray-500;
+                            font-size: 12px;
+                        }
+                    }
+                    p{
+                        color: $gray-600;
+                    }
+                }
+            }
+        }
+    }
+   
+  .media-col{
+    justify-content: flex-end;
+    display: flex;
+    align-items: flex-end;
+    border-right: 0.2px solid $gray-400;
+  }
+  .product{
+      text-align: center;
+      h2{
+        margin: 0;
+        font-size: $font-size-base;
+      }
+      h5{
+        margin: 0;
+        font-size: 12px;
+        color: $gray-500;
+      }
+    article{
+        padding: 0;
+    }
+  }
+}
+
+.aboutus-content{
+
+
+    .slick-slide img{
+      margin: 0 auto;
+    }
+    .product article{
+      text-align: center;
+    }
+    .img-portion{
+      img{
+        width: 100%;
+      }
+      padding-bottom: 100px;
+    }
+    .peragraph {
+      padding-bottom: 60px;
+      width: 70%;
+      .pre-info{
+        padding-bottom: 30px;
+        h5,p{
+          margin-bottom: 5px;
+        }
+      }
+  }
+  .peragraph2 {
+        margin-bottom: 10px;
+        &:last-child{
+          margin-bottom: 0;
+        }
+}
+
+  .profile-div{
+    background-color: $box-color;
+     .media{
+      padding: 30px 0;
+      .media-body {
+        margin-left: 20px;
+    }
+     }
+  }
+  .profile-team{
+  .products-area{
+    .aboutus-carousel-js{
+      .product{
+        padding-bottom: 0;
+      }
+    }
+  }
+  .aboutdetail{
+    padding: 10px;
+    p{
+      white-space: normal;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+    }
+  }
+   .pro-title{
+    padding-top: 30px;
+  h5{
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+  }
+
+
+   }
+  }
+  video{
+    width: 100%;
+  }
+ 
+  h5{
+    .fa-angle-down{
+      margin-left: 15px;
+    }
+  }
+  .insta-discription{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p{
+      margin-bottom: 15px;
+    }
+  }
+}
+
+.aboutus-carousel-js{
+  &:hover .slick-arrow{
+      transition: 0.4s ease-in-out;
+      transform :translateX(0px) !important;
+      -webkit-transform: translateX(0px) !important;
+      opacity: 1 !important;
+    }
+}

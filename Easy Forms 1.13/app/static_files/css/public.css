@@ -1,0 +1,99 @@
+/**
+ * This file is used in public forms
+ */
+
+/**
+ * Alerts
+ */
+.alert {
+    color: #ffffff;
+    font-size: 18px;
+    border-left-width: 1px;
+}
+.alert-success {
+    background-color: #41ad49;
+    border-color: #3a9a41;
+}
+.alert-danger {
+    background-color: #ff0000;
+    border: 0;
+}
+.has-error .help-block, .has-error .control-label, .has-error .radio, .has-error .checkbox,
+.has-error .radio-inline, .has-error .checkbox-inline, .has-error.radio label,
+.has-error.checkbox label, .has-error.radio-inline label, .has-error.checkbox-inline label {
+    color: #ff0000;
+}
+.has-error .form-control {
+    border-color: #ff0000;
+}
+
+/**
+ * Embed
+ */
+.legend {
+    margin-top: 0;
+}
+
+/**
+ * Form
+ */
+.container {
+    padding-top: 15px;
+}
+/*!* Small devices (tablets, 768px and up) *!*/
+@media (min-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+}
+.container-fluid {
+    padding: 0;
+}
+.app-form .app-name, .app-forms .app-name {
+    font-size: 20px;
+}
+.app-form .app-name:before, .app-forms .app-name:before {
+    font-family: 'Glyphicons Regular';
+    font-style: normal;
+    font-weight: normal;
+    vertical-align: -1px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\E151";
+}
+
+/**
+ * Preview
+ */
+.app-preview {
+    padding: 20px;
+}
+
+/**************************
+ * Don't remove this
+ **************************/
+
+/*
+ * Hide all except first Fieldset (Multistep Forms)
+ */
+#form-app fieldset:not(:first-of-type) {
+    display: none;
+}
+
+/*
+ * Clear floating columns in multi-column forms
+ */
+#form-app .snippet {
+    display: block;
+    clear:both;
+}
+
+/**
+ * Fix iOS bug
+ */
+@supports (-webkit-overflow-scrolling: touch) {
+    iframe {
+        max-width: 100% !important; /* Limits width to 100% of container */
+        width: 100vw !important; /* Sets width to 100% of the viewport width while respecting the max-width above */
+    }
+}

@@ -1,0 +1,142 @@
+// ....compare....
+
+.order-one-content{
+
+   
+    .h5-heading{
+        margin: 0;
+    }
+    .hr-line{
+        hr {
+            margin-top: 5px;
+            margin-bottom: 1rem;
+            border: 0;
+            border-top: $border-width solid $border-color;
+            &:before {
+                height: 1px;
+                background-color: $secondary;
+                content: "";
+                position: absolute;
+                width: 85px;
+                margin-top: -1px;
+            }
+        }  
+    }
+  
+    .table{
+        background-color: white;
+        text-align: center;
+        th{
+            border: none;
+            vertical-align: middle;
+        }
+        tr{
+            border-bottom: 2px solid  $gray-400;
+            .underline{
+                text-decoration: underline;
+            }
+            td{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              
+                     .order-img
+                    {
+                      
+                        border:$border-width solid $gray-400;
+                    }
+               
+                .description{
+                    text-align: left;
+                    h3{
+                        font-family: $font-family-base-bold;
+                        font-size: $font-size-lg;
+    
+                    }
+                    .price{
+                        white-space: normal;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 1;
+                        -webkit-box-orient: vertical;
+                        margin-bottom: 5px;
+                        font-family: $font-family-base-bold;
+                        font-size: $font-size-lg;
+                        margin-bottom: 5px;
+                        span{
+                            color: $danger;
+                          
+                        }
+                    }
+                    p{
+                        white-space: normal;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 2;
+                        -webkit-box-orient: vertical;
+                        margin-bottom: 10px;
+                    }
+                      
+                        .input-group{
+                            span{
+                                display: -webkit-box;
+                                display: -ms-flexbox;
+                                display: flex;
+                                -webkit-box-pack: center;
+                                -ms-flex-pack: center;
+                                justify-content: center;
+                                -webkit-box-align: center;
+                                -ms-flex-align: center;
+                                align-items: center;
+                                border: $border-width solid $gray-400;
+                                width: 29px;
+                                height: 29px;
+                                cursor: pointer;
+                                .fa{
+                                    font-size: 13px;
+                                }
+                    
+                            }
+                            input{
+                                background-color: #f2f2f2;
+                                padding-left: 5px;
+                                padding-right: 5px;
+                                text-align: center;
+                                height: 29px;
+                                min-width: 24px;
+                                max-width: 35px;
+                                outline: none;
+                                box-shadow: unset;
+                            }
+                            .btn{
+                                font-size: 10px;
+                                font-weight: 600;
+                                margin-left: 15px;
+                            }
+                        }
+                    .detail{
+                        text-align: right;
+                        p{
+                            margin-bottom: 5px;
+                            color:#a1abb6;
+                        }
+                        .share{
+                            margin-bottom: 5px;
+                            a{
+                            color:#a1abb6;
+                            .fas{
+                                color:#a1abb6;
+                            }
+                            }
+                        
+                        }
+            
+                    }
+                }
+            }
+        }
+    }
+}
+              

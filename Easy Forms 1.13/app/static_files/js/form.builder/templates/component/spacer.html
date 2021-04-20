@@ -1,0 +1,4 @@
+<!-- Spacer -->{{ var height = field.height > 0 ? field.height + 'px' : '0'; var style = 'height: ' + height }}
+{{ if (field.containerClass) { }}<div class="{{= field.containerClass }}">{{ } }}
+    <div style="{{= style }}" {{ if (field.cssClass) { }} class="{{= field.cssClass }}" {{ } }}></div>
+{{ if (field.containerClass) { }}</div>{{ } }}

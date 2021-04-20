@@ -1,0 +1,136 @@
+$bg-top-bar:  $primary-dark;
+$select-form:$gray-500;
+
+.shop-content{
+    .list-group {
+        display: block;
+        margin-bottom: 15px;
+        padding: 0 15px;
+        
+        .list-group-item:first-child{
+            
+            &:before{
+                display: none;
+            }
+        }
+
+        .list-group-item{
+            float: left;
+            font-size: 0.875rem;
+            background-color: transparent;
+            border:none;
+            margin-right: 10px;
+
+            a{
+                text-decoration: none;
+            }
+
+            &.active{
+                color:$secondary;
+            }
+            &:before{
+                display: inline-block;
+                padding-right: 0.5rem;
+                color: #6c757d;
+                content: ">";
+            }
+        }
+        
+    }
+    .list-group.end{
+        float: right;
+        .list-group-item{
+            font-weight: $font-weight-bold;
+        }
+    }
+
+  
+  
+}
+.shop-content{
+    .listing{
+        .product{
+            article{
+                display: flex;
+                .thumb{
+
+                    width:32%;
+              
+                }
+                .content{
+                    width:67%;
+                    .expand-detail{
+                        display: block;
+                        line-height: 1.5;
+                        white-space: normal;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 2;
+                        -webkit-box-orient: vertical;
+                        p{
+                            display: block;
+                        
+                        }
+                    }
+                 
+                }
+                .product-dis{
+                    margin-left: 30px;
+                }
+
+              
+                .tag{
+                    display: block;
+                    padding: 0;
+                    text-align: left;
+                }
+                .discription{
+                    display: block;
+                }  
+                .title{
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                }
+                .price{
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: flex-center;
+                }
+                .listing-btn{
+                    display: flex;
+                    padding-bottom: 10px;
+                }
+                .listview-btn{
+                    display: block;
+                    margin-left: 15px;
+                }
+                .product-hover{
+            
+                   
+    
+                }
+                
+            }
+         
+        }
+    }
+}
+.shop-content.shop-topbar{
+    .listing{
+        .product{
+            article{
+                .thumb{
+                    width:25%;
+                }
+                .content{
+                    width:75%;
+                }
+
+                
+            }
+         
+        }
+    }
+}

@@ -1,0 +1,863 @@
+/* Custom Css By CMS */
+/*****************************************************************/
+/*****************************************************************/
+
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../iconfont/MaterialIcons-Regular.eot); /* For IE6-8 */
+    src: local('Material Icons'),
+        local('MaterialIcons-Regular'),
+        url(../iconfont/MaterialIcons-Regular.woff2) format('woff2'),
+        url(../iconfont/MaterialIcons-Regular.woff) format('woff'),
+        url(../iconfont/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+body {
+    background-color: #F5F5F5;
+    color: #3C4858;
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Support for IE. */
+    -webkit-font-feature-settings: 'liga';
+            font-feature-settings: 'liga';
+}
+
+
+
+/*Global Css*/
+
+.mRight10{
+    margin-right: 5px !important;
+}
+.margin0{
+    margin: 0 !important;
+}
+.colorwhite{
+    color:#fff !important;
+}
+.colorwhite:hover{
+    color:#fff !important;
+}
+
+.view_mainsite {
+    /* background: #9c27b0; */
+    color: #fff !important;
+    border-radius: 2px;
+    font-weight: bold;
+    font-size: 13px;
+    background: linear-gradient(60deg, #ab47bc, #8e24aa);
+    -webkit-box-shadow: 0 12px 20px -10px rgba(156, 39, 176, 0.28), 0 4px 20px 0px rgba(0, 0, 0, 0.12), 0 7px 8px -5px rgba(156, 39, 176, 0.2);
+            box-shadow: 0 12px 20px -10px rgba(156, 39, 176, 0.28), 0 4px 20px 0px rgba(0, 0, 0, 0.12), 0 7px 8px -5px rgba(156, 39, 176, 0.2);
+}
+
+/*Image Adding Notifier Text In Add Form*/
+p.add_image_notifier {
+    padding: 15px;
+    font-size: 16px;
+    text-align: left;
+    color: #9c27b0;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+
+/*
+        Limit image width to avoid overflow the container
+        This rule is very important, please do not ignore this! Its apply on Cropper Image Section
+        max-width:100% is very important
+*/
+
+
+img#image {
+    max-width: 100%;
+    min-height: 300px;
+    height: 120px;
+    width: 100%;
+    border: 1px solid rgb(156, 39, 176) !important;
+    background-image: none !important;
+    visibility: hidden;
+
+}
+
+.imageWrapper {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: 1px solid rgb(156, 39, 176);
+}
+
+
+/*******************************************/
+
+img.lang_img {
+    margin: 0px 10px 0 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+}
+
+/**************************************/
+/********* Dashboard Default Styles **********/
+/**************************************/
+.wrapper {
+    height: auto !important;
+}
+
+.sidebar .sidebar-wrapper, .off-canvas-sidebar .sidebar-wrapper {
+    height: auto !important;
+}
+
+.sidebar[data-color="purple"] .nav li.active a, .off-canvas-sidebar[data-color="purple"] .nav li.active a {
+    background: linear-gradient(60deg, #ab47bc, #8e24aa);
+    -webkit-box-shadow: 0 12px 20px -10px rgba(156, 39, 176, 0.28), 0 4px 20px 0px rgba(0, 0, 0, 0.12), 0 7px 8px -5px rgba(156, 39, 176, 0.2);
+            box-shadow: 0 12px 20px -10px rgba(156, 39, 176, 0.28), 0 4px 20px 0px rgba(0, 0, 0, 0.12), 0 7px 8px -5px rgba(156, 39, 176, 0.2);
+}
+
+
+.main-panel {
+    overflow: unset !important;
+}
+
+.loading {
+    margin: 0;
+    padding: 0;
+    float: left;
+    position: fixed;
+    top: 250px;
+    left: 50%;
+    display: block;
+    z-index: 10000;
+    background: #ffffff;
+    border: 2px solid #9c27b0;
+    border-radius: 3px;
+}
+
+.loading img{
+    width:100px;
+    height:100px;
+}
+
+.notifi {
+    margin: 0;
+    padding: 10px 40px;
+    float: left;
+    position: fixed;
+    top: 180px;
+    right: 10px;
+    display: block;
+    z-index: 10000;
+    border: 2px solid rgba(204, 204, 204, 0);
+    border-radius: 2px;
+    font-weight: bold;
+    color: #fff;
+    background: #f44336;
+    min-width: 300px;
+}
+
+.notifi p i.material-icons {
+    vertical-align: middle;
+    margin: -5px 0 0 0;
+}
+
+
+.warning_notifi {
+    background: #f44336;
+    top: 20px;
+}
+
+.success_notifi {
+    background: #4caf50;
+    top: 100px;
+}
+
+
+.error_message {
+    position: fixed;
+    z-index: 1000;
+    top: 35px;
+    right: 0;
+}
+
+.sorted_slider_table tbody tr:hover, .sorted_menu_table tbody tr:hover, .sorted_gallery_table tbody tr:hover, .sorted_table tbody tr:hover {
+    background-color: #f5f5f5;
+    cursor: n-resize;
+}
+
+.table thead tr th {
+    font-weight: bold;
+}
+
+.extra-space {
+    margin: 50px 0;
+}
+
+
+.marginTop100 {
+    margin-top: 100px;
+}
+
+.validPurchase {
+    float: left;
+    width: 94%;
+    margin: 100px 3% 0;
+    background: #ffffff;
+    padding: 0;
+}
+
+.btn{
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+    border-radius: 0px !important;
+}
+
+
+/* DataTables Button Styles */
+
+a.btn.btn-secondary.buttons-print.btn-primary.mRight10 {
+    background-color: #FF5722 !important;
+}
+
+a.btn.btn-secondary.buttons-copy.buttons-html5.btn-primary.mRight10 {
+    background-color: #FF9800 !important;
+}
+
+a.btn.btn-secondary.buttons-pdf.buttons-html5.btn-primary.mRight10 {
+    background-color: #9C27B0 !important;
+}
+
+a.btn.btn-secondary.buttons-excel.buttons-flash.btn-primary.mRight10 {
+    background-color: #03A9F4 !important;
+}
+
+a.btn.btn-secondary.buttons-csv.buttons-html5.btn-primary.mRight10 {
+    background-color: #009688 !important;
+}
+
+.image_select_text {
+    text-align: center;
+    color: #fff;
+    padding: 12px 0;
+    letter-spacing: 1px;
+    border-radius: 0px;
+    margin: 0 auto;
+    width: 70%;
+}
+
+p.image_select_text.destroy_cropper {
+    cursor: default;
+}
+p.image_select_text.ini_cropper {
+    cursor: default;
+}
+
+.file_import_btn {
+    text-align: center;
+    color: #fff;
+    padding: 12px 0;
+    letter-spacing: 1px;
+    border-radius: 2px;
+    margin: 0 auto;
+    width: 100%;
+
+}
+
+.btn .material-icons, .file_import_btn .material-icons {
+    vertical-align: middle;
+    font-size: 17px;
+    top: -1px;
+    position: relative;
+}
+
+
+.form-group.label-floating label.control-label, .form-group.label-placeholder label.control-label {
+    top: -28px !important;
+    left: 0;
+    font-size: 1em !important;
+    line-height: 1.07143;
+}
+
+form input.form-control{
+    width:80% !important;
+}
+
+form select.form-control{
+    width:100% !important;
+}
+
+.form-group.label-floating.is-empty {
+    width: 100%;
+    float: left;
+}
+
+form textarea.form-control{
+    width:100% !important;
+}
+
+form .col-md-12 input.form-control{
+    width:93% !important;
+}
+
+.pagination li a, .pagination li span {
+    position: relative;
+    float: left;
+    padding: 12px 20px !important;
+    margin-left: -1px;
+    line-height: 1.42857143;
+    color: #9c27b0;
+    text-decoration: none;
+    background-color: #ffffff;
+    border: 1px solid rgba(156, 39, 176, 0.31);
+}
+
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
+    z-index: 2;
+    color: #fff;
+    cursor: default;
+    background-color: #9c27b0;
+    border-color: #9c27b0;
+}
+
+.pagination>li>a:focus, .pagination>li>a:hover, .pagination>li>span:focus, .pagination>li>span:hover {
+    z-index: 3;
+    color: #ffffff;
+    background-color: #9c27b0;
+    border-color: #9c27b0;
+}
+
+.datepicker table tr td.active.active, .datepicker table tr td.active.disabled, .datepicker table tr td.active.disabled.active, .datepicker table tr td.active.disabled.disabled, .datepicker table tr td.active.disabled:active, .datepicker table tr td.active.disabled:hover, .datepicker table tr td.active.disabled:hover.active, .datepicker table tr td.active.disabled:hover.disabled, .datepicker table tr td.active.disabled:hover:active, .datepicker table tr td.active.disabled:hover:hover, .datepicker table tr td.active.disabled:hover[disabled], .datepicker table tr td.active.disabled[disabled], .datepicker table tr td.active:active, .datepicker table tr td.active:hover, .datepicker table tr td.active:hover.active, .datepicker table tr td.active:hover.disabled, .datepicker table tr td.active:hover:active, .datepicker table tr td.active:hover:hover, .datepicker table tr td.active:hover[disabled], .datepicker table tr td.active[disabled] {
+    background-color: #9C27B0 !important;
+}
+
+.datepicker table tr td.active, .datepicker table tr td.active.disabled, .datepicker table tr td.active.disabled:hover, .datepicker table tr td.active:hover {
+    background-image: -webkit-gradient(linear,left top, left bottom,from(#9C27B0),to(#9C27B0)) !important;
+    background-image: linear-gradient(to bottom,#9C27B0,#9C27B0) !important;
+}
+
+/**Custom Css By Admin**/
+.nice-select.open .list {
+    border: 3px solid #9C27B0 !important;
+    height: 200px !important;
+    overflow-y: scroll !important;
+    z-index: 18 !important;
+}
+
+.nice-select.select.form-control {
+    width: 85% !important;
+    padding-left: 0;
+}
+
+.nice-select .list:hover .option:not(:hover) {
+    background-color: rgba(0, 0, 0, 0) !important;
+    background: #fff !important;
+    color: #333 !important;
+}
+
+h4.title i.material-icons, p.image_select_text i.material-icons {
+    vertical-align: middle;
+    margin: -5px 5px 0 0;
+}
+
+.fr-toolbar {
+    border-top: 1px solid #9C27B0 !important;
+}
+
+.fr-box.fr-basic.fr-top .fr-wrapper {
+    -webkit-box-shadow: 0 0px 1px #9C27B0, 0 0px 1px 0px #9C27B0 !important;
+            box-shadow: 0 0px 1px #9C27B0, 0 0px 1px 0px #9C27B0 !important;
+}
+
+.fr-toolbar.fr-top {
+    -webkit-box-shadow: 0 0px 1px #9C27B0, 0 0px 1px 0px #9C27B0 !important;
+            box-shadow: 0 0px 1px #9C27B0, 0 0px 1px 0px #9C27B0 !important;
+}
+
+/* .trumbowyg-button-pane .trumbowyg-button-group:not(:empty)+.trumbowyg-button-group::before {
+    content: " ";
+    display: inline-block;
+    width: 0px;
+    background: #ffffff;
+    margin: 0;
+    height: 35px;
+}
+
+.trumbowyg-button-pane button.trumbowyg-active, .trumbowyg-button-pane button:not(.trumbowyg-disable):focus, .trumbowyg-button-pane button:not(.trumbowyg-disable):hover {
+    background-color: rgba(255, 255, 255, 0);
+    outline: 0;
+}
+
+.trumbowyg-box svg {
+    width: 17px;
+    height: 100%;
+    fill: #fff;
+} */
+
+/********* Dashboard Website Page ***********/
+/*********************************************/
+.website img.favicon, .website img.logo {
+    margin: 0 auto;
+    padding: 15px;
+    float: none;
+    width: auto;
+    height: auto;
+    display: block;
+    border: 0px !important;
+    border-radius: 3px;
+    max-width: 150px;
+    max-height: 150px;
+}
+
+
+/********* Dashboard User View Page ***********/
+/*********************************************/
+.user-profile .card .card-content p.category {
+    margin-bottom: 0;
+    float: left !important;
+    padding: 30px 0 0 0 !important;
+}
+
+.user-profile .card-profile{
+    margin-top: 30px;
+    text-align: center;
+    padding: 0 0 25px 0 !important;
+}
+
+.user-profile .action-btn {
+    margin: 0;
+    padding: 40px 0 0 0;
+}
+
+
+
+/********* Dashboard All Committee Members Page ***********/
+/*********************************************/
+.allcommittee .card-profile{
+    margin-bottom: 60px !important;
+    padding: 0 0 30px 0 !important;
+}
+
+.allcommittee .content .card-content.speech{
+    height:115px !important;
+}
+
+
+/********* Dashboard Speech ***********/
+/*********************************************/
+.allspeechs .card-profile{
+    margin-bottom: 60px !important;
+    padding: 0 0 30px 0 !important;
+}
+
+.allspeechs .content .card-content.speech{
+    height:115px !important;
+}
+
+/********* Dashboard All Pastors Page ***********/
+/*********************************************/
+.allpastors .card-profile{
+    margin-bottom: 60px !important;
+    padding: 0 0 30px 0 !important;
+}
+
+.allpastors .content .card-content.speech{
+    height:115px !important;
+}
+
+/**Custom Css By Admin**/
+
+/*allusers, allpastors, allmembers etc action-btn style*/
+.action-btn a.btn {
+    padding: 5px 10px;
+    margin: 10px 1px;
+    font-size: 12px !important;
+    font-weight: normal;
+    border-radius: 3px;
+    text-transform: normal;
+}
+
+
+/*Global Css End*/
+/******************/
+
+/*Dashboard Users*/
+
+.gusers p.card-content {
+    height: 140px;
+    overflow: hidden;
+}
+
+.gusers .card-profile .content{
+    margin-top: 15px;
+    padding-bottom: 20px;
+}
+
+.gusers table td img.committee.img {
+    width: 50px !important;
+    height: 50px !important;
+    border-radius: 100%;
+}
+
+.gusers table td a.btn {
+    margin: 0;
+    padding: 5px 10px;
+    border-radius: 0px !important;
+    font-size: 11px !important;
+    text-transform: none !important;
+}
+
+/*********************************/
+
+
+@media (max-width: 991px){
+.sidebar .nav-mobile-menu .open .dropdown-menu {
+    position: relative !important;
+    float: none;
+    width: auto;
+    margin-top: 0;
+    background-color: transparent;
+    border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+}
+
+.sidebar .logo:after, .off-canvas-sidebar .logo:after {
+    height: 0px;
+}
+.sidebar, .off-canvas-sidebar {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+}
+
+
+.sidebar .nav li {
+    float: left;
+    width: 100%;
+}
+
+
+.sidebar .nav li a, .off-canvas-sidebar .nav li a {
+    margin: 10px 0;
+    border-radius: 0;
+    color: #3C4858;
+}
+
+.dropdown-menu li > a:hover, .dropdown-menu li > a:focus {
+    box-shadow: none;
+    /* background: #fff; */
+}
+
+.sidebar .dropdown-menu li a:hover, .sidebar .dropdown-menu li a:focus, .sidebar .dropdown-menu li a:active {
+    background-color: rgb(238, 238, 238);
+}
+
+.sidebar .nav li a i.right.material-icons {
+    float: right;
+}
+
+/* Dropdown Start From Here */
+
+.sidebar .nav li.nav_parent {
+    float: left;
+    width: 100%;
+    cursor: move;
+}
+
+.sidebar .nav li ul {
+    margin: 0;
+    padding: 0;
+    float: left;
+    width: 100%;
+    border-right: 3px solid #9c27b0;
+    /*  background: #fadbff; */
+}
+
+.sidebar .nav li ul.nav_child{
+    display: none;
+}
+
+.sidebar .nav li ul.nav_child li {
+    margin: 0;
+    padding: 10px 0 10px 35px;
+    float: left;
+    width: 100%;
+    list-style: none;
+}
+
+.sidebar .nav li ul.nav_child li:hover {
+    margin: 0;
+    padding: 10px 0 10px 35px;
+    float: left;
+    width: 100%;
+    list-style: none;
+    background: rgba(200, 200, 200, 0.2);
+}
+
+ul.active.nav_child li.active {
+    background: #9c27b0 !important;
+}
+
+
+.navbar.navbar-transparent {
+/*    background-color: #ffffff;
+    box-shadow: none;
+    border-bottom: 0;*/
+}
+
+/* Dashboard Style */
+.card {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border-radius: 0;
+    color: rgba(0,0,0, 0.87);
+}
+
+.card-stats .card-header {
+    padding: 0;
+    /* display: none; */
+}
+
+.card .card-header {
+     margin: 0;
+     border-radius: 0;
+     padding: 25px;
+    /* border-radius: 100%; */
+}
+
+.card .card-header .title {
+    float: left;
+    margin-right: 30px;
+}
+
+.card .card-header .category {
+    margin-top: 2px;
+}
+
+.card .card-footer {
+    /*    display: none;*/
+}
+
+.card .card-content {
+    padding: 25px 20px;
+}
+
+.card .card-content .category {
+    /* margin-bottom: 20px; */
+    /* float: left; */
+    /* width: 100%; */
+    /* text-align: center; */
+    /* padding-bottom: 10px; */
+    /* border-bottom: 0px dotted #ccc; */
+    /* font-weight: bold; */
+    /* text-transform: uppercase; */
+}
+
+.card-stats .title {
+    /* margin: 0; */
+    /* text-align: center; */
+}
+
+
+.card-profile .card-avatar, .card-testimonial .card-avatar {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+}
+
+.main-panel > .footer {
+    border-top: 0px solid #e7e7e7;
+}
+
+
+/** Login And Register Page Style **/
+.login-page .content, .lock-page .content {
+    padding-top: 30vh !important;
+}
+
+/* Committee Page Style */
+.card img.committee.img {
+    width: 130px !important;
+    height: 130px !important;
+}
+
+/* Chorus Page Style */
+.chorus .card-profile{
+    margin-bottom: 50px;
+}
+
+/* Add Website Basic Info */
+.card form [class*="col-"]:first-child {
+    padding-left: 0 !important;
+}
+.card form [class*="col-"]:last-child {
+    padding-left: 0 !important;
+}
+.card form [class*="col-"]:first-child {
+    padding-right: 0 !important;
+}
+.card form [class*="col-"]:last-child {
+    padding-right: 0 !important;
+}
+.card form {
+    padding:0 30px !important;
+}
+.form-group textarea {
+    width: 100% !important;
+}
+
+/********Seminar Page*********/
+
+.allseminars i.material-icons {
+    vertical-align: middle;
+    margin: -5px 5px 0 0;
+}
+
+.allseminars .card .card-footer {
+    margin: 0 20px 10px;
+    padding-top: 10px;
+    border-top: 0px solid #eeeeee !important;
+}
+
+.seminars .price {
+    margin-right: 10px;
+}
+.seminars .price h5 {
+    font-size: 13px;
+    color: #5f5f5f;
+    font-weight: bold;
+}
+.seminars .pull-right a.btn {
+    margin: 0;
+    padding: 5px 10px !important;
+    border-radius: 2px !important;
+    font-size: 11px !important;
+    text-transform: none !important;
+}
+
+.allseminars .pull-right {
+    float: right;
+    margin: 0;
+    padding: 15px;
+}
+
+/********Seminar Registration Page**********/
+
+.content.seminarregistration{
+    padding-top: 150px !important;
+}
+.seminarregistration .form-group {
+    padding-bottom: 25px !important;
+    margin: 35px 0 0 0 !important;
+}
+.seminarregistration .nice-select.select.form-control {
+    width: 100% !important;
+    padding-left: 0;
+}
+
+/********** Event Page **********/
+.card-content.event-element {
+    padding-bottom: 60px;
+}
+.card-content.event-element p {
+    color:#666;
+}
+.card-content.event-element p i.material-icons {
+    vertical-align: middle !important;
+}
+
+
+/*****************************************************************/
+/********************** Responsive *******************************/
+/*****************************************************************/
+
+
+@media only screen and (min-width: 320px) and (max-width: 479px){
+.sidebar .sidebar-wrapper, .off-canvas-sidebar .sidebar-wrapper {
+    height: calc(100vh - 75px) !important;
+    background: #fff !important;
+}
+
+.sidebar .logo, .off-canvas-sidebar .logo {
+    background: #fff !important;
+}
+
+.view_mainsite, .view_mainsite:hover {
+    display: none;
+}
+
+.navbar .navbar-brand {
+    display: none;
+}
+
+
+
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px){
+.sidebar .sidebar-wrapper, .off-canvas-sidebar .sidebar-wrapper {
+    height: calc(100vh - 75px) !important;
+    background: #fff !important;
+}
+
+.sidebar .logo, .off-canvas-sidebar .logo {
+    background: #fff !important;
+}
+
+.view_mainsite, .view_mainsite:hover {
+    display: none;
+}
+
+.navbar .navbar-brand {
+    display: none;
+}
+
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+.sidebar .sidebar-wrapper, .off-canvas-sidebar .sidebar-wrapper {
+    height: calc(100vh - 75px) !important;
+    background: #fff !important;
+}
+
+.sidebar .logo, .off-canvas-sidebar .logo {
+    background: #fff !important;
+}
+
+.view_mainsite, .view_mainsite:hover {
+    display: none;
+}
+
+.navbar .navbar-brand {
+    display: none;
+}
+
+
+
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1999px){
+
+}

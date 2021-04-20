@@ -1,0 +1,44 @@
+{{ if (field.containerClass) { }}<!-- reCAPTCHA -->
+<div class="{{= field.containerClass }}">
+    <!-- reCAPTCHA -->
+    <div id="recaptcha">
+        <div class="rc">
+            <div class="pull-left">
+                <div class="rc-checkbox"></div>
+            </div>
+            <div class="pull-left">
+                <div class="rc-label">I'm not a robot</div>
+            </div>
+            <div class="pull-right">
+                <div class="rc-logo">
+                    <div class="rc-logo-img rc-logo-img-portrait"></div>
+                    <div class="rc-logo-text">reCAPTCHA</div>
+                </div>
+                <div class="rc-anchor-pt">
+                    <span>Privacy</span> - <span>Terms</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>{{ } else { }}<!-- reCAPTCHA -->
+<!-- reCAPTCHA -->
+<div id="recaptcha">
+    <div class="rc">
+        <div class="pull-left">
+            <div class="rc-checkbox"></div>
+        </div>
+        <div class="pull-left">
+            <div class="rc-label">I'm not a robot</div>
+        </div>
+        <div class="pull-right">
+            <div class="rc-logo">
+                <div class="rc-logo-img rc-logo-img-portrait"></div>
+                <div class="rc-logo-text">reCAPTCHA</div>
+            </div>
+            <div class="rc-anchor-pt">
+                <span>Privacy</span> - <span>Terms</span>
+            </div>
+        </div>
+    </div>
+</div>
+{{ } }}

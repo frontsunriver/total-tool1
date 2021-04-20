@@ -1,0 +1,4 @@
+deployment:
+      tasks:
+        - export DEPLOYPATH=/home/vcodertest/public_html/grocery-dev
+        - /bin/cp -r * $DEPLOYPATH   

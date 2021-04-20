@@ -1,0 +1,4 @@
+{{ if(name !== "id") {}}<div class="form-group">
+    <label class="control-label"> {{= polyglot.t(label) }} </label>
+    <input class="input-large field form-control" data-type="{{= type }}" type="text" name="{{= name }}" id="{{= name }}" value="{{- value }}" />
+</div>{{ } }}

@@ -1,0 +1,71 @@
+<div class="form-group styles-{{- name }}">
+    <label class="control-label" for="{{- name }}">{{- label }}</label>
+    <input type="text" id="{{- name }}" class="form-control" name="{{- name }}" value="{{- value }}" placeholder="{{- placeholder }}">
+    <div class="btn-group" data-toggle="buttons" role="group">
+        <label class="btn btn-xs btn-white">
+            <input type="radio" name="bg-image-type" value="gradient"> {{= polyglot.t('style.gradients') }}
+        </label>
+        <label class="btn btn-xs btn-white">
+            <input type="radio" name="bg-image-type" value="pattern"> {{= polyglot.t('style.patterns') }}
+        </label>
+        <label class="btn btn-xs btn-white">
+            <input type="radio" name="bg-image-type" value="other"> {{= polyglot.t('style.others') }}
+        </label>
+        <label class="btn btn-xs btn-white active">
+            <input type="radio" name="bg-image-type" value=""> {{= polyglot.t('style.none') }}
+        </label>
+    </div>
+    <div class="gradients" style="display: none">
+        <div class="grapick-cont">
+            <div id="gp-{{- name }}"></div>
+            <div class="row" style="margin-top: 20px">
+                <div class="col-xs-6" style="padding-right: 5px">
+                    <select class="form-control input-sm" id="switch-type-{{- name }}">
+                        <option value="">{{= polyglot.t('style.type') }}</option>
+                        <option value="radial">{{= polyglot.t('style.radial') }}</option>
+                        <option value="linear">{{= polyglot.t('style.linear') }}</option>
+                        <option value="repeating-radial">{{= polyglot.t('style.repeatingRadial') }}</option>
+                        <option value="repeating-linear">{{= polyglot.t('style.repeatingLinear') }}</option>
+                    </select>
+                </div>
+                <div class="col-xs-6" style="padding-left: 5px">
+                    <select class="form-control input-sm" id="switch-angle-{{- name }}">
+                        <option value="">{{= polyglot.t('style.direction') }}</option>
+                        <option value="top">{{= polyglot.t('style.top') }}</option>
+                        <option value="right">{{= polyglot.t('style.right') }}</option>
+                        <option value="center">{{= polyglot.t('style.center') }}</option>
+                        <option value="bottom">{{= polyglot.t('style.bottom') }}</option>
+                        <option value="left">{{= polyglot.t('style.left') }}</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="gradient-group">
+            {{ _.each(gradients, function (gradient) { }}
+            <div class="gradient" data-background="{{- gradient.background }}">
+                <div class="gradient-background" style="background-image: {{- gradient.background }}"></div>
+            </div>
+            {{ }) }}
+        </div>
+    </div>
+    <div class="patterns" style="display: none">
+        <div class="pattern-group">
+            {{ _.each(patterns, function (pattern) { }}
+            <div class="pattern-item" data-src="{{- homeUrl }}static_files/images/patterns/{{- pattern }}"></div>
+            {{ }) }}
+        </div>
+    </div>
+    <div class="others" style="display: none">
+        <div class="row">
+            <div class="col-xs-6" style="padding-right: 5px">
+                <div id="{{- scope }}-background-size-wrapper"></div>
+            </div>
+            <div class="col-xs-6" style="padding-left: 5px">
+                <div id="{{- scope }}-background-repeat-wrapper"></div>
+            </div>
+            <div class="col-xs-12" style="margin-top: 10px">
+                <div id="{{- scope }}-background-position-wrapper"></div>
+            </div>
+        </div>
+    </div>
+</div>

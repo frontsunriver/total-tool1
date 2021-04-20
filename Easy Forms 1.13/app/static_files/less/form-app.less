@@ -1,0 +1,126 @@
+//
+// Form App
+// --------------------------------------------------
+
+/*
+ * Multi Step
+ */
+#form-app, #my-form {
+  h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: inherit;
+  }
+  .form-action {
+    //margin-bottom: 15px;
+  }
+  .progress {
+    margin-top: 5px;
+    .progress-bar {
+      min-width: 2em;
+    }
+  }
+  .steps {
+    margin-bottom: 10px;
+    padding-top: 5px;
+    overflow: hidden;
+    text-align: center;
+
+    .step {
+      display: inline-block;
+      position: relative;
+      margin-right: -4px; /* Fix space between each step */
+      text-align: center;
+      min-height: 28px;
+      line-height: 28px;
+
+      &:before, &:after {
+        position: absolute;
+        background-color: #E6E9ED;
+        top: 11px;
+        margin-top: 0;
+        width: 50%;
+        height: 6px;
+        content: '';
+      }
+      &:before {
+        left: 0;
+      }
+      &:after {
+        right: 0;
+      }
+      &:first-child:before {
+        content: none;
+      }
+      &:last-child:after {
+        content: none;
+      }
+      &.no-stage:before, &.no-stage:after {
+        content: none;
+      }
+      &.current .stage {
+        background-color: #92a1ad;
+        color: #FFFFFF;
+      }
+      &.current:after, &.current:before {
+        background-color: #92a1ad;
+      }
+      &.success .stage {
+        background-color: #92a1ad;
+        color: #FFFFFF;
+      }
+      &.success:after, &.success:before {
+        background-color: #92a1ad;
+      }
+      .stage {
+        display: inline-block;
+        width: 28px;
+        height: 28px;
+        background-color: #E6E9ED;
+        color: #627483;
+        text-align: center;
+        font-size: 18px;
+        position: relative;
+        z-index: 1;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+      }
+      .stage .glyphicon {
+        font-size: 15px;
+      }
+      .title {
+        padding-right: 5px;
+        padding-left: 5px;
+      }
+      &:first-child .title {
+        padding-left: 0;
+      }
+    }
+    .no-title {
+      width: 48px;
+      &:first-child {
+        width: 38px;
+        text-align: left;
+      }
+    }
+    .no-stage {
+      .title {
+        padding: 0 10px;
+        margin: 0 5px 5px 5px;
+        border: 1px solid #6e8292;
+        border-radius: 4px;
+        text-align: center;
+      }
+      &:first-child {
+        .title {
+          padding: 0 10px;
+        }
+      }
+      &.current {
+        .title {
+          color: #ffffff;
+          background-color: #6e8292;
+          border-color: #637584;
+        }
+      }
+    }
+  }
+}

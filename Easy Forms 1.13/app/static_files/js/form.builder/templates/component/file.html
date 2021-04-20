@@ -1,0 +1,17 @@
+{{ if (field.containerClass) { }}<!-- File -->
+<div class="{{= field.containerClass }}">
+    <div class="form-group{{ if(field.required) { }} required-control{{ } }}">
+        {{ if (field.label) { }}<label {{ if (field.labelClass) { }} class="{{= field.labelClass }}"{{ } }} for="{{= field.id }}">{{= field.label }}</label>{{ } }}{{ if (field.helpText && field.helpTextPlacement === "above") { }}
+        <p class="help-block">{{= field.helpText }}</p>{{ } }}
+        <input type="file" id="{{= field.id }}" name="{{= field.id }}[]" data-alias="{{= field.alias }}" accept="{{= field.accept }}"{{ if (field.minFiles) { }} data-min-files="{{= field.minFiles }}"{{ } }}{{ if(field.maxFiles) { }} data-max-files="{{= field.maxFiles }}"{{ } }}{{ if (field.minSize) { }} data-min-size="{{= field.minSize }}"{{ } }}{{ if(field.maxSize) { }} data-max-size="{{= field.maxSize }}"{{ } }}{{ if(field.cssClass) { }} class="{{= field.cssClass }}"{{ } }}{{ if(field.required){ }} required{{ } }}{{ if(field.readOnly) { }} readOnly{{ } }}{{ if(field.disabled) { }} disabled{{ } }}{{ if(field.maxFiles && field.maxFiles > 1) { }} multiple{{ } }}>{{ if (field.helpText && field.helpTextPlacement === "below") { }}
+        <p class="help-block">{{= field.helpText }}</p>{{ } }}
+    </div>
+</div>
+{{ } else { }}<!-- File -->
+<div class="form-group{{ if(field.required) { }} required-control{{ } }}">
+    {{ if (field.label) { }}<label {{ if (field.labelClass) { }} class="{{= field.labelClass }}"{{ } }} for="{{= field.id }}">{{= field.label }}</label>{{ } }}{{ if (field.helpText && field.helpTextPlacement === "above") { }}
+    <p class="help-block">{{= field.helpText }}</p>{{ } }}
+    <input type="file" id="{{= field.id }}" name="{{= field.id }}[]" data-alias="{{= field.alias }}" accept="{{= field.accept }}"{{ if (field.minFiles) { }} data-min-files="{{= field.minFiles }}"{{ } }}{{ if(field.maxFiles) { }} data-max-files="{{= field.maxFiles }}"{{ } }}{{ if (field.minSize) { }} data-min-size="{{= field.minSize }}" {{ } }}{{ if(field.maxSize) { }} data-max-size="{{= field.maxSize }}"{{ } }}{{ if(field.cssClass) { }} class="{{= field.cssClass }}"{{ } }} {{ if(field.required){ }} required{{ } }}{{ if(field.readOnly) { }} readOnly{{ } }}{{ if(field.disabled) { }} disabled{{ } }}{{ if(field.maxFiles && field.maxFiles > 1) { }} multiple{{ } }}>{{ if (field.helpText && field.helpTextPlacement === "below") { }}
+    <p class="help-block">{{= field.helpText }}</p>{{ } }}
+</div>
+{{ } }}

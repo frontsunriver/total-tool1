@@ -1,0 +1,23 @@
+.empty-content .pro-empty-page {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 33px 0 92px;
+  h2{
+      font-family: $font-family-base-bold;
+      color: $body-bg-secondary;
+      font-size: 36px;
+      line-height: 43px;
+      padding: 0;
+      margin: 0;
+  }
+  h1{
+      font-family: $font-family-base-bold;
+      font-size: 64px;
+      line-height: 77px;
+  }
+}

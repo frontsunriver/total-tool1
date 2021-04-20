@@ -1,0 +1,7 @@
+date,amount,type,verifier, source,note
+29.06.2017,10000,Collect,John,Londan Church,Note Something
+29.06.2017,10000,Spend,John,Londan Church,Note Something
+29.06.2017,10000,Collect,John,Londan Church,Note Something
+29.06.2017,15000,Spend,John,Londan Church,Note Something
+29.06.2017,10000,Collect,John,Londan Church,Note Something
+29.06.2017,150,Spend,John,Londan Church,Note Something

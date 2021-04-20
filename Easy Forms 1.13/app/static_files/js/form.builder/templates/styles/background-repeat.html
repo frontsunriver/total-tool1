@@ -1,0 +1,12 @@
+<div class="form-group styles-{{- name }}">
+    <label class="control-label" for="{{- name }}">{{- label }}</label>
+    <input type="text" id="{{- name }}" class="form-control data-list" name="{{- name }}" value="{{- value }}" placeholder="{{- placeholder }}" list="{{- name }}-data-list">
+    <datalist id="{{- name }}-data-list">
+        <option value="repeat">repeat</option>
+        <option value="repeat-x">repeat-x</option>
+        <option value="repeat-y">repeat-y</option>
+        <option value="no-repeat">no-repeat</option>
+        <option value="space">space</option>
+        <option value="round">round</option>
+    </datalist>
+</div>

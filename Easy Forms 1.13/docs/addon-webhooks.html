@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="language" content="en"/>
+    <link rel="shortcut icon" type="image/ico" href="./assets/8f121b9a/favicon/favicon.ico"/>
+    <link rel="shortcut icon" type="image/ico" href="./assets/8f121b9a/favicon/favicon_32.ico"/>
+    <link rel="shortcut icon" type="image/ico" href="./assets/8f121b9a/favicon/favicon_48.ico"/>
+    <link rel="shortcut icon" type="image/ico" href="./assets/8f121b9a/favicon/favicon_96.ico"/>
+    <link rel="shortcut icon" type="image/ico" href="./assets/8f121b9a/favicon/favicon_144.ico"/>
+        <link href="./assets/c7fbc653/css/bootstrap.css" rel="stylesheet">
+<link href="./assets/fcacff94/github-gist.css" rel="stylesheet">
+<link href="./assets/8f121b9a/css/fonts.min.css" rel="stylesheet">
+<link href="./assets/8f121b9a/css/bootstrap.min.css" rel="stylesheet">
+<link href="./assets/8f121b9a/css/api.css" rel="stylesheet">
+<link href="./assets/8f121b9a/css/style.css" rel="stylesheet">
+<script src="./assets/e3a17645/jquery.js"></script>
+<script src="./assets/c7fbc653/js/bootstrap.js"></script>
+<script src="./assets/bbf47a67/jssearch.js"></script>    <title>WebHooks - Add-Ons - Easy Forms</title>
+</head>
+<body>
+
+<div class="wrap">
+    <nav id="w338" class="navbar-inverse navbar-fixed-top navbar"><div class="container"><div class="navbar-header"><button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#w338-collapse"><span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span></button><a class="navbar-brand" href="./index.html"><span class="app-name">Easy Forms</span></a></div><div id="w338-collapse" class="collapse navbar-collapse"><ul id="w339" class="navbar-nav nav"><li><a href="./index.html">Documentation</a></li></ul>
+    <div class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+            <input id="searchbox" type="text" class="form-control" placeholder="Search">
+        </div>
+    </div>
+    </div></div></nav>
+    <div id="search-resultbox" style="display: none;" class="modal-content">
+        <ul id="search-results">
+        </ul>
+    </div>
+
+    <div class="container">
+        
+<div class="row">
+    <div class="col-md-2">
+                <div id="navigation" class="list-group"><a class="list-group-item" href="#navigation-330" data-toggle="collapse" data-parent="#navigation">First steps <b class="caret"></b></a><div id="navigation-330" class="submenu panel-collapse collapse"><a class="list-group-item" href="./intro-easy-forms.html">About Easy Forms</a>
+<a class="list-group-item" href="./system-requirements.html">Requirements</a>
+<a class="list-group-item" href="./start-installation.html">Installing Easy Forms</a>
+<a class="list-group-item" href="./start-upgrading.html">Upgrading Easy Forms</a>
+<a class="list-group-item" href="./settings.html">Set Up Easy Forms</a>
+<a class="list-group-item" href="./start-customization.html">Customizing Easy Forms</a>
+<a class="list-group-item" href="./email-setup.html">Email Setup</a>
+<a class="list-group-item" href="./dynamic-content.html">Dynamic Content</a></div>
+<a class="list-group-item" href="#navigation-331" data-toggle="collapse" data-parent="#navigation">Forms <b class="caret"></b></a><div id="navigation-331" class="submenu panel-collapse collapse"><a class="list-group-item" href="./form-manager.html">Form Manager</a>
+<a class="list-group-item" href="./form-builder.html">Form Builder</a>
+<a class="list-group-item" href="./theme-designer.html">Theme Designer</a>
+<a class="list-group-item" href="./rule-builder.html">Rule Builder</a>
+<a class="list-group-item" href="./submission-manager.html">Submission Manager</a>
+<a class="list-group-item" href="./form-report-builder.html">Report Builder</a>
+<a class="list-group-item" href="./form-analytics.html">In-App Analytics</a>
+<a class="list-group-item" href="./form-widget.html">Form Widget</a>
+<a class="list-group-item" href="./form-import-export.html">Import / Export</a></div>
+<a class="list-group-item" href="#navigation-332" data-toggle="collapse" data-parent="#navigation">Templates <b class="caret"></b></a><div id="navigation-332" class="submenu panel-collapse collapse"><a class="list-group-item" href="./template-manager.html">Template Manager</a></div>
+<a class="list-group-item" href="#navigation-333" data-toggle="collapse" data-parent="#navigation">Themes <b class="caret"></b></a><div id="navigation-333" class="submenu panel-collapse collapse"><a class="list-group-item" href="./theme-manager.html">Theme Manager</a></div>
+<a class="list-group-item" href="#navigation-334" data-toggle="collapse" data-parent="#navigation">Users <b class="caret"></b></a><div id="navigation-334" class="submenu panel-collapse collapse"><a class="list-group-item" href="./user-manager.html">User Manager</a>
+<a class="list-group-item" href="./membership.html">Membership</a></div>
+<a class="list-group-item active" href="#navigation-335" data-toggle="collapse" data-parent="#navigation">Add-Ons <b class="caret"></b></a><div id="navigation-335" class="submenu panel-collapse collapse in"><a class="list-group-item" href="./addon-manager.html">Add-On Manager</a>
+<a class="list-group-item active" href="./addon-webhooks.html">WebHooks</a>
+<a class="list-group-item" href="./addon-google-analytics.html">Google Analytics</a></div>
+<a class="list-group-item" href="#navigation-336" data-toggle="collapse" data-parent="#navigation">Premium Add-Ons <b class="caret"></b></a><div id="navigation-336" class="submenu panel-collapse collapse"><a class="list-group-item" href="./addon-acelle-mail.html">Acelle Mail</a>
+<a class="list-group-item" href="./addon-active-campaign.html">Active Campaign</a>
+<a class="list-group-item" href="./addon-adyen.html">Adyen</a>
+<a class="list-group-item" href="./addon-aweber.html">AWeber</a>
+<a class="list-group-item" href="./addon-braintree.html">Braintree</a>
+<a class="list-group-item" href="./addon-campaign-monitor.html">Campaign Monitor</a>
+<a class="list-group-item" href="./addon-cleverreach.html">CleverReach</a>
+<a class="list-group-item" href="./addon-conditional-emails.html">Conditional Emails</a>
+<a class="list-group-item" href="./addon-constant-contact.html">Constant Contact</a>
+<a class="list-group-item" href="./addon-custom-error-messages.html">Custom Error Messages</a>
+<a class="list-group-item" href="./addon-custom-data-validation.html">Data Validation</a>
+<a class="list-group-item" href="./addon-emailoctopus.html">EmailOctopus</a>
+<a class="list-group-item" href="./addon-facebook-login.html">Facebook Login</a>
+<a class="list-group-item" href="./addon-field-encryption.html">Field Encryption</a>
+<a class="list-group-item" href="./addon-google-places-autocomplete.html">Google Places Autocomplete</a>
+<a class="list-group-item" href="./addon-import-submissions.html">Import Submissions</a>
+<a class="list-group-item" href="./addon-insightly.html">Insightly</a>
+<a class="list-group-item" href="./addon-mailchimp.html">MailChimp</a>
+<a class="list-group-item" href="./addon-mailerlite.html">MailerLite</a>
+<a class="list-group-item" href="./addon-mysql.html">MySQL</a>
+<a class="list-group-item" href="./addon-neverbounce.html">NeverBounce</a>
+<a class="list-group-item" href="./addon-nexmo-sms.html">Nexmo SMS</a>
+<a class="list-group-item" href="./addon-paypal.html">PayPal</a>
+<a class="list-group-item" href="./addon-paypal-invoicing.html">PayPal Invoicing</a>
+<a class="list-group-item" href="./addon-pdf.html">PDF</a>
+<a class="list-group-item" href="./addon-plivo.html">Plivo SMS</a>
+<a class="list-group-item" href="./addon-salesforce.html">Salesforce</a>
+<a class="list-group-item" href="./addon-sendinblue.html">SendinBlue</a>
+<a class="list-group-item" href="./addon-stripe.html">Stripe</a>
+<a class="list-group-item" href="./addon-twilio.html">Twilio SMS</a></div>
+<a class="list-group-item" href="#navigation-337" data-toggle="collapse" data-parent="#navigation">Premium Modules <b class="caret"></b></a><div id="navigation-337" class="submenu panel-collapse collapse"><a class="list-group-item" href="./module-subscriptions.html">Subscriptions</a></div></div>    </div>
+    <div class="col-md-9 guide-content" role="main">
+        <h1>WebHooks Add-On <span id="webhooks-add-on"></span><a href="#webhooks-add-on" class="hashlink">&para;</a></h1>
+<div class="toc"><ol><li><a href="#introduction">Introduction</a></li>
+<li><a href="#install-webhooks-add-on">Install WebHooks add-on</a></li>
+<li><a href="#create-a-webhook">Create a WebHook</a></li>
+<li><a href="#disable-enable-a-webhook">Disable / Enable a WebHook</a></li>
+<li><a href="#delete-a-webhook">Delete a WebHook</a></li>
+<li><a href="#send-data-as-json">Send data as JSON</a></li>
+<li><a href="#using-webhooks">Using WebHooks</a></li>
+<li><a href="#saving-form-submissions-in-an-external-database">Saving Form Submissions in an external database</a></li></ol></div>
+<h2>Introduction <span id="introduction"></span><a href="#introduction" class="hashlink">&para;</a></h2><p>You can use the WebHooks Add-On to send data from your forms to any custom page or script you like. This page can perform integration tasks to transform, parse, manipulate and send your submission data to wherever you choose.</p>
+<p>If you are developing an application that needs to be updated every time a form is submitted, WebHooks is for you. The advantage of WebHooks is that the passing of data is immediate and you can pass all submitted form data at once.</p>
+<p><strong>What's a WebHook?</strong></p>
+<p>A WebHook is just a push notification from Easy Forms to another server every time someone submits your forms.</p>
+<p><strong>What can you do with a WebHook?</strong></p>
+<p>WebHooks makes easier to integrate two systems. The most common use for a WebHook is to feed leads into your CRM. But there are lots of other things you could do as well.</p>
+<p><strong>What Do You Need?</strong></p>
+<p>The very nature of a WebHook assumes that you have some ability to write code (or bribe a friend or colleague who does). You need to have a server that can accept a POST request (the one you’d get from a form submission), and be able to write a script that does something in response.</p>
+<blockquote><p><strong>Note:</strong> Easy Forms support the integration of multiples WebHooks by form.</p>
+</blockquote>
+<h2>Install WebHooks add-on <span id="install-webhooks-add-on"></span><a href="#install-webhooks-add-on" class="hashlink">&para;</a></h2><p>To install WebHooks add-on follow the Install an add-on from <a href="addon-manager.html">Add-On Manager documentation instructions</a>.</p>
+<h2>Create a WebHook <span id="create-a-webhook"></span><a href="#create-a-webhook" class="hashlink">&para;</a></h2><p>To create a WebHook, you must perform the following steps:</p>
+<ol>
+<li>Go to the Add-Ons Manager and click on WebHooks.</li>
+<li>Click on the Create a Webhook button.</li>
+<li>A form used to configure the WebHook will appear:<ul>
+<li><strong>Form</strong>: Select the form that will send notifications.</li>
+<li><strong>Handshake Key</strong>: This is a an optional key that you choose as an authentication mechanism to prevent spam to your Web Hook. This key will be included as a post parameter when our servers call yours. If you use this key, you should compare it to your copy to validate that the submission is legit.</li>
+<li><strong>Url</strong>: The URL where your script is located.</li>
+<li><strong>Status</strong>: Can be:<ul>
+<li><strong>On</strong>: Send notifications</li>
+<li><strong>Off</strong>: Does not send notifications</li>
+</ul>
+</li>
+<li><strong>Json</strong>: Can be:<ul>
+<li><strong>On</strong>: Send data as JSON string</li>
+<li><strong>Off</strong>: Send data as Url Encoded string</li>
+</ul>
+</li>
+<li><strong>Alias</strong>: Can be:<ul>
+<li><strong>On</strong>: Send data with Field Alias as parameter key. Eg. Replaces 'text_0' by 'name'.</li>
+<li><strong>Off</strong>: Send data with Field ID as parameter key</li>
+</ul>
+</li>
+<li>Click Create.</li>
+</ul>
+</li>
+</ol>
+<blockquote class="note"><p><strong>Note: </strong>Select multiple forms to create the same WebHook for each form.</p>
+</blockquote>
+<h2>Disable / Enable a WebHook <span id="disable-enable-a-webhook"></span><a href="#disable-enable-a-webhook" class="hashlink">&para;</a></h2><p>To stop a webhook temporarily, you can choose to disable and enable later. To disable a form webhook, you must follow these steps:</p>
+<ol>
+<li>Go to the Add-Ons Manager and click on WebHooks.</li>
+<li>Click the Actions button of the WebHook to disable.</li>
+<li>Click Update.</li>
+<li>Change the Status from On to Off or vice versa.</li>
+<li>Click Update.</li>
+</ol>
+<h2>Delete a WebHook <span id="delete-a-webhook"></span><a href="#delete-a-webhook" class="hashlink">&para;</a></h2><p>To delete a WebHook, you must perform the following steps:</p>
+<ol>
+<li>Select the checkbox of the WebHook to delete.</li>
+<li>Click Bulk Actions.</li>
+<li>Click Delete.</li>
+<li>Then it will show a popup asking you to confirm your decision to delete the WebHook.</li>
+</ol>
+<p>The WebHooks Manager will reload and the selected WebHook will be deleted.</p>
+<h2>Send data as JSON <span id="send-data-as-json"></span><a href="#send-data-as-json" class="hashlink">&para;</a></h2><p>To send the post data as a JSON string, you must follow these steps:</p>
+<ol>
+<li>Go to the Add-Ons Manager and click on WebHooks.</li>
+<li>Click the Actions button of the WebHook to disable.</li>
+<li>Click Update.</li>
+<li>Change the Json field from On to Off or vice versa.</li>
+<li>Click Update.</li>
+</ol>
+<h2>Using WebHooks <span id="using-webhooks"></span><a href="#using-webhooks" class="hashlink">&para;</a></h2><p>Now that you know what are WebHooks and how to use them in Easy Forms, let's see an example.</p>
+<blockquote><p><strong>Note:</strong> You can follow this tutorial using the Easy Forms demo. But keep in mind that our demo page will refresh every 15 minutes.</p>
+</blockquote>
+<p>In this tutorial we are going to send notifications from one of our forms to the page: Beeceptor. This page captures our notifications and printed them on screen.</p>
+<h3>First Steps: <span id="first-steps"></span><a href="#first-steps" class="hashlink">&para;</a></h3><ol>
+<li>Go to <a href="https://beeceptor.com/">https://beeceptor.com/</a></li>
+<li>Enter a Endpoint Name and</li>
+<li>Press the Create Endpoint button</li>
+<li>Copy the Endpoint Url</li>
+</ol>
+<p>Very Good! Know you have a URL that will serve to receive notifications sent by Easy Forms.</p>
+<h3>Next Steps: <span id="next-steps"></span><a href="#next-steps" class="hashlink">&para;</a></h3><ol>
+<li>Go to Easy Forms</li>
+<li>Go to the Add-Ons Manager and Install WebHooks</li>
+<li>Now, Click on WebHooks.</li>
+<li>Click on the Create a Webhook button.</li>
+<li>Fill the form:<ul>
+<li>Form: Select ‘Mailing List - Inline Layout'</li>
+<li>Url: Paste the Endpoint Url</li>
+<li>Handshake Key: For this example: my_handshake_key</li>
+<li>Status: ON</li>
+</ul>
+</li>
+<li>Click on Create</li>
+</ol>
+<p><img src="images/using-webhooks.png" alt="Using WebHooks" /></p>
+<h3>Final Steps: Test your notifications <span id="final-steps-test-your-notifications"></span><a href="#final-steps-test-your-notifications" class="hashlink">&para;</a></h3><ol>
+<li>Go to Form Manager</li>
+<li>Click on the ‘Mailing List - Inline Layout' form</li>
+<li>Click on the Publish and Share button (the green arrow icon)</li>
+<li>Click on Share Form Link</li>
+<li>Check Without box and press Go!</li>
+<li>Fill the Mailing List form and submit</li>
+</ol>
+<p><img src="images/using-webhooks-1.png" alt="Test your notifications" /></p>
+<p>If your submission is received, a success message will appear.</p>
+<p><img src="images/using-webhooks-2.png" alt="Success message" /></p>
+<p>Now, go to Endpoint Url (and without refresh the page) you will see that the notification contains:</p>
+<ul>
+<li>Form ID</li>
+<li>Form Name</li>
+<li>User IP</li>
+<li>Submission Data</li>
+<li>HandShake Key</li>
+</ul>
+<p><img src="images/using-webhooks-3.png" alt="Your notification" /></p>
+<p>And that’s it! You have sent your first notification to another server. Congratulations!</p>
+<h2>Saving Form Submissions in an external database <span id="saving-form-submissions-in-an-external-database"></span><a href="#saving-form-submissions-in-an-external-database" class="hashlink">&para;</a></h2><p>Now that we know how to export Form Submissions in real time to an external application, we will see how we can store these submissions in a database.</p>
+<p>If you have a website, you can perform the following steps and store Form Submissions of our Demo Form in your own database, you just need to change the WebHook URL.</p>
+<blockquote><p><strong>Note</strong>: You can Follow this tutorial using our <a href="https://demo.easyforms.dev/">Easy Forms demo</a>. Keep in mind that our demo page will refresh every 15 minutes.</p>
+</blockquote>
+<h3>In Your own Website: <span id="in-your-own-website"></span><a href="#in-your-own-website" class="hashlink">&para;</a></h3><p>1.- <strong>Create a database</strong>: '<em>test</em>'. You can do this with your favorite software, such as phpMyAdmin or also using the following MySQL command:</p>
+<pre><code class="hljs sql"><span class="hljs-operator"><span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">DATABASE</span> <span class="hljs-string">'test'</span>;</span>
+</code></pre>
+<p>2.- <strong>Create a database table</strong>: '<em>subscribers</em>', with 4 fields: <em>id, name, email</em> and ip_<em>address</em>. You can run the following MySQL query:</p>
+<pre><code class="hljs sql"><span class="hljs-operator"><span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">TABLE</span> <span class="hljs-string">`test`</span>.<span class="hljs-string">`subscribers`</span> (
+    <span class="hljs-string">`id`</span> <span class="hljs-built_in">INT</span>(<span class="hljs-number">11</span>) <span class="hljs-keyword">NOT</span> <span class="hljs-literal">NULL</span> AUTO_INCREMENT ,
+    <span class="hljs-string">`name`</span> <span class="hljs-built_in">VARCHAR</span>(<span class="hljs-number">255</span>) <span class="hljs-keyword">NOT</span> <span class="hljs-literal">NULL</span> ,
+    <span class="hljs-string">`email`</span> <span class="hljs-built_in">VARCHAR</span>(<span class="hljs-number">255</span>) <span class="hljs-keyword">NOT</span> <span class="hljs-literal">NULL</span> ,
+    <span class="hljs-string">`ip_address`</span> <span class="hljs-built_in">VARCHAR</span>(<span class="hljs-number">255</span>) <span class="hljs-keyword">NOT</span> <span class="hljs-literal">NULL</span> ,
+ PRIMARY <span class="hljs-keyword">KEY</span> (<span class="hljs-string">`id`</span>)) <span class="hljs-keyword">ENGINE</span> = <span class="hljs-keyword">InnoDB</span>;</span>
+</code></pre>
+<p>3.- <strong>Setup the information to your database</strong>: 'test'. The <code>@app/custom/saveToDB.php</code> file allows you to configure the following parameters:</p>
+<pre><code class="hljs bash">define(<span class="hljs-string">'DB_SERVER'</span>, <span class="hljs-string">"localhost"</span>);
+define(<span class="hljs-string">'DB_USER'</span>, <span class="hljs-string">"root"</span>);
+define(<span class="hljs-string">'DB_PASSWORD'</span>, <span class="hljs-string">""</span>);
+define(<span class="hljs-string">'DB_DATABASE'</span>, <span class="hljs-string">"test"</span>);
+define(<span class="hljs-string">'DB_DRIVER'</span>, <span class="hljs-string">"mysql"</span>);
+</code></pre>
+<p>4.- <strong>Upload the @app/custom/saveToDB.php file to your server</strong>.</p>
+<h3>In our Easy Forms demo page: <span id="in-our-easy-forms-demo-page"></span><a href="#in-our-easy-forms-demo-page" class="hashlink">&para;</a></h3><p><a href="http://demo.easyforms.baluart.com/">http://demo.easyforms.baluart.com/</a></p>
+<p>Username: admin
+Password: admin</p>
+<p>5.- Finally <strong>go to our Easy Forms demo page</strong> and change the WebHook URL:</p>
+<ul>
+<li>Go to the <em>Add-Ons Manager</em> and click on <em>WebHooks</em>.</li>
+<li>Click the <em>Actions</em> button of the WebHook to update</li>
+<li>Replace the <em>URL</em> by <a href="http://mydomain.com/saveToDB.php">http://mydomain.com/saveToDB.php</a>.</li>
+<li>Click <em>Update</em></li>
+</ul>
+<p>From now on, each time you submit the form, the data will be forwarded to your saveToDB.php file that will store the information in the corresponding field in the database.</p>
+<p>As you can see in the <strong>saveToDB.php</strong> file:</p>
+<ul>
+<li>We are receiving $_POST data sent by Easy Forms when a Form is submitted. For example:</li>
+</ul>
+<pre><code class="hljs php"><span class="hljs-variable">$name</span> = <span class="hljs-keyword">isset</span>(<span class="hljs-variable">$_POST</span>[<span class="hljs-string">'text_0'</span>]) ? <span class="hljs-variable">$_POST</span>[<span class="hljs-string">'text_0'</span>] : <span class="hljs-string">''</span>;
+</code></pre>
+<p>Here <code>text_0</code> is the Field name. You can see the name of each field in the <a href="form-builder.html#user-interface">Form Builder (Code tab)</a>:</p>
+<p><a href="http://demo.easyforms.baluart.com/form/update?id=4">http://demo.easyforms.baluart.com/form/update?id=4</a></p>
+<p>And that's all!</p>
+<p>Then you can follow this logic to create your own custom file in order to receive Form Submissions and save them in your database.</p>
+        <div class="toplink"><a href="#" class="h1" title="go to top"><span class="glyphicon glyphicon-arrow-up"></a></div>
+    </div>
+</div>
+
+    </div>
+
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <p class="pull-left">&copy; Easy forms 2015 - 2021</p>
+        <p class="pull-right">
+            <small>Page generated on Thu, 08 Apr 2021 01:38:17 +0000</small>
+        </p>
+    </div>
+</footer>
+
+<script>jQuery(function ($) {
+    var shiftWindow = function () { scrollBy(0, -50) };
+    if (location.hash) setTimeout(shiftWindow, 1);
+    window.addEventListener("hashchange", shiftWindow);
+var element = document.createElement("script");
+element.src = "./jssearch.index.js";
+document.body.appendChild(element);
+
+var searchBox = $('#searchbox');
+
+// search when typing in search field
+searchBox.on("keyup", function(event) {
+    var query = $(this).val();
+
+    if (query == '' || event.which == 27) {
+        $('#search-resultbox').hide();
+        return;
+    } else if (event.which == 13) {
+        var selectedLink = $('#search-resultbox a.selected');
+        if (selectedLink.length != 0) {
+            document.location = selectedLink.attr('href');
+            return;
+        }
+    } else if (event.which == 38 || event.which == 40) {
+        $('#search-resultbox').show();
+
+        var selected = $('#search-resultbox a.selected');
+        if (selected.length == 0) {
+            $('#search-results').find('a').first().addClass('selected');
+        } else {
+            var next;
+            if (event.which == 40) {
+                next = selected.parent().next().find('a').first();
+            } else {
+                next = selected.parent().prev().find('a').first();
+            }
+            if (next.length != 0) {
+                var resultbox = $('#search-results');
+                var position = next.position();
+
+//              TODO scrolling is buggy and jumps around
+//                resultbox.scrollTop(Math.floor(position.top));
+//                console.log(position.top);
+
+                selected.removeClass('selected');
+                next.addClass('selected');
+            }
+        }
+
+        return;
+    }
+    $('#search-resultbox').show();
+    $('#search-results').html('<li><span class="no-results">No results</span></li>');
+
+    var result = jssearch.search(query);
+
+    if (result.length > 0) {
+        var i = 0;
+        var resHtml = '';
+
+        for (var key in result) {
+            if (i++ > 20) {
+                break;
+            }
+            resHtml = resHtml +
+            '<li><a href="' + result[key].file.u.substr(3) +'"><span class="title">' + result[key].file.t + '</span>' +
+            '<span class="description">' + result[key].file.d + '</span></a></li>';
+        }
+        $('#search-results').html(resHtml);
+    }
+});
+
+// hide the search results on ESC
+$(document).on("keyup", function(event) { if (event.which == 27) { $('#search-resultbox').hide(); } });
+// hide search results on click to document
+$(document).bind('click', function (e) { $('#search-resultbox').hide(); });
+// except the following:
+searchBox.bind('click', function(e) { e.stopPropagation(); });
+$('#search-resultbox').bind('click', function(e) { e.stopPropagation(); });
+
+});</script></body>
+</html>

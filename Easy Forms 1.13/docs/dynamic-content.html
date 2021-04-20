@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="language" content="en"/>
+    <link rel="shortcut icon" type="image/ico" href="./assets/8f121b9a/favicon/favicon.ico"/>
+    <link rel="shortcut icon" type="image/ico" href="./assets/8f121b9a/favicon/favicon_32.ico"/>
+    <link rel="shortcut icon" type="image/ico" href="./assets/8f121b9a/favicon/favicon_48.ico"/>
+    <link rel="shortcut icon" type="image/ico" href="./assets/8f121b9a/favicon/favicon_96.ico"/>
+    <link rel="shortcut icon" type="image/ico" href="./assets/8f121b9a/favicon/favicon_144.ico"/>
+        <link href="./assets/c7fbc653/css/bootstrap.css" rel="stylesheet">
+<link href="./assets/fcacff94/github-gist.css" rel="stylesheet">
+<link href="./assets/8f121b9a/css/fonts.min.css" rel="stylesheet">
+<link href="./assets/8f121b9a/css/bootstrap.min.css" rel="stylesheet">
+<link href="./assets/8f121b9a/css/api.css" rel="stylesheet">
+<link href="./assets/8f121b9a/css/style.css" rel="stylesheet">
+<script src="./assets/e3a17645/jquery.js"></script>
+<script src="./assets/c7fbc653/js/bootstrap.js"></script>
+<script src="./assets/bbf47a67/jssearch.js"></script>    <title>Dynamic Content - First steps - Easy Forms</title>
+</head>
+<body>
+
+<div class="wrap">
+    <nav id="w348" class="navbar-inverse navbar-fixed-top navbar"><div class="container"><div class="navbar-header"><button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#w348-collapse"><span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span></button><a class="navbar-brand" href="./index.html"><span class="app-name">Easy Forms</span></a></div><div id="w348-collapse" class="collapse navbar-collapse"><ul id="w349" class="navbar-nav nav"><li><a href="./index.html">Documentation</a></li></ul>
+    <div class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+            <input id="searchbox" type="text" class="form-control" placeholder="Search">
+        </div>
+    </div>
+    </div></div></nav>
+    <div id="search-resultbox" style="display: none;" class="modal-content">
+        <ul id="search-results">
+        </ul>
+    </div>
+
+    <div class="container">
+        
+<div class="row">
+    <div class="col-md-2">
+                <div id="navigation" class="list-group"><a class="list-group-item active" href="#navigation-340" data-toggle="collapse" data-parent="#navigation">First steps <b class="caret"></b></a><div id="navigation-340" class="submenu panel-collapse collapse in"><a class="list-group-item" href="./intro-easy-forms.html">About Easy Forms</a>
+<a class="list-group-item" href="./system-requirements.html">Requirements</a>
+<a class="list-group-item" href="./start-installation.html">Installing Easy Forms</a>
+<a class="list-group-item" href="./start-upgrading.html">Upgrading Easy Forms</a>
+<a class="list-group-item" href="./settings.html">Set Up Easy Forms</a>
+<a class="list-group-item" href="./start-customization.html">Customizing Easy Forms</a>
+<a class="list-group-item" href="./email-setup.html">Email Setup</a>
+<a class="list-group-item active" href="./dynamic-content.html">Dynamic Content</a></div>
+<a class="list-group-item" href="#navigation-341" data-toggle="collapse" data-parent="#navigation">Forms <b class="caret"></b></a><div id="navigation-341" class="submenu panel-collapse collapse"><a class="list-group-item" href="./form-manager.html">Form Manager</a>
+<a class="list-group-item" href="./form-builder.html">Form Builder</a>
+<a class="list-group-item" href="./theme-designer.html">Theme Designer</a>
+<a class="list-group-item" href="./rule-builder.html">Rule Builder</a>
+<a class="list-group-item" href="./submission-manager.html">Submission Manager</a>
+<a class="list-group-item" href="./form-report-builder.html">Report Builder</a>
+<a class="list-group-item" href="./form-analytics.html">In-App Analytics</a>
+<a class="list-group-item" href="./form-widget.html">Form Widget</a>
+<a class="list-group-item" href="./form-import-export.html">Import / Export</a></div>
+<a class="list-group-item" href="#navigation-342" data-toggle="collapse" data-parent="#navigation">Templates <b class="caret"></b></a><div id="navigation-342" class="submenu panel-collapse collapse"><a class="list-group-item" href="./template-manager.html">Template Manager</a></div>
+<a class="list-group-item" href="#navigation-343" data-toggle="collapse" data-parent="#navigation">Themes <b class="caret"></b></a><div id="navigation-343" class="submenu panel-collapse collapse"><a class="list-group-item" href="./theme-manager.html">Theme Manager</a></div>
+<a class="list-group-item" href="#navigation-344" data-toggle="collapse" data-parent="#navigation">Users <b class="caret"></b></a><div id="navigation-344" class="submenu panel-collapse collapse"><a class="list-group-item" href="./user-manager.html">User Manager</a>
+<a class="list-group-item" href="./membership.html">Membership</a></div>
+<a class="list-group-item" href="#navigation-345" data-toggle="collapse" data-parent="#navigation">Add-Ons <b class="caret"></b></a><div id="navigation-345" class="submenu panel-collapse collapse"><a class="list-group-item" href="./addon-manager.html">Add-On Manager</a>
+<a class="list-group-item" href="./addon-webhooks.html">WebHooks</a>
+<a class="list-group-item" href="./addon-google-analytics.html">Google Analytics</a></div>
+<a class="list-group-item" href="#navigation-346" data-toggle="collapse" data-parent="#navigation">Premium Add-Ons <b class="caret"></b></a><div id="navigation-346" class="submenu panel-collapse collapse"><a class="list-group-item" href="./addon-acelle-mail.html">Acelle Mail</a>
+<a class="list-group-item" href="./addon-active-campaign.html">Active Campaign</a>
+<a class="list-group-item" href="./addon-adyen.html">Adyen</a>
+<a class="list-group-item" href="./addon-aweber.html">AWeber</a>
+<a class="list-group-item" href="./addon-braintree.html">Braintree</a>
+<a class="list-group-item" href="./addon-campaign-monitor.html">Campaign Monitor</a>
+<a class="list-group-item" href="./addon-cleverreach.html">CleverReach</a>
+<a class="list-group-item" href="./addon-conditional-emails.html">Conditional Emails</a>
+<a class="list-group-item" href="./addon-constant-contact.html">Constant Contact</a>
+<a class="list-group-item" href="./addon-custom-error-messages.html">Custom Error Messages</a>
+<a class="list-group-item" href="./addon-custom-data-validation.html">Data Validation</a>
+<a class="list-group-item" href="./addon-emailoctopus.html">EmailOctopus</a>
+<a class="list-group-item" href="./addon-facebook-login.html">Facebook Login</a>
+<a class="list-group-item" href="./addon-field-encryption.html">Field Encryption</a>
+<a class="list-group-item" href="./addon-google-places-autocomplete.html">Google Places Autocomplete</a>
+<a class="list-group-item" href="./addon-import-submissions.html">Import Submissions</a>
+<a class="list-group-item" href="./addon-insightly.html">Insightly</a>
+<a class="list-group-item" href="./addon-mailchimp.html">MailChimp</a>
+<a class="list-group-item" href="./addon-mailerlite.html">MailerLite</a>
+<a class="list-group-item" href="./addon-mysql.html">MySQL</a>
+<a class="list-group-item" href="./addon-neverbounce.html">NeverBounce</a>
+<a class="list-group-item" href="./addon-nexmo-sms.html">Nexmo SMS</a>
+<a class="list-group-item" href="./addon-paypal.html">PayPal</a>
+<a class="list-group-item" href="./addon-paypal-invoicing.html">PayPal Invoicing</a>
+<a class="list-group-item" href="./addon-pdf.html">PDF</a>
+<a class="list-group-item" href="./addon-plivo.html">Plivo SMS</a>
+<a class="list-group-item" href="./addon-salesforce.html">Salesforce</a>
+<a class="list-group-item" href="./addon-sendinblue.html">SendinBlue</a>
+<a class="list-group-item" href="./addon-stripe.html">Stripe</a>
+<a class="list-group-item" href="./addon-twilio.html">Twilio SMS</a></div>
+<a class="list-group-item" href="#navigation-347" data-toggle="collapse" data-parent="#navigation">Premium Modules <b class="caret"></b></a><div id="navigation-347" class="submenu panel-collapse collapse"><a class="list-group-item" href="./module-subscriptions.html">Subscriptions</a></div></div>    </div>
+    <div class="col-md-9 guide-content" role="main">
+        <h1>Dynamic Content <span id="dynamic-content"></span><a href="#dynamic-content" class="hashlink">&para;</a></h1>
+<div class="toc"><ol><li><a href="#introduction">Introduction</a></li>
+<li><a href="#variables">Variables</a></li>
+<li><a href="#auto-suggest-tool">Auto-Suggest Tool</a></li>
+<li><a href="#filters">Filters</a></li>
+<li><a href="#conditionals">Conditionals</a></li></ol></div>
+<h2>Introduction <span id="introduction"></span><a href="#introduction" class="hashlink">&para;</a></h2><p>Dynamic content is an exciting new functionality that enables powerful content customization. With dynamic content, you can send an email or generate a PDF document (requires <a href="addon-pdf.html">PDF Add-On</a>) with HTML formatted text displayed based on the field values. </p>
+<p>For example, you can structure the Subject of your emails to display the appropriate user name, rather than hard-coding a particular value:</p>
+<pre><code class="hljs twig"><span class="xml">Thanks </span><span class="hljs-variable">{{ Name }}</span><span class="xml">, we have received your message!
+</span></code></pre>
+<p>Currently, this functionality is available in:</p>
+<ul>
+<li>Confirmation Messages</li>
+<li>Confirmation Emails and </li>
+<li>Email Notifications</li>
+</ul>
+<p>Also, Dynamic Content is available in our Premium Add-Ons like Conditional Emails or PDF.</p>
+<h2>Variables <span id="variables"></span><a href="#variables" class="hashlink">&para;</a></h2><p>You can insert variables into the email body, and they'll be replaced with whatever the user insert into that field.</p>
+<p>To print a variable, it must be between double curly braces: {{ and }}. Eg. <code>{{ My Variable }}</code></p>
+<p>In the following example, we show two ways you can print variables:</p>
+<ul>
+<li><strong>By using the Field Label</strong>: The variable <code>{{ Your Name }}</code> has been inserted to the confirmation email and will be replaced by the name the user puts in the Form.</li>
+<li><strong>By using the Field ID</strong>: You can use a Field ID as the variable name too, for example in the next image we use the following variable to print the Name of the user: <code>{{ text_1 }}</code> at the same time we use <code>{{ Your Name }}</code>. In other words, we can use both types of variables to get the same field information. If your field doesn't have a label, this is the option you should use.</li>
+</ul>
+<p><img src="images/form-manager-settings-customizing-message.jpg" alt="Easy Forms - Customizing the message" /></p>
+<p>Additionally, you can use the following variables:</p>
+<ul>
+<li><code>{{ form_id }}</code>: Form ID.</li>
+<li><code>{{ form_name }}</code>: Form Name</li>
+<li><code>{{ submission_id }}</code>: Submission ID</li>
+<li><code>{{ submission_number }}</code>: Submission Number</li>
+<li><code>{{ submission_table }}</code>: The content of all the form fields (HTML format)</li>
+<li><code>{{ submission_text }}</code>: The content of all the form fields (Text format)</li>
+<li><code>{{ created_at }}</code>: Date of Submission</li>
+<li><code>{{ ip_address }}</code>: IP Address.</li>
+<li><code>{{ user_agent }}</code>: Browser’s User Agent of Sender.</li>
+<li><code>{{ url }}</code>: Web page url where form has been embedded.</li>
+<li><code>{{ referrer }}</code>: Web page url from where the visitor has arrived to the form.</li>
+<li><code>{{ country }}</code>: Country of Sender.</li>
+<li><code>{{ city }}</code>: City of Sender.</li>
+<li><code>{{ longitude }}</code>: The geographic coordinate that specifies the east-west position of Sender.</li>
+<li><code>{{ latitude }}</code>: The geographic coordinate that specifies the north–south position of Sender.</li>
+<li><code>{{ edit_link }}</code>: To display the url to the Public Form Page to Edit a Submission. You should enable "Save to DB" &amp; "Editable" to use this feature.</li>
+<li><code>{{ optin_link }}</code>: To present the link to the Opt-In Confirmation Page. You should enable "Save to DB" to use this feature.</li>
+</ul>
+<p>This is a great way to personalize your message. Any form field can be used in this way.</p>
+<h2>Auto-Suggest Tool <span id="auto-suggest-tool"></span><a href="#auto-suggest-tool" class="hashlink">&para;</a></h2><p>"Form Settings", "Form Rules" and Premium Add-Ons allow the replacement of placeholders by data collected by your forms. To make things easier, we have implemented a visual tool that allows you to select form fields without remember them. To use this tool just enter a curly bracket "{", and the list of Form Fields will appear, select the desired field and ready.</p>
+<p><img src="images/easyforms-placeholder-suggestions.png" alt="Easy Forms - Customizing the message" /></p>
+<h2>Filters <span id="filters"></span><a href="#filters" class="hashlink">&para;</a></h2><p>Filters allow change the output of a variable. It must be used after the variable and separated by a pipe "|".</p>
+<h3>Use Default Values <span id="use-default-values"></span><a href="#use-default-values" class="hashlink">&para;</a></h3><p>For non-required fields, you can specify a default value to be used if it doesn't have any value.</p>
+<pre><code class="hljs javascript">Thanks {{ Name | <span class="hljs-keyword">default</span>: <span class="hljs-string">'friend'</span> }}, we have received your message!
+</code></pre>
+<p>For a user named John, this would read “Thanks John, we have received your message!”. However, if a submission didn't have a name, it would read “Thanks friend, we have received your message!”</p>
+<h3>Change Date Formats <span id="change-date-formats"></span><a href="#change-date-formats" class="hashlink">&para;</a></h3><p>Converts a timestamp into another date format.</p>
+<pre><code class="hljs twig"><span class="xml"></span><span class="hljs-variable">{{ created_at | <span class="hljs-function"><span class="hljs-keyword">date</span></span>: "%a, %b %d, %y" }}</span><span class="xml">
+</span></code></pre>
+<p>Output: Fri, Jul 17, 20</p>
+<pre><code class="hljs twig"><span class="xml"></span><span class="hljs-variable">{{ created_at | <span class="hljs-function"><span class="hljs-keyword">date</span></span>: "%Y" }}</span><span class="xml">
+</span></code></pre>
+<p>Output: 2020</p>
+<h3>Use Timezone with Date Formats <span id="use-timezone-with-date-formats"></span><a href="#use-timezone-with-date-formats" class="hashlink">&para;</a></h3><pre><code class="hljs bash">{{ created_at | timezone: <span class="hljs-string">"America/New_York"</span> | date: <span class="hljs-string">"%Y-%m-%d %H:%M"</span> }}
+</code></pre>
+<p>Output: 2020-07-17 01:00</p>
+<h2>Conditionals <span id="conditionals"></span><a href="#conditionals" class="hashlink">&para;</a></h2><p>You can use conditional logic into your content. You may want to send the same email with differences for different groups. The most common use-case for this is language localization, where you want to send different content to different users.</p>
+<h3>Use Multiple Languages <span id="use-multiple-languages"></span><a href="#use-multiple-languages" class="hashlink">&para;</a></h3><p>In the example below, if a user named John selects his preferred language as Spanish, he will see their message as “Hola, John!”</p>
+<pre><code class="hljs twig"><span class="xml"></span><span class="hljs-template_tag">{% <span class="hljs-keyword">if</span> Language == 'Spanish' %}</span><span class="xml">
+  Hola </span><span class="hljs-variable">{{ Name }}</span><span class="xml">! 
+</span><span class="hljs-template_tag">{% elseif Language == 'French' %}</span><span class="xml">
+  Bonjour </span><span class="hljs-variable">{{ Name }}</span><span class="xml">!
+</span><span class="hljs-template_tag">{% else %}</span><span class="xml">
+  Hello </span><span class="hljs-variable">{{ Name }}</span><span class="xml">!
+</span><span class="hljs-template_tag">{% <span class="hljs-keyword">endif</span> %}</span><span class="xml">
+</span></code></pre>
+<h3>Show Images <span id="show-images"></span><a href="#show-images" class="hashlink">&para;</a></h3><p>Another common use case is display multiple images uploaded by a same file field in different places. For that, you can do the following:</p>
+<pre><code class="hljs twig"><span class="xml"></span><span class="hljs-template_tag">{% <span class="hljs-keyword">if</span> file_1[0] %}</span><span class="xml">
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"image-item-1"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"</span></span></span><span class="hljs-variable">{{ file_1[0] }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-value">"</span> <span class="hljs-attribute">width</span>=<span class="hljs-value">"300"</span> <span class="hljs-attribute">height</span>=<span class="hljs-value">"300"</span> <span class="hljs-attribute">alt</span>=<span class="hljs-value">"First Image"</span> /&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+</span><span class="hljs-variable">{{% endif %}}</span><span class="xml">
+</span></code></pre>
+<pre><code class="hljs twig"><span class="xml"></span><span class="hljs-template_tag">{% <span class="hljs-keyword">if</span> file_1[1] %}</span><span class="xml">
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"image-item-2"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">img</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"</span></span></span><span class="hljs-variable">{{ file_1[1] }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-value">"</span> <span class="hljs-attribute">width</span>=<span class="hljs-value">"300"</span> <span class="hljs-attribute">height</span>=<span class="hljs-value">"300"</span> <span class="hljs-attribute">alt</span>=<span class="hljs-value">"Second Image"</span> /&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+</span><span class="hljs-variable">{{% endif %}}</span><span class="xml">
+</span></code></pre>
+        <div class="toplink"><a href="#" class="h1" title="go to top"><span class="glyphicon glyphicon-arrow-up"></a></div>
+    </div>
+</div>
+
+    </div>
+
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <p class="pull-left">&copy; Easy forms 2015 - 2021</p>
+        <p class="pull-right">
+            <small>Page generated on Thu, 08 Apr 2021 01:38:17 +0000</small>
+        </p>
+    </div>
+</footer>
+
+<script>jQuery(function ($) {
+    var shiftWindow = function () { scrollBy(0, -50) };
+    if (location.hash) setTimeout(shiftWindow, 1);
+    window.addEventListener("hashchange", shiftWindow);
+var element = document.createElement("script");
+element.src = "./jssearch.index.js";
+document.body.appendChild(element);
+
+var searchBox = $('#searchbox');
+
+// search when typing in search field
+searchBox.on("keyup", function(event) {
+    var query = $(this).val();
+
+    if (query == '' || event.which == 27) {
+        $('#search-resultbox').hide();
+        return;
+    } else if (event.which == 13) {
+        var selectedLink = $('#search-resultbox a.selected');
+        if (selectedLink.length != 0) {
+            document.location = selectedLink.attr('href');
+            return;
+        }
+    } else if (event.which == 38 || event.which == 40) {
+        $('#search-resultbox').show();
+
+        var selected = $('#search-resultbox a.selected');
+        if (selected.length == 0) {
+            $('#search-results').find('a').first().addClass('selected');
+        } else {
+            var next;
+            if (event.which == 40) {
+                next = selected.parent().next().find('a').first();
+            } else {
+                next = selected.parent().prev().find('a').first();
+            }
+            if (next.length != 0) {
+                var resultbox = $('#search-results');
+                var position = next.position();
+
+//              TODO scrolling is buggy and jumps around
+//                resultbox.scrollTop(Math.floor(position.top));
+//                console.log(position.top);
+
+                selected.removeClass('selected');
+                next.addClass('selected');
+            }
+        }
+
+        return;
+    }
+    $('#search-resultbox').show();
+    $('#search-results').html('<li><span class="no-results">No results</span></li>');
+
+    var result = jssearch.search(query);
+
+    if (result.length > 0) {
+        var i = 0;
+        var resHtml = '';
+
+        for (var key in result) {
+            if (i++ > 20) {
+                break;
+            }
+            resHtml = resHtml +
+            '<li><a href="' + result[key].file.u.substr(3) +'"><span class="title">' + result[key].file.t + '</span>' +
+            '<span class="description">' + result[key].file.d + '</span></a></li>';
+        }
+        $('#search-results').html(resHtml);
+    }
+});
+
+// hide the search results on ESC
+$(document).on("keyup", function(event) { if (event.which == 27) { $('#search-resultbox').hide(); } });
+// hide search results on click to document
+$(document).bind('click', function (e) { $('#search-resultbox').hide(); });
+// except the following:
+searchBox.bind('click', function(e) { e.stopPropagation(); });
+$('#search-resultbox').bind('click', function(e) { e.stopPropagation(); });
+
+});</script></body>
+</html>

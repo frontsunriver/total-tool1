@@ -1,0 +1,275 @@
+// ...........footer.............
+
+$bg-footer: $primary;
+$bg-copyright: $gray-300;
+$bg-social: $primary-dark;
+
+.footer-three {
+    padding-top: 45px;
+    background-color:$bg-footer;
+    color: color-yiq($bg-footer);
+   
+    hr {
+        margin-top: 5px;
+        margin-bottom: 1rem;
+        border: 0;
+        border-top: $border-width solid $border-color;
+        &:before {
+            height: 1px;
+            background-color: $secondary;
+            content: "";
+            position: absolute;
+            width: 85px;
+            margin-top: -1px;
+        }
+    }
+    .peragraph{
+        margin-top: 15px;
+    }
+    h5 {
+        font-size: $font-size-lg;
+        text-transform: uppercase;
+        margin: 0;
+    }  
+    ul{
+        li{
+            a{
+                .fa{
+                    padding-right: 5px;
+                }
+                &:hover{
+                    color: $secondary;
+                }
+            }
+        }
+    }        
+    .contact-list  {
+        li {
+            display: flex;
+            align-items: center;
+            list-style: none;
+            font-size: $font-size-base;
+            margin-bottom: 15px;
+            .fas {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                font-size: $font-size-lg;
+                color: $secondary;
+                height: 30px;
+                width: 30px;
+            }
+            a {
+                color: color-yiq($bg-footer);
+            }
+        }
+    }
+    .links-list{
+        li{
+            list-style-type: none;
+            margin-bottom: 8px;
+            a{
+                display: block;
+                font-size: $font-size-base;
+                color: color-yiq($bg-footer);
+                &:hover {
+                    color: $secondary;
+                }
+            }
+        }
+    }
+            
+   
+    .payment-mthod{
+        margin-bottom: 30px;
+        .footer-image {
+            .img-fluid{
+                height: 20px;
+            }
+        }
+    }
+
+      // -----------------social
+      .social-content{
+        background-color:$bg-social;
+        color: color-yiq($bg-social);
+        padding-top: 15px;
+        padding-bottom: 15px;
+        margin-top: 45px;
+        .socials {
+            display: block;
+            .list {
+                display: block;
+                padding-left: 0;
+                margin-bottom: 0;
+                li{
+                    display: inline-block;
+                    a {
+                        background-color: $primary;
+                        color: color-yiq($bg-footer);
+                        font-size: $font-size-lg;
+                        width: 30px;
+                        height: 30px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        text-decoration: none;
+                        border-radius: $border-radius;
+                        border: $border-width solid $border-color;
+    
+                        &:hover
+                            {
+                            background-color: $secondary;
+                            color: color-yiq($secondary);
+                            border-color: $secondary;
+                        }
+                    }
+                }
+            }   
+        }
+   
+    }  
+    .copyright-content{
+        background-color:$bg-copyright;
+        color: color-yiq($bg-copyright);
+        padding-top: 10px;
+        padding-bottom: 10px;
+    
+        
+    
+        .footer-info{
+            text-align: right;
+            a{
+                color:color-yiq($bg-copyright);
+            }
+            p{
+                color:color-yiq($bg-copyright);
+                margin: 0;
+                padding: 0;
+            }
+        }
+    }  
+    .newsletter{
+        .block{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            h5{
+                font-size: 18px;
+            }
+            .form-inline{
+                width: 345px;
+            }
+            .search-field-module {
+                position: relative;
+                background-color: $white;
+                border:1px solid $border-color;
+                box-shadow: none;
+                width: 100%;
+                &:focus{
+                    border-color: $secondary;
+                }
+                   
+                
+                    .search-field-wrap{
+                        float: right;
+                        height: 42px;
+                        width: 100%;
+                        input {
+                            float: left;
+                            padding: 0px 50px 0 15px;
+                            height: 42px;
+                            width: 100%;
+                            border-radius: 0;
+                            border: none;
+                            outline: none !important;
+        
+                            
+                        }
+                        .btn-secondary {
+                            position: absolute;
+                            right: 0;
+                            top: 0;
+                            bottom: 0;
+                            height: 100%;
+                          
+                            padding: 5px;
+                        } 
+                   }   
+                .search-field-select{
+                    float: left;
+                    position: relative;
+                    width: 160px !important;
+                    height: 50px;
+    
+                    .bootstrap-select{
+                        width: 100% !important;
+                        .btn.dropdown-toggle{
+                            background-color:$white;
+                            color: $body-color-secondary;
+                            font-weight: $font-weight-normal;
+                            font-family: $font-family-base;
+                            height: 50px;
+                            width: 100%;
+                            border: none;
+                            padding: 0;
+                            // padding: 0.6rem 4px 0.6rem 15px;
+                            .filter-option{
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                            }
+                            .filter-option-inner-inner {
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                            }
+        
+                            &:focus{
+                                outline: none !important;
+                            }
+        
+                            &::after{
+                                font-family:"Font Awesome 5 Free";
+                                font-weight: 900; /* regular style/weight */
+                                content: "\f107";
+                                position: absolute;
+                                top: 17px;
+                                right: 6px;
+                                color: $body-color-secondary;
+                                border: none;
+                            }
+                            
+                        }
+                        
+                        > .dropdown-menu{
+                            animation: animationselect ease 0.7s;
+                            animation-iteration-count: 1;
+                            transform-origin: 100% 100%;
+                            animation-fill-mode: forwards;
+                            margin: 0;
+                            border: 0;
+                            .dropdown-item{
+                                padding: 5px 15px 5px 23px;
+                            }
+                        }
+                        
+                    }
+                    &::before {
+                        content: "";
+                        width: 1px;
+                        height: 25px;
+                        background: $border-color;
+                        position: absolute;
+                        top: 50%;
+                        margin-top: -12px;
+                        right: -14px;
+                        z-index: 1;
+                    }
+                }
+                  
+            }
+            
+        }
+    }  
+}
+

@@ -1,0 +1,5 @@
+<form id="form-app"{{ if (cssClass) { }} class="{{= cssClass }}"{{ } }}{{ if (multipart) { }} enctype="multipart/form-data"{{ } }}>{{= pageHeader }}
+<fieldset{{ if (!cssClass || cssClass === 'form-horizontal') { }} class="row"{{ } }}{{ if (disabled) { }} disabled="disabled"{{ } }}>
+{{= text }}
+</fieldset>
+</form>

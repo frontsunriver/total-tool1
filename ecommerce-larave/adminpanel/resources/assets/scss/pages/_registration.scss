@@ -1,0 +1,55 @@
+.registration-process{
+    background-color: $white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    .input-group{
+        .input-group-text{
+            background-color: $white;
+            border-right-width: 0;
+
+            
+        }
+        input{
+            border-color: $border-color;
+          
+            &:focus{
+                border-color: $border-color;
+            }
+        }
+        
+    }
+    
+}
+.registration-socials{
+    background-color: $white;
+    padding:15px;
+    text-align: center;
+   .btn{
+       margin: 0 2px;
+   }
+}
+
+#registerTab{
+    .nav-link{
+        font-size: $font-size-lg;
+        font-weight: $font-weight-bold;
+        text-transform: uppercase;
+        text-align: center;
+        background-color: $body-bg-secondary;
+        border:none;
+        width: 120px;
+
+        &.active{
+             background-color: $white;
+        }
+    }
+}
+#registerTabContent{
+    .registration-process{
+        padding:30px 15px;
+    }
+    .registration-socials{
+        background-color: transparent;
+    }
+}

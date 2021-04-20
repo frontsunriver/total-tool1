@@ -1,0 +1,177 @@
+.input-group{
+    .form-control{
+        height: calc(2.25rem + 6px);
+    }
+}
+.cart-area{
+  
+  
+        .bottom-table{
+            border: 2px solid $border-color;
+            background-color: $white;
+            padding: 15px 0;
+            width: 100%;
+            display: flex;
+            .align-right.align-right2{
+                .btn{
+                    margin-right: 0;
+                }
+            }
+        }        
+ 
+    .table-background{
+        background-color: $white;
+        .form-control{
+            height: calc(2.25rem + 9px);
+        }
+    }
+    .table{
+        margin: 0;
+        thead{
+            tr {
+                th{
+                    text-transform: uppercase;
+                    border: none;
+                    font-family: $font-family-base-bold;
+                }
+                th[align="center"]{
+                    text-align: center;
+                }
+            }
+        }
+        
+    }   
+    .item{
+        position: relative;
+        float: left;
+        width: 100%;
+        .item-thumb{
+            float: left;
+            width: 120px;
+            height: 120px;
+            border:1px solid $gray-300;
+            margin-right: 15px;
+        }
+        .item-detail{
+            float: left;
+            
+
+            h4{
+                font-size: $font-size-lg;
+                small{
+                    color: $body-color-secondary;
+                }
+            }
+
+          
+    
+        }
+        
+    }
+    .item-price{
+        color: $secondary;
+    }
+    .item-price, .item-total{
+        font-size: 1.25rem;
+        font-weight: $font-weight-bold;
+    }
+}
+.cart-page-one{
+    .top-table{
+        thead{
+            background-color: $white;
+          
+        }
+        tbody{
+            tr{
+                background-color: $white;
+                align-items: center;
+                border: 2px solid $gray-300;
+                margin-bottom: 30px;
+                td{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border: none;
+                    .item-detail{
+                        justify-content: flex-start;
+                        h4{
+                            font-size: $font-size-lg;
+                            font-weight: $font-weight-bold;
+                        }
+                        .item-controls{
+                         
+                            .btn{
+                                font-size: 12px;
+                                border:1px solid $gray-300;
+                                padding: 0 5px;
+                            }
+                        }
+                      
+                    }
+                    .item-control{
+                        text-align: right;
+                        .btn{
+                            padding: 6px 12px;
+                            border: $border-width solid $border-color;
+                        }
+                    }
+                }
+              
+            }
+        }
+    }  
+        .summery{
+            background-color: $white;
+            border: 2px solid $border-color;
+            padding: 15px 15px;
+            h5{
+                text-align: center;
+            }
+        }
+    .right-table{
+        background-color: $white;
+        border: 2px solid $border-color;
+        margin-bottom: 30px;
+        tbody{
+            th,td{
+                border-top: none;
+                padding: 15px;
+            }
+        }
+    
+    }
+    .align-right{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        .btn:first-child{
+            margin-right:15px;
+        }
+    }  
+}
+.bottom-table{
+    tbody{
+        tr{
+            td{
+                padding-top: 20px;
+                padding-bottom: 20px;
+               
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 767px){
+    .cart-page-one .align-right .btn:first-child{
+        margin-right: 0px;
+        margin-left: 15px;
+    }
+}
+@media only screen and (max-width: 576px){
+    .cart-page-one .align-right .btn:first-child {
+        margin-right: 0;
+        margin-left: 0px;
+    }
+}
+

@@ -1,0 +1,7 @@
+{{ if (field.containerClass) { }}<!-- Heading -->
+<div class="{{= field.containerClass }}">
+    <{{= field.type }} {{ if(field.cssClass) { }}class="{{= field.cssClass }}"{{ } }}>{{= field.text }}</{{= field.type }}>
+</div>
+{{ } else { }}<!-- Heading -->
+<{{= field.type }} {{ if(field.cssClass) { }}class="{{= field.cssClass }}"{{ } }}>{{= field.text }}</{{= field.type}}>
+{{ } }}

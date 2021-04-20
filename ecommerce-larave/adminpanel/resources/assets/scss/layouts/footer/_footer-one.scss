@@ -1,0 +1,130 @@
+// ...........footer.............
+
+.alert-cookie{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background-color: $primary;
+    color: color-yiq($primary);
+    margin-bottom: 0;
+    width: 100%;
+    padding: 30px;
+    border: none;
+    z-index: 15;
+    .btn-link{
+        color: color-yiq($primary);
+        text-decoration: underline;
+
+        &:hover, &:focus{
+            color: $secondary;
+        }
+    }
+    .btn{
+        float: right;
+    }
+}
+.footer-area{
+    margin-top: 30px;
+    .peragraph{
+        margin-top: 15px;
+    }
+
+}
+.footer-one{
+    padding: 65px 0 0 0;
+    background-color:$bg-footer;
+    color: color-yiq($bg-footer);
+
+    .links-list{
+        li{
+            list-style-type: none;
+            margin-bottom: 8px;
+            a{
+                display: block;
+                font-size: $font-size-base;
+                color: color-yiq($bg-footer);
+                &:hover {
+                    color: $secondary;
+                }
+            }
+        }
+    }
+    
+    .socials {
+        display: flex;
+        padding: 0;
+        list-style: none;
+        li{
+            font-size: 1.625rem;
+            width: auto;
+            margin-right: 15px;
+            list-style: none;
+            a {
+                color: #6c757d;
+                transition: 0.4s;
+            }
+            
+        }
+    }  
+    
+    .mail {
+        padding: 0;
+        list-style: none;
+        li{
+            font-size: 15px;
+            width: auto;
+           
+            list-style: none;
+            a {
+                color: #6c757d;
+                transition: 0.4s;
+                .fas{
+                    margin-right: 10px;
+                }
+            }
+            
+        }
+    }  
+
+    figure{
+        margin-bottom: 1.5rem;
+    }  
+    p{
+        margin-bottom: 1.5rem;
+    }
+    .single-footer{
+        h5{
+            font-family: $font-family-base-bold;
+            font-weight: $font-weight-bold;
+            font-size: $font-size-base;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+        }
+    }
+    .copyright-content {
+        background-color: $box-color;
+        color: #212529;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-top: 20px;
+        .footer-info {
+            text-align: center;
+        }
+    }
+}
+.footer-one .socials li .fb:hover {
+    color: #3b5998;
+}
+.footer-one .socials li .tw:hover {
+    color: #00acee;
+}
+.footer-one .socials li .sk:hover {
+    color: #00aff0;
+}
+.footer-one .socials li .In:hover {
+    color: #0077B5;
+}
+.footer-one .socials li .ig:hover {
+    color: #3f729b;
+}
+

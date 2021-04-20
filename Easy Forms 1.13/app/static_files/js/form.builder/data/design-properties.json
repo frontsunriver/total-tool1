@@ -1,0 +1,558 @@
+[
+  {
+    "name": "global",
+    "properties": [
+      "background-color",
+      "background-image",
+      "background-position",
+      "background-repeat",
+      "background-size",
+      "color",
+      "font-family",
+      "text-align",
+      "margin",
+      "padding"
+    ]
+  },
+  {
+    "name": "form",
+    "properties": [
+      "background-color",
+      "background-image",
+      "background-position",
+      "background-repeat",
+      "background-size",
+      "border-color",
+      "border-radius",
+      "border-style",
+      "border-width",
+      "box-shadow",
+      "margin",
+      "padding",
+      "width",
+      "text-align"
+    ]
+  },
+  {
+    "name": "form-group",
+    "properties": [
+      "background-color",
+      "background-image",
+      "background-position",
+      "background-repeat",
+      "background-size",
+      "border-color",
+      "border-radius",
+      "border-style",
+      "border-width",
+      "box-shadow",
+      "margin",
+      "padding"
+    ]
+  },
+  {
+    "name": "form-control",
+    "properties": [
+      "background-color",
+      "background-image",
+      "background-position",
+      "background-repeat",
+      "background-size",
+      "border-color",
+      "border-radius",
+      "border-style",
+      "border-width",
+      "box-shadow",
+      "color",
+      "font-family",
+      "font-size",
+      "font-weight",
+      "height",
+      "line-height",
+      "margin",
+      "padding",
+      "text-align",
+      "text-decoration",
+      "text-shadow",
+      "text-transform",
+      "transition",
+      "width"
+    ]
+  },
+  {
+    "name": "form-control-focus",
+    "properties": [
+      "background-color",
+      "border-color",
+      "box-shadow",
+      "transition"
+    ]
+  },
+  {
+    "name": "button-primary",
+    "properties": [
+      "background-color",
+      "background-image",
+      "background-position",
+      "background-repeat",
+      "background-size",
+      "border-color",
+      "border-radius",
+      "border-style",
+      "border-width",
+      "box-shadow",
+      "margin",
+      "padding",
+      "width",
+      "height",
+      "color",
+      "font-family",
+      "font-size",
+      "font-weight",
+      "line-height",
+      "text-align",
+      "text-decoration",
+      "text-transform",
+      "transition"
+    ]
+  },
+  {
+    "name": "button-primary-hover",
+    "properties": [
+      "background-color",
+      "background-image",
+      "background-position",
+      "background-repeat",
+      "background-size",
+      "border-color",
+      "border-radius",
+      "border-style",
+      "border-width",
+      "box-shadow",
+      "margin",
+      "padding",
+      "height",
+      "width",
+      "color",
+      "transition"
+    ]
+  },
+  {
+    "name": "button-default",
+    "properties": []
+  },
+  {
+    "name": "button-default-hover",
+    "properties": []
+  },
+  {
+    "name": "button-warning",
+    "properties": []
+  },
+  {
+    "name": "button-warning-hover",
+    "properties": []
+  },
+  {
+    "name": "button-danger",
+    "properties": []
+  },
+  {
+    "name": "button-danger-hover",
+    "properties": []
+  },
+  {
+    "name": "button-info",
+    "properties": []
+  },
+  {
+    "name": "button-info-hover",
+    "properties": []
+  },
+  {
+    "name": "control-label",
+    "properties": [
+      "font-family",
+      "font-size",
+      "line-height",
+      "text-align",
+      "font-weight",
+      "text-transform",
+      "text-decoration",
+      "color",
+      "margin",
+      "padding",
+      "height",
+      "width",
+      "display"
+    ]
+  },
+  {
+    "name": "placeholder",
+    "properties": [
+      "font-family",
+      "font-size",
+      "line-height",
+      "color",
+      "font-weight",
+      "text-align",
+      "text-transform",
+      "text-decoration"
+    ]
+  },
+  {
+    "name": "heading",
+    "properties": [
+      "color",
+      "font-family",
+      "font-size",
+      "line-height",
+      "font-weight",
+      "text-align",
+      "text-transform",
+      "text-decoration",
+      "letter-spacing",
+      "text-shadow",
+      "background-color",
+      "background-image",
+      "background-position",
+      "background-repeat",
+      "background-size",
+      "border-color",
+      "border-radius",
+      "border-style",
+      "border-width",
+      "box-shadow",
+      "margin",
+      "padding",
+      "height",
+      "width"
+    ]
+  },
+  {
+    "name": "paragraph",
+    "properties": [
+      "font-family",
+      "font-size",
+      "line-height",
+      "color",
+      "font-weight",
+      "text-align",
+      "text-transform",
+      "text-decoration",
+      "margin",
+      "padding",
+      "height",
+      "width"
+    ]
+  },
+  {
+    "name": "help-block",
+    "properties": [
+      "font-family",
+      "font-size",
+      "line-height",
+      "color",
+      "font-weight",
+      "text-align",
+      "text-transform",
+      "text-decoration",
+      "background-color",
+      "border-color",
+      "border-radius",
+      "border-style",
+      "border-width",
+      "box-shadow",
+      "margin",
+      "padding",
+      "height",
+      "width"
+    ]
+  },
+  {
+    "name": "link",
+    "properties": [
+      "font-family",
+      "color",
+      "font-size",
+      "font-weight",
+      "text-transform",
+      "text-decoration",
+      "background-color"
+    ]
+  },
+  {
+    "name": "link-hover",
+    "properties": [
+      "font-family",
+      "color",
+      "font-weight",
+      "text-decoration",
+      "background-color"
+    ]
+  },
+  {
+    "name": "step",
+    "properties": [
+      "background-color",
+      "border-style",
+      "border-radius",
+      "border-color",
+      "color",
+      "font-family",
+      "font-weight"
+    ]
+  },
+  {
+    "name": "step-stage",
+    "properties": []
+  },
+  {
+    "name": "step-connection",
+    "properties": []
+  },
+  {
+    "name": "step-current",
+    "properties": [
+      "background-color",
+      "color",
+      "font-weight"
+    ]
+  },
+  {
+    "name": "step-success",
+    "properties": [
+      "background-color",
+      "color",
+      "font-weight"
+    ]
+  },
+  {
+    "name": "step-title",
+    "properties": [
+      "background-color",
+      "border-color",
+      "color"
+    ]
+  },
+  {
+    "name": "step-current-title",
+    "properties": [
+      "background-color",
+      "border-color",
+      "color"
+    ]
+  },
+  {
+    "name": "step-success-title",
+    "properties": [
+      "background-color",
+      "border-color",
+      "color"
+    ]
+  },
+  {
+    "name": "alert",
+    "properties": [
+      "font-family",
+      "font-size",
+      "font-weight",
+      "border-style",
+      "border-width",
+      "border-radius",
+      "box-shadow"
+    ]
+  },
+  {
+    "name": "alert-success",
+    "properties": [
+      "background-color",
+      "border-color",
+      "color"
+    ]
+  },
+  {
+    "name": "alert-danger",
+    "properties": [
+      "background-color",
+      "border-color",
+      "color"
+    ]
+  },
+  {
+    "name": "alert-info",
+    "properties": []
+  },
+  {
+    "name": "alert-warning",
+    "properties": []
+  },
+  {
+    "name": "validation-error-field",
+    "properties": [
+      "background-color",
+      "border-color",
+      "color"
+    ]
+  },
+  {
+    "name": "validation-error-text",
+    "properties": [
+      "color"
+    ]
+  },
+  {
+    "name": "validation-symbol-asterisk",
+    "properties": [
+      "color"
+    ]
+  },
+  {
+    "name": "recaptcha",
+    "properties": [
+      "margin"
+    ]
+  },
+  {
+    "name": "signature-pad",
+    "properties": []
+  },
+  {
+    "name": "signature-canvas",
+    "properties": [
+      "background-color"
+    ]
+  },
+  {
+    "name": "checkbox-input",
+    "properties": [
+      "margin"
+    ]
+  },
+  {
+    "name": "checkbox-inline",
+    "properties": [
+      "font-size"
+    ]
+  },
+  {
+    "name": "radio-input",
+    "properties": [
+      "margin"
+    ]
+  },
+  {
+    "name": "radio-inline",
+    "properties": [
+      "font-size"
+    ]
+  },
+  {
+    "name": "custom-control-checkbox-before",
+    "properties": [
+      "background-color",
+      "border-color"
+    ]
+  },
+  {
+    "name": "custom-control-checkbox-after",
+    "properties": []
+  },
+  {
+    "name": "custom-control-checkbox-checked-before",
+    "properties": [
+      "background-color",
+      "border-color"
+    ]
+  },
+  {
+    "name": "custom-control-checkbox-checked-after",
+    "properties": [
+      "color"
+    ]
+  },
+  {
+    "name": "custom-control-radio-before",
+    "properties": [
+      "background-color",
+      "border-color"
+    ]
+  },
+  {
+    "name": "custom-control-radio-after",
+    "properties": []
+  },
+  {
+    "name": "custom-control-radio-checked-before",
+    "properties": [
+      "border-color"
+    ]
+  },
+  {
+    "name": "custom-control-radio-checked-after",
+    "properties": [
+      "background-color",
+      "border-color"
+    ]
+  },
+  {
+    "name": "button-prev",
+    "properties": [
+      "background-color",
+      "color",
+      "border-style",
+      "border-radius",
+      "border-color",
+      "display"
+    ]
+  },
+  {
+    "name": "button-prev-hover",
+    "properties": [
+      "background-color",
+      "color",
+      "border-color"
+    ]
+  },
+  {
+    "name": "button-next",
+    "properties": [
+      "background-color",
+      "color",
+      "float",
+      "border-style",
+      "border-radius",
+      "border-color",
+      "display"
+    ]
+  },
+  {
+    "name": "button-next-hover",
+    "properties": [
+      "background-color",
+      "color",
+      "border-color"
+    ]
+  },
+  {
+    "name": "progress-bar-container",
+    "properties": [
+      "background-color"
+    ]
+  },
+  {
+    "name": "progress-bar",
+    "properties": [
+      "background-color",
+      "color"
+    ]
+  },
+  {
+    "name": "table",
+    "properties": []
+  },
+  {
+    "name": "well",
+    "properties": []
+  }
+]

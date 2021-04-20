@@ -1,0 +1,98 @@
+
+
+
+// Custom variables
+@import "private/variables15";
+@import "private/variables";
+
+
+@import "fontawesome/fontawesome.scss";
+
+// Bootstrap and its default variables
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+
+@import "../api/fancybox/source/jquery.fancybox.css";
+//@import "../api/bootstrap-datepicker/bootstrap-datepicker.scss";
+@import "../api/slick/slick-theme.css";
+@import "../api/slick/slick.css";
+
+// Custom Css
+@import "private/mixins";
+@import "private/base";
+@import "private/animation";
+@import "private/button";
+
+
+@import "components/categories-panel";
+@import "components/popup";
+@import "components/insta";
+@import "components/modal";
+@import "components/banners";
+@import "components/products";
+@import "components/product";
+@import "components/pagination";
+@import "components/range-slider";
+@import "components/slick-carousel";
+@import "components/product-card";
+
+
+
+@import "layouts/header/header-one";
+@import "layouts/header/header-two";
+@import "layouts/header/header-three";
+@import "layouts/header/header-four";
+@import "layouts/header/header-five";
+@import "layouts/header/header-six";
+@import "layouts/header/header-seven";
+@import "layouts/header/header-eight";
+@import "layouts/header/header-nine";
+@import "layouts/header/header-ten";
+@import "layouts/header/header-mobile";
+@import "layouts/header/header-sticky";
+
+
+@import "layouts/footer/footer-one";
+
+@import "layouts/footer/footer-two";
+@import "layouts/footer/footer-three";
+@import "layouts/footer/footer-four";
+@import "layouts/footer/footer-five";
+@import "layouts/footer/footer-six";
+@import "layouts/footer/footer-seven";
+@import "layouts/footer/footer-eight";
+@import "layouts/footer/footer-nine";
+@import "layouts/footer/footer-ten";
+
+@import "layouts/footer/footer-mobile";
+
+@import "layouts/sidebar/shop-right-bar";
+@import "layouts/sidebar/shop-top-bar";
+@import "layouts/sidebar/blog-sidebar";
+
+@import "layouts/bootstrapSlider/bootstrap-carousel";
+
+@import "components/modal";
+
+@import "pages/404";
+@import "pages/index";
+@import "pages/shop-one";
+@import "pages/product-one";
+@import "pages/cart-page-one";
+@import "pages/cart-page-two";
+@import "pages/orders";
+@import "pages/order-detail";
+@import "pages/shipping-address";
+@import "pages/profile";
+@import "pages/checkout";
+@import "pages/compare";
+@import "pages/wishlist";
+@import "pages/registration";
+@import "pages/about-page-one";
+@import "pages/about-page-two";
+@import "pages/contact-page-one";
+@import "pages/blog-page-one";
+
+@import "utilities/responsive";
+@import "utilities/rtl";
+
+

@@ -1,0 +1,18 @@
+<div class="form-group">
+    <label for="settings-form-name">{{= polyglot.t('form.name') }}</label>
+    <input type="text" class="form-control" placeholder="{{= polyglot.t('form.name') }}" id="settings-form-name" value="{{ if(name) { }}{{= name }}{{ } }}">
+    <span class="help-block">{{= polyglot.t('form.description') }}</span>
+</div>
+<div class="form-group">
+    <label for="settings-form-layout-selected">{{= polyglot.t('form.layout') }}</label>
+    <select class="form-control" id="settings-form-layout-selected">
+        {{ _.each(layouts, function(layout) { }}
+        <option value="{{= layout.id }}" {{ if( layoutSelected === layout.id ) { }}selected{{ } }}>{{= layout.name }}</option>
+        {{ }); }}
+    </select>
+</div>
+<div class="form-group checkbox">
+    <label style="font-weight: normal">
+        <input type="checkbox" id="settings-form-disabled-fieldset" {{ if( disabledFieldset ) { }}checked{{ } }}> {{= polyglot.t('form.disabled') }}
+    </label>
+</div>

@@ -1,0 +1,16 @@
+<div class="form-group highlight-addon styles-{{- name }}">
+    <label class="control-label has-star" for="{{- name }}">{{- label }}</label>
+    <!--[if lt IE 10]>
+    <input type="text" id="{{- name }}" class="form-control spectrum-input" name="{{- name }}" value="{{- value }}" placeholder="{{- placeholder }}">
+    <br>
+    <div class="alert alert-warning">It is recommended you use an upgraded browser to display the {type} control properly.</div>
+    <![endif]-->
+    <![if gt IE 9]>
+    <div class="spectrum-group input-group input-group-html5 kv-type-text is-bs3">
+        <span id="{{- name }}-cont" class="kv-center-loading input-group-sp input-group-addon">
+            <input type="text" id="{{- name }}-source" class="spectrum-source form-control-text" name="{{- name }}-source" value="{{- value }}" style="display:none">
+        </span>
+        <input type="text" id="{{- name }}" class="form-control spectrum-input" name="{{- name }}" value="{{- value }}" placeholder="Select color ...">
+    </div>
+    <![endif]>
+</div>

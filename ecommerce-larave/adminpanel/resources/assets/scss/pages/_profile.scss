@@ -1,0 +1,121 @@
+// ....compare....
+
+.profile-content{
+    margin-bottom: 30px;  
+    
+
+    .h5-heading{
+        margin: 0;
+    }
+    .hr-line{
+        hr {
+            margin-top: 5px;
+            margin-bottom: 1rem;
+            border: 0;
+            border-top: $border-width solid $border-color;
+            &:before {
+                height: 1px;
+                background-color: $secondary;
+                content: "";
+                position: absolute;
+                width: 85px;
+                margin-top: -1px;
+            }
+        }  
+    }
+    .media-main{
+        margin-bottom: 30px;
+        .media{
+            display: flex;
+            align-items: center;
+            background-color: white;
+            padding: 20px;
+            img{
+                width: 50px;
+                height: 50px;
+                border:$border-width solid #ddd;
+                border-radius: 200px;
+            }
+        }
+        .media-body{
+            margin-left: 15px;
+            h4{
+                font-size: $font-size-lg;
+                margin-bottom: 0;
+                small{
+                    span{
+                        color: $secondary;
+                    }
+                }
+            }
+            .input-group{
+                span{
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                    justify-content: center;
+                    -webkit-box-align: center;
+                    -ms-flex-align: center;
+                    align-items: center;
+                    border: $border-width solid $gray-300;
+                    width: 29px;
+                    height: 29px;
+                    cursor: pointer;
+                    .fa{
+                        font-size: 13px;
+                    }
+        
+                }
+                
+            }
+            .detail{
+                
+                text-align: right;
+               span{
+                    display: block;
+                    font-size: $font-size-base;
+                    font-family: $font-family-base-bold;
+                }    
+            }
+        }
+       
+    }
+    form{
+        float: left;
+        width: 100%;
+        background-color: white;
+        padding: 30px;
+
+        .select-control::before{
+            right: 30px;
+        }
+        .input-group.date{
+            
+            .input-group-prepend{
+                margin-right: 0;
+                .input-group-text{
+                    border-left-width: 0;
+                }
+                
+            }
+            .datepicker-inline {
+                position: absolute; 
+                left: 0;
+                top: 100%; 
+                background-color: white;
+                z-index: 999;
+            }
+        }
+        
+        .btn{
+            float: right;
+        }
+    }
+   
+}
+              
+
+#datepicker{width:100%;}
+#datepicker > span:hover{cursor: pointer;}

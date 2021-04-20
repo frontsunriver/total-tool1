@@ -1,0 +1,1252 @@
+[
+    {
+        "name": "heading",
+        "title": "heading.title",
+        "fields": {
+            "id": {
+                "label": "component.id",
+                "type": "input",
+                "value": "heading"
+            },
+            "text": {
+                "label": "component.text",
+                "type": "input",
+                "value": "Encabezado"
+            },
+            "type": {
+                "label": "component.type",
+                "type": "select",
+                "value": [
+                    {
+                        "value": "h1",
+                        "label": "H1",
+                        "selected": false
+                    },
+                    {
+                        "value": "h2",
+                        "label": "H2",
+                        "selected": false
+                    },
+                    {
+                        "value": "h3",
+                        "label": "H3",
+                        "selected": true
+                    },
+                    {
+                        "value": "h4",
+                        "label": "H4",
+                        "selected": false
+                    },
+                    {
+                        "value": "h5",
+                        "label": "H5",
+                        "selected": false
+                    },
+                    {
+                        "value": "h6",
+                        "label": "H6",
+                        "selected": false
+                    }
+                ]
+            },
+            "cssClass": {
+                "label": "component.cssClass",
+                "type": "input",
+                "value": "legend",
+                "advanced": true
+            },
+            "containerClass": {
+                "label": "component.containerClass",
+                "type": "input",
+                "value": "col-xs-12",
+                "advanced": true
+            }
+        }
+    },
+    {
+        "name": "paragraph",
+        "title": "paragraph.title",
+        "fields": {
+            "id": {
+                "label": "component.id",
+                "type": "input",
+                "value": "paragraph"
+            },
+            "text": {
+                "label": "component.text",
+                "type": "textarea",
+                "value": "Puede editar este párrafo haciendo click aquí."
+            },
+            "cssClass": {
+                "label": "component.cssClass",
+                "type": "input",
+                "value": "",
+                "advanced": true
+            },
+            "containerClass": {
+                "label": "component.containerClass",
+                "type": "input",
+                "value": "col-xs-12",
+                "advanced": true
+            }
+        }
+    },
+    {
+        "name": "text",
+        "title": "text.title",
+        "fields": {
+            "id": {
+                "label": "component.id",
+                "type": "input",
+                "value": "text"
+            },
+            "inputType": {
+                "label": "component.inputType",
+                "type": "select",
+                "value": [
+                    {
+                        "value": "text",
+                        "label": "Text",
+                        "selected": true
+                    },
+                    {
+                        "value": "tel",
+                        "label": "Tel",
+                        "selected": false
+                    },
+                    {
+                        "value": "url",
+                        "label": "URL",
+                        "selected": false
+                    },
+                    {
+                        "value": "color",
+                        "label": "Color",
+                        "selected": false
+                    },
+                    {
+                        "value": "password",
+                        "label": "Password",
+                        "selected": false
+                    }
+                ]
+            },
+            "label": {
+                "label": "component.label",
+                "type": "input",
+                "value": "Campo de texto"
+            },
+            "placeholder": {
+                "label": "component.placeholder",
+                "type": "input",
+                "value": ""
+            },
+            "required": {
+                "label": "component.required",
+                "type": "checkbox",
+                "value": false
+            },
+            "predefinedValue": {
+                "label": "component.predefinedValue",
+                "type": "input",
+                "value": "",
+                "advanced": true
+            },
+            "helpText": {
+                "label": "component.helpText",
+                "type": "textarea",
+                "value": "",
+                "advanced": true
+            },
+            "pattern": {
+                "label": "component.pattern",
+                "type": "input",
+                "value": "",
+                "advanced": true
+            },
+            "cssClass": {
+                "label": "component.cssClass",
+                "type": "input",
+                "value": "form-control",
+                "advanced": true
+            },
+            "labelClass": {
+                "label": "component.labelClass",
+                "type": "input",
+                "value": "control-label",
+                "advanced": true
+            },
+            "containerClass": {
+                "label": "component.containerClass",
+                "type": "input",
+                "value": "col-xs-12",
+                "advanced": true
+            },
+            "unique": {
+                "label": "component.unique",
+                "type": "checkbox",
+                "value": false,
+                "advanced": true
+            },
+            "readOnly": {
+                "label": "component.readOnly",
+                "type": "checkbox",
+                "value": false,
+                "advanced": true
+            },
+            "disabled": {
+                "label": "component.disabled",
+                "type": "checkbox",
+                "value": false,
+                "advanced": true
+            }
+        }
+    },
+    {
+        "name": "number",
+        "title": "number.title",
+        "fields": {
+            "id": {
+                "label": "component.id",
+                "type": "input",
+                "value": "number"
+            },
+            "inputType": {
+                "label": "component.inputType",
+                "type": "select",
+                "value": [
+                    {
+                        "value": "number",
+                        "label": "Number",
+                        "selected": true
+                    },
+                    {
+                        "value": "range",
+                        "label": "Range",
+                        "selected": false
+                    }
+                ]
+            },
+            "label": {
+                "label": "component.label",
+                "type": "input",
+                "value": "Campo de número"
+            },
+            "placeholder": {
+                "label": "component.placeholder",
+                "type": "input",
+                "value": ""
+            },
+            "integerOnly": {
+                "label": "component.integerOnly",
+                "type": "checkbox",
+                "value": false
+            },
+            "required": {
+                "label": "component.required",
+                "type": "checkbox",
+                "value": false
+            },
+            "predefinedValue": {
+                "label": "component.predefinedValue",
+                "type": "input",
+                "value": "",
+                "advanced": true
+            },
+            "helpText": {
+                "label": "component.helpText",
+                "type": "textarea",
+                "value": "",
+                "advanced": true
+            },
+            "min": {
+                "label": "component.minNumber",
+                "type": "input",
+                "value": "",
+                "advanced": true
+            },
+            "max": {
+                "label": "component.maxNumber",
+                "type": "input",
+                "value": "",
+                "advanced": true
+            },
+            "step": {
+                "label": "component.stepNumber",
+                "type": "input",
+                "value": "",
+                "advanced": true
+            },
+            "integerPattern": {
+                "label": "component.integerPattern",
+                "type": "input",
+                "value": "",
+                "advanced": true
+            },
+            "numberPattern": {
+                "label": "component.numberPattern",
+                "type": "input",
+                "value": "",
+                "advanced": true
+            },
+            "cssClass": {
+                "label": "component.cssClass",
+                "type": "input",
+                "value": "form-control",
+                "advanced": true
+            },
+            "labelClass": {
+                "label": "component.labelClass",
+                "type": "input",
+                "value": "control-label",
+                "advanced": true
+            },
+            "containerClass": {
+                "label": "component.containerClass",
+                "type": "input",
+                "value": "col-xs-12",
+                "advanced": true
+            },
+            "unique": {
+                "label": "component.unique",
+                "type": "checkbox",
+                "value": false,
+                "advanced": true
+            },
+            "readOnly": {
+                "label": "component.readOnly",
+                "type": "checkbox",
+                "value": false,
+                "advanced": true
+            },
+            "disabled": {
+                "label": "component.disabled",
+                "type": "checkbox",
+                "value": false,
+                "advanced": true
+            }
+        }
+    },
+    {
+        "name": "date",
+        "title": "date.title",
+        "fields": {
+            "id": {
+                "label": "component.id",
+                "type": "input",
+                "value": "date"
+            },
+            "inputType": {
+                "label": "component.inputType",
+                "type": "select",
+                "value": [
+                    {
+                        "value": "date",
+                        "label": "Date",
+                        "selected": true
+                    },
+                    {
+                        "value": "datetime-local",
+                        "label": "DateTime-Local",
+                        "selected": false
+                    },
+                    {
+                        "value": "time",
+                        "label": "Time",
+                        "selected": false
+                    },
+                    {
+                        "value": "month",
+                        "label": "Month",
+                        "selected": false
+                    },
+                    {
+                        "value": "week",
+                        "label": "Week",
+                        "selected": false
+                    }
+                ]
+            },
+            "label": {
+                "label": "component.label",
+                "type": "input",
+                "value": "Campo de Fecha"
+            },
+            "placeholder": {
+                "label": "component.placeholder",
+                "type": "input",
+                "value": ""
+            },
+            "required": {
+                "label": "component.required",
+                "type": "checkbox",
+                "value": false
+            },
+            "predefinedValue": {
+                "label": "component.predefinedValue",
+                "type": "input",
+                "value": "",
+                "advanced": true
+            },
+            "helpText": {
+                "label": "component.helpText",
+                "type": "textarea",
+                "value": "",
+                "advanced": true
+            },
+            "min": {
+                "label": "component.minDate",
+                "type": "input",
+                "value": "",
+                "advanced": true
+            },
+            "max": {
+                "label": "component.maxDate",
+                "type": "input",
+                "value": "",
+                "advanced": true
+            },
+            "step": {
+                "label": "component.stepNumber",
+                "type": "input",
+                "value": "",
+                "advanced": true
+            },
+            "cssClass": {
+                "label": "component.cssClass",
+                "type": "input",
+                "value": "form-control",
+                "advanced": true
+            },
+            "labelClass": {
+                "label": "component.labelClass",
+                "type": "input",
+                "value": "control-label",
+                "advanced": true
+            },
+            "containerClass": {
+                "label": "component.containerClass",
+                "type": "input",
+                "value": "col-xs-12",
+                "advanced": true
+            },
+            "unique": {
+                "label": "component.unique",
+                "type": "checkbox",
+                "value": false,
+                "advanced": true
+            },
+            "readOnly": {
+                "label": "component.readOnly",
+                "type": "checkbox",
+                "value": false,
+                "advanced": true
+            },
+            "disabled": {
+                "label": "component.disabled",
+                "type": "checkbox",
+                "value": false,
+                "advanced": true
+            }
+        }
+    },
+    {
+        "name": "email",
+        "title": "email.title",
+        "fields": {
+            "id": {
+                "label": "component.id",
+                "type": "input",
+                "value": "email"
+            },
+            "label": {
+                "label": "component.label",
+                "type": "input",
+                "value": "Campo de Email"
+            },
+            "placeholder": {
+                "label": "component.placeholder",
+                "type": "input",
+                "value": ""
+            },
+            "required": {
+                "label": "component.required",
+                "type": "checkbox",
+                "value": false
+            },
+            "predefinedValue": {
+                "label": "component.predefinedValue",
+                "type": "input",
+                "value": "",
+                "advanced": true
+            },
+            "helpText": {
+                "label": "component.helpText",
+                "type": "textarea",
+                "value": "",
+                "advanced": true
+            },
+            "pattern": {
+                "label": "component.pattern",
+                "type": "input",
+                "value": "",
+                "advanced": true
+            },
+            "cssClass": {
+                "label": "component.cssClass",
+                "type": "input",
+                "value": "form-control",
+                "advanced": true
+            },
+            "labelClass": {
+                "label": "component.labelClass",
+                "type": "input",
+                "value": "control-label",
+                "advanced": true
+            },
+            "containerClass": {
+                "label": "component.containerClass",
+                "type": "input",
+                "value": "col-xs-12",
+                "advanced": true
+            },
+            "checkdns": {
+                "label": "component.checkDNS",
+                "type": "checkbox",
+                "value": false,
+                "advanced": true
+            },
+            "multiple": {
+                "label": "component.multiple",
+                "type": "checkbox",
+                "value": false,
+                "advanced": true
+            },
+            "unique": {
+                "label": "component.unique",
+                "type": "checkbox",
+                "value": false,
+                "advanced": true
+            },
+            "readOnly": {
+                "label": "component.readOnly",
+                "type": "checkbox",
+                "value": false,
+                "advanced": true
+            },
+            "disabled": {
+                "label": "component.disabled",
+                "type": "checkbox",
+                "value": false,
+                "advanced": true
+            }
+        }
+    },
+    {
+        "name": "textarea",
+        "title": "textarea.title",
+        "fields": {
+            "id": {
+                "label": "component.id",
+                "type": "input",
+                "value": "textarea"
+            },
+            "label": {
+                "label": "component.label",
+                "type": "input",
+                "value": "Área de texto"
+            },
+            "placeholder": {
+                "label": "component.placeholder",
+                "type": "input",
+                "value": ""
+            },
+            "predefinedValue": {
+                "label": "component.predefinedValue",
+                "type": "textarea",
+                "value": "",
+            },
+            "required": {
+                "label": "component.required",
+                "type": "checkbox",
+                "value": false
+            },
+            "helpText": {
+                "label": "component.helpText",
+                "type": "textarea",
+                "value": "",
+                "advanced": true
+            },
+            "fieldSize": {
+                "label": "component.fieldSize",
+                "type": "input",
+                "value": 3,
+                "advanced": true
+            },
+            "cssClass": {
+                "label": "component.cssClass",
+                "type": "input",
+                "value": "form-control",
+                "advanced": true
+            },
+            "labelClass": {
+                "label": "component.labelClass",
+                "type": "input",
+                "value": "control-label",
+                "advanced": true
+            },
+            "containerClass": {
+                "label": "component.containerClass",
+                "type": "input",
+                "value": "col-xs-12",
+                "advanced": true
+            },
+            "unique": {
+                "label": "component.unique",
+                "type": "checkbox",
+                "value": false,
+                "advanced": true
+            },
+            "readOnly": {
+                "label": "component.readOnly",
+                "type": "checkbox",
+                "value": false,
+                "advanced": true
+            },
+            "disabled": {
+                "label": "component.disabled",
+                "type": "checkbox",
+                "value": false,
+                "advanced": true
+            }
+        }
+    },
+    {
+        "name": "checkbox",
+        "title": "checkbox.title",
+        "fields": {
+            "id": {
+                "label": "component.groupName",
+                "type": "input",
+                "value": "checkbox"
+            },
+            "label": {
+                "label": "component.label",
+                "type": "input",
+                "value": "Marque las opciones que correspondan"
+            },
+            "checkboxes": {
+                "label": "component.checkboxes",
+                "type": "textarea-split",
+                "value": [
+                    "Primera opción|check",
+                    "Segunda opción",
+                    "Tercera opción"
+                ]
+            },
+            "required": {
+                "label": "component.required",
+                "type": "checkbox",
+                "value": false
+            },
+            "helpText": {
+                "label": "component.helpText",
+                "type": "textarea",
+                "value": "",
+                "advanced": true
+            },
+            "cssClass": {
+                "label": "component.cssClass",
+                "type": "input",
+                "value": "checkbox-inline",
+                "advanced": true
+            },
+            "labelClass": {
+                "label": "component.labelClass",
+                "type": "input",
+                "value": "control-label",
+                "advanced": true
+            },
+            "containerClass": {
+                "label": "component.containerClass",
+                "type": "input",
+                "value": "col-xs-12",
+                "advanced": true
+            },
+            "disabled": {
+                "label": "component.disabled",
+                "type": "checkbox",
+                "value": false,
+                "advanced": true
+            },
+            "readOnly": {
+                "label": "component.readOnly",
+                "type": "checkbox",
+                "value": false,
+                "advanced": true
+            },
+            "inline": {
+                "label": "component.inline",
+                "type": "checkbox",
+                "value": false,
+                "advanced": true
+            }
+        }
+    },
+    {
+        "name": "radio",
+        "title": "radio.title",
+        "fields": {
+            "id": {
+                "label": "component.groupName",
+                "type": "input",
+                "value": "radio"
+            },
+            "label": {
+                "label": "component.label",
+                "type": "input",
+                "value": "Seleccione una opción"
+            },
+            "radios": {
+                "label": "component.radios",
+                "type": "textarea-split",
+                "value": [
+                    "Primera opción|select",
+                    "Segunda opción",
+                    "Tercera opción"
+                ]
+            },
+            "required": {
+                "label": "component.required",
+                "type": "checkbox",
+                "value": false
+            },
+            "helpText": {
+                "label": "component.helpText",
+                "type": "textarea",
+                "value": "",
+                "advanced": true
+            },
+            "cssClass": {
+                "label": "component.cssClass",
+                "type": "input",
+                "value": "radio-inline",
+                "advanced": true
+            },
+            "labelClass": {
+                "label": "component.labelClass",
+                "type": "input",
+                "value": "control-label",
+                "advanced": true
+            },
+            "containerClass": {
+                "label": "component.containerClass",
+                "type": "input",
+                "value": "col-xs-12",
+                "advanced": true
+            },
+            "disabled": {
+                "label": "component.disabled",
+                "type": "checkbox",
+                "value": false,
+                "advanced": true
+            },
+            "readOnly": {
+                "label": "component.readOnly",
+                "type": "checkbox",
+                "value": false,
+                "advanced": true
+            },
+            "inline": {
+                "label": "component.inline",
+                "type": "checkbox",
+                "value": false,
+                "advanced": true
+            }
+        }
+    },
+    {
+        "name": "selectlist",
+        "title": "selectlist.title",
+        "fields": {
+            "id": {
+                "label": "component.id",
+                "type": "input",
+                "value": "selectlist"
+            },
+            "label": {
+                "label": "component.label",
+                "type": "input",
+                "value": "Seleccione una opción"
+            },
+            "options": {
+                "label": "component.options",
+                "type": "textarea-split",
+                "value": [
+                    "Primera opción|select",
+                    "Segunda opción",
+                    "Tercera opción"
+                ]
+            },
+            "placeholder": {
+                "label": "component.placeholder",
+                "type": "input",
+                "value": ""
+            },
+            "required": {
+                "label": "component.required",
+                "type": "checkbox",
+                "value": false
+            },
+            "helpText": {
+                "label": "component.helpText",
+                "type": "textarea",
+                "value": "",
+                "advanced": true
+            },
+            "cssClass": {
+                "label": "component.cssClass",
+                "type": "input",
+                "value": "form-control",
+                "advanced": true
+            },
+            "labelClass": {
+                "label": "component.labelClass",
+                "type": "input",
+                "value": "control-label",
+                "advanced": true
+            },
+            "containerClass": {
+                "label": "component.containerClass",
+                "type": "input",
+                "value": "col-xs-12",
+                "advanced": true
+            },
+            "readOnly": {
+                "label": "component.readOnly",
+                "type": "checkbox",
+                "value": false,
+                "advanced": true
+            },
+            "disabled": {
+                "label": "component.disabled",
+                "type": "checkbox",
+                "value": false,
+                "advanced": true
+            },
+            "multiple": {
+                "label": "component.multiple",
+                "type": "checkbox",
+                "value": false,
+                "advanced": true
+            }
+        }
+    },
+    {
+        "name": "hidden",
+        "title": "hidden.title",
+        "fields": {
+            "id": {
+                "label": "component.id",
+                "type": "input",
+                "value": "hidden"
+            },
+            "label": {
+                "label": "component.label",
+                "type": "input",
+                "value": ""
+            },
+            "predefinedValue": {
+                "label": "component.predefinedValue",
+                "type": "input",
+                "value": "",
+            },
+            "disabled": {
+                "label": "component.disabled",
+                "type": "checkbox",
+                "value": false
+            }
+        }
+    },
+    {
+        "name": "file",
+        "title": "file.title",
+        "fields": {
+            "id": {
+                "label": "component.id",
+                "type": "input",
+                "value": "file"
+            },
+            "label": {
+                "label": "component.label",
+                "type": "input",
+                "value": "Adjuntar archivo"
+            },
+            "accept": {
+                "label": "component.accept",
+                "type": "input",
+                "value": ".gif, .jpg, .png"
+            },
+            "required": {
+                "label": "component.required",
+                "type": "checkbox",
+                "value": false
+            },
+            "helpText": {
+                "label": "component.helpText",
+                "type": "textarea",
+                "value": "",
+                "advanced": true
+            },
+            "minSize": {
+                "label": "component.minSize",
+                "type": "input",
+                "value": "",
+                "advanced": true
+            },
+            "maxSize": {
+                "label": "component.maxSize",
+                "type": "input",
+                "value": "",
+                "advanced": true
+            },
+            "cssClass": {
+                "label": "component.cssClass",
+                "type": "input",
+                "value": "",
+                "advanced": true
+            },
+            "labelClass": {
+                "label": "component.labelClass",
+                "type": "input",
+                "value": "control-label",
+                "advanced": true
+            },
+            "containerClass": {
+                "label": "component.containerClass",
+                "type": "input",
+                "value": "col-xs-12",
+                "advanced": true
+            },
+            "readOnly": {
+                "label": "component.readOnly",
+                "type": "checkbox",
+                "value": false,
+                "advanced": true
+            },
+            "disabled": {
+                "label": "component.disabled",
+                "type": "checkbox",
+                "value": false,
+                "advanced": true
+            }
+        }
+    },
+    {
+        "name": "snippet",
+        "title": "snippet.title",
+        "fields": {
+            "id": {
+                "label": "component.id",
+                "type": "input",
+                "value": "snippet"
+            },
+            "snippet": {
+                "label": "component.htmlCode",
+                "type": "textarea",
+                "value": "Reemplazar este <code>código</code> con su snippet html."
+            },
+            "containerClass": {
+                "label": "component.containerClass",
+                "type": "input",
+                "value": "col-xs-12",
+                "advanced": true
+            }
+        }
+    },
+    {
+        "name": "recaptcha",
+        "title": "recaptcha.title",
+        "fields": {
+            "id": {
+                "label": "component.id",
+                "type": "input",
+                "value": "recaptcha"
+            },
+            "theme": {
+                "label": "component.theme",
+                "type": "select",
+                "value": [
+                    {
+                        "value": "light",
+                        "label": "Light",
+                        "selected": true
+                    },
+                    {
+                        "value": "dark",
+                        "label": "Dark",
+                        "selected": false
+                    }
+                ]
+            },
+            "type": {
+                "label": "component.type",
+                "type": "select",
+                "value": [
+                    {
+                        "value": "image",
+                        "label": "Image",
+                        "selected": true
+                    },
+                    {
+                        "value": "audio",
+                        "label": "Audio",
+                        "selected": false
+                    }
+                ],
+                "advanced": true
+            },
+            "size": {
+                "label": "component.size",
+                "type": "select",
+                "value": [
+                    {
+                        "value": "normal",
+                        "label": "Normal",
+                        "selected": true
+                    },
+                    {
+                        "value": "compact",
+                        "label": "Compact",
+                        "selected": false
+                    }
+                ],
+                "advanced": true
+            },
+            "containerClass": {
+                "label": "component.containerClass",
+                "type": "input",
+                "value": "col-xs-12",
+                "advanced": true
+            }
+        }
+    },
+    {
+        "name": "pagebreak",
+        "title": "pagebreak.title",
+        "fields": {
+            "id": {
+                "label": "component.id",
+                "type": "input",
+                "value": "pagebreak"
+            },
+            "prev": {
+                "label": "component.prev",
+                "type": "input",
+                "value": ""
+            },
+            "next": {
+                "label": "component.next",
+                "type": "input",
+                "value": ""
+            }
+        }
+    },
+    {
+        "name": "spacer",
+        "title": "spacer.title",
+        "fields": {
+            "id": {
+                "label": "component.id",
+                "type": "input",
+                "value": "spacer"
+            },
+            "height": {
+                "label": "component.height",
+                "type": "number",
+                "value": "50"
+            },
+            "cssClass": {
+                "label": "component.cssClass",
+                "type": "input",
+                "value": "",
+                "advanced": true
+            },
+            "containerClass": {
+                "label": "component.containerClass",
+                "type": "input",
+                "value": "col-xs-12",
+                "advanced": true
+            }
+        }
+    },
+    {
+        "name": "signature",
+        "title": "signature.title",
+        "fields": {
+            "id": {
+                "label": "component.id",
+                "type": "input",
+                "value": "signature"
+            },
+            "label": {
+                "label": "component.label",
+                "type": "input",
+                "value": "Firma"
+            },
+            "required": {
+                "label": "component.required",
+                "type": "checkbox",
+                "value": false
+            },
+            "clear": {
+                "label": "component.clear",
+                "type": "checkbox",
+                "value": true
+            },
+            "undo": {
+                "label": "component.undo",
+                "type": "checkbox",
+                "value": true
+            },
+            "helpText": {
+                "label": "component.helpText",
+                "type": "textarea",
+                "value": "",
+                "advanced": true
+            },
+            "width": {
+                "label": "component.width",
+                "type": "input",
+                "value": "400",
+                "advanced": true
+            },
+            "height": {
+                "label": "component.height",
+                "type": "input",
+                "value": "200",
+                "advanced": true
+            },
+            "color": {
+                "label": "component.color",
+                "type": "input",
+                "value": "black",
+                "advanced": true
+            },
+            "clearText": {
+                "label": "component.clearText",
+                "type": "input",
+                "value": "Borrar",
+                "advanced": true
+            },
+            "undoText": {
+                "label": "component.undoText",
+                "type": "input",
+                "value": "Deshacer",
+                "advanced": true
+            },
+            "cssClass": {
+                "label": "component.cssClass",
+                "type": "input",
+                "value": "",
+                "advanced": true
+            },
+            "labelClass": {
+                "label": "component.labelClass",
+                "type": "input",
+                "value": "control-label",
+                "advanced": true
+            },
+            "containerClass": {
+                "label": "component.containerClass",
+                "type": "input",
+                "value": "col-xs-12",
+                "advanced": true
+            }
+        }
+    },
+    {
+        "name": "button",
+        "title": "button.title",
+        "fields": {
+            "id": {
+                "label": "component.id",
+                "type": "input",
+                "value": "button"
+            },
+            "inputType": {
+                "label": "component.type",
+                "type": "select",
+                "value": [
+                    {
+                        "value": "submit",
+                        "label": "Submit",
+                        "selected": true
+                    },
+                    {
+                        "value": "reset",
+                        "label": "Reset",
+                        "selected": false
+                    },
+                    {
+                        "value": "image",
+                        "label": "Image",
+                        "selected": false
+                    },
+                    {
+                        "value": "button",
+                        "label": "Button",
+                        "selected": false
+                    }
+                ]
+            },
+            "buttonText": {
+                "label": "component.buttonText",
+                "type": "input",
+                "value": "Enviar"
+            },
+            "label": {
+                "label": "component.label",
+                "type": "input",
+                "value": "",
+                "advanced": true
+            },
+            "src": {
+                "label": "component.src",
+                "type": "input",
+                "value": "",
+                "advanced": true
+            },
+            "cssClass": {
+                "label": "component.cssClass",
+                "type": "input",
+                "value": "btn btn-primary",
+                "advanced": true
+            },
+            "labelClass": {
+                "label": "component.labelClass",
+                "type": "input",
+                "value": "control-label",
+                "advanced": true
+            },
+            "containerClass": {
+                "label": "component.containerClass",
+                "type": "input",
+                "value": "col-xs-12",
+                "advanced": true
+            },
+            "readOnly": {
+                "label": "component.readOnly",
+                "type": "checkbox",
+                "value": false,
+                "advanced": true
+            },
+            "disabled": {
+                "label": "component.disabled",
+                "type": "checkbox",
+                "value": false,
+                "advanced": true
+            }
+        }
+    }
+]

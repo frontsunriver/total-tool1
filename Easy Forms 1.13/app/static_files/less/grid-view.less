@@ -1,0 +1,257 @@
+//
+// Grid View
+// --------------------------------------------------
+
+.grid-view {
+
+  .panel-heading {
+    background-color: @grid-view-heading-bg;
+    padding: 25px;
+    border: 0;
+
+    .panel-title {
+      color: @grid-view-heading-title-color;
+      font-size: 24px;
+      line-height: 26px;
+      font-weight: 400;
+
+      .panel-subtitle {
+        color: @grid-view-heading-subtitle-color;
+        padding-left: 20px;
+        font-size: 80%;
+      }
+    }
+
+    .summary {
+      color: @grid-view-heading-title-color;
+      line-height: 26px;
+    }
+
+    .clearfix {
+      height: 0;
+    }
+  }
+
+  .panel-footer {
+    text-align: center;
+    background-color: #ffffff;
+    border: 0;
+    padding: 0;
+    .kv-panel-pager {
+      min-height: 0;
+      .pagination {
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+      .page-size {
+        width: 70px;
+        float: right;
+        margin: 20px;
+      }
+    }
+  }
+
+  .table-responsive {
+    overflow: visible;
+    > .table {
+      > thead,
+      > tbody,
+      > tfoot {
+        > tr {
+          > th,
+          > td {
+            display: none;
+            white-space: normal;
+            &:nth-child(2),
+            &:nth-last-child(2),
+            &:last-child {
+              display: table-cell;
+            }
+            @media screen and (max-width: @screen-xs-max) {
+              > .desc:after {
+                display: none;
+              }
+            }
+            @media screen and (min-width: @screen-sm-min) {
+              &:first-child,
+              &:nth-last-child(2) {
+                display: table-cell;
+              }
+            }
+            @media screen and (min-width: @screen-md-min) {
+              &:nth-child(3),
+              &:nth-child(4),
+              &:nth-child(5) {
+                display: table-cell;
+              }
+            }
+            @media screen and (min-width: @screen-lg-min) {
+              display: table-cell;
+            }
+            &.kv-nowrap {
+              white-space: nowrap;
+            }
+          }
+          &.filters {
+            > th,
+            > td {
+              display: none;
+              border-top: 0;
+              &:first-child,
+              &:last-child {
+                display: table-cell;
+              }
+              @media screen and (min-width: @screen-md-min) {
+                &:nth-child(2),
+                &:nth-child(3),
+                &:nth-child(4) {
+                  display: table-cell;
+                }
+              }
+              @media screen and (min-width: @screen-lg-min) {
+                display: table-cell;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .kv-panel-before {
+    padding: 20px 20px 10px 20px;
+    border: 0;
+
+    .text {
+      color: @grid-view-panel-before-color;
+      text-decoration: underline;
+      margin-left: 10px;
+    }
+  }
+
+  .panel-subheading {
+    padding: 20px 20px 10px 20px;
+    border: 0;
+  }
+
+  .widget-action-bar {
+    margin: 0;
+  }
+
+  .kv-panel-after {
+    border: 0;
+  }
+
+  .badge {
+    display: inline-block;
+    min-width: 10px;
+    padding: 3px 7px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    background-color: #777;
+    border-radius: 10px;
+  }
+
+  // add sorting icons to gridview sort links
+
+  .asc:after, .desc:after {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Regular';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    padding-left: 5px;
+  }
+
+  .asc:after {
+    content: /*"\e113"*/ "\e601";
+  }
+
+  .desc:after {
+    content: /*"\e114"*/ "\e602";
+  }
+
+  table {
+    margin-bottom: 0;
+    thead {
+      border-bottom: 2px solid #e7ecf0;
+      tr.filters {
+        display: none;
+      }
+      th, td {
+        padding: 12px;
+        vertical-align: middle;
+        border: 0;
+        white-space: nowrap;
+        a {
+          color: @grid-view-table-head-color;
+        }
+      }
+      th.kv-merged-header {
+        border-bottom: 1px solid @grid-view-table-border-color !important;
+      }
+      th:last-child{
+        padding-right: 20px;
+      }
+      td {
+        padding-top: 0;
+        padding-bottom: 15px;
+      }
+    }
+    tbody {
+      tr:last-child{
+        border-bottom: 1px solid @grid-view-table-border-color;
+      }
+      th {
+        vertical-align: middle;
+      }
+      td {
+        padding: 12px;
+        vertical-align: middle;
+        color: @grid-view-table-body-color;
+      }
+
+      @media (max-width: @screen-xs-min) {
+        td:first-child {
+          margin-top: 0;
+        }
+      }
+
+      td:last-child{
+        padding-right: 20px;
+
+        > .pull-right > .dropdown-menu {
+          margin-bottom: 30px;
+        }
+
+        @media (max-width: @screen-xs-min) {
+          > .pull-right {
+            float: none !important;
+          }
+          > .pull-right > .dropdown-menu {
+            width: 100%;
+          }
+        }
+
+      }
+    }
+  }
+
+  .table-with-filters {
+    table {
+      thead {
+        tr.filters {
+          display: table-row;
+        }
+      }
+    }
+  }
+
+}

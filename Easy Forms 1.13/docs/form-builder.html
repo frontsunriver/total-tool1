@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="language" content="en"/>
+    <link rel="shortcut icon" type="image/ico" href="./assets/8f121b9a/favicon/favicon.ico"/>
+    <link rel="shortcut icon" type="image/ico" href="./assets/8f121b9a/favicon/favicon_32.ico"/>
+    <link rel="shortcut icon" type="image/ico" href="./assets/8f121b9a/favicon/favicon_48.ico"/>
+    <link rel="shortcut icon" type="image/ico" href="./assets/8f121b9a/favicon/favicon_96.ico"/>
+    <link rel="shortcut icon" type="image/ico" href="./assets/8f121b9a/favicon/favicon_144.ico"/>
+        <link href="./assets/c7fbc653/css/bootstrap.css" rel="stylesheet">
+<link href="./assets/fcacff94/github-gist.css" rel="stylesheet">
+<link href="./assets/8f121b9a/css/fonts.min.css" rel="stylesheet">
+<link href="./assets/8f121b9a/css/bootstrap.min.css" rel="stylesheet">
+<link href="./assets/8f121b9a/css/api.css" rel="stylesheet">
+<link href="./assets/8f121b9a/css/style.css" rel="stylesheet">
+<script src="./assets/e3a17645/jquery.js"></script>
+<script src="./assets/c7fbc653/js/bootstrap.js"></script>
+<script src="./assets/bbf47a67/jssearch.js"></script>    <title>Form Builder - Forms - Easy Forms</title>
+</head>
+<body>
+
+<div class="wrap">
+    <nav id="w378" class="navbar-inverse navbar-fixed-top navbar"><div class="container"><div class="navbar-header"><button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#w378-collapse"><span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span></button><a class="navbar-brand" href="./index.html"><span class="app-name">Easy Forms</span></a></div><div id="w378-collapse" class="collapse navbar-collapse"><ul id="w379" class="navbar-nav nav"><li><a href="./index.html">Documentation</a></li></ul>
+    <div class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+            <input id="searchbox" type="text" class="form-control" placeholder="Search">
+        </div>
+    </div>
+    </div></div></nav>
+    <div id="search-resultbox" style="display: none;" class="modal-content">
+        <ul id="search-results">
+        </ul>
+    </div>
+
+    <div class="container">
+        
+<div class="row">
+    <div class="col-md-2">
+                <div id="navigation" class="list-group"><a class="list-group-item" href="#navigation-370" data-toggle="collapse" data-parent="#navigation">First steps <b class="caret"></b></a><div id="navigation-370" class="submenu panel-collapse collapse"><a class="list-group-item" href="./intro-easy-forms.html">About Easy Forms</a>
+<a class="list-group-item" href="./system-requirements.html">Requirements</a>
+<a class="list-group-item" href="./start-installation.html">Installing Easy Forms</a>
+<a class="list-group-item" href="./start-upgrading.html">Upgrading Easy Forms</a>
+<a class="list-group-item" href="./settings.html">Set Up Easy Forms</a>
+<a class="list-group-item" href="./start-customization.html">Customizing Easy Forms</a>
+<a class="list-group-item" href="./email-setup.html">Email Setup</a>
+<a class="list-group-item" href="./dynamic-content.html">Dynamic Content</a></div>
+<a class="list-group-item active" href="#navigation-371" data-toggle="collapse" data-parent="#navigation">Forms <b class="caret"></b></a><div id="navigation-371" class="submenu panel-collapse collapse in"><a class="list-group-item" href="./form-manager.html">Form Manager</a>
+<a class="list-group-item active" href="./form-builder.html">Form Builder</a>
+<a class="list-group-item" href="./theme-designer.html">Theme Designer</a>
+<a class="list-group-item" href="./rule-builder.html">Rule Builder</a>
+<a class="list-group-item" href="./submission-manager.html">Submission Manager</a>
+<a class="list-group-item" href="./form-report-builder.html">Report Builder</a>
+<a class="list-group-item" href="./form-analytics.html">In-App Analytics</a>
+<a class="list-group-item" href="./form-widget.html">Form Widget</a>
+<a class="list-group-item" href="./form-import-export.html">Import / Export</a></div>
+<a class="list-group-item" href="#navigation-372" data-toggle="collapse" data-parent="#navigation">Templates <b class="caret"></b></a><div id="navigation-372" class="submenu panel-collapse collapse"><a class="list-group-item" href="./template-manager.html">Template Manager</a></div>
+<a class="list-group-item" href="#navigation-373" data-toggle="collapse" data-parent="#navigation">Themes <b class="caret"></b></a><div id="navigation-373" class="submenu panel-collapse collapse"><a class="list-group-item" href="./theme-manager.html">Theme Manager</a></div>
+<a class="list-group-item" href="#navigation-374" data-toggle="collapse" data-parent="#navigation">Users <b class="caret"></b></a><div id="navigation-374" class="submenu panel-collapse collapse"><a class="list-group-item" href="./user-manager.html">User Manager</a>
+<a class="list-group-item" href="./membership.html">Membership</a></div>
+<a class="list-group-item" href="#navigation-375" data-toggle="collapse" data-parent="#navigation">Add-Ons <b class="caret"></b></a><div id="navigation-375" class="submenu panel-collapse collapse"><a class="list-group-item" href="./addon-manager.html">Add-On Manager</a>
+<a class="list-group-item" href="./addon-webhooks.html">WebHooks</a>
+<a class="list-group-item" href="./addon-google-analytics.html">Google Analytics</a></div>
+<a class="list-group-item" href="#navigation-376" data-toggle="collapse" data-parent="#navigation">Premium Add-Ons <b class="caret"></b></a><div id="navigation-376" class="submenu panel-collapse collapse"><a class="list-group-item" href="./addon-acelle-mail.html">Acelle Mail</a>
+<a class="list-group-item" href="./addon-active-campaign.html">Active Campaign</a>
+<a class="list-group-item" href="./addon-adyen.html">Adyen</a>
+<a class="list-group-item" href="./addon-aweber.html">AWeber</a>
+<a class="list-group-item" href="./addon-braintree.html">Braintree</a>
+<a class="list-group-item" href="./addon-campaign-monitor.html">Campaign Monitor</a>
+<a class="list-group-item" href="./addon-cleverreach.html">CleverReach</a>
+<a class="list-group-item" href="./addon-conditional-emails.html">Conditional Emails</a>
+<a class="list-group-item" href="./addon-constant-contact.html">Constant Contact</a>
+<a class="list-group-item" href="./addon-custom-error-messages.html">Custom Error Messages</a>
+<a class="list-group-item" href="./addon-custom-data-validation.html">Data Validation</a>
+<a class="list-group-item" href="./addon-emailoctopus.html">EmailOctopus</a>
+<a class="list-group-item" href="./addon-facebook-login.html">Facebook Login</a>
+<a class="list-group-item" href="./addon-field-encryption.html">Field Encryption</a>
+<a class="list-group-item" href="./addon-google-places-autocomplete.html">Google Places Autocomplete</a>
+<a class="list-group-item" href="./addon-import-submissions.html">Import Submissions</a>
+<a class="list-group-item" href="./addon-insightly.html">Insightly</a>
+<a class="list-group-item" href="./addon-mailchimp.html">MailChimp</a>
+<a class="list-group-item" href="./addon-mailerlite.html">MailerLite</a>
+<a class="list-group-item" href="./addon-mysql.html">MySQL</a>
+<a class="list-group-item" href="./addon-neverbounce.html">NeverBounce</a>
+<a class="list-group-item" href="./addon-nexmo-sms.html">Nexmo SMS</a>
+<a class="list-group-item" href="./addon-paypal.html">PayPal</a>
+<a class="list-group-item" href="./addon-paypal-invoicing.html">PayPal Invoicing</a>
+<a class="list-group-item" href="./addon-pdf.html">PDF</a>
+<a class="list-group-item" href="./addon-plivo.html">Plivo SMS</a>
+<a class="list-group-item" href="./addon-salesforce.html">Salesforce</a>
+<a class="list-group-item" href="./addon-sendinblue.html">SendinBlue</a>
+<a class="list-group-item" href="./addon-stripe.html">Stripe</a>
+<a class="list-group-item" href="./addon-twilio.html">Twilio SMS</a></div>
+<a class="list-group-item" href="#navigation-377" data-toggle="collapse" data-parent="#navigation">Premium Modules <b class="caret"></b></a><div id="navigation-377" class="submenu panel-collapse collapse"><a class="list-group-item" href="./module-subscriptions.html">Subscriptions</a></div></div>    </div>
+    <div class="col-md-9 guide-content" role="main">
+        <h1>Form Builder <span id="form-builder"></span><a href="#form-builder" class="hashlink">&para;</a></h1>
+<div class="toc"><ol><li><a href="#introduction">Introduction</a></li>
+<li><a href="#user-interface">User Interface</a></li>
+<li><a href="#basic-form-settings">Basic Form Settings</a></li>
+<li><a href="#field-settings">Field Settings</a></li>
+<li><a href="#field-types">Field Types</a></li>
+<li><a href="#field-validation">Field Validation</a></li></ol></div>
+<h2>Introduction <span id="introduction"></span><a href="#introduction" class="hashlink">&para;</a></h2><p>Form Builder is an Easy Forms key piece. It's where forms are created and updated. The form builder provides the necessary tools for add and remove fields as other HTML elements.</p>
+<h2>User Interface <span id="user-interface"></span><a href="#user-interface" class="hashlink">&para;</a></h2><p><img src="images/form-builder-ui.png" alt="Easy Forms - Form Builder - User Interface" /></p>
+<p>The Form Builder interface is divided into three areas: On the left the form fields, on the right the theme designer and in the center the form preview.</p>
+<p>The left panel has three tabs:</p>
+<ul>
+<li>The tab Fields displays all fields and elements that can be added to the form. Simply drag and drop them to the right area.</li>
+<li>The tab Settings let set the form name, the form layout (labels position) and disabling all fields.</li>
+<li>The tab Code let see in real time the HTML code that is being generated with the Form Builder. From here you can recognize each element ID to manipulate the Form in a more advanced way. A "Copy" button allows you to copy the entire source code easily.</li>
+</ul>
+<p>The center area is the Form Preview from where you can manipulate each of the components.</p>
+<p>The right panel is the <strong>Theme Designer</strong> from where you can customize the look and feel of your form:</p>
+<ul>
+<li>Backgrounds: Change the background of different elements on your form.</li>
+<li>Typography: Choose the font, style, size, and color of all the text elements on your form.</li>
+<li>Borders: Set the thickness, style, and color of the borders around certain elements on your form.</li>
+<li>Shadows: Add or remove a drop shadow around your form.</li>
+<li>Buttons: Change the text of the Submit button.</li>
+<li>And much more!</li>
+</ul>
+<h3>- Add a field <span id="add-a-field"></span><a href="#add-a-field" class="hashlink">&para;</a></h3><p>There are two ways to add a field:</p>
+<ol>
+<li>Clicking a widget on the left panel. That's all! The form component will appear in your form, below all other components.</li>
+<li>Or, if you want to add a field in a specific placement.<ul>
+<li>Click a widget on the left panel and Drag it to the right area.</li>
+<li>At the time you enter the Form Builder's active area, a box will indicate where will be placed the Field.</li>
+<li>Once you placed it where you need, drop the button.</li>
+</ul>
+</li>
+</ol>
+<h3>- Edit a field <span id="edit-a-field"></span><a href="#edit-a-field" class="hashlink">&para;</a></h3><p>To edit a field:</p>
+<ol>
+<li>Click on the field to edit, and a pop-over will appear with field information</li>
+<li>Edit the information according to your requirements.</li>
+<li>Click Save.</li>
+</ol>
+<blockquote><p><strong>Note:</strong> Pressing ESC will close the popovers.</p>
+</blockquote>
+<h3>- Reorder the fields <span id="reorder-the-fields"></span><a href="#reorder-the-fields" class="hashlink">&para;</a></h3><p>To reorder a field (component):</p>
+<ol>
+<li>Click on a component and hold</li>
+<li>Drag the component up or down according to your requirements.</li>
+<li>According to where you drag the component, an active zone where the component will be placed will appear.</li>
+<li>Once placed in the required place, release the component.</li>
+</ol>
+<h3>- Copy a field <span id="copy-a-field"></span><a href="#copy-a-field" class="hashlink">&para;</a></h3><p>To copy a field (component):</p>
+<ol>
+<li>Click on a component and hold.</li>
+<li>Click the 'Copy' button in the Popover window</li>
+</ol>
+<p>You'll notice that the copied field will appear below the original field.</p>
+<h3>- Delete a field <span id="delete-a-field"></span><a href="#delete-a-field" class="hashlink">&para;</a></h3><p>To delete a field (component):</p>
+<ol>
+<li>Click on a component and hold.</li>
+<li>Drag it out of the active zone.</li>
+<li>Release.</li>
+</ol>
+<p>You'll notice that the component has disappeared.</p>
+<h2>Basic Form Settings <span id="basic-form-settings"></span><a href="#basic-form-settings" class="hashlink">&para;</a></h2><p>By clicking on the Form Builder's Settings tab, you will access a very basic version of the form configuration. From here you can:</p>
+<ol>
+<li><strong>Change the form name</strong>: The form name is to recognize the Form in the administration pages and is also display as the Form public page title at Easy Forms.</li>
+<li><strong>Change the form layout</strong>: The form layout is based on Bootstrap CSS and is used to locate the labels position on the form.<ul>
+<li>The Vertical layout displays the field labels above,</li>
+<li>The Horizontal layout displays the labels on the field left side, and</li>
+<li>The Inline layout hides the labels and displays the fields next to each other. For example, you can use it on a mail registration form, to place an Email field and a button by the side.</li>
+</ul>
+</li>
+<li><strong>Disable form elements</strong>: Let you disable all form fields. It is an advanced option that can be useful if you plan to interact with the form from an external javascript file.</li>
+</ol>
+<p><img src="images/form-builder-form-settings.png" alt="Easy Forms - Form Builder - Basic Form Settings" /></p>
+<blockquote><p>These basic options are intimately related to the form builder. However, you have other Setup options much more advanced that <a href="form-manager.html#advanced-form-settings">can be accessed from the Form Manager</a>.</p>
+</blockquote>
+<h2>Field Settings <span id="field-settings"></span><a href="#field-settings" class="hashlink">&para;</a></h2><p>Each form field has many Setup options, for example, the label, the default value, the CSS class, etc. To set up a field, go to the preview and click on it.</p>
+<h3>Setup Options <span id="setup-options"></span><a href="#setup-options" class="hashlink">&para;</a></h3><p>Next, all the Setup Options are shown in alphabetical order. Not all are in all fields, but if you have any problem, use this list as a reference.</p>
+<h4>- Accept: <span id="accept"></span><a href="#accept" class="hashlink">&para;</a></h4><p>This option is in the File Upload field. With it you can limit the type of files the field can accept. You should consider the following</p>
+<ul>
+<li>You must add the file extensions starting from the dot and separated by commas.</li>
+<li>By default, all files will be validated and will only be accepted image files with extension '.gif, .jpg, .png'.</li>
+<li>For example, to accept text files, you can change this option to: '.doc, .docx, .txt'.</li>
+<li>If you want to accept all types of files, you must leave this blank.</li>
+<li>This option enables the 'accept' attribute from the HTML5 standard, so the field validation is performed both on the client side (browser) and server side.</li>
+</ul>
+<p><img src="images/form-builder-file-upload.png" alt="Easy Forms - Form Builder - File Upload - Accept" /></p>
+<h4>- Alias: <span id="alias"></span><a href="#alias" class="hashlink">&para;</a></h4><p>The Alias option let you send WebHook notifications using the Field Alias instead of the Field Name. For example, we'll be able to re-send POST data by using “name” or "age" instead of “text_0” or "number_0". </p>
+<h4>- Checkboxes: <span id="checkboxes"></span><a href="#checkboxes" class="hashlink">&para;</a></h4><p>The Checkboxes option is only available in Checkbox fields, and it's used to add checkboxes to the component.</p>
+<p>For example, enter the Bulk editor and add the following "Checkboxes" and click "Save":</p>
+<pre><code class="language-plaintext">First Choice|1
+Second Choice|2|selected
+Third Choice|3
+Fourth Choice|4|selected
+Fifth Choice|5
+</code></pre>
+<p>The form preview will show a Checkbox component with 5 checkboxes: First Choice, Second Choice, Third Choice, Fourth Choice and Fifth Choice. The "Second Choice" and "Fourth Choice" checkboxes will be checked. And finally, if the user submits the form without making any changes, he will be sending the values: 2,4.</p>
+<p><img src="images/form-builder-checkboxes.png" alt="Easy Forms - Form - Builder - Checkboxes" /></p>
+<h5>Display Checkboxes in multiple columns <span id="display-checkboxes-in-multiple-columns"></span><a href="#display-checkboxes-in-multiple-columns" class="hashlink">&para;</a></h5><p>To display the options of a Checkbox component in multiple columns you need to add the Container CSS Class: <code>columns-2</code> or <code>columns-3</code> or <code>columns-4</code> to define if you want to show the options in 2, 3 or 4 columns, respectively.</p>
+<p><img src="images/form-builder-checkbox-multiple-columns.png" alt="Easy Forms - Form - Builder - Checkbox - Multiple Columns" /></p>
+<h5>Custom Checkbox <span id="custom-checkbox"></span><a href="#custom-checkbox" class="hashlink">&para;</a></h5><p>To customize Checkbox component colors, you need to add the Container CSS Class: <code>custom-control</code></p>
+<p><img src="images/form-builder-checkbox-custom-control.png" alt="Easy Forms - Form - Builder - Checkbox - Custom Control" /></p>
+<h4>- Check DNS: <span id="check-dns"></span><a href="#check-dns" class="hashlink">&para;</a></h4><p>This option tells the application that in the process of Email Field validation verify that the email domain really exists and has 'A' and 'MX' records.</p>
+<blockquote><p><strong>Caution!</strong> This is an advanced option and should be used with caution. Verification may fail due to a problem with the DNS servers even when is a valid email. By default, it is disabled.</p>
+</blockquote>
+<h4>- CSS Class: <span id="css-class"></span><a href="#css-class" class="hashlink">&para;</a></h4><p>Let you add one or more CSS classes to the Form Field.</p>
+<h4>- Container CSS Class: <span id="container-css-class"></span><a href="#container-css-class" class="hashlink">&para;</a></h4><p>Let you add one or more CSS classes to the container of the whole component.</p>
+<p>You can <strong>create multi-column forms</strong> by defining the class <code>col-xs-*</code> (the asterisk represents the number of columns, between 1 and 12).</p>
+<p>For example:</p>
+<p>If you want to place two fields in two columns you must do the following:</p>
+<ol>
+<li>Add the container CSS class to the first field: `col-xs-6</li>
+<li>Add the container CSS class to the second field: `col-xs-6</li>
+</ol>
+<p>In this example, we are using the "no-padding" predefined CSS classes to remove the padding that Bootstrap CSS adds to the columns. You can add them or not according to your design. If not, you can add the container CSS class col-xs-12 to the rest of fields, to preserve the same padding on each field.</p>
+<blockquote><p><strong>Important!</strong> You can go to the <a href="https://getbootstrap.com/docs/3.4/css/#grid">Bootstrap CSS documentation</a> for more information.</p>
+</blockquote>
+<blockquote><p><strong>Note:</strong></p>
+<ul>
+<li>By default, all fields except Button, come with the class: <code>form-group</code>. This class cannot be edited.</li>
+<li>By default, the field Button comes with the class: <code>form-action</code>. This class cannot be edited.</li>
+</ul>
+</blockquote>
+<h4>- Default Value: <span id="default-value"></span><a href="#default-value" class="hashlink">&para;</a></h4><p>You can add a default value to a field. This value appears by default, but the user can modify. If the user submits the form without having modified the default value, this value will be collected to process the submission.</p>
+<h4>- Disabled: <span id="disabled"></span><a href="#disabled" class="hashlink">&para;</a></h4><p>You can disable a field if you want it to be displayed to the user, but not be edited. (Note that you can also disable a hidden field). Unlike the Read Only option, a disabled field is not sent to the server. That is, the information stored in a disabled field is not received and therefore not appear on the Submissions Manager.</p>
+<h4>- Field Size: <span id="field-size"></span><a href="#field-size" class="hashlink">&para;</a></h4><p>A Text Area field allows its size configuration. The size must be an integer and indicates the number of rows displayed or, in other words, the field height. By default is 3.</p>
+<h4>- Help Text: <span id="help-text"></span><a href="#help-text" class="hashlink">&para;</a></h4><p>The text you type here will appear below the field and is often used to give the users instructions on what to put in it.</p>
+<h4>- Help Text Placement: <span id="help-text-placement"></span><a href="#help-text-placement" class="hashlink">&para;</a></h4><p>This Drop Down menu allows you to move the Help Text above or below the form field.</p>
+<h4>- Inline: <span id="inline"></span><a href="#inline" class="hashlink">&para;</a></h4><p>The Inline option is in the Checkbox fields and Radio Buttons and is used to change the vertical position of the checkboxes or radio buttons for a horizontal position.</p>
+<h4>- Input Type: <span id="input-type"></span><a href="#input-type" class="hashlink">&para;</a></h4><p>Many fields allow you to change the Input Type to specify the type of data you will receive. For example, a Text Field can have an Input Type "URL", to ensure that the text you type here is an absolute URL that starts with the letters 'http'.</p>
+<p><img src="images/form-builder-text-input-type.png" alt="Easy Forms - Form Builder - Input Type" /></p>
+<h4>- Integer Only: <span id="integer-only"></span><a href="#integer-only" class="hashlink">&para;</a></h4><p>You can activate this option if you want the value of this field to be only an integer. If the user enters a floating point number, the Form would not be processed and instead a validation error appears.</p>
+<h4>- Integer Pattern: <span id="integer-pattern"></span><a href="#integer-pattern" class="hashlink">&para;</a></h4><p>Is an advanced option of the Number Field that allows you to customize the regular expression that accepts only integer numbers (0-9) and will be used in the Form Validation process. The regular expression used by default is '/^\s[+-]?\d+\s$/';</p>
+<h4>- Label <span id="label"></span><a href="#label" class="hashlink">&para;</a></h4><p>It is the most common way to inform the user the value he must enter in the field. Generally it is shown at the top of the field, but you can modify this position by changing the form layout.</p>
+<h4>- Label CSS Class: <span id="label-css-class"></span><a href="#label-css-class" class="hashlink">&para;</a></h4><p>Let you add one or more CSS classes to the label. Keep in mind that if you want to hide a label, you can add the Bootstrap 3 css class 'sr-only'.</p>
+<blockquote><p><strong>Note:</strong> By default all fields come with the CSS class: control-label. It is recommended not to remove it.</p>
+</blockquote>
+<h4>- Min date: <span id="min-date"></span><a href="#min-date" class="hashlink">&para;</a></h4><p>You can define a date as the minimum date to be taken into account in the validating field process. If the user enters a earlier date, the form will not be sent and instead, a validation error will appear. If this option is not defined, this limitation will not exist.</p>
+<blockquote><p><strong>Important!</strong> The date must keep the following format: yyyy-mm-dd (HTML5 standard format)</p>
+</blockquote>
+<h4>- Max date: <span id="max-date"></span><a href="#max-date" class="hashlink">&para;</a></h4><p>You can define a date as the maximum date to be taken into account in the validating field process. If the user enters an later date, the form will not be sent and instead, a validation error will appear. If this option is not defined, this limitation will not exist.</p>
+<blockquote><p><strong>Important!</strong> The date must keep the following format: yyyy-mm-dd (HTML5 standard format)</p>
+</blockquote>
+<h4>- Min number: <span id="min-number"></span><a href="#min-number" class="hashlink">&para;</a></h4><p>You can define an integer or floating-point number as the minimum number to be taken into account in the validating field process. If the user enters a lower number, the form will not be sent and instead, a validation error will appear. If this option is not defined, this limitation will not exist.</p>
+<h4>- Max number: <span id="max-number"></span><a href="#max-number" class="hashlink">&para;</a></h4><p>You can define an integer or floating-point number as the maximum number to be taken into account in the validating field process. If the user enters a larger number, the form will not be sent and instead, a validation error will appear. If this option is not defined, this limitation will not exist.</p>
+<h4>- Min Size: <span id="min-size"></span><a href="#min-size" class="hashlink">&para;</a></h4><p>You can define an integer number as the minimum size to be taken into account in the process of validating the field. If the user uploads a file with a smaller size than the one you have defined, the form will not be sent and, instead, a validation error appears. If this option is not defined, this limitation will not exist.</p>
+<p>The integer number represents the number of bytes allowed. For example, Min Size: 10311680 (resulting from the multiplication of 1024 x 1024 x 5), the minimum file size should be 5MB.</p>
+<h4>- Max Size: <span id="max-size"></span><a href="#max-size" class="hashlink">&para;</a></h4><p>You can define an integer number as the maximum size that will be taken into account in the process of validating the field. If the user uploads a file with a size larger than the one you defined, the form will not be sent and instead, a validation error appears. If this option is not defined, this limitation will not exist.</p>
+<p>The integer number represents the number of bytes allowed. For example, Max Size: 10311680 (resulting from the multiplication of 1024 x 1024 x 5), the maximum file size should be 5MB.</p>
+<h4>- Min length: <span id="min-length"></span><a href="#min-length" class="hashlink">&para;</a></h4><p>You can define an integer number as the minimum length of the input string. If not set, it means no minimum length limit.</p>
+<h4>- Max length: <span id="max-length"></span><a href="#max-length" class="hashlink">&para;</a></h4><p>You can define an integer number as the maximum length of the input string. If not set, it means no maximum length limit.</p>
+<h4>- Min files: <span id="min-files"></span><a href="#min-files" class="hashlink">&para;</a></h4><p>You can define an integer number as the minimum number of files that the end user must upload to pass the validation.</p>
+<h4>- Max files: <span id="max-files"></span><a href="#max-files" class="hashlink">&para;</a></h4><p>You can define an integer number as the maximum number of files that the end user must upload to pass the validation. <strong>Use this feature to allow multiple uploads with the same File field</strong>. </p>
+<h4>- Max length: <span id="max-length"></span><a href="#max-length" class="hashlink">&para;</a></h4><p>You can define an integer number as the maximum number of files that the end user must upload to pass the validation.</p>
+<h4>- Multiple: <span id="multiple"></span><a href="#multiple" class="hashlink">&para;</a></h4><p>This option indicates that the user can enter multiple values. You can find this option in the Email and Select List fields:</p>
+<ul>
+<li>If Multiple option has been enabled on an Email field, you can add several valid email addresses separated by commas. For example: 'name@example.com,name2@example.com'.</li>
+<li>If Multiple option has been enabled on a Select List field, you can select several options. The collected information will have a comma-separated format. For example: 'Option One, Option Two'.</li>
+</ul>
+<p><img src="images/form-builder-selectlist-multiple.png" alt="Easy Forms - Form Builder - Select List Multiple" /></p>
+<h4>- Number Pattern: <span id="number-pattern"></span><a href="#number-pattern" class="hashlink">&para;</a></h4><p>Is an advanced option of the Number Field that allows you to customize the regular expression that accepts any number and will be used in the Form Validation process. The regular expression used by default match with a floating point number and optionally an exponent part (eg -1.23e-10): '/^\s[-+]?[0-9].?[0-9]+([eE][-+]?[0-9]+)?\s*$/'.</p>
+<h4>- Options: <span id="options"></span><a href="#options" class="hashlink">&para;</a></h4><p>The Options option is only in the Select List fields and are used to add selection options to the component.</p>
+<p>For example, if you enter in the Options field of the pop-up Form:</p>
+<pre><code class="language-plaintext">One|1
+Two|2|select
+Three|3
+Four|4
+Five|5
+</code></pre>
+<p>The Form Preview will show a box with the text "Two". And if the user submits the form without making any changes, he will be sending the value: 2.</p>
+<p><img src="images/form-builder-selectlist-options.png" alt="Easy Forms - Form Builder - Select List Options" /></p>
+<h4>- Pattern <span id="pattern"></span><a href="#pattern" class="hashlink">&para;</a></h4><p>It is an advanced option and allows you to add a regular expression to the field to be used in the Form Validation process. If the value sent by the user does not match this pattern, the form will not be processed and instead a validation error appears.</p>
+<h4>- Placeholder <span id="placeholder"></span><a href="#placeholder" class="hashlink">&para;</a></h4><p>It is the alternative way of describing the value that the user must enter in the field. By default, the placeholder appears in the field until the user start to enter data.</p>
+<p><img src="images/form-builder-placeholder.png" alt="Easy Forms - Form Builder - Placeholder" /></p>
+<h4>- Radios: <span id="radios"></span><a href="#radios" class="hashlink">&para;</a></h4><p>The Radios option is available in Radio Button components, and it's used to add radio buttons to the form.</p>
+<p>For example, if you click <em>Bulk Editor</em> and enter the following radios:</p>
+<pre><code class="language-plaintext">One|1
+Two|2|selected
+Three|3
+Four|4
+Five|5
+</code></pre>
+<p>The Form Preview will show five radio buttons with the words: One, Two, Three, Four and Five. The option Two will be selected. Then, if the user submits the form without making any changes, he will be sending the value: 2</p>
+<p><img src="images/form-builder-radios.png" alt="Easy Forms - Form Builder - Radios" /></p>
+<h5>Display Radio Buttons in multiple columns <span id="display-radio-buttons-in-multiple-columns"></span><a href="#display-radio-buttons-in-multiple-columns" class="hashlink">&para;</a></h5><p>To display the options of a Radio Button field in multiple columns you need to add the Container CSS Class: <code>columns-2</code> or <code>columns-3</code> or <code>columns-4</code> to define if you want to show the options in 2, 3 or 4 columns, respectively.</p>
+<p><img src="images/form-builder-radio-multiple-columns.png" alt="Easy Forms - Form - Builder - Radios - Multiple Columns" /></p>
+<h5>Custom Radio Button <span id="custom-radio-button"></span><a href="#custom-radio-button" class="hashlink">&para;</a></h5><p>To customize a Radio Button field, you need to add the Container CSS Class: <code>custom-control</code></p>
+<p><img src="images/form-builder-radio-custom-control.png" alt="Easy Forms - Form - Builder - Radios - Custom Control" /></p>
+<h4>- Read Only: <span id="read-only"></span><a href="#read-only" class="hashlink">&para;</a></h4><p>When you enable this option, the field will be displayed to the user but he cannot edit. The information in a Read Only field is received and validated by the server when the Form is submitted. It will also be collected by the Submission Manager.</p>
+<h4>- Required <span id="required"></span><a href="#required" class="hashlink">&para;</a></h4><p>This property allows you to ensure that the user complete a specific field before sending the form. If the user submits the form with an empty required field, the form is not processed and instead an error message is displayed. By default, the required fields labels have a red asterisk on the right.</p>
+<p><img src="images/form-builder-required.png" alt="Easy Forms - Form Builder - Required" /></p>
+<h4>- Step number: <span id="step-number"></span><a href="#step-number" class="hashlink">&para;</a></h4><p>With this option, you can set the HTML5 'step' attribute of the Number and Date fields. The 'step' attribute specifies the valid number to be use as an interval when changing the values of this field using the browser controllers. Modern browsers recognize this attribute.</p>
+<blockquote><p><strong>Important!</strong> If the Number field has the 'Integer Only' option enabled is recommended to set your 'Step number' to 1.</p>
+</blockquote>
+<h4>- Unique: <span id="unique"></span><a href="#unique" class="hashlink">&para;</a></h4><p>This option allows you to check that the information entered into this field is unique and has not been submitted previously. Useful for mailing lists and registration forms, where preventing the users from entering the same information more than once is often needed.</p>
+<p><img src="images/form-builder-unique.png" alt="Easy Forms - Form Builder - Unique" /></p>
+<h2>Field Types <span id="field-types"></span><a href="#field-types" class="hashlink">&para;</a></h2><h4>- Heading <span id="heading"></span><a href="#heading" class="hashlink">&para;</a></h4><p>Headings are used to mark Form sections, also as to give it a title. For example, when you enter the Form Builder to create one, you will see a heading (h3) with the text "Untitled Form". To modify this text, just click on it. Immediately a form will appear with all the options to customize it.</p>
+<h4>- Paragraph <span id="paragraph"></span><a href="#paragraph" class="hashlink">&para;</a></h4><p>Paragraphs are components used for fleshing out a form. For example, you can use them to invite your users to fill out the form or to give directions. When you enter to the Forms Builder to create one, you will see a paragraph with the text "This is my form. Please fill it out. Thanks!" To modify this text, simply click on it. Immediately a form will appear with all the options to customize it.</p>
+<h4>- Text Field <span id="text-field"></span><a href="#text-field" class="hashlink">&para;</a></h4><p>A text field is a component that allows you to write only one line of text. Web browsers consider the text field as the standard default field from others more specialized such as URL or color. The text field can have five different input types, each of which is used to validate data differently. The five types are:</p>
+<ul>
+<li><strong>Text</strong>: This is the default type for this component. And it is one that is commonly used in forms, because it does not offer any validation and will accept all data sent by the user. If the browser does not recognize any other type, such field will be displayed instead.</li>
+<li><strong>Url</strong>: This type was introduced by HTML5 and now modern browsers accept it. Use the URL type if you want to collect absolute URLs that starts with 'http'.</li>
+<li><strong>Color</strong>: This type was introduced by HTML5 and modern browsers that accept it, displays an automatically color palette when you click on it. Use the Color type if you want the collected data to be the hexadecimal value of a color, starting with a '#' sign. For example, '#FFFFFF'.</li>
+<li><strong>Tel</strong>: This type was introduced by HTML5 and now modern browsers accept it. Use this type if the data to collect is a phone number.</li>
+<li><strong>Password</strong>: All browsers recognize this type of entry. Use this entry type if you want the user to enter data not shown on screen. Note that Easy Forms is not meant to store passwords, mainly because the data is stored as plain text. If required, use this input type with caution.</li>
+</ul>
+<h4>- Number Field <span id="number-field"></span><a href="#number-field" class="hashlink">&para;</a></h4><p>A number field is a component used to collect numbers as content. Following the HTML5 standard, this component can be of 2 types:</p>
+<ul>
+<li><strong>Number</strong>: This is the type that should be used when you want the user to type the number. For example, you may ask: "How old are you?" If the user enters 'Five years', they are notified that they must write only numbers: 5, in this case.</li>
+<li><strong>Range</strong>: This type of entry is also used to collect numerical data, but unlike Number, modern browsers display a slider the user can use to enter his data. For example, you can ask "From 1 to 10, how good are you at math?" Depending on how you drag the slider, the value will be higher or lower.</li>
+</ul>
+<p>Unlike Text components, Number components offer many different validation options. For example, Integer Only indicate that the field must collect only numerical integers data: Decimals are not accepted! You can also set the minimum and maximum number to be entered and more. All these options follow the HTML5 standard and are also validated on the server.</p>
+<h4>- Date Field <span id="date-field"></span><a href="#date-field" class="hashlink">&para;</a></h4><p>A date field is a component used to collect valid dates. Date fields were introduced by HTML5 and modern browsers that recognize them display a calendar by clicking on the field. This component can have 5 different types of input:</p>
+<ul>
+<li><strong>Date</strong>: The input type to use if you want to collect dates. You must have the format: yyyy-mm-dd.</li>
+<li><strong>DateTime-Local</strong>: The input type to use if you want to collect dates and times. The collected data will have the standard ISO format: yyyy-mm-ddThh:mm:ss.</li>
+<li><strong>Time</strong>: The input type to use if you want to collect times in the format: hh:mm:ss.</li>
+<li><strong>Month</strong>: This type of entry is supported by modern browsers and should be used if you want the user to select the month or month and year. The input format is yyyy-mm.</li>
+<li><strong>Week</strong>: This type of entry is supported by modern browsers and should be used if you want the user to select the week of the year in numerical format.</li>
+</ul>
+<blockquote><p><strong>Note:</strong> Indeed some modern browsers don't yet show the Datepicker when the field is a date. But, in the future all of them will do. For now, browsers that don't support it are Safari, Firefox and previous versions of IE. For these cases, we can use a jQuery UI Datepicker widget as fallback.</p>
+</blockquote>
+<h4>- Email Field <span id="email-field"></span><a href="#email-field" class="hashlink">&para;</a></h4><p>An email field is used to collect valid emails. By default it validates that the text contains a '@' and '.' plus two or more characters for the e-mail domain. In addition, you must use this field to send notifications that have your users mails as senders (Reply-To).</p>
+<p>An advanced option of this field is the ability to verify the mail DNS to confirm that the domain really exists and has an A and MX record. Care should be taken that this validation can fail due to problems with the DNS servers even when mail is valid. By default, this option is disabled.</p>
+<h4>- Text Area <span id="text-area"></span><a href="#text-area" class="hashlink">&para;</a></h4><p>A text area is a component that allows you to collect multiple lines of text, with multiples paragraphs. It is a suitable field if you want users to draft a comprehensive text. Also, you can change some settings. For example, you can change the height of the text area, to display more space to your users. To do this, click on the text area and change the size of the field that by default is 3.</p>
+<h4>- Checkbox <span id="checkbox"></span><a href="#checkbox" class="hashlink">&para;</a></h4><p>The Checkbox component adds checkboxes to the form. This component provides an option list with a checkbox next, so your users can check all, some or none. You can use it if you want to get several answers, for example: Which of the followings are fruits?</p>
+<p>To add, edit and delete checkboxes, you must click on the component. Then a form appears with the "Checkboxes" field. Note that each line of this field represents a different choice. Each choice can be composed of three parts: Label, Value and Image. Additionally, you can check them.</p>
+<p><img src="images/checkbox-component.png" alt="Easy Forms - Form Builder - Checkbox Component" /></p>
+<p>Also, you can choose the Bulk Editor tool to insert choices separated by a vertical bar or pipe line. The format should be as follows: Label|Value|selected. The second and third part of this format is optional.</p>
+<p>For example, click Bulk Editor and add the following "Checkboxes":</p>
+<pre><code class="language-plaintext">One|1
+Two|2|selected
+Three|3
+Four|4|selected
+Five|5
+</code></pre>
+<p>The Form Preview will show 5 checkboxes with the words One, Two, Three, Four and Five. The "Two" and "Four" option will be selected. And, if the user submits the form without making any changes, it will be sending the values: 2,4.</p>
+<p><img src="images/checkbox-component-bulk-edition.png" alt="Easy Forms - Form Builder - Checkbox Component with Bulk Editor" /></p>
+<p>Also, you can add pictures or icons to the checkboxes to give a more dynamic touch to your forms.</p>
+<p>To insert a picture on a checkbox label you must add the image url as the third setting parameter of the checkbox. For example, if we set up our component as:</p>
+<pre><code class="language-plaintext">One
+Two|2
+Three|3|selected
+Four|4|http://example.com/image-4.jpg
+Five|5|http://example.com/image-5.jpg|selected
+</code></pre>
+<p>We'll be creating five checkboxes:</p>
+<ul>
+<li><code>One</code>: Creates a checkbox with the value: 'One' and the label: 'One'</li>
+<li><code>Two|2</code>: Creates a checkbox with the value: '2' and the label: 'Two'</li>
+<li><code>Three|3|selected</code>: Creates a checkbox with the value: '3', the label: 'Three' and will be checked by default.</li>
+<li><code>Four|4|http://example.com/image-4.jpg</code>: Creates a checkbox with the value: '4', the label: 'Four' and the image will appear next to the checkbox.</li>
+<li><code>Five|5|http://example.com/image-5.jpg|selected</code>: Creates a checkbox with the value: '5', the label: 'Five' and the image will appear next to the checkbox and will be checked by default.</li>
+</ul>
+<p>To add icons instead of images, you should only replace the images URLs by the icons' CSS classes. For example: <code>glyphicon glyphicon-user</code>, will display the user icon. Keep in mind that by default, the application has the Glyphicons Pro set of icons; however, you can use other icons like Font Awesome or DevIcons. For this, you just have to add the fonts to the CSS theme of your form.</p>
+<blockquote><p><strong>Important:</strong> To add an image or icon to the checkbox setup, you must have the first two parameters, even if they are the same.</p>
+</blockquote>
+<blockquote><p><strong>Note:</strong> Remember that you can display your checkboxes horizontally by activating the 'inline' attribute.</p>
+</blockquote>
+<h4>- Radio Button <span id="radio-button"></span><a href="#radio-button" class="hashlink">&para;</a></h4><p>Radio Button is a component that lets you add a group of radio buttons to the form. This component gives users a list of choices, but they must select only one of them. For example: What is your favorite color?</p>
+<p>To add, edit and delete options, you must click on the component. Then a form appears with the "Radio" field. Note that each line of this field represents a different option. And each line can be composed of three parts, separated by a vertical bar or pipe line. The format should be as follows: Label|Value|select. The second and third part of this format is optional.</p>
+<p>For example, if you enter in the field "Radio" of the pop-up Form:</p>
+<pre><code class="language-plaintext">One|1
+Two|2|selected
+Three|3
+Four|4
+Five|5
+</code></pre>
+<p>The Form Preview will show 5 check boxes with the words One, Two, Three, Four and Five. The "Two" option will be selected. And if the user submits the form without making any changes, it will be sending the value: 2.</p>
+<p>Also, since version 1.3 you can add pictures or icons to the radio buttons to give a more dynamic touch to your forms.</p>
+<p>To insert a picture on a radio button label you must add the image url as the third setting parameter of the radio button. For example, if we set up our component as:</p>
+<pre><code class="language-plaintext">One
+Two|2
+Three|3|selected
+Four|4|http://example.com/image-4.jpg
+Five|5|http://example.com/image-5.jpg|selected
+</code></pre>
+<p>We'll be creating five radio buttons:</p>
+<ul>
+<li><code>One</code>: Creates a radio button with the value: 'One' and the label: 'One'</li>
+<li><code>Two|2</code>: Creates a radio button with the value: '2' and the label: 'Two'</li>
+<li><code>Three|3|selected</code>: Creates a radio button with the value: '3', the label: 'Three' and will be selected by default.</li>
+<li><code>Four|4|http://example.com/image-4.jpg</code>: Creates a radio button with the value: '4', the label: 'Four' and the image will appear next to the radio button.</li>
+<li><code>Five|5|http://example.com/image-5.jpg|selected</code>: Creates a radio button with the value: '5', the label: 'Five' and the image will appear next to the radio button and will be selected by default.</li>
+</ul>
+<p>To add icons instead of images, you should only replace the images URLs by the icons' CSS classes. For example: <code>glyphicon glyphicon-user</code>, will display the user icon. Keep in mind that by default, the application has the Glyphicons Pro set of icons; however, you can use other icons like Font Awesome or DevIcons. For this, you just have to add the fonts to the CSS theme of your form.</p>
+<blockquote><p><strong>Important:</strong> To add an image or icon to the radio button setup, you must have the first two parameters, even if they are the same.</p>
+</blockquote>
+<blockquote><p><strong>Note:</strong> Remember that you can display your radio button horizontally by activating the 'inline' attribute.</p>
+</blockquote>
+<h4>- Select List <span id="select-list"></span><a href="#select-list" class="hashlink">&para;</a></h4><p>A Select List is a drop-down menu that allows the user to select one or several options, depending on the configuration you choose. The main difference with the Radio Button component is that you can add a lot of options without changing its size. So its use is recommended when there are plenty of options for example: Select your country of origin?</p>
+<p>To add, edit and delete options, you must click on the component. Then a form appears with the "Options" field. Note that each line of this field represents a different option. And each line can be composed of three parts, separated by a vertical bar or pipe line. The format should be as follows: Label|Value|selected. The second and third part of this format is optional.</p>
+<p>For example, if you enter in the field "Options" of the pop-up Form:</p>
+<pre><code class="language-plaintext">One|1
+Two|2|selected
+Three|3
+Four|4
+Five|5
+</code></pre>
+<p>The Form Preview will show a box with the text "Two". And if the user submits the form without making any changes, it will be sending the value: 2.</p>
+<h4>- Hidden Field <span id="hidden-field"></span><a href="#hidden-field" class="hashlink">&para;</a></h4><p>By adding a hidden field to the form, this will not be shown on the form. However, hidden fields are useful for mathematical calculations or send default values without changing the form interface.</p>
+<blockquote><p><strong>Note:</strong> You can add a label to a hidden field to work in a more comfortable way in the Form administration, for example to create conditional rules using this field.</p>
+</blockquote>
+<h4>- File Upload <span id="file-upload"></span><a href="#file-upload" class="hashlink">&para;</a></h4><p>The File Upload field is a component that enables users to attach files in the form submission. Once sent, the files will appear in the detailed submission information. There are two details that must take into account:</p>
+<ul>
+<li><strong>Allowed file types</strong>: You can limit the types of files that can be uploaded in each file field. By default, allowed file types for picture are: '.gif, .jpg, .png'. To modify the allowed file type, you must click on the component and on the 'Accept' form field that appears, change file extensions allowed, eg, '.doc, .pdf, .txt' to accept text files.</li>
+<li><strong>Size limitations</strong>: You can limit the file size as define a minimum or maximum size for each field. To modify the allowed file size, click the component and then expand the pop-up form by clicking on the 'More' link. Then locate the Minimum and Maximum Size fields and enter the digit that represents the number of bytes allowed. For example, Max Size: 10311680 (resulting from the multiplication of 1024 x 1024 x 5 = 5MB).</li>
+</ul>
+<h4>- Snippet <span id="snippet"></span><a href="#snippet" class="hashlink">&para;</a></h4><p>The HTML Snippet field is an advanced use component that allows you to add HTML code to your forms. It will display a Wysiwyg editor able to recognize keyboard shortcuts to style your HTML code quickly.</p>
+<p>Be careful of entering a valid HTML code, otherwise, the Form Builder won't save the form and, it will display an error message indicating the line of code where the error was made. For example, a common mistake is to add more of one HTML element with the same ID.</p>
+<p><img src="images/form-builder-snippet.png" alt="Easy Forms - Form Builder - Snippet" /></p>
+<p>To add an HTML table, enter a link or display an image, first, you will need to click the Fullscreen button. This will open the Wysiwyg editor over the Form Builder, so you will get more space to enter all the needed content. Also, you can click the Code button to display the content as HTML code.</p>
+<p><img src="images/form-builder-snippet-table.png" alt="Easy Forms - Form Builder - Snippet - Table" /></p>
+<blockquote><p><strong>Note:</strong> Although you can add CSS and JavaScript code in a form. It is not recommended to do so, in these cases you can create a CSS Theme and/or Load external javascript file. Remember that the form you created is also displayed in the Submission Manager and its code could be incompatible.</p>
+</blockquote>
+<h4>- reCaptcha <span id="recaptcha"></span><a href="#recaptcha" class="hashlink">&para;</a></h4><p>The reCaptcha field is an advanced component that allows you to use Google technology to verify that users are not bots and/or spammers. You can modify the reCAPTCHA configuration, like changing the theme color, type of captcha and size. A detail to keep in mind is that you can only add a reCaptcha component per Form.</p>
+<p><img src="images/form-builder-recaptcha.png" alt="Easy Forms - Form Builder - Recaptcha" /></p>
+<blockquote><p><strong>Important!</strong> Before adding the reCAPTCHA component to your Form, you must first add reCAPTCHA keys in the site configuration. Otherwise, reCAPTCHA will not operate. If you created the form before adding the keys, you must update the form.</p>
+</blockquote>
+<h4>- Page Break <span id="page-break"></span><a href="#page-break" class="hashlink">&para;</a></h4><p>The Page break field is an advanced component that allows you to create multi-step or multi-page forms. For each page break created you will add a new page. In addition, a header will be displayed above the form to let users know in which step they are and how many steps must follow to submit the form. There are two details that must take into account:</p>
+<ol>
+<li>The Page Break component adds two buttons to allow Form Navigation. You can customize the text on the button 'Next' or 'Previous' by clicking on the component.</li>
+<li>Form Steps: Shown above form and may be modified as follows.<ul>
+<li>Click Form Steps to check its settings. You can change the titles of each step in the field Form Steps. Each line matches a title.</li>
+<li>You can specify to display only the titles or steps (numbers).</li>
+<li>You can change the step numbers by glyphicons icons. To use Glyphicons in stages, you should add to each line of the Steps fields, a vertical bar or pipe line followed by 'icon-[name of icon]'. For example, if I want to replace the number 1, I write it in the first line of Steps: 'Untitled Step|icon-user'. Go to Glyphicons to view the name of the icons you can use.</li>
+<li>You can change the design of the steps for a progress bar indicating the percentage that has been achieved.</li>
+<li>Finally, you can hide the Form Steps by checking the 'No Form Steps' option.</li>
+</ul>
+</li>
+</ol>
+<p><img src="images/form-builder-form-steps-alt.png" alt="Easy Forms - Form Builder - Form Steps" /></p>
+<h4>- Spacer <span id="spacer"></span><a href="#spacer" class="hashlink">&para;</a></h4><p>The Spacer component allows you to add precise vertical spacing between fields on your forms. Just drag and drop a Spacer between your fields and set the number of pixels between they.</p>
+<p>Options:</p>
+<ul>
+<li><strong>Height</strong>: Is the space defined by the number of pixels.</li>
+</ul>
+<p><img src="images/form-builder-spacer.png" alt="Easy Forms - Form Builder - Spacer" /></p>
+<h4>- Signature <span id="signature"></span><a href="#signature" class="hashlink">&para;</a></h4><p>The Signature component allow your end users to sign your form – either with their mouse or finger on an iPad/smartphone – their John Hancock directly onto the form. So, you can securely capture signatures for contracts, legal documents, and other forms in which you need a physical autograph.</p>
+<p>There are two details that must take into account:</p>
+<ol>
+<li>The Signature component adds two buttons to allow Canvas Interactions. You can customize the text on the 'Clean' and 'Undo' buttons by clicking on the component.</li>
+<li>Field Settings: The Signature field has the following special options:<ul>
+<li><strong>Clear</strong>: Enable / Disable the "Clear" button. When an end user clicks the "Clear" button, the signature will be removed. And the canvas will be clean to start again.</li>
+<li><strong>Undo</strong>: Enable / Disable the "Undo" button. When an end user clicks the "Undo" button, the last stroke of his signature will be removed. He can continue pressing this button to undo his signature step by step.</li>
+<li>Additionally, you can define the <strong>width</strong> and <strong>height</strong> of the canvas, the <strong>color</strong> of the pencil, as well as change the <strong>text of the buttons</strong> between other common settings.</li>
+</ul>
+</li>
+</ol>
+<p><img src="images/form-builder-signature.png" alt="Easy Forms - Form Builder - Signature" /></p>
+<h4>- Matrix Field <span id="matrix-field"></span><a href="#matrix-field" class="hashlink">&para;</a></h4><p>The Matrix field is an advanced component, allows you to group multiple form controls with the same input type within a table. You can create a matrix field with the following input types:</p>
+<ul>
+<li>Radio Button (By Default)</li>
+<li>Checkbox</li>
+<li>Select List</li>
+<li>Text</li>
+<li>Text Area</li>
+<li>Number</li>
+<li>Range (Slider)</li>
+<li>Email</li>
+<li>Tel (Phone)</li>
+<li>URL</li>
+<li>Color</li>
+<li>Password</li>
+<li>Date</li>
+<li>DateTime-Local</li>
+<li>Time</li>
+<li>Month</li>
+<li>Week</li>
+</ul>
+<p>All the form controls are fully customizable and according to its type, the correct input validation will be applied. </p>
+<p><img src="images/matrix-field.png" alt="Easy Forms - Form Builder - Matrix Field" /></p>
+<p>A Matrix field can have any number of questions (rows) and answers (columns), then you can set different values to each answer. </p>
+<p>A special input type for the Matrix is Select List, because you need to add different values (options), to do this just check "Values" and in each "Value" field enter slash separated values ("/"). If you want to enable a default empty option, you need to use the Placeholder setting.</p>
+<p><img src="images/matrix-field-select-list.png" alt="Easy Forms - Form Builder - Matrix Field with Select List" /></p>
+<p>You are able to make open questions too, with the Text Input variation, each row contains a set of text entry boxes. This variation looks and acts similar to the Text Field. The same applies for other input fields based on text, like a text area or number fields.</p>
+<p><img src="images/matrix-field-text-input.png" alt="Easy Forms - Form Builder - Matrix Field with Text Inputs" /></p>
+<p>A special feature in the Matrix field is the ability to hide the questions. Just check the "Inline" option and questions will disappear. You can use this feature if you only want to do a single question in a tabular format.</p>
+<p><img src="images/matrix-field-inline.png" alt="Easy Forms - Form Builder - Matrix Field In Line" /></p>
+<blockquote><p><strong>Note</strong>: When a table is very big, we will need to add the "table-responsive" class within the "Container CSS Class" setting.</p>
+</blockquote>
+<h4>- Button <span id="button"></span><a href="#button" class="hashlink">&para;</a></h4><p>The button field is a component that allows you to send the forms. While it is normal to add one button per form, nothing prevents you to add more, for example at the beginning and end of the form. This component can be of 3 types:</p>
+<ul>
+<li><strong>Submit</strong>: To submit the form. It is selected by default.</li>
+<li><strong>Reset</strong>: To reset the form to their default values.</li>
+<li><strong>Image</strong>: Displays an image on the button and like Submit is used to submit the form. If you use this type of button you need to add the URL of the image and also remove the CSS class.</li>
+<li><strong>Button</strong>: This type doesn't send the form, but it can be used to interact with the fields via javascript.</li>
+</ul>
+<p>You can add an icon to the buttons type 'Submit', 'Reset' and 'Button', writing in the attribute 'Button Text' the icon label. For example:</p>
+<p><code>&lt;span class="glyphicon glyphicon-shopping-cart"&gt;&lt;/span&gt; Buy Now!</code></p>
+<p>It will display your button with a nice icon at the beginning:</p>
+<p><img src="images/form-builder-button.png" alt="Easy Forms - Form Builder - Button" /></p>
+<blockquote><p><strong>Note:</strong> The CSS class: 'btn btn-primary' add the default design to the button. Go to <a href="http://getbootstrap.com/css/#buttons">Bootstrap CSS</a> for more information.</p>
+</blockquote>
+<h2>Field Validation <span id="field-validation"></span><a href="#field-validation" class="hashlink">&para;</a></h2><p>A very important point to consider is the field validation that runs when users submit a form.</p>
+<p>Field validation is the process by which it is verified that the data submitted by users meet certain requirements. For example, a <strong>Date Field</strong> requires that the value sent to the server has the following format yyyy-mm-dd. Validation ensures that this happens.</p>
+<p><img src="images/form-builder-validation-1.png" alt="Easy Forms - Form Builder - Field Validation" /></p>
+<p>You should note that Easy Forms works with standard HTML5 fields, so you can always go to HTML5 documentation for more information. In addition to validation by type, fields may have other requirements, such as 'Required' and 'Unique'.</p>
+<p><img src="images/form-builder-validation-2.png" alt="Easy Forms - Form Builder - Field Validation" /></p>
+<p>Many of these requirements are validated at the client, by the browser; but they are all validated on the server, by Easy Forms.</p>
+        <div class="toplink"><a href="#" class="h1" title="go to top"><span class="glyphicon glyphicon-arrow-up"></a></div>
+    </div>
+</div>
+
+    </div>
+
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <p class="pull-left">&copy; Easy forms 2015 - 2021</p>
+        <p class="pull-right">
+            <small>Page generated on Thu, 08 Apr 2021 01:38:17 +0000</small>
+        </p>
+    </div>
+</footer>
+
+<script>jQuery(function ($) {
+    var shiftWindow = function () { scrollBy(0, -50) };
+    if (location.hash) setTimeout(shiftWindow, 1);
+    window.addEventListener("hashchange", shiftWindow);
+var element = document.createElement("script");
+element.src = "./jssearch.index.js";
+document.body.appendChild(element);
+
+var searchBox = $('#searchbox');
+
+// search when typing in search field
+searchBox.on("keyup", function(event) {
+    var query = $(this).val();
+
+    if (query == '' || event.which == 27) {
+        $('#search-resultbox').hide();
+        return;
+    } else if (event.which == 13) {
+        var selectedLink = $('#search-resultbox a.selected');
+        if (selectedLink.length != 0) {
+            document.location = selectedLink.attr('href');
+            return;
+        }
+    } else if (event.which == 38 || event.which == 40) {
+        $('#search-resultbox').show();
+
+        var selected = $('#search-resultbox a.selected');
+        if (selected.length == 0) {
+            $('#search-results').find('a').first().addClass('selected');
+        } else {
+            var next;
+            if (event.which == 40) {
+                next = selected.parent().next().find('a').first();
+            } else {
+                next = selected.parent().prev().find('a').first();
+            }
+            if (next.length != 0) {
+                var resultbox = $('#search-results');
+                var position = next.position();
+
+//              TODO scrolling is buggy and jumps around
+//                resultbox.scrollTop(Math.floor(position.top));
+//                console.log(position.top);
+
+                selected.removeClass('selected');
+                next.addClass('selected');
+            }
+        }
+
+        return;
+    }
+    $('#search-resultbox').show();
+    $('#search-results').html('<li><span class="no-results">No results</span></li>');
+
+    var result = jssearch.search(query);
+
+    if (result.length > 0) {
+        var i = 0;
+        var resHtml = '';
+
+        for (var key in result) {
+            if (i++ > 20) {
+                break;
+            }
+            resHtml = resHtml +
+            '<li><a href="' + result[key].file.u.substr(3) +'"><span class="title">' + result[key].file.t + '</span>' +
+            '<span class="description">' + result[key].file.d + '</span></a></li>';
+        }
+        $('#search-results').html(resHtml);
+    }
+});
+
+// hide the search results on ESC
+$(document).on("keyup", function(event) { if (event.which == 27) { $('#search-resultbox').hide(); } });
+// hide search results on click to document
+$(document).bind('click', function (e) { $('#search-resultbox').hide(); });
+// except the following:
+searchBox.bind('click', function(e) { e.stopPropagation(); });
+$('#search-resultbox').bind('click', function(e) { e.stopPropagation(); });
+
+});</script></body>
+</html>

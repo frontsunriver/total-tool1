@@ -1,0 +1,129 @@
+// ....order....
+
+.shipping-content{
+  
+    .main-form{
+        padding: 30px;
+        background-color: white;
+        .select-control{
+            float: left;
+            position: relative;
+                                  
+            .form-control{
+                background-color: transparent;
+                width: 100%;
+                color: #495057;
+                border:1px solid #ced4da !important;
+            }
+            &::before{
+                font-family:"Font Awesome 5 Free";
+                font-weight: 900; 
+                content: "\f107";
+                position: absolute;
+                color: $body-color-secondary;
+                bottom: 8px;
+                right: 15px;
+                z-index: 1;
+                font-size: 12px;
+            }
+        }
+        .star{
+            color:red; 
+            position: relative;
+            top: 3px;
+        }
+    }
+    .navbar-nav{
+        .nav-item{
+            .nav-link{
+                .fas{
+                    margin-right: 10px;
+                    font-size: 16px;
+                    float: left;
+                }
+            }
+        }
+        
+    }
+  
+    .tag-color{
+        color: $secondary;
+    }
+
+   
+    .h5-heading{
+        margin: 0;
+    }
+    .hr-line{
+        hr {
+            margin-top: 5px;
+            margin-bottom: 1rem;
+            border: 0;
+            border-top: $border-width solid $border-color;
+            &:before {
+                height: 1px;
+                background-color: $secondary;
+                content: "";
+                position: absolute;
+                width: 85px;
+                margin-top: -1px;
+            }
+        }  
+    }
+    .media-main{
+        background-color: white;
+     
+    }
+    .table{
+        background-color: white;
+        text-align: center;
+        th{
+            border: none;
+            vertical-align: middle;
+            text-align: left;
+        }
+        tr{
+            .edit-tag{
+                ul{
+                    display: flex;
+                    list-style: none;
+                    margin: 0;
+                    padding: 0;
+                    li{
+                        margin-right: 15px;
+                    }
+                }
+            }
+            td{
+               
+                vertical-align: middle;
+                .qtypluscart{
+                    display: grid;
+                    a{
+                        display: grid;
+                    }
+                    .fas{
+                        border:  $border-width solid $gray-400;
+                        padding: 2px 4px;
+                        font-size: 9px;
+                    }
+                }
+                
+                .form-check{
+                    padding-left: 30px;
+                    .form-check-input{
+                        position: absolute;
+                        left: 20px;
+                        top: 5px;
+                        margin-top: 0;
+                    }
+                    .form-check-label{
+                        text-align: left;
+                    }
+                }
+            }
+        }
+    }
+   
+}
+              

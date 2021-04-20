@@ -1,0 +1,7 @@
+<!-- reCAPTCHA -->{{ if ( field.siteKey ) { }}
+<div class="form-group{{ if (field.containerClass) { }} {{= field.containerClass }}{{ } }}">
+    <div id="{{= field.id }}" class="g-recaptcha" data-sitekey="{{= field.siteKey }}" data-theme="{{= field.theme }}" data-type="{{= field.type }}" data-size="{{= field.size }}"></div>
+</div>
+{{ } else { }}
+<div class="g-recaptcha" data-sitekey="your_site_key"></div>
+{{ } }}

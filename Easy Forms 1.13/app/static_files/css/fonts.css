@@ -1,0 +1,7 @@
+/*@import url(https://fonts.googleapis.com/css?family=Kaushan+Script);*/
+@font-face {
+    font-family: 'Kaushan Script';
+    src: url('../fonts/kaushan-script/KaushanScript-Regular.ttf');
+    src: url('../fonts/kaushan-script/KaushanScript-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+    url('../fonts/kaushan-script/KaushanScript-Regular.ttf') format('truetype'); /* Safari, Android, iOS */
+}

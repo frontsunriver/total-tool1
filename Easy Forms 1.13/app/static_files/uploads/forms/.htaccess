@@ -1,0 +1,8 @@
+<IfModule mod_rewrite.c>
+  # Limit file access to only logged in users
+  RewriteEngine On
+  RewriteCond %{REQUEST_FILENAME} -f
+  RewriteRule ^(logos)($|/) - [L]
+  RewriteCond %{HTTP_COOKIE} !^.*_identity.*$ [NC]
+  RewriteRule . - [R=403,L]
+</IfModule>

@@ -1,0 +1,41 @@
+<div id="{{= name }}" class="form-group field choice" data-type="{{= type }}">
+    <label class='control-label'> {{= polyglot.t(label) }} </label>
+    <div class="show-options">
+        <label for="{{= name }}-show-values" id="{{= name }}-for-show-values" class="for-show-values">
+            <input type="checkbox" id="{{= name }}-show-values" class="show-values"> {{= polyglot.t('popover.values') }}
+        </label>
+        <label for="{{= name }}-show-images" id="{{= name }}-for-show-images" class="for-show-images">
+            <input type="checkbox" id="{{= name }}-show-images" class="show-images"> {{= polyglot.t('popover.images') }}
+        </label>
+    </div>
+    <div class="choices">
+        {{ for ( var i = 0; i < value.length ; i++ ) { }}
+        {{ var items = value[i].split("|"); var last = items[items.length-1]; var selected = (last==="selected"||last==="select"|last==="check"); var answer = items[0]; var val = ((items.length >= 3) || (items.length == 2 && !selected)) ? items[1] : ''; var image = ((items.length >= 4) || (items.length == 3 && !selected)) ? items[2] : ''; if (image.length > 0 && val.length < 1) { val = answer; } }}
+        <div class="row row-no-gutters choice">
+            <div class="col-xs-1">
+                <div class="checkbox">
+                    <input type="checkbox"{{ if(selected) { }} checked{{ } }} name="selected[]" class="selected-choice" />
+                </div>
+            </div>
+            <div class="col-xs-8 choice-answer">
+                <input type="text" class="form-control input-sm" placeholder="{{= polyglot.t('popover.choice') }}" value='{{- answer }}' name="answer[]" />
+            </div>
+            <div class="col-xs-4 choice-value">
+                <input type="text" class="form-control input-sm" placeholder="{{= polyglot.t('popover.value') }}" value='{{- val }}' name="value[]" />
+            </div>
+            <div class="col-xs-3">
+                <small class="actions">
+                    <span class="glyphicon glyphicon-plus-sign add-choice"></span>
+                    <span class="glyphicon glyphicon-minus-sign text-danger remove-choice"></span>
+                </small>
+            </div>
+            <div class="col-xs-8 col-xs-offset-1 choice-image">
+                <input type="text" class="form-control input-sm" placeholder="{{= polyglot.t('popover.image') }}" value='{{- image }}' name="image[]" />
+            </div>
+        </div>
+        {{ } }}
+    </div>
+    <textarea id="{{= name }}-bulk-choices" class="form-control bulk-choices" style="min-height: 100px; display: none">{{ for ( var i = 0; i < value.length ; i++ ) { }}{{= value[i] }}{{ if (i < value.length - 1) { }}{{= "\n" }}{{ } }}{{ } }}</textarea>
+    <a id="{{= name }}-bulk-editor" href="#" class="btn btn-xs btn-default bulk-editor">{{= polyglot.t('popover.bulkEditor') }}</a>
+    <a id="{{= name }}-bulk-cancel" href="#" class="btn btn-xs btn-danger bulk-cancel" style="display: none">{{= polyglot.t('popover.cancel') }}</a>
+</div>

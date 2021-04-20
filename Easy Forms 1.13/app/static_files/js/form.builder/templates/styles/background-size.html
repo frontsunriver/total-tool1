@@ -1,0 +1,11 @@
+<div class="form-group styles-{{- name }}">
+    <label class="control-label" for="{{- name }}">{{- label }}</label>
+    <input type="text" id="{{- name }}" class="form-control data-list" name="{{- name }}" value="{{- value }}" placeholder="{{- placeholder }}" list="{{- name }}-data-list">
+    <datalist id="{{- name }}-data-list">
+        <option value="auto">auto</option>
+        <option value="cover">cover</option>
+        <option value="contain">contain</option>
+        <option value="100% 100%">100% 100%</option>
+        <option value="100px 100px">100px 100px</option>
+    </datalist>
+</div>

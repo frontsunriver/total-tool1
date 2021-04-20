@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="language" content="en"/>
+    <link rel="shortcut icon" type="image/ico" href="./assets/8f121b9a/favicon/favicon.ico"/>
+    <link rel="shortcut icon" type="image/ico" href="./assets/8f121b9a/favicon/favicon_32.ico"/>
+    <link rel="shortcut icon" type="image/ico" href="./assets/8f121b9a/favicon/favicon_48.ico"/>
+    <link rel="shortcut icon" type="image/ico" href="./assets/8f121b9a/favicon/favicon_96.ico"/>
+    <link rel="shortcut icon" type="image/ico" href="./assets/8f121b9a/favicon/favicon_144.ico"/>
+        <link href="./assets/c7fbc653/css/bootstrap.css" rel="stylesheet">
+<link href="./assets/fcacff94/github-gist.css" rel="stylesheet">
+<link href="./assets/8f121b9a/css/fonts.min.css" rel="stylesheet">
+<link href="./assets/8f121b9a/css/bootstrap.min.css" rel="stylesheet">
+<link href="./assets/8f121b9a/css/api.css" rel="stylesheet">
+<link href="./assets/8f121b9a/css/style.css" rel="stylesheet">
+<script src="./assets/e3a17645/jquery.js"></script>
+<script src="./assets/c7fbc653/js/bootstrap.js"></script>
+<script src="./assets/bbf47a67/jssearch.js"></script>    <title>In-App Analytics - Forms - Easy Forms</title>
+</head>
+<body>
+
+<div class="wrap">
+    <nav id="w368" class="navbar-inverse navbar-fixed-top navbar"><div class="container"><div class="navbar-header"><button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#w368-collapse"><span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span></button><a class="navbar-brand" href="./index.html"><span class="app-name">Easy Forms</span></a></div><div id="w368-collapse" class="collapse navbar-collapse"><ul id="w369" class="navbar-nav nav"><li><a href="./index.html">Documentation</a></li></ul>
+    <div class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+            <input id="searchbox" type="text" class="form-control" placeholder="Search">
+        </div>
+    </div>
+    </div></div></nav>
+    <div id="search-resultbox" style="display: none;" class="modal-content">
+        <ul id="search-results">
+        </ul>
+    </div>
+
+    <div class="container">
+        
+<div class="row">
+    <div class="col-md-2">
+                <div id="navigation" class="list-group"><a class="list-group-item" href="#navigation-360" data-toggle="collapse" data-parent="#navigation">First steps <b class="caret"></b></a><div id="navigation-360" class="submenu panel-collapse collapse"><a class="list-group-item" href="./intro-easy-forms.html">About Easy Forms</a>
+<a class="list-group-item" href="./system-requirements.html">Requirements</a>
+<a class="list-group-item" href="./start-installation.html">Installing Easy Forms</a>
+<a class="list-group-item" href="./start-upgrading.html">Upgrading Easy Forms</a>
+<a class="list-group-item" href="./settings.html">Set Up Easy Forms</a>
+<a class="list-group-item" href="./start-customization.html">Customizing Easy Forms</a>
+<a class="list-group-item" href="./email-setup.html">Email Setup</a>
+<a class="list-group-item" href="./dynamic-content.html">Dynamic Content</a></div>
+<a class="list-group-item active" href="#navigation-361" data-toggle="collapse" data-parent="#navigation">Forms <b class="caret"></b></a><div id="navigation-361" class="submenu panel-collapse collapse in"><a class="list-group-item" href="./form-manager.html">Form Manager</a>
+<a class="list-group-item" href="./form-builder.html">Form Builder</a>
+<a class="list-group-item" href="./theme-designer.html">Theme Designer</a>
+<a class="list-group-item" href="./rule-builder.html">Rule Builder</a>
+<a class="list-group-item" href="./submission-manager.html">Submission Manager</a>
+<a class="list-group-item" href="./form-report-builder.html">Report Builder</a>
+<a class="list-group-item active" href="./form-analytics.html">In-App Analytics</a>
+<a class="list-group-item" href="./form-widget.html">Form Widget</a>
+<a class="list-group-item" href="./form-import-export.html">Import / Export</a></div>
+<a class="list-group-item" href="#navigation-362" data-toggle="collapse" data-parent="#navigation">Templates <b class="caret"></b></a><div id="navigation-362" class="submenu panel-collapse collapse"><a class="list-group-item" href="./template-manager.html">Template Manager</a></div>
+<a class="list-group-item" href="#navigation-363" data-toggle="collapse" data-parent="#navigation">Themes <b class="caret"></b></a><div id="navigation-363" class="submenu panel-collapse collapse"><a class="list-group-item" href="./theme-manager.html">Theme Manager</a></div>
+<a class="list-group-item" href="#navigation-364" data-toggle="collapse" data-parent="#navigation">Users <b class="caret"></b></a><div id="navigation-364" class="submenu panel-collapse collapse"><a class="list-group-item" href="./user-manager.html">User Manager</a>
+<a class="list-group-item" href="./membership.html">Membership</a></div>
+<a class="list-group-item" href="#navigation-365" data-toggle="collapse" data-parent="#navigation">Add-Ons <b class="caret"></b></a><div id="navigation-365" class="submenu panel-collapse collapse"><a class="list-group-item" href="./addon-manager.html">Add-On Manager</a>
+<a class="list-group-item" href="./addon-webhooks.html">WebHooks</a>
+<a class="list-group-item" href="./addon-google-analytics.html">Google Analytics</a></div>
+<a class="list-group-item" href="#navigation-366" data-toggle="collapse" data-parent="#navigation">Premium Add-Ons <b class="caret"></b></a><div id="navigation-366" class="submenu panel-collapse collapse"><a class="list-group-item" href="./addon-acelle-mail.html">Acelle Mail</a>
+<a class="list-group-item" href="./addon-active-campaign.html">Active Campaign</a>
+<a class="list-group-item" href="./addon-adyen.html">Adyen</a>
+<a class="list-group-item" href="./addon-aweber.html">AWeber</a>
+<a class="list-group-item" href="./addon-braintree.html">Braintree</a>
+<a class="list-group-item" href="./addon-campaign-monitor.html">Campaign Monitor</a>
+<a class="list-group-item" href="./addon-cleverreach.html">CleverReach</a>
+<a class="list-group-item" href="./addon-conditional-emails.html">Conditional Emails</a>
+<a class="list-group-item" href="./addon-constant-contact.html">Constant Contact</a>
+<a class="list-group-item" href="./addon-custom-error-messages.html">Custom Error Messages</a>
+<a class="list-group-item" href="./addon-custom-data-validation.html">Data Validation</a>
+<a class="list-group-item" href="./addon-emailoctopus.html">EmailOctopus</a>
+<a class="list-group-item" href="./addon-facebook-login.html">Facebook Login</a>
+<a class="list-group-item" href="./addon-field-encryption.html">Field Encryption</a>
+<a class="list-group-item" href="./addon-google-places-autocomplete.html">Google Places Autocomplete</a>
+<a class="list-group-item" href="./addon-import-submissions.html">Import Submissions</a>
+<a class="list-group-item" href="./addon-insightly.html">Insightly</a>
+<a class="list-group-item" href="./addon-mailchimp.html">MailChimp</a>
+<a class="list-group-item" href="./addon-mailerlite.html">MailerLite</a>
+<a class="list-group-item" href="./addon-mysql.html">MySQL</a>
+<a class="list-group-item" href="./addon-neverbounce.html">NeverBounce</a>
+<a class="list-group-item" href="./addon-nexmo-sms.html">Nexmo SMS</a>
+<a class="list-group-item" href="./addon-paypal.html">PayPal</a>
+<a class="list-group-item" href="./addon-paypal-invoicing.html">PayPal Invoicing</a>
+<a class="list-group-item" href="./addon-pdf.html">PDF</a>
+<a class="list-group-item" href="./addon-plivo.html">Plivo SMS</a>
+<a class="list-group-item" href="./addon-salesforce.html">Salesforce</a>
+<a class="list-group-item" href="./addon-sendinblue.html">SendinBlue</a>
+<a class="list-group-item" href="./addon-stripe.html">Stripe</a>
+<a class="list-group-item" href="./addon-twilio.html">Twilio SMS</a></div>
+<a class="list-group-item" href="#navigation-367" data-toggle="collapse" data-parent="#navigation">Premium Modules <b class="caret"></b></a><div id="navigation-367" class="submenu panel-collapse collapse"><a class="list-group-item" href="./module-subscriptions.html">Subscriptions</a></div></div>    </div>
+    <div class="col-md-9 guide-content" role="main">
+        <h1>In-App Analytics <span id="in-app-analytics"></span><a href="#in-app-analytics" class="hashlink">&para;</a></h1>
+<div class="toc"><ol><li><a href="#introduction">Introduction</a></li>
+<li><a href="#performance-analytics">Performance Analytics</a></li>
+<li><a href="#the-funnel-kpis">The funnel: KPIs</a></li>
+<li><a href="#timeline">Timeline</a></li>
+<li><a href="#conversion-time">Conversion Time</a></li>
+<li><a href="#conversion-time-average">Conversion Time Average</a></li>
+<li><a href="#conversion-vs-abandonment">Conversion vs. Abandonment</a></li>
+<li><a href="#submissions-analytics">Submissions Analytics</a></li>
+<li><a href="#timeline">Timeline</a></li>
+<li><a href="#sessions-before-submission">Sessions before submission</a></li>
+<li><a href="#by-country">By country</a></li>
+<li><a href="#top-cities">Top cities</a></li>
+<li><a href="#submissions-by-hour">Submissions by hour</a></li>
+<li><a href="#top-referrers">Top referrers</a></li>
+<li><a href="#by-type-referrer">By type referrer</a></li>
+<li><a href="#by-device-category">By device category</a></li>
+<li><a href="#by-os">By OS</a></li>
+<li><a href="#by-browser">By Browser</a></li>
+<li><a href="#is-mobile">Is Mobile?</a></li>
+<li><a href="#interacting-with-in-app-analytics">Interacting with In-App Analytics</a></li>
+<li><a href="#enable-disable-in-app-analytics">Enable / Disable In-App Analytics</a></li>
+<li><a href="#enable-disable-in-app-analytics-on-the-fly">Enable / Disable In-App Analytics on the fly</a></li>
+<li><a href="#advanced-settings">Advanced Settings</a></li></ol></div>
+<h2>Introduction <span id="introduction"></span><a href="#introduction" class="hashlink">&para;</a></h2><p>Want to know how well are your forms performing? Well, now you can do it fast and easy with the Easy Forms' In-App Analytics. Get the best results from your forms, improve them to increase your conversion rates and much more. Yes, with only a few steps, you can start tracking your forms and in real time! Try it now and see the difference!</p>
+<p>In-App Analytics offers two kinds of reports, each with a different approach:</p>
+<ul>
+<li>Performance Analytics</li>
+<li>Submissions Analytics</li>
+</ul>
+<h2>Performance Analytics <span id="performance-analytics"></span><a href="#performance-analytics" class="hashlink">&para;</a></h2><p>The Performance Analytics report let you measure how effective is your form in converting inbound visitors.</p>
+<h2>The funnel: KPIs <span id="the-funnel-kpis"></span><a href="#the-funnel-kpis" class="hashlink">&para;</a></h2><p><img src="images/performance-analytics-funnel.png" alt="The funnel" /></p>
+<p>The funnel in this report represents how many visitors make it to the next conversion stage.</p>
+<ul>
+<li><p><strong>Users:</strong> Visitors who landed on the Form.</p>
+<p>  The first step in the funnel is the number of unique users that landed on the form. This number represents the total amount of people that saw the form and serves as a baseline for the rest of the funnel steps.</p>
+</li>
+<li><p><strong>Began Filling:</strong> Users who interacted with the Form.</p>
+<p>  The next step in the funnel shows how many unique users have interacted with the form beside the users that saw your page.</p>
+<p>  An interaction will be considered an action with any of the input fields in the form (attempting to fill them out, change them, or any other). This funnel step tells you how many people made some effort to fill out this form, but weren't able to make it through to the next step (a successful conversion).</p>
+<p>  We recommend looking at this segment very closely, because the visitor that have made it to this step, but not to the next; have displayed interest in the form but due to confusion, form validation errors, or other reasons, decided not to go any further.</p>
+</li>
+<li><p><strong>Conversions:</strong> Users Converted Successfully</p>
+<p>  This number represents the unique users that successfully converted the form by completing every stage of the funnel.</p>
+</li>
+<li><p><strong>Conversion Rate:</strong> This is the average number of conversions per users, shown as a percentage.</p>
+</li>
+</ul>
+<h2>Timeline <span id="timeline"></span><a href="#timeline" class="hashlink">&para;</a></h2><p>|<a href="images/performance-analytics-timeline.png">Timeline</a></p>
+<p>The Timeline represents the evolution of the first three indicators mentioned above through the time.</p>
+<p><img src="images/performance-analytics-dates.png" alt="Dates" /></p>
+<p>These three graphs grouped the number of users, interactions and conversions in that time unit. For example, at a glance we can know that on Mondays we have more conversions than on Fridays.</p>
+<h2>Conversion Time <span id="conversion-time"></span><a href="#conversion-time" class="hashlink">&para;</a></h2><p><img src="images/performance-analytics-conversion-time.png" alt="Conversion Time" /></p>
+<p>The Conversion Time chart shows how much time your average users are spending filling out your form.</p>
+<h2>Conversion Time Average <span id="conversion-time-average"></span><a href="#conversion-time-average" class="hashlink">&para;</a></h2><p><img src="images/performance-analytics-conversion-time-average.png" alt="Conversion Time Average" /></p>
+<p>The Conversion Time Average chart shows the average time per day that users are spending filling out your form.</p>
+<h2>Conversion vs. Abandonment <span id="conversion-vs-abandonment"></span><a href="#conversion-vs-abandonment" class="hashlink">&para;</a></h2><p>This chart makes a comparison between the number of conversions and the number of abandonments.</p>
+<p><img src="images/performance-analytics-conversion-vs-abandonment.png" alt="Conversion vs. Abandonment" /></p>
+<p><strong>Abandonments:</strong> This rate represents the number of unique users that interacted with the form (start filling it) but, for one reason or another, didn't send it.</p>
+<p><strong>Abandonment Rate</strong></p>
+<p><img src="images/performance-analytics-abandonment-rate.png" alt="Abandonment Rate" /></p>
+<p>This chart shows you the percentage of abandonments in the course of time.</p>
+<p><strong>Abandonment Rate:</strong> This is the average number of abandonments per users, shown as a percentage.</p>
+<h2>Submissions Analytics <span id="submissions-analytics"></span><a href="#submissions-analytics" class="hashlink">&para;</a></h2><p>Unlike the previous report, the Submissions Analytics report focuses on submissions and for example, let you know at a glance the number of submissions that are made in time, how many sessions are performed by your users to submit the form or which country and city have made more submissions.</p>
+<h2>Timeline <span id="timeline"></span><a href="#timeline" class="hashlink">&para;</a></h2><p><img src="images/submissions-analytics-timeline.png" alt="Timeline" /></p>
+<p>With the Timeline you can see how many submissions are made each day.</p>
+<h2>Sessions before submission <span id="sessions-before-submission"></span><a href="#sessions-before-submission" class="hashlink">&para;</a></h2><p><img src="images/submissions-analytics-sessions-before-submission.png" alt="Sessions before submissions" /></p>
+<p>Each time a user visits a site, Easy Forms sets a session counter: Set to 1 on the user’s first visit, 2 on the user’s second visit, etc. So with this chart you'll know the average number of visits by users before sending the form. This KPI will help you better understand the behavior of your users</p>
+<h2>By country <span id="by-country"></span><a href="#by-country" class="hashlink">&para;</a></h2><p><img src="images/submissions-analytics-by-country.png" alt="By country" /></p>
+<p>One of the coolest features of In-App Analytics system is that it can show you a geographic map of your form's submissions. Geographic maps can help determine top markets, the effectiveness of offline Campaigns, where to target special offers and advertisements, and more.</p>
+<p>This chart will show you a world map with each country with a shade of blue. For example, some countries (like the USA and Canada) will have a dark shade of blue, which indicates that these are your most important countries in terms of submissions. Other countries may not have any shading at all, which indicates you’ve likely never had a submission from that country.</p>
+<h2>Top cities <span id="top-cities"></span><a href="#top-cities" class="hashlink">&para;</a></h2><p><img src="images/submissions-analytics-top-cities.png" alt="Top cities" /></p>
+<p>Next to the World Map is this Row chart listing the major cities where users have made a submission, as the number of submissions made in each.</p>
+<h2>Submissions by hour <span id="submissions-by-hour"></span><a href="#submissions-by-hour" class="hashlink">&para;</a></h2><p><img src="images/submissions-analytics-by-hour.png" alt="Submissions by hour" /></p>
+<p>With this chart you can know in what time of the day are made more submissions. Some websites will experience peaks of traffic through the day depending on the content they publish and the audience they target. For example, a children’s website will be quiet at night, while a B2B website will be much busier during business hours.</p>
+<blockquote><p><strong>Note:</strong> This chart complements the Performance Analytics' charts (By Year, By Month, By day).</p>
+</blockquote>
+<h2>Top referrers <span id="top-referrers"></span><a href="#top-referrers" class="hashlink">&para;</a></h2><p><img src="images/submissions-analytics-top-referrers.png" alt="Top referrers" /></p>
+<p>With this chart you will see the main domains that send traffic to your form, listed by number of submissions.</p>
+<h2>By type referrer <span id="by-type-referrer"></span><a href="#by-type-referrer" class="hashlink">&para;</a></h2><p>With this chart you can see the number of submissions segmented by the type of reference from which the user came.</p>
+<p>Types:</p>
+<ul>
+<li>search</li>
+<li>social</li>
+<li>internal</li>
+<li>email</li>
+<li>unknown</li>
+<li>invalid</li>
+</ul>
+<h2>By device category <span id="by-device-category"></span><a href="#by-device-category" class="hashlink">&para;</a></h2><p><img src="images/submissions-analytics-by-device-category.png" alt="By device category" /></p>
+<p>With this chart you can see the number of submissions according to the device categories from which was made.</p>
+<p>Categories:</p>
+<ul>
+<li>desktop</li>
+<li>smartphone</li>
+<li>tablet</li>
+<li>feature phone</li>
+<li>console</li>
+<li>TV</li>
+<li>Car browser</li>
+<li>Smart Display</li>
+<li>camera</li>
+<li>portable media player</li>
+<li>phablet</li>
+</ul>
+<h2>By OS <span id="by-os"></span><a href="#by-os" class="hashlink">&para;</a></h2><p>With this chart you can see the number of submissions segmented by the type of operating system.</p>
+<h2>By Browser <span id="by-browser"></span><a href="#by-browser" class="hashlink">&para;</a></h2><p><img src="images/submissions-analytics-by-browser.png" alt="By Browser" /></p>
+<p>With this chart you can see the number of submissions segmented by the Navigator.</p>
+<h2>Is Mobile? <span id="is-mobile"></span><a href="#is-mobile" class="hashlink">&para;</a></h2><p>With this chart you can quickly determine the number of submissions made from a mobile device or not.</p>
+<h2>Interacting with In-App Analytics <span id="interacting-with-in-app-analytics"></span><a href="#interacting-with-in-app-analytics" class="hashlink">&para;</a></h2><p>Keep in mind that the In-App Analytics Charts are naturally data driven and reactive, therefore providing instant feedback on user's interaction.</p>
+<p>Just click on one of the charts and the rest of them will show the segment reporting.</p>
+<p>For example, on the Performance Analytics report click on Monday ('Sun') and you will see how the other charts update their data, including the funnel where you can see the number of users, interactions and conversions performed on Mondays.</p>
+<p><img src="images/interacting-with-in-app-analytics.gif" alt="Interacting with In-App Analytics" /></p>
+<h2>Enable / Disable In-App Analytics <span id="enable-disable-in-app-analytics"></span><a href="#enable-disable-in-app-analytics" class="hashlink">&para;</a></h2><p>Most of the time, you won't have to do anything to enable form analytics. When a form is created the option to track their performance is enabled.</p>
+<p>To disable a form tracking, you must follow these steps:</p>
+<ol>
+<li>Go to the Form Manager.</li>
+<li>Click the Actions button of the Form and then Settings</li>
+<li>Change Analytics from On to Off or vice versa.</li>
+<li>Click Save.</li>
+</ol>
+<h2>Enable / Disable In-App Analytics on the fly <span id="enable-disable-in-app-analytics-on-the-fly"></span><a href="#enable-disable-in-app-analytics-on-the-fly" class="hashlink">&para;</a></h2><p>Depending on the requirements of your site, you may be interested to track your form when certain conditions are met. For these cases you can enable / disable in-app analytics on the fly by adding the configuration option record to the embed code you use to publish the form in your website.</p>
+<p>For disable:</p>
+<p><code>‘record’: 0,</code></p>
+<p>For enable:</p>
+<p><code>‘record’: 1,</code></p>
+<p>This parameter is enabled by default.</p>
+<blockquote><p><strong>Note:</strong> You can read more details in the Form Widget documentation.</p>
+</blockquote>
+<h2>Advanced Settings <span id="advanced-settings"></span><a href="#advanced-settings" class="hashlink">&para;</a></h2><h3>How often should statistics be computed? <span id="how-often-should-statistics-be-computed"></span><a href="#how-often-should-statistics-be-computed" class="hashlink">&para;</a></h3><p>In-App Analytics is updated once a day, so you will see the stats until yesterday. We decided this because multiple queries are made to the database in order to upgrade the data and this could degrade the application's performance (especially in sites with high traffic). However, this can be configured easily.</p>
+<p>For example, follow these steps:</p>
+<ol>
+<li>Open the <code>@app/config/params.php</code> file.</li>
+<li>Change App.Analytics.cronExpression value of @daily by <code>@hourly</code> or <code>* * * * *</code></li>
+<li>Save the file</li>
+</ol>
+<p>With this change, the stats will be updated every hour or every minute.</p>
+<blockquote><p><strong>Note:</strong> Remember, it's important to properly configure your server's cron.</p>
+</blockquote>
+        <div class="toplink"><a href="#" class="h1" title="go to top"><span class="glyphicon glyphicon-arrow-up"></a></div>
+    </div>
+</div>
+
+    </div>
+
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <p class="pull-left">&copy; Easy forms 2015 - 2021</p>
+        <p class="pull-right">
+            <small>Page generated on Thu, 08 Apr 2021 01:38:17 +0000</small>
+        </p>
+    </div>
+</footer>
+
+<script>jQuery(function ($) {
+    var shiftWindow = function () { scrollBy(0, -50) };
+    if (location.hash) setTimeout(shiftWindow, 1);
+    window.addEventListener("hashchange", shiftWindow);
+var element = document.createElement("script");
+element.src = "./jssearch.index.js";
+document.body.appendChild(element);
+
+var searchBox = $('#searchbox');
+
+// search when typing in search field
+searchBox.on("keyup", function(event) {
+    var query = $(this).val();
+
+    if (query == '' || event.which == 27) {
+        $('#search-resultbox').hide();
+        return;
+    } else if (event.which == 13) {
+        var selectedLink = $('#search-resultbox a.selected');
+        if (selectedLink.length != 0) {
+            document.location = selectedLink.attr('href');
+            return;
+        }
+    } else if (event.which == 38 || event.which == 40) {
+        $('#search-resultbox').show();
+
+        var selected = $('#search-resultbox a.selected');
+        if (selected.length == 0) {
+            $('#search-results').find('a').first().addClass('selected');
+        } else {
+            var next;
+            if (event.which == 40) {
+                next = selected.parent().next().find('a').first();
+            } else {
+                next = selected.parent().prev().find('a').first();
+            }
+            if (next.length != 0) {
+                var resultbox = $('#search-results');
+                var position = next.position();
+
+//              TODO scrolling is buggy and jumps around
+//                resultbox.scrollTop(Math.floor(position.top));
+//                console.log(position.top);
+
+                selected.removeClass('selected');
+                next.addClass('selected');
+            }
+        }
+
+        return;
+    }
+    $('#search-resultbox').show();
+    $('#search-results').html('<li><span class="no-results">No results</span></li>');
+
+    var result = jssearch.search(query);
+
+    if (result.length > 0) {
+        var i = 0;
+        var resHtml = '';
+
+        for (var key in result) {
+            if (i++ > 20) {
+                break;
+            }
+            resHtml = resHtml +
+            '<li><a href="' + result[key].file.u.substr(3) +'"><span class="title">' + result[key].file.t + '</span>' +
+            '<span class="description">' + result[key].file.d + '</span></a></li>';
+        }
+        $('#search-results').html(resHtml);
+    }
+});
+
+// hide the search results on ESC
+$(document).on("keyup", function(event) { if (event.which == 27) { $('#search-resultbox').hide(); } });
+// hide search results on click to document
+$(document).bind('click', function (e) { $('#search-resultbox').hide(); });
+// except the following:
+searchBox.bind('click', function(e) { e.stopPropagation(); });
+$('#search-resultbox').bind('click', function(e) { e.stopPropagation(); });
+
+});</script></body>
+</html>

@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="language" content="en"/>
+    <link rel="shortcut icon" type="image/ico" href="./assets/8f121b9a/favicon/favicon.ico"/>
+    <link rel="shortcut icon" type="image/ico" href="./assets/8f121b9a/favicon/favicon_32.ico"/>
+    <link rel="shortcut icon" type="image/ico" href="./assets/8f121b9a/favicon/favicon_48.ico"/>
+    <link rel="shortcut icon" type="image/ico" href="./assets/8f121b9a/favicon/favicon_96.ico"/>
+    <link rel="shortcut icon" type="image/ico" href="./assets/8f121b9a/favicon/favicon_144.ico"/>
+        <link href="./assets/c7fbc653/css/bootstrap.css" rel="stylesheet">
+<link href="./assets/fcacff94/github-gist.css" rel="stylesheet">
+<link href="./assets/8f121b9a/css/fonts.min.css" rel="stylesheet">
+<link href="./assets/8f121b9a/css/bootstrap.min.css" rel="stylesheet">
+<link href="./assets/8f121b9a/css/api.css" rel="stylesheet">
+<link href="./assets/8f121b9a/css/style.css" rel="stylesheet">
+<script src="./assets/e3a17645/jquery.js"></script>
+<script src="./assets/c7fbc653/js/bootstrap.js"></script>
+<script src="./assets/bbf47a67/jssearch.js"></script>    <title>User Manager - Users - Easy Forms</title>
+</head>
+<body>
+
+<div class="wrap">
+    <nav id="w568" class="navbar-inverse navbar-fixed-top navbar"><div class="container"><div class="navbar-header"><button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#w568-collapse"><span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span></button><a class="navbar-brand" href="./index.html"><span class="app-name">Easy Forms</span></a></div><div id="w568-collapse" class="collapse navbar-collapse"><ul id="w569" class="navbar-nav nav"><li><a href="./index.html">Documentation</a></li></ul>
+    <div class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+            <input id="searchbox" type="text" class="form-control" placeholder="Search">
+        </div>
+    </div>
+    </div></div></nav>
+    <div id="search-resultbox" style="display: none;" class="modal-content">
+        <ul id="search-results">
+        </ul>
+    </div>
+
+    <div class="container">
+        
+<div class="row">
+    <div class="col-md-2">
+                <div id="navigation" class="list-group"><a class="list-group-item" href="#navigation-560" data-toggle="collapse" data-parent="#navigation">First steps <b class="caret"></b></a><div id="navigation-560" class="submenu panel-collapse collapse"><a class="list-group-item" href="./intro-easy-forms.html">About Easy Forms</a>
+<a class="list-group-item" href="./system-requirements.html">Requirements</a>
+<a class="list-group-item" href="./start-installation.html">Installing Easy Forms</a>
+<a class="list-group-item" href="./start-upgrading.html">Upgrading Easy Forms</a>
+<a class="list-group-item" href="./settings.html">Set Up Easy Forms</a>
+<a class="list-group-item" href="./start-customization.html">Customizing Easy Forms</a>
+<a class="list-group-item" href="./email-setup.html">Email Setup</a>
+<a class="list-group-item" href="./dynamic-content.html">Dynamic Content</a></div>
+<a class="list-group-item" href="#navigation-561" data-toggle="collapse" data-parent="#navigation">Forms <b class="caret"></b></a><div id="navigation-561" class="submenu panel-collapse collapse"><a class="list-group-item" href="./form-manager.html">Form Manager</a>
+<a class="list-group-item" href="./form-builder.html">Form Builder</a>
+<a class="list-group-item" href="./theme-designer.html">Theme Designer</a>
+<a class="list-group-item" href="./rule-builder.html">Rule Builder</a>
+<a class="list-group-item" href="./submission-manager.html">Submission Manager</a>
+<a class="list-group-item" href="./form-report-builder.html">Report Builder</a>
+<a class="list-group-item" href="./form-analytics.html">In-App Analytics</a>
+<a class="list-group-item" href="./form-widget.html">Form Widget</a>
+<a class="list-group-item" href="./form-import-export.html">Import / Export</a></div>
+<a class="list-group-item" href="#navigation-562" data-toggle="collapse" data-parent="#navigation">Templates <b class="caret"></b></a><div id="navigation-562" class="submenu panel-collapse collapse"><a class="list-group-item" href="./template-manager.html">Template Manager</a></div>
+<a class="list-group-item" href="#navigation-563" data-toggle="collapse" data-parent="#navigation">Themes <b class="caret"></b></a><div id="navigation-563" class="submenu panel-collapse collapse"><a class="list-group-item" href="./theme-manager.html">Theme Manager</a></div>
+<a class="list-group-item active" href="#navigation-564" data-toggle="collapse" data-parent="#navigation">Users <b class="caret"></b></a><div id="navigation-564" class="submenu panel-collapse collapse in"><a class="list-group-item active" href="./user-manager.html">User Manager</a>
+<a class="list-group-item" href="./membership.html">Membership</a></div>
+<a class="list-group-item" href="#navigation-565" data-toggle="collapse" data-parent="#navigation">Add-Ons <b class="caret"></b></a><div id="navigation-565" class="submenu panel-collapse collapse"><a class="list-group-item" href="./addon-manager.html">Add-On Manager</a>
+<a class="list-group-item" href="./addon-webhooks.html">WebHooks</a>
+<a class="list-group-item" href="./addon-google-analytics.html">Google Analytics</a></div>
+<a class="list-group-item" href="#navigation-566" data-toggle="collapse" data-parent="#navigation">Premium Add-Ons <b class="caret"></b></a><div id="navigation-566" class="submenu panel-collapse collapse"><a class="list-group-item" href="./addon-acelle-mail.html">Acelle Mail</a>
+<a class="list-group-item" href="./addon-active-campaign.html">Active Campaign</a>
+<a class="list-group-item" href="./addon-adyen.html">Adyen</a>
+<a class="list-group-item" href="./addon-aweber.html">AWeber</a>
+<a class="list-group-item" href="./addon-braintree.html">Braintree</a>
+<a class="list-group-item" href="./addon-campaign-monitor.html">Campaign Monitor</a>
+<a class="list-group-item" href="./addon-cleverreach.html">CleverReach</a>
+<a class="list-group-item" href="./addon-conditional-emails.html">Conditional Emails</a>
+<a class="list-group-item" href="./addon-constant-contact.html">Constant Contact</a>
+<a class="list-group-item" href="./addon-custom-error-messages.html">Custom Error Messages</a>
+<a class="list-group-item" href="./addon-custom-data-validation.html">Data Validation</a>
+<a class="list-group-item" href="./addon-emailoctopus.html">EmailOctopus</a>
+<a class="list-group-item" href="./addon-facebook-login.html">Facebook Login</a>
+<a class="list-group-item" href="./addon-field-encryption.html">Field Encryption</a>
+<a class="list-group-item" href="./addon-google-places-autocomplete.html">Google Places Autocomplete</a>
+<a class="list-group-item" href="./addon-import-submissions.html">Import Submissions</a>
+<a class="list-group-item" href="./addon-insightly.html">Insightly</a>
+<a class="list-group-item" href="./addon-mailchimp.html">MailChimp</a>
+<a class="list-group-item" href="./addon-mailerlite.html">MailerLite</a>
+<a class="list-group-item" href="./addon-mysql.html">MySQL</a>
+<a class="list-group-item" href="./addon-neverbounce.html">NeverBounce</a>
+<a class="list-group-item" href="./addon-nexmo-sms.html">Nexmo SMS</a>
+<a class="list-group-item" href="./addon-paypal.html">PayPal</a>
+<a class="list-group-item" href="./addon-paypal-invoicing.html">PayPal Invoicing</a>
+<a class="list-group-item" href="./addon-pdf.html">PDF</a>
+<a class="list-group-item" href="./addon-plivo.html">Plivo SMS</a>
+<a class="list-group-item" href="./addon-salesforce.html">Salesforce</a>
+<a class="list-group-item" href="./addon-sendinblue.html">SendinBlue</a>
+<a class="list-group-item" href="./addon-stripe.html">Stripe</a>
+<a class="list-group-item" href="./addon-twilio.html">Twilio SMS</a></div>
+<a class="list-group-item" href="#navigation-567" data-toggle="collapse" data-parent="#navigation">Premium Modules <b class="caret"></b></a><div id="navigation-567" class="submenu panel-collapse collapse"><a class="list-group-item" href="./module-subscriptions.html">Subscriptions</a></div></div>    </div>
+    <div class="col-md-9 guide-content" role="main">
+        <h1>User Manager <span id="user-manager"></span><a href="#user-manager" class="hashlink">&para;</a></h1>
+<div class="toc"><ol><li><a href="#introduction">Introduction</a></li>
+<li><a href="#user-management">User Management</a></li>
+<li><a href="#create-a-user">Create a User</a></li>
+<li><a href="#updating-a-user">Updating a User</a></li>
+<li><a href="#delete-a-user">Delete a User</a></li>
+<li><a href="#confirm-a-user">Confirm a User</a></li>
+<li><a href="#block-a-user">Block a User</a></li>
+<li><a href="#impersonate-a-user">Impersonate a User</a></li>
+<li><a href="#reset-user-password">Reset User Password</a></li>
+<li><a href="#create-update-a-user-role">Create / Update a User Role</a></li>
+<li><a href="#assign-user-roles-to-a-user">Assign User Roles to a User</a></li>
+<li><a href="#assign-user-permissions-to-a-user">Assign User Permissions to a User</a></li></ol></div>
+<h2>Introduction <span id="introduction"></span><a href="#introduction" class="hashlink">&para;</a></h2><p>In Easy Forms, each user is identified with a username, password, and email. Together with other settings, a robust and flexible RBAC system determine which tasks a user can perform, what data he can see, and what he can do with this data.</p>
+<h2>User Management <span id="user-management"></span><a href="#user-management" class="hashlink">&para;</a></h2><p><img src="images/user-manager.png" alt="User Management" /></p>
+<p>As an Easy Forms administrator, you can manage users. The user management includes working with permissions and roles, delegating users, impersonate them and more.</p>
+<ul>
+<li>As an administrator, you perform user management tasks, such as:</li>
+<li>Create and edit users</li>
+<li>Reset passwords</li>
+<li>Grant permissions</li>
+<li>Create and manage other types of users</li>
+<li>Block users</li>
+<li>Assign resource to specific users (forms, templates and themes)</li>
+<li>Delegate user administration tasks to other users</li>
+</ul>
+<p>To perform any action in the application, a user must have permission. There are two ways to get this permission:</p>
+<ul>
+<li>Assigning a user role with the required permissions</li>
+<li>Assigning you the necessary user permissions directly</li>
+</ul>
+<h5>User Roles <span id="user-roles"></span><a href="#user-roles" class="hashlink">&para;</a></h5><p>The user roles enables you to assign specific user permissions to a role and to fine-tune the security, use and administration of the entire application. Users assigned to the role, are granted those permissions as assigned to the role.</p>
+<p>Easy Forms allows you to set up any number of different kinds of 'Roles'. By default, the application comes with two user roles:</p>
+<ul>
+<li><strong>Administrator</strong>: A user with access to the entire application, including site configuration, user management and all forms.</li>
+<li><strong>User</strong>: User with this role can create forms and manage them. Also, they will be able to create their own themes and use them in their forms. Moreover, they can access the Template Manager to create their own templates and use templates created by administrators.</li>
+</ul>
+<p>However, Easy Forms is very flexible, so you can create custom user roles and assign each one different types of granular permissions. Also, if you want, you can assign specific permissions to each user.</p>
+<h5>User Permissions <span id="user-permissions"></span><a href="#user-permissions" class="hashlink">&para;</a></h5><p>The ability to do actions on your app (including viewing forms, editing forms, and changing configuration) is governed by permissions. Each permission has a name (such as View Forms) and covers one action or a small subset of actions. A user must be granted a permission in order to do the corresponding action on the application.</p>
+<h5>Shared Resources <span id="shared-resources"></span><a href="#shared-resources" class="hashlink">&para;</a></h5><p>The application allows you to share resources with other users. For example, you have created a form, and you want another user to be able to access it. This is possible, but not only that. You also have the option of defining the permissions that the user who accesses the shared resource will have. In the example, he will be able to see it, but not to edit it (such as View Shared Forms).</p>
+<h5>User Impersonation <span id="user-impersonation"></span><a href="#user-impersonation" class="hashlink">&para;</a></h5><p>This feature allows you to temporarily sign in as a different user in your application. Users with impersonation permissions can impersonate all other users in the app and take any action according the impersonated user's own permission level.</p>
+<h5>Maximum Password Age <span id="maximum-password-age"></span><a href="#maximum-password-age" class="hashlink">&para;</a></h5><p>This feature determines the period of time (in days) that a password can be used before the system requires the user to change it.</p>
+<h2>Create a User <span id="create-a-user"></span><a href="#create-a-user" class="hashlink">&para;</a></h2><p><img src="images/create-users.png" alt="Create Users - User Management" /></p>
+<p>To create a user, go to the User Manager by clicking on the <em>Users</em> link in the navigation bar. Then, you must perform the following steps:</p>
+<ol>
+<li>Click on the "<em>Create</em>" button and click <em>New User</em></li>
+<li>Fill the account information:<ul>
+<li>Email</li>
+<li>Username</li>
+<li>Password</li>
+</ul>
+</li>
+<li>The user will receive an email notification.</li>
+<li>After that, if you want, you can complete the profile details:<ul>
+<li>Name</li>
+<li>Email (Public)</li>
+<li>Location</li>
+<li>Website</li>
+<li>Gravatar email</li>
+<li>Biography</li>
+</ul>
+</li>
+<li>Click on the "<em>Save</em>" button.</li>
+<li>After that, you can click the "<em>Assignments</em>" link to assign one or multiple roles or permissions to the user.</li>
+</ol>
+<h2>Updating a User <span id="updating-a-user"></span><a href="#updating-a-user" class="hashlink">&para;</a></h2><p><img src="images/update-user-account.png" alt="Update Users - Impersonate Users" /></p>
+<p>To update a user go to the User Manager by clicking on the <em>Users</em> link in the navigation bar. Then, you must perform the following steps:</p>
+<ol>
+<li>Click the <em>Actions</em> button of the User to edit.</li>
+<li>Press <em>Update</em>.</li>
+<li>Change the account information.</li>
+<li>Modify the profile information.</li>
+<li>Update the <em>assignments</em>.</li>
+<li>Click the <em>Update</em> button. </li>
+</ol>
+<h2>Delete a User <span id="delete-a-user"></span><a href="#delete-a-user" class="hashlink">&para;</a></h2><p>To delete a user go to the User Manager by clicking on the <em>Users</em> link in the navigation bar. Then, you must perform the following steps:</p>
+<ol>
+<li>Click the <em>Actions</em> button of the User to edit.</li>
+<li>Press <em>Delete</em>.</li>
+<li>A pop-up window will appear asking for confirmation. You must click <em>OK</em>.</li>
+<li>After reloading the page, the User will be deleted.</li>
+</ol>
+<blockquote><p><strong>Note:</strong> Please keep in mind that all user information will be deleted and cannot be recovered.</p>
+</blockquote>
+<h2>Confirm a User <span id="confirm-a-user"></span><a href="#confirm-a-user" class="hashlink">&para;</a></h2><p>After the registration process, a User must confirm his email address. If you want to omit this step, you can confirm a user manually.</p>
+<p>To confirm a user go to the User Manager by clicking on the <em>Users</em> link in the navigation bar. Then, click the “<em>Confirm</em>” button you can see in the GridView. </p>
+<h2>Block a User <span id="block-a-user"></span><a href="#block-a-user" class="hashlink">&para;</a></h2><p>To prevent a user from accessing the application, you must go to the User Manager by clicking on the <em>Users</em> link in the navigation bar. Then, click the "<em>Block</em>" button of the User you are going to block.</p>
+<h2>Impersonate a User <span id="impersonate-a-user"></span><a href="#impersonate-a-user" class="hashlink">&para;</a></h2><p>To temporarily sign in as a different user, you must go to the User Manager by clicking on the Users link in the navigation bar. Then, you must perform the following steps:</p>
+<ol>
+<li>Click the <em>Actions</em> button of the User to impersonate.</li>
+<li>Press <em>Impersonate User</em></li>
+<li>A pop-up window will appear asking for confirmation. You must click <em>OK</em>.</li>
+</ol>
+<p><img src="images/impersonate-users.png" alt="Impersonate Users - Impersonate Users" /></p>
+<p>After reloading the page, you will be redirected to the Dashboard page, and a new link will appear in the navigation menu (above the “Log out” button) that will allow you to return to your personal account. </p>
+<p><img src="images/impersonate-users-switch-back.png" alt="Switch Back - User Management" /></p>
+<h2>Reset User Password <span id="reset-user-password"></span><a href="#reset-user-password" class="hashlink">&para;</a></h2><p>To reset a user password, you must go to the User Manager by clicking on the Users link in the navigation bar. Then, you must perform the following steps:</p>
+<ol>
+<li>Click the Actions button of the User to reset his password.</li>
+<li>Press Reset Password</li>
+<li>A pop-up window will appear asking for confirmation. You must click OK.</li>
+<li>A password recovery email will be sent to this user.</li>
+</ol>
+<h2>Create / Update a User Role <span id="create-update-a-user-role"></span><a href="#create-update-a-user-role" class="hashlink">&para;</a></h2><p>To create a user role, you must go to the User Manager by clicking on the Users link in the navigation bar. Then, you must perform the following steps:</p>
+<ol>
+<li>Click on the Create button and click New Role</li>
+<li>Fill the following information:<ul>
+<li>Name: Eg. customer</li>
+<li>Description: EG. Role: Customer</li>
+<li>Rule: Keep it empty. This feature is only useful for developers.</li>
+<li>Children: Select the user roles from which you want to inherit their permissions or the specific user permissions for this role.</li>
+</ul>
+</li>
+<li>Click the Save button</li>
+</ol>
+<p><img src="images/create-user-roles.png" alt="Create User Roles - User Management" /></p>
+<p>If you want to update the user role, go to the User Manager by clicking on the Users link in the navigation bar. Then click Roles, then Actions and press the <em>Update</em> button.</p>
+<h2>Assign User Roles to a User <span id="assign-user-roles-to-a-user"></span><a href="#assign-user-roles-to-a-user" class="hashlink">&para;</a></h2><p>To assign a user role to a user, follow the next steps:</p>
+<ul>
+<li>Click the Users link in the navigation bar</li>
+<li>Click the Actions button</li>
+<li>Click Update</li>
+<li>Click Assignments</li>
+<li>In Items, select the user role</li>
+<li>Click Save</li>
+</ul>
+<p><img src="images/assign-user-roles.png" alt="Assign User Roles - User Management" /></p>
+<h2>Assign User Permissions to a User <span id="assign-user-permissions-to-a-user"></span><a href="#assign-user-permissions-to-a-user" class="hashlink">&para;</a></h2><p>To assign one or multiple user permissions to a user, follow the next steps:</p>
+<ul>
+<li>Click the Users link in the navigation bar</li>
+<li>Click the Actions button</li>
+<li>Click Update</li>
+<li>Click Assignments</li>
+<li>In Items, select the user permissions</li>
+<li>Click Save</li>
+</ul>
+        <div class="toplink"><a href="#" class="h1" title="go to top"><span class="glyphicon glyphicon-arrow-up"></a></div>
+    </div>
+</div>
+
+    </div>
+
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <p class="pull-left">&copy; Easy forms 2015 - 2021</p>
+        <p class="pull-right">
+            <small>Page generated on Thu, 08 Apr 2021 01:38:17 +0000</small>
+        </p>
+    </div>
+</footer>
+
+<script>jQuery(function ($) {
+    var shiftWindow = function () { scrollBy(0, -50) };
+    if (location.hash) setTimeout(shiftWindow, 1);
+    window.addEventListener("hashchange", shiftWindow);
+var element = document.createElement("script");
+element.src = "./jssearch.index.js";
+document.body.appendChild(element);
+
+var searchBox = $('#searchbox');
+
+// search when typing in search field
+searchBox.on("keyup", function(event) {
+    var query = $(this).val();
+
+    if (query == '' || event.which == 27) {
+        $('#search-resultbox').hide();
+        return;
+    } else if (event.which == 13) {
+        var selectedLink = $('#search-resultbox a.selected');
+        if (selectedLink.length != 0) {
+            document.location = selectedLink.attr('href');
+            return;
+        }
+    } else if (event.which == 38 || event.which == 40) {
+        $('#search-resultbox').show();
+
+        var selected = $('#search-resultbox a.selected');
+        if (selected.length == 0) {
+            $('#search-results').find('a').first().addClass('selected');
+        } else {
+            var next;
+            if (event.which == 40) {
+                next = selected.parent().next().find('a').first();
+            } else {
+                next = selected.parent().prev().find('a').first();
+            }
+            if (next.length != 0) {
+                var resultbox = $('#search-results');
+                var position = next.position();
+
+//              TODO scrolling is buggy and jumps around
+//                resultbox.scrollTop(Math.floor(position.top));
+//                console.log(position.top);
+
+                selected.removeClass('selected');
+                next.addClass('selected');
+            }
+        }
+
+        return;
+    }
+    $('#search-resultbox').show();
+    $('#search-results').html('<li><span class="no-results">No results</span></li>');
+
+    var result = jssearch.search(query);
+
+    if (result.length > 0) {
+        var i = 0;
+        var resHtml = '';
+
+        for (var key in result) {
+            if (i++ > 20) {
+                break;
+            }
+            resHtml = resHtml +
+            '<li><a href="' + result[key].file.u.substr(3) +'"><span class="title">' + result[key].file.t + '</span>' +
+            '<span class="description">' + result[key].file.d + '</span></a></li>';
+        }
+        $('#search-results').html(resHtml);
+    }
+});
+
+// hide the search results on ESC
+$(document).on("keyup", function(event) { if (event.which == 27) { $('#search-resultbox').hide(); } });
+// hide search results on click to document
+$(document).bind('click', function (e) { $('#search-resultbox').hide(); });
+// except the following:
+searchBox.bind('click', function(e) { e.stopPropagation(); });
+$('#search-resultbox').bind('click', function(e) { e.stopPropagation(); });
+
+});</script></body>
+</html>

@@ -1,0 +1,45 @@
+<!-- Matrix -->
+{{ if (field.containerClass) { }}<div class="{{= field.containerClass }}">{{ } }}
+    <div class="form-group{{ if(field.required) { }} required-control{{ } }}{{ if(field.inline) { }} inline-control{{ } }}">
+        <table id="{{= field.id }}" class="table-matrix {{= field.tableClass }}" data-matrix-type="{{= field.inputType }}">
+            {{ if (field.label) { }}<caption>
+                <label for="{{= field.id }}"{{ if (field.labelClass) { }} class="{{= field.labelClass }}"{{ } }}>{{= field.label }}</label>{{ if (field.helpText && field.helpTextPlacement === "above") { }}
+                <p class="help-block">{{= field.helpText }}</p>{{ } }}
+            </caption>{{ } }}
+            <thead>
+            <tr>
+                <th{{ if (field.inline) { }} style="display:none"{{ } }}>&nbsp;</th>{{ _.each(field.answers, function(answer, i) { var items = answer.split("|"); var last = items[items.length-1]; var selected = last==="selected"; answer = items[0]; }}
+                <th class="text-center">{{= answer }}</th>{{ }) }}
+            </tr>
+            </thead>
+            <tbody>{{ _.each(field.questions, function(question, i) { var items = question.split("|"); var last = items[items.length-1]; var selected = last==="selected"; question = items[0]; }}
+            <tr>
+                <th{{ if (field.inline) { }} style="display:none"{{ } }}>
+                    <label for="{{= field.id+'_'+i }}">{{= question }}</label>
+                </th>{{ _.each(field.answers, function(answer, a_i) { var items = answer.split("|"); var last = items[items.length-1]; var selected = (last==="selected"||last==="select"|last==="check"); answer = items[0]; var value = ((items.length >= 3) || (items.length == 2) && !selected) ? items[1] : items[0]; var figure = ((items.length >= 4) || (items.length == 3 && !checked)) ? items[2] : false; }}
+                <td class="text-center {{= field.id+'_q_'+(i+1) }} {{= field.id+'_a_'+(a_i+1) }}" title="{{= answer }}">{{ if (field.inputType === "select") { }}
+                    <select name="{{= field.id+'_'+i+'_'+a_i }}[]" id="{{= field.id+'_'+i+'_'+a_i }}" data-label="{{- question.replace(/(<([^>]+)>)/ig,'') }} > {{- answer.replace(/(<([^>]+)>)/ig,'') }}" data-matrix-id="{{= field.id }}" data-matrix-label="{{= field.label }}" data-matrix-question="{{- question.replace(/(<([^>]+)>)/ig,'') }}" data-matrix-answer="{{- answer.replace(/(<([^>]+)>)/ig,'') }}" class="{{- field.cssClass }}"{{ if(field.alias) { }} data-alias="{{= field.alias+'_'+i+'_'+a_i }}"{{ } }}{{ if(field.required){ }} required{{ } }}{{ if(field.readOnly) { }} readOnly{{ } }}{{ if(field.disabled) { }} disabled{{ } }}{{ if (field.multiple) { }} multiple{{ } }} >{{ if(field.placeholder) { }}
+                        <option value="" disabled selected>{{= field.placeholder }}</option>{{ } }}{{ var options = value.split('/'); _.each(options, function(option) { }}
+                        <option value="{{- option.replace(/(<([^>]+)>)/ig,'') }}">{{= option }}</option>{{ }); }}
+                    </select>{{ } else if (field.inputType === "radio") { }}
+                    <div class="radio">
+                        <span id="{{= field.id+'_'+i }}"></span>
+                        <input type="{{= field.inputType }}" name="{{= field.id+'_'+i }}" id="{{= field.id+'_'+i+'_'+a_i }}" data-matrix-id="{{= field.id }}" data-matrix-label="{{= field.label }}" data-matrix-question="{{- question.replace(/(<([^>]+)>)/ig,'') }}" data-matrix-answer="{{- answer.replace(/(<([^>]+)>)/ig,'') }}" value="{{- value.replace(/(<([^>]+)>)/ig,'') }}"{{ if(field.alias) { }} data-alias="{{= field.alias+'_'+i }}"{{ } }}{{ if(field.required){ }} required{{ } }}{{ if(field.readOnly) { }} readOnly{{ } }}{{ if(field.disabled) {}} disabled{{ } }}{{ if(selected) { }} checked{{ } }}>
+                        <label for="{{= field.id+'_'+i+'_'+a_i }}"></label>
+                    </div>{{ } else if (field.inputType === "checkbox") { }}
+                    <div class="checkbox">
+                        <span id="{{= field.id+'_'+i }}"></span>
+                        <input type="{{= field.inputType }}" name="{{= field.id+'_'+i }}[]" id="{{= field.id+'_'+i+'_'+a_i }}" data-matrix-id="{{= field.id }}" data-matrix-label="{{= field.label }}" data-matrix-question="{{- question.replace(/(<([^>]+)>)/ig,'') }}" data-matrix-answer="{{- answer.replace(/(<([^>]+)>)/ig,'') }}" value="{{- value.replace(/(<([^>]+)>)/ig,'') }}"{{ if(field.alias) { }} data-alias="{{= field.alias+'_'+i+'_'+a_i }}"{{ } }}{{ if(field.required){ }} data-required="true"{{ } }}{{ if(field.readOnly) { }} readOnly{{ } }}{{ if(field.disabled) {}} disabled{{ } }}{{ if(selected) { }} checked{{ } }}>
+                        <label for="{{= field.id+'_'+i+'_'+a_i }}"></label>
+                    </div>{{ } else if (field.inputType === "textarea") { }}
+                    <textarea id="{{= field.id+'_'+i+'_'+a_i }}" name="{{= field.id+'_'+i+'_'+a_i }}" data-label="{{- question.replace(/(<([^>]+)>)/ig,'') }} > {{- answer.replace(/(<([^>]+)>)/ig,'') }}" data-matrix-id="{{= field.id }}" data-matrix-label="{{= field.label.replace(/(<([^>]+)>)/ig,'') }}" data-matrix-question="{{- question.replace(/(<([^>]+)>)/ig,'') }}" data-matrix-answer="{{- answer.replace(/(<([^>]+)>)/ig,'') }}"{{ if(field.alias) { }} data-alias="{{= field.alias+'_'+i+'_'+a_i }}"{{ } }}{{ if (field.minlength) { }} minlength="{{= field.minlength }}"{{ } }}{{ if (field.maxlength) { }} maxlength="{{= field.maxlength }}"{{ } }}{{ if (field.cssClass) { }} class="{{= field.cssClass }}"{{ } }}{{ if (field.placeholder) { }}placeholder="{{= field.placeholder }}" {{ } }}{{ if(field.required){ }}required {{ } }}{{ if(field.readOnly) { }}readOnly {{ } }}{{ if(field.disabled) { }}disabled {{ } }}>{{ if (value !== answer) { }}{{= value }}{{ } }}</textarea>
+                    {{ } else { }}
+                    <input type="{{= field.inputType }}" id="{{= field.id+'_'+i+'_'+a_i }}" name="{{= field.id+'_'+i+'_'+a_i }}" data-label="{{- question.replace(/(<([^>]+)>)/ig,'') }} > {{- answer.replace(/(<([^>]+)>)/ig,'') }}" data-matrix-id="{{= field.id }}" data-matrix-label="{{= field.label.replace(/(<([^>]+)>)/ig,'') }}" data-matrix-question="{{- question.replace(/(<([^>]+)>)/ig,'') }}" data-matrix-answer="{{- answer.replace(/(<([^>]+)>)/ig,'') }}"{{ if(field.alias) { }} data-alias="{{= field.alias+'_'+i+'_'+a_i }}"{{ } }}{{ if (value !== answer) { }} value="{{= value }}"{{ } }}{{ if (field.minlength) { }} minlength="{{= field.minlength }}"{{ } }}{{ if (field.maxlength) { }} maxlength="{{= field.maxlength }}"{{ } }}{{ if (field.cssClass) { }} class="{{= field.cssClass }}"{{ } }}{{ if (field.min) { }} min="{{= field.min }}"{{ } }}{{ if (field.max) { }} max="{{= field.max }}"{{ } }}{{ if (field.step) { }} step="{{= field.step }}"{{ } }}{{ if (field.pattern) { }} pattern="{{= field.pattern }}"{{ } }}{{ if (field.placeholder) { }} placeholder="{{- field.placeholder }}"{{ } }}{{ if(field.required){ }} required{{ } }}{{ if(field.readOnly) { }} readOnly{{ } }}{{ if(field.disabled) { }} disabled{{ } }}>
+                    {{ } }}
+                </td>{{ }) }}
+            </tr>{{ }) }}
+            </tbody>
+        </table>
+        {{ if (field.helpText && field.helpTextPlacement === "below") { }}<p class="help-block">{{= field.helpText }}</p>{{ } }}
+    </div>
+{{ if (field.containerClass) { }}</div>{{ } }}

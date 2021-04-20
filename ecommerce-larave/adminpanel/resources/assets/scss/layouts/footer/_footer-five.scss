@@ -1,0 +1,103 @@
+// ...........footer.............
+
+$bg-footer: #fff;
+
+$bg-social: $primary;
+
+.footer-five{
+    padding: 65px 0 0 0;
+    margin-top: 60px;
+    background-color:$bg-footer;
+    color: color-yiq($bg-footer);
+
+    .links-list{
+        li{
+            list-style-type: none;
+            margin-bottom: 8px;
+            a{
+                display: block;
+                font-size: $font-size-base;
+                color: color-yiq($bg-footer);
+                &:hover {
+                    color: $secondary;
+                }
+            }
+        }
+    }
+    
+    .socials {
+        display: flex;
+        padding: 0;
+        list-style: none;
+        li{
+            font-size: 1.625rem;
+            width: auto;
+            margin-right: 15px;
+            list-style: none;
+            a {
+                color: #6c757d;
+                transition: 0.4s;
+            }
+            
+        }
+    }  
+    
+    .mail {
+        padding: 0;
+        list-style: none;
+        li{
+            font-size: 15px;
+            width: auto;
+           
+            list-style: none;
+            a {
+                color: #6c757d;
+                transition: 0.4s;
+                .fas{
+                    margin-right: 10px;
+                }
+            }
+            
+        }
+    }  
+
+    figure{
+        margin-bottom: 1.5rem;
+    }  
+    p{
+        margin-bottom: 1.5rem;
+    }
+    .single-footer{
+        h5{
+            font-family: $font-family-base-bold;
+            font-weight: $font-weight-bold;
+            margin-bottom: 30px;
+        }
+    }
+    .copyright-content {
+        background-color: #dbdbdb;
+        color: #212529;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-top: 20px;
+        .footer-info {
+            text-align: center;
+        }
+    }
+}
+.footer-five .socials li .fb:hover {
+    color: #3b5998;
+}
+.footer-five .socials li .tw:hover {
+    color: #00acee;
+}
+.footer-five .socials li .sk:hover {
+    color: #00aff0;
+}
+.footer-five .socials li .In:hover {
+    color: #0077B5;
+}
+.footer-five .socials li .ig:hover {
+    color: #3f729b;
+}
+

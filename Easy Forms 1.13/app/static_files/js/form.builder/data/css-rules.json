@@ -1,0 +1,246 @@
+[
+  {
+    "name": "global",
+    "selector": "#canvas"
+  },
+  {
+    "name": "form",
+    "selector": "#canvas form"
+  },
+  {
+    "name": "form-group",
+    "selector": "#canvas form .form-group"
+  },
+  {
+    "name": "form-control",
+    "selector": "#canvas form .form-control"
+  },
+  {
+    "name": "form-control-focus",
+    "selector": "#canvas form .form-control:focus"
+  },
+  {
+    "name": "button-primary",
+    "selector": "#canvas form .btn.btn-primary"
+  },
+  {
+    "name": "button-primary-hover",
+    "selector": "#canvas form .btn.btn-primary:hover, #canvas form .btn.btn-primary:active, #canvas form .btn.btn-primary:focus"
+  },
+  {
+    "name": "button-default",
+    "selector": "#canvas form .btn.btn-default"
+  },
+  {
+    "name": "button-default-hover",
+    "selector": "#canvas form .btn.btn-default:hover, #canvas form .btn.btn-default:active, #canvas form .btn.btn-default:focus"
+  },
+  {
+    "name": "button-warning",
+    "selector": "#canvas form .btn.btn-warning"
+  },
+  {
+    "name": "button-warning-hover",
+    "selector": "#canvas form .btn.btn-warning:hover, #canvas form .btn.btn-warning:active, #canvas form .btn.btn-warning:focus"
+  },
+  {
+    "name": "button-danger",
+    "selector": "#canvas form .btn.btn-danger"
+  },
+  {
+    "name": "button-danger-hover",
+    "selector": "#canvas form .btn.btn-danger:hover, #canvas form .btn.btn-danger:active, #canvas form .btn.btn-danger:focus"
+  },
+  {
+    "name": "button-info",
+    "selector": "#canvas form .btn.btn-danger"
+  },
+  {
+    "name": "button-info-hover",
+    "selector": "#canvas form .btn.btn-info:hover, #canvas form .btn.btn-info:active, #canvas form .btn.btn-info:focus"
+  },
+  {
+    "name": "control-label",
+    "selector": "#canvas form .control-label"
+  },
+  {
+    "name": "placeholder",
+    "selector": "#canvas form ::placeholder"
+  },
+  {
+    "name": "heading",
+    "selector": "#canvas form h1, #canvas form h2, #canvas form h3, #canvas form h4, #canvas form h5, #canvas form h6, #canvas form .legend"
+  },
+  {
+    "name": "paragraph",
+    "selector": "#canvas form p"
+  },
+  {
+    "name": "help-block",
+    "selector": "#canvas form .help-block"
+  },
+  {
+    "name": "link",
+    "selector": "#canvas form a"
+  },
+  {
+    "name": "link-hover",
+    "selector": "#canvas form a:hover"
+  },
+  {
+    "name": "step",
+    "selector": "#canvas form .steps .step .stage, #canvas form .steps .step:before, #canvas form .steps .step:after"
+  },
+  {
+    "name": "step-stage",
+    "selector": "#canvas form .steps .step .stage"
+  },
+  {
+    "name": "step-connection",
+    "selector": "#canvas form .steps .step:after, #canvas form .steps .step:before"
+  },
+  {
+    "name": "step-current",
+    "selector": "#canvas form .steps .step.current .stage, #canvas form .steps .step.current:after, #canvas form .steps .step.current:before"
+  },
+  {
+    "name": "step-success",
+    "selector": "#canvas form .steps .step.success .stage, #canvas form .steps .step.success:after, #canvas form .steps .step.success:before"
+  },
+  {
+    "name": "step-title",
+    "selector": "#canvas form .steps .step .title"
+  },
+  {
+    "name": "step-current-title",
+    "selector": "#canvas form .steps .step.current .title"
+  },
+  {
+    "name": "step-success-title",
+    "selector": "#canvas form .steps .step.success .title"
+  },
+  {
+    "name": "alert",
+    "selector": ".alert"
+  },
+  {
+    "name": "alert-success",
+    "selector": ".alert-success"
+  },
+  {
+    "name": "alert-danger",
+    "selector": ".alert-danger"
+  },
+  {
+    "name": "alert-info",
+    "selector": ".alert-info"
+  },
+  {
+    "name": "alert-warning",
+    "selector": ".alert-warning"
+  },
+  {
+    "name": "validation-error-field",
+    "selector": ".has-error .form-control"
+  },
+  {
+    "name": "validation-error-text",
+    "selector": ".has-error .help-block, .has-error .control-label, .has-error .radio, .has-error .checkbox, .has-error .radio-inline, .has-error .checkbox-inline, .has-error.radio label, .has-error.checkbox label, .has-error.radio-inline label, .has-error.checkbox-inline label"
+  },
+  {
+    "name": "validation-symbol-asterisk",
+    "selector": ".required .control-label:after, .required-control .control-label:after"
+  },
+  {
+    "name": "recaptcha",
+    "selector": "#recaptcha, .g-recaptcha"
+  },
+  {
+    "name": "signature-pad",
+    "selector": ".signature-pad"
+  },
+  {
+    "name": "signature-canvas",
+    "selector": ".signature-pad canvas"
+  },
+  {
+    "name": "checkbox-input",
+    "selector": "input[type=checkbox]"
+  },
+  {
+    "name": "checkbox-inline",
+    "selector": ".checkbox-inline"
+  },
+  {
+    "name": "radio-input",
+    "selector": "input[type=radio]"
+  },
+  {
+    "name": "radio-inline",
+    "selector": ".radio-inline"
+  },
+  {
+    "name": "custom-control-checkbox-before",
+    "selector": ".custom-control .checkbox label::before, .custom-control .inline-control-checkbox label::before"
+  },
+  {
+    "name": "custom-control-checkbox-after",
+    "selector": ".custom-control .checkbox label::after, .custom-control .inline-control-checkbox label::after"
+  },
+  {
+    "name": "custom-control-checkbox-checked-before",
+    "selector": ".custom-control .checkbox input:checked+label::before, .custom-control .inline-control-checkbox input:checked+label::before"
+  },
+  {
+    "name": "custom-control-checkbox-checked-after",
+    "selector": ".custom-control .checkbox input:checked+label::after, .custom-control .inline-control-checkbox input:checked+label::after"
+  },
+  {
+    "name": "custom-control-radio-before",
+    "selector": ".custom-control .radio label::before, .custom-control .inline-control-radio label::before"
+  },
+  {
+    "name": "custom-control-radio-after",
+    "selector": ".custom-control .radio label::after, .custom-control .inline-control-radio label::after"
+  },
+  {
+    "name": "custom-control-radio-checked-before",
+    "selector": ".custom-control .radio input:checked+label::before, .custom-control .inline-control-radio input:checked+label::before"
+  },
+  {
+    "name": "custom-control-radio-checked-after",
+    "selector": ".custom-control .radio input:checked+label::after, .custom-control .inline-control-radio input:checked+label::after"
+  },
+  {
+    "name": "button-prev",
+    "selector": ".btn.prev"
+  },
+  {
+    "name": "button-prev-hover",
+    "selector": "#canvas form .btn.prev:hover, #canvas form .btn.prev:active, #canvas form .btn.prev:focus"
+  },
+  {
+    "name": "button-next",
+    "selector": ".btn.next"
+  },
+  {
+    "name": "button-next-hover",
+    "selector": "#canvas form .btn.next:hover, #canvas form .btn.next:active, #canvas form .btn.next:focus"
+  },
+  {
+    "name": "progress-bar-container",
+    "selector": ".progress"
+  },
+  {
+    "name": "progress-bar",
+    "selector": ".progress-bar"
+  },
+  {
+    "name": "table",
+    "selector": ".table"
+  },
+  {
+    "name": "well",
+    "selector": ".well"
+  }
+]

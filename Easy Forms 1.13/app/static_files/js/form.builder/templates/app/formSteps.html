@@ -1,0 +1,14 @@
+{{ if( steps && !noSteps) { }}{{ if( !progressBar ) { }}
+
+<!-- Steps -->
+<div class="steps">{{ _.each(steps, function(step, index, list){ var items = step.split("|"); var title = items[0]; var stage = items[1]; }}
+    <div class="step{{ if(noStages) { }} no-stage{{ } }}{{ if(noTitles) { }} no-title{{ } }}{{ if(index===0) { }} current{{ } }}">
+        {{ if (!noStages) { }}<div class="stage">{{if (stage) { if (stage.indexOf("icon") >= 0) { }}<span class="glyphicon glyph{{= stage }}"></span>{{ } else { }}{{= stage }}{{ } }}{{ } else { }}{{= index + 1 }}{{ } }}</div>{{ } }} {{ if (!noTitles) { }}<div class="title">{{= title }}</div>{{ } }}
+    </div>{{ }); }}
+</div>{{ } else { }}
+
+<!-- Progress Bar -->
+<div class="progress">
+    <div class="progress-bar" {{ if(!noTitles) { }} data-titles="{{= steps }}"{{ } }}>{{ if(!noStages) { }}<span class="percent">0%</span>{{ } }}{{ if(!noTitles) { }} <span class="title">{{= _.first(steps) }}</span>{{ } }}</div>
+</div>{{ } }}
+{{ } }}

@@ -1,0 +1,1622 @@
+<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+    <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingGlobal">
+            <h4 class="panel-title">
+                <a class="ef-toggle" role="button" data-toggle="collapse" data-parent="" href="#collapseGlobal" aria-expanded="true" aria-controls="collapseGlobal">
+                    {{= polyglot.t('style.global') }}
+                    <span class="ef-icon glyphicon glyphicon-chevron-up"></span>
+                    <span class="ef-icon glyphicon glyphicon-chevron-down"></span>
+                </a>
+            </h4>
+        </div>
+        <div id="collapseGlobal" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingGlobal">
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h6 class="sub-title">
+                            {{= polyglot.t('style.background') }}
+                        </h6>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div id="global-background-color-wrapper"></div>
+                    </div>
+                    <div class="col-xs-12">
+                        <div id="global-background-image-wrapper"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h6 class="sub-title">
+                            {{= polyglot.t('style.text') }}
+                        </h6>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div id="global-font-family-wrapper"></div>
+                    </div>
+                    <div class="col-xs-12">
+                        <div id="global-color-wrapper"></div>
+                    </div>
+                    <div class="col-xs-12">
+                        <div id="global-text-align-wrapper"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h6 class="sub-title">
+                            {{= polyglot.t('style.spacing') }}
+                        </h6>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-6">
+                        <div id="global-margin-wrapper"></div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div id="global-padding-wrapper"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingForm">
+            <h4 class="panel-title">
+                <a class="ef-toggle collapsed" role="button" data-toggle="collapse" data-parent="" href="#collapseForm" aria-expanded="false" aria-controls="collapseForm">
+                    {{= polyglot.t('style.form') }}
+                    <span class="ef-icon glyphicon glyphicon-chevron-up"></span>
+                    <span class="ef-icon glyphicon glyphicon-chevron-down"></span>
+                </a>
+            </h4>
+        </div>
+        <div id="collapseForm" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingForm">
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h6 class="sub-title">
+                            {{= polyglot.t('style.background') }}
+                        </h6>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div id="form-background-color-wrapper"></div>
+                    </div>
+                    <div class="col-xs-12">
+                        <div id="form-background-image-wrapper"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h6 class="sub-title">
+                            {{= polyglot.t('style.border') }}
+                        </h6>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-6">
+                        <div id="form-border-style-wrapper"></div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div id="form-border-width-wrapper"></div>
+                    </div>
+                    <div class="col-xs-12">
+                        <div id="form-border-color-wrapper"></div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div id="form-border-radius-wrapper"></div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div id="form-box-shadow-wrapper"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h6 class="sub-title">
+                            {{= polyglot.t('style.spacing') }}
+                        </h6>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-6">
+                        <div id="form-margin-wrapper"></div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div id="form-padding-wrapper"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h6 class="sub-title">
+                            {{= polyglot.t('style.extra') }}
+                        </h6>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-6">
+                        <div id="form-width-wrapper"></div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div id="form-text-align-wrapper"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingFormGroup">
+            <h4 class="panel-title">
+                <a class="ef-toggle collapsed" role="button" data-toggle="collapse" data-parent="" href="#collapseFormGroup" aria-expanded="false" aria-controls="collapseFormGroup">
+                    {{= polyglot.t('style.formGroup') }}
+                    <span class="ef-icon glyphicon glyphicon-chevron-up"></span>
+                    <span class="ef-icon glyphicon glyphicon-chevron-down"></span>
+                </a>
+            </h4>
+        </div>
+        <div id="collapseFormGroup" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFormGroup">
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h6 class="sub-title">
+                            {{= polyglot.t('style.background') }}
+                        </h6>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div id="form-group-background-color-wrapper"></div>
+                    </div>
+                    <div class="col-xs-12">
+                        <div id="form-group-background-image-wrapper"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h6 class="sub-title">
+                            {{= polyglot.t('style.border') }}
+                        </h6>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-6">
+                        <div id="form-group-border-style-wrapper"></div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div id="form-group-border-width-wrapper"></div>
+                    </div>
+                    <div class="col-xs-12">
+                        <div id="form-group-border-color-wrapper"></div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div id="form-group-border-radius-wrapper"></div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div id="form-group-box-shadow-wrapper"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h6 class="sub-title">
+                            {{= polyglot.t('style.spacing') }}
+                        </h6>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-6">
+                        <div id="form-group-margin-wrapper"></div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div id="form-group-padding-wrapper"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingFormControl">
+            <h4 class="panel-title">
+                <a class="ef-toggle collapsed" role="button" data-toggle="collapse" data-parent="" href="#collapseFormControl" aria-expanded="false" aria-controls="collapseFormControl">
+                    {{= polyglot.t('style.formControl') }}
+                    <span class="ef-icon glyphicon glyphicon-chevron-up"></span>
+                    <span class="ef-icon glyphicon glyphicon-chevron-down"></span>
+                </a>
+            </h4>
+        </div>
+        <div id="collapseFormControl" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFormControl">
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h6 class="sub-title">
+                            {{= polyglot.t('style.background') }}
+                        </h6>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div id="form-control-background-color-wrapper"></div>
+                    </div>
+                    <div class="col-xs-12">
+                        <div id="form-control-background-image-wrapper"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h6 class="sub-title">
+                            {{= polyglot.t('style.border') }}
+                        </h6>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-6">
+                        <div id="form-control-border-style-wrapper"></div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div id="form-control-border-width-wrapper"></div>
+                    </div>
+                    <div class="col-xs-12">
+                        <div id="form-control-border-color-wrapper"></div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div id="form-control-border-radius-wrapper"></div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div id="form-control-box-shadow-wrapper"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h6 class="sub-title">
+                            {{= polyglot.t('style.spacing') }}
+                        </h6>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-6">
+                        <div id="form-control-margin-wrapper"></div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div id="form-control-padding-wrapper"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h6 class="sub-title">
+                            {{= polyglot.t('style.size') }}
+                        </h6>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-6">
+                        <div id="form-control-width-wrapper"></div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div id="form-control-height-wrapper"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h6 class="sub-title">
+                            {{= polyglot.t('style.text') }}
+                        </h6>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div id="form-control-font-family-wrapper"></div>
+                    </div>
+                    <div class="col-xs-12">
+                        <div id="form-control-color-wrapper"></div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div id="form-control-font-size-wrapper"></div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div id="form-control-line-height-wrapper"></div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div id="form-control-font-weight-wrapper"></div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div id="form-control-text-align-wrapper"></div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div id="form-control-text-transform-wrapper"></div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div id="form-control-text-decoration-wrapper"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h6 class="sub-title">
+                            {{= polyglot.t('style.extra') }}
+                        </h6>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div id="form-control-transition-wrapper"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h6 class="sub-title">
+                            {{= polyglot.t('style.focusEffect') }}
+                        </h6>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div id="form-control-focus-background-color-wrapper"></div>
+                    </div>
+                    <div class="col-xs-12">
+                        <div id="form-control-focus-border-color-wrapper"></div>
+                    </div>
+                    <div class="col-xs-12">
+                        <div id="form-control-focus-box-shadow-wrapper"></div>
+                    </div>
+                    <div class="col-xs-12">
+                        <div id="form-control-focus-transition-wrapper"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingButton">
+            <h4 class="panel-title">
+                <a class="ef-toggle collapsed" role="button" data-toggle="collapse" data-parent="" href="#collapseButton" aria-expanded="false" aria-controls="collapseButton">
+                    {{= polyglot.t('style.button') }}
+                    <span class="ef-icon glyphicon glyphicon-chevron-up"></span>
+                    <span class="ef-icon glyphicon glyphicon-chevron-down"></span>
+                </a>
+            </h4>
+        </div>
+        <div id="collapseButton" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingButton">
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h6 class="sub-title">
+                            {{= polyglot.t('style.background') }}
+                        </h6>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div id="button-primary-background-color-wrapper"></div>
+                    </div>
+                    <div class="col-xs-12">
+                        <div id="button-primary-background-image-wrapper"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h6 class="sub-title">
+                            {{= polyglot.t('style.border') }}
+                        </h6>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-6">
+                        <div id="button-primary-border-style-wrapper"></div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div id="button-primary-border-width-wrapper"></div>
+                    </div>
+                    <div class="col-xs-12">
+                        <div id="button-primary-border-color-wrapper"></div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div id="button-primary-border-radius-wrapper"></div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div id="button-primary-box-shadow-wrapper"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h6 class="sub-title">
+                            {{= polyglot.t('style.spacing') }}
+                        </h6>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-6">
+                        <div id="button-primary-margin-wrapper"></div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div id="button-primary-padding-wrapper"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h6 class="sub-title">
+                            {{= polyglot.t('style.size') }}
+                        </h6>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-6">
+                        <div id="button-primary-width-wrapper"></div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div id="button-primary-height-wrapper"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h6 class="sub-title">
+                            {{= polyglot.t('style.text') }}
+                        </h6>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div id="button-primary-font-family-wrapper"></div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div id="button-primary-font-size-wrapper"></div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div id="button-primary-line-height-wrapper"></div>
+                    </div>
+                    <div class="col-xs-12">
+                        <div id="button-primary-color-wrapper"></div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div id="button-primary-font-weight-wrapper"></div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div id="button-primary-text-align-wrapper"></div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div id="button-primary-text-transform-wrapper"></div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div id="button-primary-text-decoration-wrapper"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h6 class="sub-title">
+                            {{= polyglot.t('style.extra') }}
+                        </h6>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div id="button-primary-transition-wrapper"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h6 class="sub-title">
+                            {{= polyglot.t('style.hoverEffect') }}
+                        </h6>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div id="button-primary-hover-background-color-wrapper"></div>
+                    </div>
+                    <div class="col-xs-12">
+                        <div id="button-primary-hover-background-image-wrapper"></div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div id="button-primary-hover-border-style-wrapper"></div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div id="button-primary-hover-border-width-wrapper"></div>
+                    </div>
+                    <div class="col-xs-12">
+                        <div id="button-primary-hover-border-color-wrapper"></div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div id="button-primary-hover-border-radius-wrapper"></div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div id="button-primary-hover-box-shadow-wrapper"></div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div id="button-primary-hover-margin-wrapper"></div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div id="button-primary-hover-padding-wrapper"></div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div id="button-primary-hover-width-wrapper"></div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div id="button-primary-hover-height-wrapper"></div>
+                    </div>
+                    <div class="col-xs-12">
+                        <div id="button-primary-hover-color-wrapper"></div>
+                    </div>
+                    <div class="col-xs-12">
+                        <div id="button-primary-hover-transition-wrapper"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingLabel">
+            <h4 class="panel-title">
+                <a class="ef-toggle collapsed" role="button" data-toggle="collapse" data-parent="" href="#collapseLabel" aria-expanded="false" aria-controls="collapseLabel">
+                    {{= polyglot.t('style.label') }}
+                    <span class="ef-icon glyphicon glyphicon-chevron-up"></span>
+                    <span class="ef-icon glyphicon glyphicon-chevron-down"></span>
+                </a>
+            </h4>
+        </div>
+        <div id="collapseLabel" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingLabel">
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h6 class="sub-title">
+                            {{= polyglot.t('style.text') }}
+                        </h6>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div id="control-label-font-family-wrapper"></div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div id="control-label-font-size-wrapper"></div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div id="control-label-line-height-wrapper"></div>
+                    </div>
+                    <div class="col-xs-12">
+                        <div id="control-label-color-wrapper"></div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div id="control-label-font-weight-wrapper"></div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div id="control-label-text-align-wrapper"></div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div id="control-label-text-transform-wrapper"></div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div id="control-label-text-decoration-wrapper"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h6 class="sub-title">
+                            {{= polyglot.t('style.spacing') }}
+                        </h6>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-6">
+                        <div id="control-label-margin-wrapper"></div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div id="control-label-padding-wrapper"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h6 class="sub-title">
+                            {{= polyglot.t('style.size') }}
+                        </h6>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-6">
+                        <div id="control-label-width-wrapper"></div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div id="control-label-height-wrapper"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h6 class="sub-title">
+                            {{= polyglot.t('style.extra') }}
+                        </h6>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div id="control-label-display-wrapper"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingPlaceholder">
+            <h4 class="panel-title">
+                <a class="ef-toggle collapsed" role="button" data-toggle="collapse" data-parent="" href="#collapsePlaceholder" aria-expanded="false" aria-controls="collapsePlaceholder">
+                    {{= polyglot.t('style.placeholder') }}
+                    <span class="ef-icon glyphicon glyphicon-chevron-up"></span>
+                    <span class="ef-icon glyphicon glyphicon-chevron-down"></span>
+                </a>
+            </h4>
+        </div>
+        <div id="collapsePlaceholder" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingPlaceholder">
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h6 class="sub-title">
+                            {{= polyglot.t('style.text') }}
+                        </h6>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div id="placeholder-font-family-wrapper"></div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div id="placeholder-font-size-wrapper"></div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div id="placeholder-line-height-wrapper"></div>
+                    </div>
+                    <div class="col-xs-12">
+                        <div id="placeholder-color-wrapper"></div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div id="placeholder-font-weight-wrapper"></div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div id="placeholder-text-align-wrapper"></div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div id="placeholder-text-transform-wrapper"></div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div id="placeholder-text-decoration-wrapper"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingTitle">
+            <h4 class="panel-title">
+                <a class="ef-toggle collapsed" role="button" data-toggle="collapse" data-parent="" href="#collapseTitle" aria-expanded="false" aria-controls="collapseTitle">
+                    {{= polyglot.t('style.heading') }}
+                    <span class="ef-icon glyphicon glyphicon-chevron-up"></span>
+                    <span class="ef-icon glyphicon glyphicon-chevron-down"></span>
+                </a>
+            </h4>
+        </div>
+        <div id="collapseTitle" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTitle">
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h6 class="sub-title">
+                            {{= polyglot.t('style.text') }}
+                        </h6>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div id="heading-color-wrapper"></div>
+                    </div>
+                    <div class="col-xs-12">
+                        <div id="heading-font-family-wrapper"></div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div id="heading-font-size-wrapper"></div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div id="heading-line-height-wrapper"></div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div id="heading-font-weight-wrapper"></div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div id="heading-text-align-wrapper"></div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div id="heading-text-transform-wrapper"></div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div id="heading-text-decoration-wrapper"></div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div id="heading-letter-spacing-wrapper"></div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div id="heading-text-shadow-wrapper"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h6 class="sub-title">
+                            {{= polyglot.t('style.background') }}
+                        </h6>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div id="heading-background-color-wrapper"></div>
+                    </div>
+                    <div class="col-xs-12">
+                        <div id="heading-background-image-wrapper"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h6 class="sub-title">
+                            {{= polyglot.t('style.border') }}
+                        </h6>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-6">
+                        <div id="heading-border-style-wrapper"></div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div id="heading-border-width-wrapper"></div>
+                    </div>
+                    <div class="col-xs-12">
+                        <div id="heading-border-color-wrapper"></div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div id="heading-border-radius-wrapper"></div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div id="heading-box-shadow-wrapper"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h6 class="sub-title">
+                            {{= polyglot.t('style.spacing') }}
+                        </h6>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-6">
+                        <div id="heading-margin-wrapper"></div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div id="heading-padding-wrapper"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h6 class="sub-title">
+                            {{= polyglot.t('style.size') }}
+                        </h6>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-6">
+                        <div id="heading-width-wrapper"></div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div id="heading-height-wrapper"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingParagraph">
+            <h4 class="panel-title">
+                <a class="ef-toggle collapsed" role="button" data-toggle="collapse" data-parent="" href="#collapseParagraph" aria-expanded="false" aria-controls="collapseParagraph">
+                    {{= polyglot.t('style.paragraph') }}
+                    <span class="ef-icon glyphicon glyphicon-chevron-up"></span>
+                    <span class="ef-icon glyphicon glyphicon-chevron-down"></span>
+                </a>
+            </h4>
+        </div>
+        <div id="collapseParagraph" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingParagraph">
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h6 class="sub-title">
+                            {{= polyglot.t('style.text') }}
+                        </h6>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div id="paragraph-font-family-wrapper"></div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div id="paragraph-font-size-wrapper"></div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div id="paragraph-line-height-wrapper"></div>
+                    </div>
+                    <div class="col-xs-12">
+                        <div id="paragraph-color-wrapper"></div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div id="paragraph-font-weight-wrapper"></div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div id="paragraph-text-align-wrapper"></div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div id="paragraph-text-transform-wrapper"></div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div id="paragraph-text-decoration-wrapper"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h6 class="sub-title">
+                            {{= polyglot.t('style.spacing') }}
+                        </h6>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-6">
+                        <div id="paragraph-margin-wrapper"></div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div id="paragraph-padding-wrapper"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h6 class="sub-title">
+                            {{= polyglot.t('style.size') }}
+                        </h6>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-6">
+                        <div id="paragraph-width-wrapper"></div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div id="paragraph-height-wrapper"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingHelpText">
+            <h4 class="panel-title">
+                <a class="ef-toggle collapsed" role="button" data-toggle="collapse" data-parent="" href="#collapseHelpText" aria-expanded="false" aria-controls="collapseHelpText">
+                    {{= polyglot.t('style.helpText') }}
+                    <span class="ef-icon glyphicon glyphicon-chevron-up"></span>
+                    <span class="ef-icon glyphicon glyphicon-chevron-down"></span>
+                </a>
+            </h4>
+        </div>
+        <div id="collapseHelpText" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingHelpText">
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h6 class="sub-title">
+                            {{= polyglot.t('style.text') }}
+                        </h6>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div id="help-block-font-family-wrapper"></div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div id="help-block-font-size-wrapper"></div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div id="help-block-line-height-wrapper"></div>
+                    </div>
+                    <div class="col-xs-12">
+                        <div id="help-block-color-wrapper"></div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div id="help-block-font-weight-wrapper"></div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div id="help-block-text-align-wrapper"></div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div id="help-block-text-transform-wrapper"></div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div id="help-block-text-decoration-wrapper"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h6 class="sub-title">
+                            {{= polyglot.t('style.background') }}
+                        </h6>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div id="help-block-background-color-wrapper"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h6 class="sub-title">
+                            {{= polyglot.t('style.border') }}
+                        </h6>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-6">
+                        <div id="help-block-border-style-wrapper"></div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div id="help-block-border-width-wrapper"></div>
+                    </div>
+                    <div class="col-xs-12">
+                        <div id="help-block-border-color-wrapper"></div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div id="help-block-border-radius-wrapper"></div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div id="help-block-box-shadow-wrapper"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h6 class="sub-title">
+                            {{= polyglot.t('style.spacing') }}
+                        </h6>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-6">
+                        <div id="help-block-margin-wrapper"></div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div id="help-block-padding-wrapper"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h6 class="sub-title">
+                            {{= polyglot.t('style.size') }}
+                        </h6>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-6">
+                        <div id="help-block-width-wrapper"></div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div id="help-block-height-wrapper"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingLink">
+            <h4 class="panel-title">
+                <a class="ef-toggle collapsed" role="button" data-toggle="collapse" data-parent="" href="#collapseLink" aria-expanded="false" aria-controls="collapseLink">
+                    {{= polyglot.t('style.link') }}
+                    <span class="ef-icon glyphicon glyphicon-chevron-up"></span>
+                    <span class="ef-icon glyphicon glyphicon-chevron-down"></span>
+                </a>
+            </h4>
+        </div>
+        <div id="collapseLink" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingLink">
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h6 class="sub-title">
+                            {{= polyglot.t('style.text') }}
+                        </h6>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div id="link-font-family-wrapper"></div>
+                    </div>
+                    <div class="col-xs-12">
+                        <div id="link-color-wrapper"></div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div id="link-font-size-wrapper"></div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div id="link-font-weight-wrapper"></div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div id="link-text-transform-wrapper"></div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div id="link-text-decoration-wrapper"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h6 class="sub-title">
+                            {{= polyglot.t('style.background') }}
+                        </h6>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div id="link-background-color-wrapper"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h6 class="sub-title">
+                            {{= polyglot.t('style.hoverEffect') }}
+                        </h6>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div id="link-hover-font-family-wrapper"></div>
+                    </div>
+                    <div class="col-xs-12">
+                        <div id="link-hover-color-wrapper"></div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div id="link-hover-font-weight-wrapper"></div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div id="link-hover-text-decoration-wrapper"></div>
+                    </div>
+                    <div class="col-xs-12">
+                        <div id="link-hover-background-color-wrapper"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingStep">
+            <h4 class="panel-title">
+                <a class="ef-toggle collapsed" role="button" data-toggle="collapse" data-parent="" href="#collapseStep" aria-expanded="false" aria-controls="collapseStep">
+                    {{= polyglot.t('style.formSteps') }}
+                    <span class="ef-icon glyphicon glyphicon-chevron-up"></span>
+                    <span class="ef-icon glyphicon glyphicon-chevron-down"></span>
+                </a>
+            </h4>
+        </div>
+        <div id="collapseStep" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingStep">
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h6 class="sub-title">
+                            {{= polyglot.t('style.background') }}
+                        </h6>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div id="step-background-color-wrapper"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h6 class="sub-title">
+                            {{= polyglot.t('style.others') }}
+                        </h6>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-6">
+                        <div id="step-border-style-wrapper"></div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div id="step-border-radius-wrapper"></div>
+                    </div>
+                    <div class="col-xs-12">
+                        <div id="step-border-color-wrapper"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h6 class="sub-title">
+                            {{= polyglot.t('style.text') }}
+                        </h6>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div id="step-color-wrapper"></div>
+                    </div>
+                    <div class="col-xs-12">
+                        <div id="step-font-family-wrapper"></div>
+                    </div>
+                    <div class="col-xs-12">
+                        <div id="step-font-weight-wrapper"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="sub-group">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <h6 class="sub-title">{{= polyglot.t('style.title') }}</h6>
+                                </div>
+                                <div class="col-xs-12">
+                                    <div id="step-title-background-color-wrapper"></div>
+                                </div>
+                                <div class="col-xs-12">
+                                    <div id="step-title-color-wrapper"></div>
+                                </div>
+                                <div class="col-xs-12">
+                                    <div id="step-title-border-color-wrapper"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h6 class="sub-title">
+                            {{= polyglot.t('style.currentStep') }}
+                        </h6>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div id="step-current-background-color-wrapper"></div>
+                    </div>
+                    <div class="col-xs-12">
+                        <div id="step-current-color-wrapper"></div>
+                    </div>
+                    <div class="col-xs-12">
+                        <div id="step-current-font-weight-wrapper"></div>
+                    </div>
+                    <div class="col-xs-12">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="sub-group">
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                            <h6 class="sub-title">{{= polyglot.t('style.title') }}</h6>
+                                        </div>
+                                        <div class="col-xs-12">
+                                            <div id="step-current-title-background-color-wrapper"></div>
+                                        </div>
+                                        <div class="col-xs-12">
+                                            <div id="step-current-title-color-wrapper"></div>
+                                        </div>
+                                        <div class="col-xs-12">
+                                            <div id="step-current-title-border-color-wrapper"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h6 class="sub-title">
+                            {{= polyglot.t('style.succeedStep') }}
+                        </h6>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div id="step-success-background-color-wrapper"></div>
+                    </div>
+                    <div class="col-xs-12">
+                        <div id="step-success-color-wrapper"></div>
+                    </div>
+                    <div class="col-xs-12">
+                        <div id="step-success-font-weight-wrapper"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="sub-group">
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <h6 class="sub-title">{{= polyglot.t('style.title') }}</h6>
+                                    </div>
+                                    <div class="col-xs-12">
+                                        <div id="step-success-title-background-color-wrapper"></div>
+                                    </div>
+                                    <div class="col-xs-12">
+                                        <div id="step-success-title-color-wrapper"></div>
+                                    </div>
+                                    <div class="col-xs-12">
+                                        <div id="step-success-title-border-color-wrapper"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h6 class="sub-title">
+                            {{= polyglot.t('style.previousButton') }}
+                        </h6>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div id="button-prev-background-color-wrapper"></div>
+                    </div>
+                    <div class="col-xs-12">
+                        <div id="button-prev-color-wrapper"></div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div id="button-prev-border-style-wrapper"></div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div id="button-prev-border-radius-wrapper"></div>
+                    </div>
+                    <div class="col-xs-12">
+                        <div id="button-prev-border-color-wrapper"></div>
+                    </div>
+                    <div class="col-xs-12">
+                        <div id="button-prev-display-wrapper"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h6 class="sub-title">{{= polyglot.t('style.previousButtonHoverEffect') }}</h6>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div id="button-prev-hover-background-color-wrapper"></div>
+                    </div>
+                    <div class="col-xs-12">
+                        <div id="button-prev-hover-color-wrapper"></div>
+                    </div>
+                    <div class="col-xs-12">
+                        <div id="button-prev-hover-border-color-wrapper"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h6 class="sub-title">
+                            {{= polyglot.t('style.nextButton') }}
+                        </h6>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div id="button-next-background-color-wrapper"></div>
+                    </div>
+                    <div class="col-xs-12">
+                        <div id="button-next-color-wrapper"></div>
+                    </div>
+                    <div class="col-xs-12">
+                        <div id="button-next-float-wrapper"></div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div id="button-next-border-style-wrapper"></div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div id="button-next-border-radius-wrapper"></div>
+                    </div>
+                    <div class="col-xs-12">
+                        <div id="button-next-border-color-wrapper"></div>
+                    </div>
+                    <div class="col-xs-12">
+                        <div id="button-next-display-wrapper"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h6 class="sub-title">
+                            {{= polyglot.t('style.nextButtonHoverEffect') }}
+                        </h6>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div id="button-next-hover-background-color-wrapper"></div>
+                    </div>
+                    <div class="col-xs-12">
+                        <div id="button-next-hover-color-wrapper"></div>
+                    </div>
+                    <div class="col-xs-12">
+                        <div id="button-next-hover-border-color-wrapper"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingAlert">
+            <h4 class="panel-title">
+                <a class="ef-toggle collapsed" role="button" data-toggle="collapse" data-parent="" href="#collapseAlert" aria-expanded="false" aria-controls="collapseAlert">
+                    {{= polyglot.t('style.formAlerts') }}
+                    <span class="ef-icon glyphicon glyphicon-chevron-up"></span>
+                    <span class="ef-icon glyphicon glyphicon-chevron-down"></span>
+                </a>
+            </h4>
+        </div>
+        <div id="collapseAlert" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingAlert">
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h6 class="sub-title">
+                            {{= polyglot.t('style.text') }}
+                        </h6>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div id="alert-font-family-wrapper"></div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div id="alert-font-size-wrapper"></div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div id="alert-font-weight-wrapper"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h6 class="sub-title">
+                            {{= polyglot.t('style.border') }}
+                        </h6>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-6">
+                        <div id="alert-border-style-wrapper"></div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div id="alert-border-width-wrapper"></div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div id="alert-border-radius-wrapper"></div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div id="alert-box-shadow-wrapper"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h6 class="sub-title">{{= polyglot.t('style.successMessage') }}</h6>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div id="alert-success-background-color-wrapper"></div>
+                    </div>
+                    <div class="col-xs-12">
+                        <div id="alert-success-border-color-wrapper"></div>
+                    </div>
+                    <div class="col-xs-12">
+                        <div id="alert-success-color-wrapper"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h6 class="sub-title">{{= polyglot.t('style.errorMessage') }}</h6>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div id="alert-danger-background-color-wrapper"></div>
+                    </div>
+                    <div class="col-xs-12">
+                        <div id="alert-danger-border-color-wrapper"></div>
+                    </div>
+                    <div class="col-xs-12">
+                        <div id="alert-danger-color-wrapper"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingValidation">
+            <h4 class="panel-title">
+                <a class="ef-toggle collapsed" role="button" data-toggle="collapse" data-parent="" href="#collapseValidation" aria-expanded="false" aria-controls="collapseValidation">
+                    {{= polyglot.t('style.fieldValidation') }}
+                    <span class="ef-icon glyphicon glyphicon-chevron-up"></span>
+                    <span class="ef-icon glyphicon glyphicon-chevron-down"></span>
+                </a>
+            </h4>
+        </div>
+        <div id="collapseValidation" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingValidation">
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h6 class="sub-title">{{= polyglot.t('style.asteriskSymbol') }}</h6>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div id="validation-symbol-asterisk-color-wrapper"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h6 class="sub-title">{{= polyglot.t('style.textMessage') }}</h6>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div id="validation-error-text-color-wrapper"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h6 class="sub-title">{{= polyglot.t('style.field') }}</h6>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div id="validation-error-field-background-color-wrapper"></div>
+                    </div>
+                    <div class="col-xs-12">
+                        <div id="validation-error-field-border-color-wrapper"></div>
+                    </div>
+                    <div class="col-xs-12">
+                        <div id="validation-error-field-color-wrapper"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingOther">
+            <h4 class="panel-title">
+                <a class="ef-toggle collapsed" role="button" data-toggle="collapse" data-parent="" href="#collapseOther" aria-expanded="false" aria-controls="collapseOther">
+                    {{= polyglot.t('style.otherComponents') }}
+                    <span class="ef-icon glyphicon glyphicon-chevron-up"></span>
+                    <span class="ef-icon glyphicon glyphicon-chevron-down"></span>
+                </a>
+            </h4>
+        </div>
+        <div id="collapseOther" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOther">
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h6 class="sub-title">reCAPTCHA</h6>
+                    </div>
+                    <div class="col-xs-12">
+                        <div class="sub-group">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div id="recaptcha-margin-wrapper"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h6 class="sub-title">{{= polyglot.t('style.signaturePad') }}</h6>
+                    </div>
+                    <div class="col-xs-12">
+                        <div class="sub-group">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div id="signature-canvas-background-color-wrapper"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h6 class="sub-title">{{= polyglot.t('style.checkbox') }}</h6>
+                    </div>
+                    <div class="col-xs-12">
+                        <div class="sub-group">
+                            <div class="row">
+                                <div class="col-xs-6">
+                                    <h6 class="sub-title">{{= polyglot.t('style.label') }}</h6>
+                                    <div id="checkbox-inline-font-size-wrapper"></div>
+                                </div>
+                                <div class="col-xs-6">
+                                    <h6 class="sub-title">{{= polyglot.t('style.input') }}</h6>
+                                    <div id="checkbox-input-margin-wrapper"></div>
+                                </div>
+                                <div class="col-xs-12">
+                                    <h6 class="sub-title">{{= polyglot.t('style.customControl') }}</h6>
+                                </div>
+                                <div class="col-xs-12">
+                                    <div id="custom-control-checkbox-before-background-color-wrapper"></div>
+                                </div>
+                                <div class="col-xs-12">
+                                    <div id="custom-control-checkbox-before-border-color-wrapper"></div>
+                                </div>
+                                <div class="col-xs-12">
+                                    <h6 class="sub-title">{{= polyglot.t('style.checked') }}</h6>
+                                </div>
+                                <div class="col-xs-12">
+                                    <div id="custom-control-checkbox-checked-before-background-color-wrapper"></div>
+                                </div>
+                                <div class="col-xs-12">
+                                    <div id="custom-control-checkbox-checked-before-border-color-wrapper"></div>
+                                </div>
+                                <div class="col-xs-12">
+                                    <h6 class="sub-title">{{= polyglot.t('style.mark') }}</h6>
+                                </div>
+                                <div class="col-xs-12">
+                                    <div id="custom-control-checkbox-checked-after-color-wrapper"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h6 class="sub-title">{{= polyglot.t('style.radioButton') }}</h6>
+                    </div>
+                    <div class="col-xs-12">
+                        <div class="sub-group">
+                            <div class="row">
+                                <div class="col-xs-6">
+                                    <h6 class="sub-title">{{= polyglot.t('style.label') }}</h6>
+                                    <div id="radio-inline-font-size-wrapper"></div>
+                                </div>
+                                <div class="col-xs-6">
+                                    <h6 class="sub-title">{{= polyglot.t('style.input') }}</h6>
+                                    <div id="radio-input-margin-wrapper"></div>
+                                </div>
+                                <div class="col-xs-12">
+                                    <h6 class="sub-title">{{= polyglot.t('style.customControl') }}</h6>
+                                </div>
+                                <div class="col-xs-12">
+                                    <div id="custom-control-radio-before-background-color-wrapper"></div>
+                                </div>
+                                <div class="col-xs-12">
+                                    <div id="custom-control-radio-before-border-color-wrapper"></div>
+                                </div>
+                                <div class="col-xs-12">
+                                    <h6 class="sub-title">{{= polyglot.t('style.checked') }}</h6>
+                                </div>
+                                <div class="col-xs-12">
+                                    <div id="custom-control-radio-checked-before-border-color-wrapper"></div>
+                                </div>
+                                <div class="col-xs-12">
+                                    <h6 class="sub-title">{{= polyglot.t('style.mark') }}</h6>
+                                </div>
+                                <div class="col-xs-12">
+                                    <div id="custom-control-radio-checked-after-background-color-wrapper"></div>
+                                </div>
+                                <div class="col-xs-12">
+                                    <div id="custom-control-radio-checked-after-border-color-wrapper"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h6 class="sub-title">{{= polyglot.t('style.progressBar') }}</h6>
+                    </div>
+                    <div class="col-xs-12">
+                        <div class="sub-group">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <h6 class="sub-title">{{= polyglot.t('style.progressBarContainer') }}</h6>
+                                </div>
+                                <div class="col-xs-12">
+                                    <div id="progress-bar-container-background-color-wrapper"></div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <h6 class="sub-title">{{= polyglot.t('style.progressBar') }}</h6>
+                                </div>
+                                <div class="col-xs-12">
+                                    <div id="progress-bar-background-color-wrapper"></div>
+                                </div>
+                                <div class="col-xs-12">
+                                    <div id="progress-bar-color-wrapper"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

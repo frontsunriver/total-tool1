@@ -1,0 +1,12 @@
+{
+    "require": {
+        "hybridauth/hybridauth": "^2.9",
+        "nexmo/client": "^1.3",
+        "mailgun/mailgun-php": "^2.5",
+        "php-http/curl-client": "^1.7",
+        "guzzlehttp/psr7": "^1.4",
+        "paypal/rest-api-sdk-php": "*",
+        "stripe/stripe-php": "^6.6",
+        "twilio/sdk": "^5.19"
+    }
+}

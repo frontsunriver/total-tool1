@@ -1,0 +1,27 @@
+{{ if (field.containerClass) { }}<!-- Checkbox -->
+<div class="{{= field.containerClass }}">
+    <div class="form-group{{ if(field.required) { }} required-control{{ } }}">{{ if(field.inline) { }}<div class="inline-control inline-control-checkbox{{ if(field.disabled) { }} disabled{{ } }}">{{ } }} {{ if (field.label) { }}
+        <label {{ if (field.labelClass) { }} class="{{= field.labelClass }}"{{ } }} for="{{= field.id }}">{{= field.label }}</label>{{ } }}{{ if (field.helpText && field.helpTextPlacement === "above") { }}
+        <p class="help-block">{{= field.helpText }}</p>{{ } }}{{ _.each(field.checkboxes, function(checkbox, i){ var items = checkbox.split("|"); var last = items[items.length-1]; var checked = (last==="selected"||last==="select"|last==="check"); checkbox = items[0]; var value = ((items.length >= 3) || (items.length == 2) && !checked) ? items[1] : items[0]; var figure = ((items.length >= 4) || (items.length == 3 && !checked)) ? items[2] : false; }}{{ if (!field.inline) { }}
+        <div class="checkbox {{ if(field.disabled) { }}disabled{{ } }}">{{ } }}
+            <input type="checkbox" name="{{= field.id }}[]" id="{{= field.id+'_'+i }}" value="{{- value.replace(/(<([^>]+)>)/ig,'') }}" data-alias="{{= field.alias }}"{{ if(field.required){ }}data-required="true" {{ } }}{{ if(field.readOnly) { }}readOnly {{ } }}{{ if(field.disabled) {}}disabled {{ } }} {{ if(checked) { }}checked {{ } }}><label for="{{= field.id+'_'+i }}"{{ if (field.cssClass) { }} class="{{= field.cssClass }}"{{ } }}>{{ if(figure) { }}
+                <span class="figure">{{ if (figure.indexOf("http") == 0) { }}<img src="{{= figure }}" />{{ } else { }}<span class="{{= figure }}"> </span>{{ } }}</span>{{ } }}
+                {{= checkbox }} </label>{{ if (!field.inline) { }}
+        </div>{{ } }}{{ }); }} {{ if(field.inline) { }}</div>{{ } }}
+        <span id="{{= field.id }}"></span>
+        {{ if (field.helpText && field.helpTextPlacement === "below") { }}<p class="help-block">{{= field.helpText }}</p>{{ } }}
+    </div>
+</div>
+{{ } else { }}<!-- Checkbox -->
+<div class="form-group{{ if(field.required) { }} required-control{{ } }}">{{ if(field.inline) { }}<div class="inline-control inline-control-checkbox{{ if(field.disabled) { }} disabled{{ } }}">{{ } }} {{ if (field.label) { }}
+    <label {{ if (field.labelClass) { }} class="{{= field.labelClass }}"{{ } }} for="{{= field.id }}">{{= field.label }}</label>{{ } }}{{ if (field.helpText && field.helpTextPlacement === "above") { }}
+    <p class="help-block">{{= field.helpText }}</p>{{ } }}{{ _.each(field.checkboxes, function(checkbox, i){ var items = checkbox.split("|"); var last = items[items.length-1]; var checked = (last==="selected"||last==="select"|last==="check"); checkbox = items[0]; var value = ((items.length >= 3) || (items.length == 2) && !checked) ? items[1] : items[0]; var figure = ((items.length >= 4) || (items.length == 3 && !checked)) ? items[2] : false; }}{{ if (!field.inline) { }}
+    <div class="checkbox {{ if(field.disabled) { }}disabled{{ } }}">{{ } }}
+        <input type="checkbox" name="{{= field.id }}[]" id="{{= field.id+'_'+i }}" value="{{- value.replace(/(<([^>]+)>)/ig,'') }}" data-alias="{{= field.alias }}"{{ if(field.required){ }}data-required="true" {{ } }}{{ if(field.readOnly) { }}readOnly {{ } }}{{ if(field.disabled) {}}disabled {{ } }} {{ if(checked) { }}checked {{ } }}><label for="{{= field.id+'_'+i }}"{{ if (field.cssClass) { }} class="{{= field.cssClass }}"{{ } }}>{{ if(figure) { }}
+            <span class="figure">{{ if (figure.indexOf("http") == 0) { }}<img src="{{= figure }}" />{{ } else { }}<span class="{{= figure }}"> </span>{{ } }}</span>{{ } }}
+            {{= checkbox }} </label>{{ if (!field.inline) { }}
+    </div>{{ } }}{{ }); }} {{ if(field.inline) { }}</div>{{ } }}
+    <span id="{{= field.id }}"></span>
+    {{ if (field.helpText && field.helpTextPlacement === "below") { }}<p class="help-block">{{= field.helpText }}</p>{{ } }}
+</div>
+{{ } }}

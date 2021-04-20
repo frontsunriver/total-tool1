@@ -1,0 +1,52 @@
+[
+   {
+      "id":1,
+      "name":"Banner Section",
+      "order":1,
+      "file_name":"banner_section",
+      "status":1,
+      "image_path":"public/images/themes_data/banner_1.jpg"
+   },
+   {
+      "id":5,
+      "name":"Categories And Newest Product Section",
+      "order":2,
+      "file_name":"categories_and_newest_product",
+      "status":1
+   },
+   {
+      "id":3,
+      "name":"Top Selling And Special Products Section",
+      "order":3,
+      "file_name":"top_selling_and_special_product",
+      "status":1
+   },
+   {
+      "id":4,
+      "name":"Ad Section",
+      "order":4,
+      "file_name":"ad_banner_section",
+      "status":1
+   },
+   {
+      "id":2,
+      "name":"Flash Sale Section",
+      "order":5,
+      "file_name":"flash_sale_section",
+      "status":1
+   },
+   {
+      "id":6,
+      "name":"Blog Section",
+      "order":6,
+      "file_name":"blog_section",
+      "status":1
+   },
+   {
+      "id":7,
+      "name":"Info Boxes",
+      "order":7,
+      "file_name":"info_boxes",
+      "status":1
+   }
+]

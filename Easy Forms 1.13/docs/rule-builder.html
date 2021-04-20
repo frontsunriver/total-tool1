@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="language" content="en"/>
+    <link rel="shortcut icon" type="image/ico" href="./assets/8f121b9a/favicon/favicon.ico"/>
+    <link rel="shortcut icon" type="image/ico" href="./assets/8f121b9a/favicon/favicon_32.ico"/>
+    <link rel="shortcut icon" type="image/ico" href="./assets/8f121b9a/favicon/favicon_48.ico"/>
+    <link rel="shortcut icon" type="image/ico" href="./assets/8f121b9a/favicon/favicon_96.ico"/>
+    <link rel="shortcut icon" type="image/ico" href="./assets/8f121b9a/favicon/favicon_144.ico"/>
+        <link href="./assets/c7fbc653/css/bootstrap.css" rel="stylesheet">
+<link href="./assets/fcacff94/github-gist.css" rel="stylesheet">
+<link href="./assets/8f121b9a/css/fonts.min.css" rel="stylesheet">
+<link href="./assets/8f121b9a/css/bootstrap.min.css" rel="stylesheet">
+<link href="./assets/8f121b9a/css/api.css" rel="stylesheet">
+<link href="./assets/8f121b9a/css/style.css" rel="stylesheet">
+<script src="./assets/e3a17645/jquery.js"></script>
+<script src="./assets/c7fbc653/js/bootstrap.js"></script>
+<script src="./assets/bbf47a67/jssearch.js"></script>    <title>Rule Builder - Forms - Easy Forms</title>
+</head>
+<body>
+
+<div class="wrap">
+    <nav id="w468" class="navbar-inverse navbar-fixed-top navbar"><div class="container"><div class="navbar-header"><button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#w468-collapse"><span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span></button><a class="navbar-brand" href="./index.html"><span class="app-name">Easy Forms</span></a></div><div id="w468-collapse" class="collapse navbar-collapse"><ul id="w469" class="navbar-nav nav"><li><a href="./index.html">Documentation</a></li></ul>
+    <div class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+            <input id="searchbox" type="text" class="form-control" placeholder="Search">
+        </div>
+    </div>
+    </div></div></nav>
+    <div id="search-resultbox" style="display: none;" class="modal-content">
+        <ul id="search-results">
+        </ul>
+    </div>
+
+    <div class="container">
+        
+<div class="row">
+    <div class="col-md-2">
+                <div id="navigation" class="list-group"><a class="list-group-item" href="#navigation-460" data-toggle="collapse" data-parent="#navigation">First steps <b class="caret"></b></a><div id="navigation-460" class="submenu panel-collapse collapse"><a class="list-group-item" href="./intro-easy-forms.html">About Easy Forms</a>
+<a class="list-group-item" href="./system-requirements.html">Requirements</a>
+<a class="list-group-item" href="./start-installation.html">Installing Easy Forms</a>
+<a class="list-group-item" href="./start-upgrading.html">Upgrading Easy Forms</a>
+<a class="list-group-item" href="./settings.html">Set Up Easy Forms</a>
+<a class="list-group-item" href="./start-customization.html">Customizing Easy Forms</a>
+<a class="list-group-item" href="./email-setup.html">Email Setup</a>
+<a class="list-group-item" href="./dynamic-content.html">Dynamic Content</a></div>
+<a class="list-group-item active" href="#navigation-461" data-toggle="collapse" data-parent="#navigation">Forms <b class="caret"></b></a><div id="navigation-461" class="submenu panel-collapse collapse in"><a class="list-group-item" href="./form-manager.html">Form Manager</a>
+<a class="list-group-item" href="./form-builder.html">Form Builder</a>
+<a class="list-group-item" href="./theme-designer.html">Theme Designer</a>
+<a class="list-group-item active" href="./rule-builder.html">Rule Builder</a>
+<a class="list-group-item" href="./submission-manager.html">Submission Manager</a>
+<a class="list-group-item" href="./form-report-builder.html">Report Builder</a>
+<a class="list-group-item" href="./form-analytics.html">In-App Analytics</a>
+<a class="list-group-item" href="./form-widget.html">Form Widget</a>
+<a class="list-group-item" href="./form-import-export.html">Import / Export</a></div>
+<a class="list-group-item" href="#navigation-462" data-toggle="collapse" data-parent="#navigation">Templates <b class="caret"></b></a><div id="navigation-462" class="submenu panel-collapse collapse"><a class="list-group-item" href="./template-manager.html">Template Manager</a></div>
+<a class="list-group-item" href="#navigation-463" data-toggle="collapse" data-parent="#navigation">Themes <b class="caret"></b></a><div id="navigation-463" class="submenu panel-collapse collapse"><a class="list-group-item" href="./theme-manager.html">Theme Manager</a></div>
+<a class="list-group-item" href="#navigation-464" data-toggle="collapse" data-parent="#navigation">Users <b class="caret"></b></a><div id="navigation-464" class="submenu panel-collapse collapse"><a class="list-group-item" href="./user-manager.html">User Manager</a>
+<a class="list-group-item" href="./membership.html">Membership</a></div>
+<a class="list-group-item" href="#navigation-465" data-toggle="collapse" data-parent="#navigation">Add-Ons <b class="caret"></b></a><div id="navigation-465" class="submenu panel-collapse collapse"><a class="list-group-item" href="./addon-manager.html">Add-On Manager</a>
+<a class="list-group-item" href="./addon-webhooks.html">WebHooks</a>
+<a class="list-group-item" href="./addon-google-analytics.html">Google Analytics</a></div>
+<a class="list-group-item" href="#navigation-466" data-toggle="collapse" data-parent="#navigation">Premium Add-Ons <b class="caret"></b></a><div id="navigation-466" class="submenu panel-collapse collapse"><a class="list-group-item" href="./addon-acelle-mail.html">Acelle Mail</a>
+<a class="list-group-item" href="./addon-active-campaign.html">Active Campaign</a>
+<a class="list-group-item" href="./addon-adyen.html">Adyen</a>
+<a class="list-group-item" href="./addon-aweber.html">AWeber</a>
+<a class="list-group-item" href="./addon-braintree.html">Braintree</a>
+<a class="list-group-item" href="./addon-campaign-monitor.html">Campaign Monitor</a>
+<a class="list-group-item" href="./addon-cleverreach.html">CleverReach</a>
+<a class="list-group-item" href="./addon-conditional-emails.html">Conditional Emails</a>
+<a class="list-group-item" href="./addon-constant-contact.html">Constant Contact</a>
+<a class="list-group-item" href="./addon-custom-error-messages.html">Custom Error Messages</a>
+<a class="list-group-item" href="./addon-custom-data-validation.html">Data Validation</a>
+<a class="list-group-item" href="./addon-emailoctopus.html">EmailOctopus</a>
+<a class="list-group-item" href="./addon-facebook-login.html">Facebook Login</a>
+<a class="list-group-item" href="./addon-field-encryption.html">Field Encryption</a>
+<a class="list-group-item" href="./addon-google-places-autocomplete.html">Google Places Autocomplete</a>
+<a class="list-group-item" href="./addon-import-submissions.html">Import Submissions</a>
+<a class="list-group-item" href="./addon-insightly.html">Insightly</a>
+<a class="list-group-item" href="./addon-mailchimp.html">MailChimp</a>
+<a class="list-group-item" href="./addon-mailerlite.html">MailerLite</a>
+<a class="list-group-item" href="./addon-mysql.html">MySQL</a>
+<a class="list-group-item" href="./addon-neverbounce.html">NeverBounce</a>
+<a class="list-group-item" href="./addon-nexmo-sms.html">Nexmo SMS</a>
+<a class="list-group-item" href="./addon-paypal.html">PayPal</a>
+<a class="list-group-item" href="./addon-paypal-invoicing.html">PayPal Invoicing</a>
+<a class="list-group-item" href="./addon-pdf.html">PDF</a>
+<a class="list-group-item" href="./addon-plivo.html">Plivo SMS</a>
+<a class="list-group-item" href="./addon-salesforce.html">Salesforce</a>
+<a class="list-group-item" href="./addon-sendinblue.html">SendinBlue</a>
+<a class="list-group-item" href="./addon-stripe.html">Stripe</a>
+<a class="list-group-item" href="./addon-twilio.html">Twilio SMS</a></div>
+<a class="list-group-item" href="#navigation-467" data-toggle="collapse" data-parent="#navigation">Premium Modules <b class="caret"></b></a><div id="navigation-467" class="submenu panel-collapse collapse"><a class="list-group-item" href="./module-subscriptions.html">Subscriptions</a></div></div>    </div>
+    <div class="col-md-9 guide-content" role="main">
+        <h1>Rule Builder <span id="rule-builder"></span><a href="#rule-builder" class="hashlink">&para;</a></h1>
+<div class="toc"><ol><li><a href="#introduction">Introduction</a></li>
+<li><a href="#requirements">Requirements</a></li>
+<li><a href="#no-limitations">No limitations</a></li>
+<li><a href="#add-your-first-rule">Add your first rule</a></li>
+<li><a href="#rule-anatomy">Rule Anatomy</a></li>
+<li><a href="#conditional-validation">Conditional Validation</a></li></ol></div>
+<h2>Introduction <span id="introduction"></span><a href="#introduction" class="hashlink">&para;</a></h2><p>Rule Builder allows you to add conditional logic to your Forms in a quick and intuitive way without using a single line of code. You simply need to add a number of conditions to fulfill to implement a number of actions such as hide/show HTML elements, enable/disable fields, copy fields values, skip pages and do math.</p>
+<p>To access the Rule Builder you must go to <a href="form-manager.html">Form Manager</a>, click the <strong>Actions</strong> button corresponding to the form you will work, then <strong>Conditional Rules</strong>.</p>
+<p><img src="images/form-manager-add-conditional-logic.png" alt="Rule Builder - Conditional Logic" /></p>
+<h2>Requirements <span id="requirements"></span><a href="#requirements" class="hashlink">&para;</a></h2><p>Before using the Rule Builder, your form must have at least one field. Otherwise, a warning message is displayed.</p>
+<p><img src="images/rule-builder-requirements.png" alt="Rule Builder - Requirements" /></p>
+<h2>No limitations <span id="no-limitations"></span><a href="#no-limitations" class="hashlink">&para;</a></h2><p>You do not have any limitation to create conditional rules. You can create as many rules, conditions, sub-conditions and actions as required.</p>
+<h2>Add your first rule <span id="add-your-first-rule"></span><a href="#add-your-first-rule" class="hashlink">&para;</a></h2><p>For this example, you should create a contact form with four fields:</p>
+<ul>
+<li>Name (text field)</li>
+<li>Email (email field)</li>
+<li>Message (text area)</li>
+<li>Button (with text Submit)</li>
+</ul>
+<p><img src="images/rule-builder-contact-form.png" alt="Rule Builder - Contact Form" /></p>
+<p>Then, go to Form Manager, locate your form, click on the Actions button, and then click Conditional Rules.</p>
+<ol>
+<li>Once in this Form Rule Builder, the first thing you will notice is a blank panel with the Add Rule button. Click this button to create your first rule.</li>
+<li>Then you will see two lines, the first refers to the conditions and second to actions.</li>
+<li>Click the button Add condition and the first field of the form will appear, followed by a statement. In our example, the first field of the Form is a Text field with the 'Name' label, so the Rule Builder will show the condition <code>'Name' 'is present'</code>.</li>
+<li>Now click the button Add Action and notice that several selection lists appears. The first list shows the action to perform (For this example, leave in 'Show'); the second shows the Type of result (For this example, leave 'Field') and the third, the first field label: 'Name'. For this example, you will change it for 'Submit' (The text 'Submit' refers to the button).</li>
+<li>Finally, in the top right of this rule you will see a small orange warning "Unsaved Changes" and next a green button with the Check icon. Click on this button to save this rule. The warning will disappear.</li>
+</ol>
+<p>You have created your first rule.</p>
+<p><img src="images/rule-builder-contact-form-rules.png" alt="Easy Forms - Form Rules" /></p>
+<p>If you see your form, you will notice that the button has disappeared, but if you enter a text in the 'Name' field, the button appears.</p>
+<p><img src="images/rule-builder-contact-form-demo.gif" alt="Easy Forms - Contact Form Demo" /></p>
+<p>You should be aware that some rules are met bi-directionally; that is, if the condition has been fulfilled the action will be executed. But, if the condition has not been fulfilled the opposite action will be executed (Show &lt;=&gt; Hide, Enable &lt;=&gt; Disable, Math &lt;=&gt; Reset to O).</p>
+<p>You can add additional rules by clicking the "Add Rule" button, but this will not be saved until you press the green button. Remember that each rule will be stored separately.</p>
+<blockquote><p><strong>Note:</strong> To <strong>delete a rule</strong>, click the red button with the Trash icon. Also, if you want to stop executing a rule for a certain time, you can disable it and then enable it when you need it.</p>
+</blockquote>
+<h2>Rule Anatomy <span id="rule-anatomy"></span><a href="#rule-anatomy" class="hashlink">&para;</a></h2><p>A conditional rule is composed of three parts: Name/Description, Conditions and Actions.</p>
+<p><img src="images/rule-builder.png" alt="Easy Forms - Rule Builder" /></p>
+<h3>Name / Description <span id="name-description"></span><a href="#name-description" class="hashlink">&para;</a></h3><p>The first part allow us to describe the conditional logic. Just use a few words to name or describe what you want to achieve with this rule. (Optional. Max Length: 255)</p>
+<h3>Conditions <span id="conditions"></span><a href="#conditions" class="hashlink">&para;</a></h3><p>It is the second part of a rule, is at the beginning and let you specify the field or fields that need to be evaluated, as the type of evaluation.</p>
+<ul>
+<li><strong>Type of Condition</strong>: The condition type indicates how many conditions must be met to execute the action. It can be: All, Any or None. The default is All.</li>
+<li><strong>Condition</strong>: Is the statement refer to a form field and must be fulfilled. It consists of 3 parts.<ul>
+<li><strong>Name</strong>: The name of the form field on which the condition is based.</li>
+<li><strong>Operator</strong>: The comparison operator used to evaluate the condition.</li>
+<li><strong>Value</strong>: It is an arbitrary value that the user must enter to the Form. The way Values will be defined are going to vary according to the type of field and the type of operator.</li>
+</ul>
+</li>
+<li><strong>Multiple conditions</strong>: You can add multiple conditions to a rule. The type of condition will indicate if all must be met (AND), if any (OR) or none.</li>
+<li><strong>Group of conditions</strong>: In addition of conditions, a rule can contain a group of conditions. A group of conditions differs from a condition that allows changing the type of condition. So a rule can be of type All (AND), but the group can be of type Any (OR).</li>
+<li><strong>Evaluation Process</strong>: The conditions evaluation process is top-down. That is, the conditions at the beginning will be evaluated before to those who are at the end, in descending order.</li>
+</ul>
+<blockquote><p><strong>Note:</strong> Conditions "<em>Belongs To</em>" and "<em>Does not Belongs To</em>" can analyze multiple values separated by "|", this allows you to compare the field value with multiple values, if one of them matches the action will be executed.</p>
+</blockquote>
+<h3>Actions <span id="actions"></span><a href="#actions" class="hashlink">&para;</a></h3><p>The last part of a rule indicates the action to be performed if the conditions are met. As conditions, actions have a declarative easy way to understand.</p>
+<p>An action consists basically of three parts:</p>
+<ul>
+<li><strong>Action Type</strong>:<ul>
+<li><strong>Show / Hide</strong></li>
+<li><strong>Enable / Disable</strong></li>
+<li><strong>Copy</strong>: Let you copy the value of a field or another element and paste it to another field automatically. A great example of where this is useful, is on a Form where you might be collecting a Shipping and Billing address. The end user could enter their Shipping address and check the Copy option to automatically fill the Billing Address Fields with the same data.</li>
+<li><strong>Math</strong>: Allows Addition / Subtraction / Multiplication / Division / Remainder of fields and show the result in another field or HTML element.</li>
+<li><strong>Evaluate</strong>: Allows the evaluation of math expressions (formulas) and set the result in another field. It is also compatible with date calculations. For example, if you want to calculate the multiplication of two fields and divide this value by 10, you use the following formula: <code>{{number_1}} * {{number_2}} / 100</code>. Please take into account the evaluation of math expressions doesn't work with opposite actions. You can read the full list of advanced calculations that the Rule Builder supports thanks to the excellent <a href="https://mathjs.org/">Math.js</a> and <a href="https://date-fns.org/">date-fns</a> libraries.</li>
+<li><strong>Number Format</strong>: Allows you to format a number in different ways and without any coding. For example, to give the currency format to a number: 10130.25 use the following format ‘$0,0.00’ and the number will now be displayed as $10,130.25. You can read the full list of formats that the Rule Builder supports thanks to the excellent <a href="http://numeraljs.com/">Numeral.js library</a>.</li>
+<li><strong>Text Format</strong>: Allows you to select multiple fields to create a new formatted text string and set the result in another field or HTML element. Eg. To auto-generate an email address, select a Name field and enter the following format {{0}}@example.com, then select the Email field where the email address will be displayed. You can use number tokens to identify the field position in the field list, or you can use the Field ID or Field Alias, in our example: {0}@example.com or {{text_1234}}@example.com or {{name}}@example.com should work. </li>
+<li><strong>Skip</strong>: Allows you to define which page to go to when we go to the next page. This action should only be used in a Multi Step Form.</li>
+<li><strong>Form</strong>: Allows you to set actions related to the form:<ul>
+<li>'Submit': To submit the form.</li>
+<li>'Reset': To reset the form.</li>
+<li>'Next Page': To go to the next page.</li>
+<li>'Previous Page': To go to the previous page.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Target</strong>: Will vary depending on the type of Action. It can be of two types:<ul>
+<li>Field</li>
+<li>Element</li>
+</ul>
+</li>
+<li><strong>Name</strong>:<ul>
+<li>If the Target is Field it will be the field name.</li>
+<li>If the Target is Element it will be among several HTML elements selected by jQuery. For instance:<ul>
+<li>'#abc': The target is the HTML element with 'abc' as ID.</li>
+<li>'.abc': The target is all HTML elements with 'abc' as the CSS class.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Opposite Actions</strong>: By default, opposite actions has been enabled because they help the creation of common conditional rules and made them more logic. For example, if after meeting a condition I want to show a field then clearly by not meeting the condition I want to keep this field hidden. However, there are occasions when the disabling of opposite actions can be helpful. When this occurs, only the action described in the rule will be executed.</li>
+</ul>
+<p>Note that the use of elements requires a basic knowledge of jQuery, but offers big advantages. For example, you could create an action to hide all the form fields; <code>'Hide' 'Element' '.form-group'</code>.</p>
+<p><img src="images/rule-builder-anatomy.png" alt="Easy Forms - Rule Anatomy" /></p>
+<blockquote><p><strong>Note:</strong> You can identify the ID and CSS Class of the form fields using the Code tab of the <a href="form-builder.html">Form Builder</a>.</p>
+</blockquote>
+<h2>Conditional Validation <span id="conditional-validation"></span><a href="#conditional-validation" class="hashlink">&para;</a></h2><p>You can omit a required field validation by using conditional rules in two ways:</p>
+<ol>
+<li>When the field is hidden.</li>
+<li>When the field belongs to a page that has been skipped.</li>
+</ol>
+<p>For example, if a field is created with the Form Builder and in the conditional rules  is defined that this field should only be displayed if another field meets a condition and the condition is not met, then the first field will no longer be required (will not be validated by the server).</p>
+<blockquote><p><strong>Note:</strong> To use Conditional Validation, the client side validation must be disabled. (See <a href="form-manager.html#advanced-form-settings">Form Settings -&gt; No validate)</a>)</p>
+</blockquote>
+        <div class="toplink"><a href="#" class="h1" title="go to top"><span class="glyphicon glyphicon-arrow-up"></a></div>
+    </div>
+</div>
+
+    </div>
+
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <p class="pull-left">&copy; Easy forms 2015 - 2021</p>
+        <p class="pull-right">
+            <small>Page generated on Thu, 08 Apr 2021 01:38:17 +0000</small>
+        </p>
+    </div>
+</footer>
+
+<script>jQuery(function ($) {
+    var shiftWindow = function () { scrollBy(0, -50) };
+    if (location.hash) setTimeout(shiftWindow, 1);
+    window.addEventListener("hashchange", shiftWindow);
+var element = document.createElement("script");
+element.src = "./jssearch.index.js";
+document.body.appendChild(element);
+
+var searchBox = $('#searchbox');
+
+// search when typing in search field
+searchBox.on("keyup", function(event) {
+    var query = $(this).val();
+
+    if (query == '' || event.which == 27) {
+        $('#search-resultbox').hide();
+        return;
+    } else if (event.which == 13) {
+        var selectedLink = $('#search-resultbox a.selected');
+        if (selectedLink.length != 0) {
+            document.location = selectedLink.attr('href');
+            return;
+        }
+    } else if (event.which == 38 || event.which == 40) {
+        $('#search-resultbox').show();
+
+        var selected = $('#search-resultbox a.selected');
+        if (selected.length == 0) {
+            $('#search-results').find('a').first().addClass('selected');
+        } else {
+            var next;
+            if (event.which == 40) {
+                next = selected.parent().next().find('a').first();
+            } else {
+                next = selected.parent().prev().find('a').first();
+            }
+            if (next.length != 0) {
+                var resultbox = $('#search-results');
+                var position = next.position();
+
+//              TODO scrolling is buggy and jumps around
+//                resultbox.scrollTop(Math.floor(position.top));
+//                console.log(position.top);
+
+                selected.removeClass('selected');
+                next.addClass('selected');
+            }
+        }
+
+        return;
+    }
+    $('#search-resultbox').show();
+    $('#search-results').html('<li><span class="no-results">No results</span></li>');
+
+    var result = jssearch.search(query);
+
+    if (result.length > 0) {
+        var i = 0;
+        var resHtml = '';
+
+        for (var key in result) {
+            if (i++ > 20) {
+                break;
+            }
+            resHtml = resHtml +
+            '<li><a href="' + result[key].file.u.substr(3) +'"><span class="title">' + result[key].file.t + '</span>' +
+            '<span class="description">' + result[key].file.d + '</span></a></li>';
+        }
+        $('#search-results').html(resHtml);
+    }
+});
+
+// hide the search results on ESC
+$(document).on("keyup", function(event) { if (event.which == 27) { $('#search-resultbox').hide(); } });
+// hide search results on click to document
+$(document).bind('click', function (e) { $('#search-resultbox').hide(); });
+// except the following:
+searchBox.bind('click', function(e) { e.stopPropagation(); });
+$('#search-resultbox').bind('click', function(e) { e.stopPropagation(); });
+
+});</script></body>
+</html>

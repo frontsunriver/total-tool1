@@ -1,0 +1,29 @@
+ //....................carousel section...............
+ .carousel-content{
+
+    .carousel{
+        .carousel-inner{
+            .carousel-item{
+                img{
+                    // height: 417px;
+                }
+            }
+        }
+        .carousel-control-prev{
+            left: 15px;            
+        }
+        .carousel-control-next{
+            right: 15px;
+        }
+        a{
+            transform: translateY(-50%);
+            top: 50%;
+            font-size: 25px;
+            background-color: #5d5d60;
+            height: 45px;
+            width: 45px;
+            border-radius: 200px;
+        }
+    }
+}
+

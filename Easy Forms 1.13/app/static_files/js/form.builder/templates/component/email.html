@@ -1,0 +1,17 @@
+{{ if (field.containerClass) { }}<!-- Email -->
+<div class="{{= field.containerClass }}">
+    <div class="form-group{{ if(field.required) { }} required-control{{ } }}">
+        {{ if (field.label) { }}<label {{ if (field.labelClass) { }} class="{{= field.labelClass }}"{{ } }} for="{{= field.id }}">{{= field.label }}</label>{{ } }}{{ if (field.helpText && field.helpTextPlacement === "above") { }}
+        <p class="help-block">{{= field.helpText }}</p>{{ } }}
+        <input type="email" id="{{= field.id }}" name="{{= field.id }}" value="{{= field.predefinedValue }}" data-alias="{{= field.alias }}"{{ if (field.minlength) { }} minlength="{{= field.minlength }}"{{ } }}{{ if (field.maxlength) { }} maxlength="{{= field.maxlength }}"{{ } }}{{ if (field.pattern) { }} pattern="{{= field.pattern }}"{{ } }}{{ if (field.placeholder) { }} placeholder="{{= field.placeholder }}"{{ } }}{{ if (field.checkdns) { }} data-check-dns="true"{{ } }}{{ if (field.cssClass) { }} class="{{= field.cssClass }}"{{ } }}{{ if (field.multiple) { }} multiple{{ } }}{{ if(field.required) {}} required{{ } }}{{ if (field.unique) { }} data-unique="{{= field.unique }}"{{ } }}{{ if(field.readOnly) { }} readOnly{{ } }}{{ if(field.disabled) { }} disabled{{ } }}>{{ if (field.helpText && field.helpTextPlacement === "below") { }}
+        <p class="help-block">{{= field.helpText }}</p>{{ } }}
+    </div>
+</div>
+{{ } else { }}<!-- Email -->
+<div class="form-group{{ if(field.required) { }} required-control{{ } }}">
+    {{ if (field.label) { }}<label {{ if (field.labelClass) { }} class="{{= field.labelClass }}"{{ } }} for="{{= field.id }}">{{= field.label }}</label>{{ } }}{{ if (field.helpText && field.helpTextPlacement === "above") { }}
+    <p class="help-block">{{= field.helpText }}</p>{{ } }}
+    <input type="email" id="{{= field.id }}" name="{{= field.id }}" value="{{= field.predefinedValue }}" data-alias="{{= field.alias }}"{{ if (field.minlength) { }} minlength="{{= field.minlength }}"{{ } }}{{ if (field.maxlength) { }} maxlength="{{= field.maxlength }}"{{ } }}{{ if (field.pattern) { }} pattern="{{= field.pattern }}"{{ } }}{{ if (field.placeholder) { }} placeholder="{{= field.placeholder }}"{{ } }}{{ if (field.checkdns) { }} data-check-dns="true"{{ } }}{{ if (field.cssClass) { }} class="{{= field.cssClass }}"{{ } }}{{ if (field.multiple) { }} multiple{{ } }}{{ if(field.required) {}} required{{ } }}{{ if (field.unique) { }} data-unique="{{= field.unique }}"{{ } }}{{ if(field.readOnly) { }} readOnly{{ } }}{{ if(field.disabled) { }} disabled{{ } }}>{{ if (field.helpText && field.helpTextPlacement === "below") { }}
+    <p class="help-block">{{= field.helpText }}</p>{{ } }}
+</div>
+{{ } }}

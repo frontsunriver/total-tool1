@@ -1,0 +1,1175 @@
+//
+// Mixins
+// --------------------------------------------------
+.alert-variant(@background; @border; @border-left; @text-color) {
+  background-color: @background;
+  border-color: @border;
+  border-left-color: @border-left;
+  color: @text-color;
+
+  hr {
+    border-top-color: darken(@border, 5%);
+  }
+  .alert-link {
+    color: darken(@text-color, 10%);
+  }
+}
+.float-grid-columns-rtl(@class) {
+  .col(@index) { // initial
+    @item: ~"*[dir='rtl'] .col-@{class}-@{index}";
+    .col((@index + 1), @item);
+  }
+  .col(@index, @list) when (@index =< @grid-columns) { // general
+    @item: ~"*[dir='rtl'] .col-@{class}-@{index}";
+    .col((@index + 1), ~"@{list}, @{item}");
+  }
+  .col(@index, @list) when (@index > @grid-columns) { // terminal
+    *[dir="rtl"] @{list} {
+      float: right;
+    }
+  }
+  .col(1); // kickstart it
+}
+
+
+//
+// Scaffolding
+// --------------------------------------------------
+.app-name {
+  font-family: @app-name-font-family;
+  font-size: @app-name-font-size;
+  color: @app-name-color;
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md-min) {
+  .app-name {
+    font-size: ceil((@app-name-font-size * 1.25));
+  }
+}
+
+//
+// Breadcrumbs
+// --------------------------------------------------
+.breadcrumb-arrow {
+  padding: 0;
+  list-style: none;
+  background-color: @breadcrumb-bg;
+  height: 36px;
+  line-height: 36px;
+  overflow: hidden;
+
+  > li:first-child a {
+    border-radius: @border-radius-base 0 0 @border-radius-base;
+  }
+  > li,
+  > li a,
+  > li span{
+    display: inline-block;
+    vertical-align: top;
+  }
+  > li {
+    + li:before {
+      padding: 0;
+      content: "";
+    }
+  }
+  > li:not(:first-child) {
+    margin-left: -5px;
+  }
+  > li:before {
+    padding: 0;
+    content: "";
+  }
+  > li span {
+    padding: 0 10px;
+  }
+  > li a,
+  > li:not(:first-child) span {
+    padding: 0 10px 0 25px;
+    height: 36px;
+    line-height: 36px;
+  }
+  > li:first-child a {
+    padding: 0 10px;
+  }
+  > li a {
+    position: relative;
+    border: 1px solid @breadcrumb-arrow-background-color;
+    color: @breadcrumb-arrow-font-color;
+    background-color: @breadcrumb-arrow-background-color;
+    text-decoration: none;
+  }
+  > li:first-child a {
+    padding-left: 10px;
+  }
+  > li a:before,
+  > li a:after {
+    position: absolute;
+    top: -1px;
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 18px solid transparent;
+    border-bottom: 18px solid transparent;
+  }
+  > li a:before {
+    right: -10px;
+    border-left-width: 11px;
+    border-left-style: solid;
+    border-left-color: @breadcrumb-arrow-background-color;
+    z-index: 3;
+  }
+  > li a:after{
+    right: -11px;
+    border-left: 11px solid darken(@breadcrumb-arrow-background-color, 10%);
+    z-index: 2;
+  }
+  > li a:hover,
+  > li a:focus {
+    background-color: @breadcrumb-arrow-background-color-hover;
+    border: 1px solid @breadcrumb-arrow-background-color-hover;
+  }
+  > li a:hover:before,
+  > li a:focus:before {
+    border-left-color: @breadcrumb-arrow-background-color-hover;
+  }
+  > li a:active {
+    background-color: darken(@breadcrumb-arrow-background-color, 10%);
+    border: 1px solid darken(@breadcrumb-arrow-background-color, 10%);
+  }
+  > li a:active:before,
+  > li a:active:after {
+    border-left-color: darken(@breadcrumb-arrow-background-color, 10%);
+  }
+  > li span {
+    color: @breadcrumb-active-color;
+  }
+
+}
+
+//
+// Alerts
+// --------------------------------------------------
+.alert {
+  border-left-width: 6px;
+  .glyphicon {
+    font-size: 1.1em;
+    top: 2px;
+    margin-right: 10px;
+  }
+}
+
+// Alternate styles
+//
+// Generate contextual modifier classes for colorizing the alert.
+
+.alert-success {
+  .alert-variant(@alert-success-bg; @alert-success-border; @alert-success-border-left; @alert-success-text);
+}
+
+.alert-info {
+  .alert-variant(@alert-info-bg; @alert-info-border; @alert-info-border-left; @alert-info-text);
+}
+
+.alert-warning {
+  .alert-variant(@alert-warning-bg; @alert-warning-border; @alert-warning-border-left; @alert-warning-text);
+}
+
+.alert-danger {
+  .alert-variant(@alert-danger-bg; @alert-danger-border; @alert-danger-border-left; @alert-danger-text);
+}
+
+//
+// Dropdown menus
+// --------------------------------------------------
+.dropdown-menu {
+  border: 0;
+}
+
+.open {
+  // Show the menu
+  > .dropdown-menu {
+    padding: 3px 4px;
+    > li > a {
+      border-radius: @border-radius-base;
+      padding: 6px 9px;
+    }
+    > .divider {
+      height: 1px;
+      margin: 2px -4px;
+    }
+  }
+}
+
+//
+// Forms
+// --------------------------------------------------
+
+// Form groups
+//
+// Designed to help with the organization and spacing of vertical forms. For
+// horizontal forms, use the predefined grid classes.
+
+.form-control {
+  .box-shadow(none);
+}
+
+// Fix issue with range input
+
+input[type="range"].form-control {
+  padding: 0;
+}
+
+.form-group, .form-action {
+  margin-bottom: @form-group-margin-bottom;
+}
+
+.radio:nth-child(2),
+.checkbox:nth-child(2) {
+  margin-top: 0;
+}
+
+.checkbox .control-label,
+.radio .control-label {
+  font-weight: 700;
+  padding-left: 0;
+  margin-bottom: 5px;
+}
+
+.required .control-label:after, .required-control  .control-label:after {
+  content: " *";
+  color: #fc4c5e;
+}
+
+.radio input[type="radio"],
+.radio-inline input[type="radio"],
+.checkbox input[type="checkbox"],
+.checkbox-inline input[type="checkbox"] {
+  position: absolute;
+  margin-left: 0;
+}
+
+.radio label input[type="radio"],
+.radio-inline label input[type="radio"],
+.checkbox label input[type="checkbox"],
+.checkbox-inline label input[type="checkbox"] {
+  position: absolute;
+  margin-top: 4px;
+  margin-left: -20px;
+}
+
+*[dir="rtl"] .radio-inline input[type="radio"],
+*[dir="rtl"] .checkbox-inline input[type="checkbox"] {
+  margin-right: -19px;
+  margin-left: 0;
+}
+
+.radio + .radio,
+.checkbox + .checkbox {
+  margin-top: -5px; // Move up sibling radios or checkboxes for tighter spacing
+}
+
+
+// Radios and checkboxes on same line
+.inline-control-checkbox,
+.inline-control-radio {
+  input[type="radio"],
+  input[type="checkbox"] {
+    position: absolute;
+    margin-left: 1px;
+  }
+  .control-label {
+    display: block;
+    width: 100%;
+    font-weight: 700;
+    padding-left: 0;
+  }
+}
+
+.radio-inline,
+.checkbox-inline {
+  position: relative;
+  display: inline-block;
+  margin-right: 20px;
+  padding-left: 20px;
+  margin-bottom: 0;
+  vertical-align: baseline;
+  font-weight: normal;
+  cursor: pointer;
+}
+.radio-inline + .radio-inline,
+.checkbox-inline + .checkbox-inline {
+  margin-top: 0;
+  margin-left: 10px; // space out consecutive inline controls
+}
+// Radios and checkboxes with images or icons
+.radio-inline .figure, .inline-control .radio-inline .figure,
+.checkbox-inline .figure, .inline-control .checkbox-inline .figure {
+  display: block;
+  margin-bottom: 10px;
+  padding-top: 4px;
+}
+
+/**
+ * Display radio button group / Checkbox group in 2, 3 or 4 columns
+ */
+form:not(.form-horizontal):not(.form-inline),
+form:not(.form-horizontal):not(.form-inline) {
+  .columns-2, .columns-3, .columns-4 {
+    .control-label {
+      display: block;
+    }
+    .checkbox, .radio {
+      float: left;
+      margin: 0;
+      padding-bottom: 5px;
+    }
+  }
+  .columns-2 {
+    .checkbox, .radio {
+      width: 50%;
+    }
+  }
+  .columns-3 {
+    .checkbox, .radio {
+      width: 33.333333%;
+    }
+  }
+  .columns-4 {
+    .checkbox, .radio {
+      width: 25%;
+    }
+  }
+}
+
+/* Horizontal Forms */
+.form-horizontal {
+  .form-group {
+    margin-right: 0;
+    margin-left: 0;
+    .control-label {
+      width: 33.33333333%;
+      float: left;
+      position: relative;
+      min-height: 1px;
+      padding-top: 0;
+      padding-right: 15px;
+      padding-left: 15px;
+      text-align: right;
+    }
+    .form-control {
+      width: 66.66666666%;
+      position: relative;
+      min-height: 1px;
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+    .checkbox, .radio {
+      margin-left: 33.33333333%;
+      padding-top: 0;
+    }
+    input[type=text] {
+      &:first-child {
+        margin-left: 33.33333333%;
+      }
+    }
+    textarea {
+      &:first-child {
+        margin-left: 33.33333333%;
+      }
+    }
+    select {
+      &:first-child {
+        margin-left: 33.33333333%;
+      }
+    }
+    input[type=file] {
+      &:first-child {
+        margin-left: 33.33333333%;
+      }
+    }
+    input[type=submit] {
+      &:first-child {
+        margin-left: 33.33333333%;
+      }
+    }
+    .help-block {
+      margin-left: 33.33333333%;
+      clear: both;
+      margin-bottom: 0;
+    }
+    .radio, .checkbox {
+      padding-top: 3px;
+    }
+    .radio-inline, .checkbox-inline {
+      padding-top: 0;
+    }
+  }
+  .radio, .checkbox {
+    min-height: 7px;
+    padding-top: 0;
+  }
+  .custom-control {
+    .radio label.control-label,
+    .checkbox label.control-label,
+    .inline-control-radio label.control-label,
+    .inline-control-checkbox label.control-label {
+      padding-left: 0;
+      margin-left: -10px;
+      margin-right: 16px;
+    }
+  }
+}
+/* Inline Forms */
+.form-inline {
+  // Kick in the inline
+  @media (min-width: @screen-sm-min) {
+    // Inline-block all the things for "inline"
+    .form-group, .form-action, input[type=file] {
+      display: inline;
+      margin-bottom: 0;
+      vertical-align: middle;
+    }
+    .radio+.radio, .checkbox+.checkbox {
+      margin-top: 0;
+    }
+    label.control-label {
+      margin-right: 20px;
+    }
+    .inline-control-radio label.control-label,
+    .inline-control-checkbox label.control-label {
+      display: inline-block;
+      width: auto;
+    }
+    .radio label, .checkbox label {
+      padding-left: 7px;
+    }
+    .custom-control {
+      display: inline;
+    }
+  }
+}
+
+/**
+ * Custom Control
+ * Checkbox and Radio Button
+ */
+.custom-control .radio,
+.custom-control .checkbox,
+.custom-control .inline-control-radio,
+.custom-control .inline-control-checkbox {
+  padding-left: 16px;
+}
+.custom-control .radio input,
+.custom-control .checkbox input,
+.custom-control .inline-control-radio input,
+.custom-control .inline-control-checkbox input {
+  opacity: 0;
+  position: absolute;
+  z-index: 1;
+  cursor: pointer;
+  margin-left: -16px;
+}
+.custom-control .radio input:disabled,
+.custom-control .checkbox input:disabled,
+.custom-control .inline-control-radio input:disabled,
+.custom-control .inline-control-checkbox input:disabled {
+  cursor: not-allowed;
+}
+.custom-control .radio input:checked + label::before,
+.custom-control .checkbox input:checked + label::before,
+.custom-control .inline-control-radio input:checked + label::before,
+.custom-control .inline-control-checkbox input:checked + label::before {
+  border-color: #3498db;
+}
+.custom-control .radio input:checked + label::after,
+.custom-control .checkbox input:checked + label::after,
+.custom-control .inline-control-radio input:checked + label::after,
+.custom-control .inline-control-checkbox input:checked + label::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  left: 4px;
+  top: 8px;
+  margin-left: -16px;
+  border: 1px solid #3498db;
+  border-radius: 50%;
+  background-color: #3498db;
+}
+.custom-control .radio label,
+.custom-control .checkbox label,
+.custom-control .inline-control-radio label,
+.custom-control .inline-control-checkbox label {
+  display: inline-block;
+  position: relative;
+  padding-left: 5px;
+}
+.custom-control .radio label::before,
+.custom-control .checkbox label::before,
+.custom-control .inline-control-radio label::before,
+.custom-control .inline-control-checkbox label::before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  left: 0;
+  top: 4px;
+  margin-left: -16px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.custom-control .radio label.control-label,
+.custom-control .checkbox label.control-label,
+.custom-control .inline-control-radio label.control-label,
+.custom-control .inline-control-checkbox label.control-label {
+  padding-left: 0;
+  margin-left: -16px;
+}
+.custom-control .radio label.control-label::before,
+.custom-control .checkbox label.control-label::before,
+.custom-control .inline-control-radio label.control-label::before,
+.custom-control .inline-control-checkbox label.control-label::before {
+  display: none;
+}
+.custom-control .radio.disabled input:checked + label::before,
+.custom-control .checkbox.disabled input:checked + label::before,
+.custom-control .inline-control-radio.disabled input:checked + label::before,
+.custom-control .inline-control-checkbox.disabled input:checked + label::before,
+.custom-control .radio.disabled input:checked + label::after,
+.custom-control .checkbox.disabled input:checked + label::after,
+.custom-control .inline-control-radio.disabled input:checked + label::after,
+.custom-control .inline-control-checkbox.disabled input:checked + label::after {
+  opacity: 0.54;
+}
+.custom-control .radio.disabled label,
+.custom-control .checkbox.disabled label,
+.custom-control .inline-control-radio.disabled label,
+.custom-control .inline-control-checkbox.disabled label {
+  color: #ccc;
+}
+.custom-control .radio.disabled label.control-label,
+.custom-control .checkbox.disabled label.control-label,
+.custom-control .inline-control-radio.disabled label.control-label,
+.custom-control .inline-control-checkbox.disabled label.control-label {
+  color: inherit;
+}
+.custom-control .radio.disabled label::before,
+.custom-control .checkbox.disabled label::before,
+.custom-control .inline-control-radio.disabled label::before,
+.custom-control .inline-control-checkbox.disabled label::before {
+  opacity: 0.54;
+  border-color: #ccc;
+}
+.custom-control .checkbox input:checked + label::before,
+.custom-control .inline-control-checkbox input:checked + label::before {
+  border-color: #3498db;
+  background-color: #3498db;
+}
+.custom-control .checkbox input:checked + label::after,
+.custom-control .inline-control-checkbox input:checked + label::after {
+  content: "\e207";
+  font-family: 'Glyphicons Regular';
+  font-size: 9px;
+  color: #fff;
+  top: 4px;
+  left: 2px;
+  border-color: transparent;
+  background-color: transparent;
+}
+.custom-control .checkbox label::before,
+.custom-control .inline-control-checkbox label::before {
+  border-radius: 2px;
+}
+.custom-control .inline-control-radio label,
+.custom-control .inline-control-checkbox label {
+  padding-right: 16px;
+}
+
+.hint-block {
+  display: block; // account for any element using help-block
+  margin-top: 5px;
+  margin-bottom: 10px;
+  color: lighten(@text-color, 25%); // lighten the text some for contrast
+}
+
+// Search inputs in iOS
+//
+// This overrides the extra rounded corners on search inputs in iOS so that our
+// `.form-control` class can properly style them. Note that this cannot simply
+// be added to `.form-control` as it's not specific enough. For details, see
+// https://github.com/twbs/bootstrap/issues/11586.
+input[type="search"] {
+  -webkit-appearance: none;
+}
+
+//
+// Buttons
+// --------------------------------------------------
+.btn-widget {
+  border-color: @gray;
+}
+
+//
+// Signature Field
+// --------------------------------------------------
+.signature-pad canvas {
+  border-bottom: 1px dashed @input-border;
+}
+
+//
+// Modals
+// --------------------------------------------------
+.modal-title {
+  font-size: @modal-title-font-size;
+  font-weight: 700;
+}
+
+.modal-footer {
+  background-color: @modal-footer-bg;
+  border-radius: 0 0 @border-radius-large @border-radius-large;
+}
+
+//
+// Navbars
+// --------------------------------------------------
+.navbar {
+  font-size: @font-size-medium; // ~16px
+}
+.navbar-fixed-top {
+  border-width: 0;
+}
+.navbar .caret {
+  display: inline-block;
+  margin-left: 8px;
+  width: 0;
+  height: 0;
+  vertical-align: middle;
+  border-top: 8px solid #4b6075;
+  border-right: 6px solid transparent;
+  border-left: 6px solid transparent;
+}
+.navbar-nav {
+  @media (max-width: @grid-float-breakpoint-max) {
+    // Dropdowns get custom display when collapsed
+    .open .dropdown-menu {
+      min-width: 100%;
+    }
+  }
+}
+.navbar-nav > .hasAvatar > a {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  min-width: 130px;
+}
+
+.navbar-nav .avatar {
+  vertical-align: -10px;
+  width: 30px;
+  height: 30px;
+  margin: 0 3px 0 auto;
+  border-radius: 50%;
+}
+.navbar-inverse {
+  box-shadow: none;
+  .navbar-nav {
+    > li > a {
+      @media (min-width: @screen-sm-min) {
+        border-bottom: 3px solid @navbar-inverse-link-border-color;
+      }
+    }
+    > .active > a {
+      &,
+      &:hover,
+      &:focus {
+        border-color: @navbar-inverse-link-active-border-color;
+      }
+    }
+  }
+}
+// Dropdown menu items and carets
+.navbar-nav {
+  // Caret should match text color on hover
+  > .dropdown > a:hover .caret,
+  > .dropdown > a:focus .caret {
+    border-top-color: @navbar-inverse-caret-hover-color;
+    border-bottom-color: @navbar-inverse-caret-hover-color;
+  }
+
+  // Remove background color from open dropdown
+  > .open > a {
+    &,
+    &:hover,
+    &:focus {
+      background-color: @navbar-inverse-link-active-bg;
+      color: @navbar-inverse-link-active-color;
+      border-left-color: transparent;
+      .caret {
+        border-top-color: @navbar-inverse-link-active-color;
+        border-bottom-color: @navbar-inverse-link-active-color;
+      }
+    }
+  }
+  > .dropdown > a .caret {
+    border-top-color: @navbar-inverse-caret-color;
+    border-bottom-color: @navbar-inverse-caret-color;
+  }
+
+  > .open {
+    > .dropdown-menu {
+      background-color: @navbar-inverse-dropdown-bg;
+      padding: 3px 4px;
+      min-width: 100%;
+
+      > li > a {
+        color: @navbar-inverse-dropdown-link-color;
+        border-radius: @border-radius-base;
+        padding: 6px 9px;
+        &.highlighted {
+          background: #526476;
+          border: none !important;
+        }
+        &:hover,
+        &:focus {
+          color: @navbar-inverse-dropdown-link-hover-color;
+          background-color: @navbar-inverse-dropdown-link-hover-bg;
+        }
+      }
+      > .divider {
+        background-color: @navbar-inverse-divider;
+        height: 2px;
+        margin: 2px -4px;
+      }
+    }
+  }
+
+  @media (max-width: @grid-float-breakpoint-max) {
+    > li > a {
+      border-left-width: 0;
+    }
+    // Dropdowns get custom display when collapsed
+    .open .dropdown-menu {
+      > li > a {
+        //color: @navbar-inverse-link-color;
+        &:hover,
+        &:focus {
+          //color: @navbar-inverse-link-hover-color;
+          //background-color: @navbar-inverse-link-hover-bg;
+        }
+      }
+      > .active > a {
+        &,
+        &:hover,
+        &:focus {
+          //color: @navbar-inverse-link-active-color;
+          //background-color: @navbar-inverse-link-active-bg;
+        }
+      }
+      > .disabled > a {
+        &,
+        &:hover,
+        &:focus {
+          //color: @navbar-inverse-link-disabled-color;
+          //background-color: @navbar-inverse-link-disabled-bg;
+        }
+      }
+    }
+    // Custom background for dividers when collapsed
+    .dropdown-menu .divider {
+      background-color: @navbar-inverse-divider;
+    }
+  }
+}
+
+//
+// Navs
+// --------------------------------------------------
+// Give the tabs something to sit on
+.nav-tabs {
+  border-bottom: none;
+  border-radius: @nav-tabs-radius @nav-tabs-radius 0 0;
+
+  > li {
+    margin-bottom: 0;
+    border-left: 1px solid @nav-tabs-border-color;
+
+    @media (max-width: @screen-sm) {
+      border-left: 0;
+    }
+
+    // Actual tabs (as links)
+    > a {
+      margin-right: 2px;
+      line-height: @line-height-base;
+      border: 1px solid transparent;
+      background-color: @nav-tabs-bg;
+      //border-radius: @border-radius-base @border-radius-base 0 0;
+      &:hover {
+        border-color: @nav-tabs-link-hover-border-color @nav-tabs-link-hover-border-color @nav-tabs-border-color;
+      }
+    }
+
+    // Active state, and its :hover to override normal :hover
+    &.active > a {
+      &,
+      &:hover,
+      &:focus {
+        //color: @nav-tabs-active-link-hover-color;
+        background-color: @nav-tabs-active-link-hover-bg;
+        border: 1px solid @nav-tabs-active-link-hover-border-color;
+        border-bottom-color: transparent;
+        cursor: default;
+      }
+    }
+  }
+  > li:first-child {
+    border-left: none;
+  }
+  > li > a {
+    margin-right: 0;
+    border: none;
+    border-radius: 0;
+    color: @nav-tabs-font-color;
+  }
+  > li:first-child > a {
+    border-radius: @nav-tabs-radius 0 0 0;
+  }
+  > li:last-child > a {
+    border-radius: 0 @nav-tabs-radius 0 0;
+  }
+  > li > a:focus,
+  > li > a:hover {
+    border: none;
+    background-color: @nav-tabs-bg-hover;
+  }
+  > li.active > a,
+  > li.active > a:focus,
+  > li.active > a:hover {
+    border: none;
+    background-color: @nav-tabs-bg-active;
+    color: @nav-tabs-font-color-active;
+  }
+}
+.nav-tabs-justified {
+  > li > a {
+    border-radius: 0;
+    border-bottom: none;
+  }
+  > li.active > a,
+  > li.active > a:focus,
+  > li.active > a:hover {
+    border: none;
+  }
+}
+
+//
+// Nav Pills
+// -------------------------
+.nav-pills {
+  > li {
+    > a {
+      padding: 7px 15px;
+      &:hover,
+      &:focus {
+        background-color: @nav-pills-link-hover-bg;
+      }
+    }
+  }
+  // Open dropdowns
+  .open > a {
+    &,
+    &:hover,
+    &:focus {
+      background-color: @nav-pills-link-hover-bg;
+    }
+  }
+}
+
+//
+// Panels
+// --------------------------------------------------
+.panel {
+  border: 0;
+  .box-shadow(0 1px 2px rgba(146,161,173,0.5));
+
+  .panel-big-heading {
+    background-color: @grid-view-heading-bg;
+    padding: 25px;
+    border: 0;
+
+    .panel-title {
+      color: @grid-view-heading-title-color;
+      font-size: 24px;
+      line-height: 26px;
+      font-weight: 400;
+
+      .panel-subtitle {
+        color: @grid-view-heading-subtitle-color;
+        padding-left: 20px;
+        font-size: 80%;
+      }
+    }
+  }
+}
+
+//
+// Popovers
+// --------------------------------------------------
+.popover {
+  padding: 0;
+  border: none;
+  .box-shadow(@popover-box-shadow);
+
+  .popover-title {
+    margin: 0; // reset heading margin
+    padding: 12px 20px;
+    font-size: @popover-title-font-size;
+    background-color: @popover-title-bg;
+    //border-bottom: 1px solid darken(@popover-title-bg, 5%);
+    border-radius: (@border-radius-large - 1) (@border-radius-large - 1) 0 0;
+    color: #ffffff;
+    //font-weight: 700;
+  }
+
+  .popover-content {
+    padding: 9px 14px 14px 14px;
+  }
+
+  &.top > .arrow {
+    left: 50%;
+    margin-left: -@popover-arrow-outer-width;
+    border-bottom-width: 0;
+    border-top-color: @popover-arrow-outer-fallback-color; // IE8 fallback
+    border-top-color: @popover-arrow-outer-color;
+    bottom: -@popover-arrow-outer-width;
+    &:after {
+      content: " ";
+      bottom: 1px;
+      margin-left: -@popover-arrow-width;
+      border-bottom-width: 0;
+      border-top-color: @popover-arrow-color;
+    }
+  }
+  &.topLeft > .arrow {
+  }
+  &.topRight > .arrow {
+  }
+  &.rightTop > .arrow {
+    top: 20%;
+    left: -@popover-arrow-outer-width;
+    margin-top: -@popover-arrow-outer-width;
+    border-left-width: 0;
+    border-right-color: @popover-arrow-outer-fallback-color; // IE8 fallback
+    border-right-color: @popover-arrow-outer-color;
+    &:after {
+      content: " ";
+      left: 1px;
+      bottom: -@popover-arrow-width;
+      border-left-width: 0;
+      border-right-color: @popover-arrow-color;
+    }
+  }
+  &.rightBottom > .arrow {}
+  &.bottomLeft > .arrow {}
+  &.bottomRight > .arrow {}
+  &.leftTop > .arrow {}
+  &.leftBottom > .arrow {}
+  &.right > .arrow {
+    top: 50%;
+    left: -@popover-arrow-outer-width;
+    margin-top: -@popover-arrow-outer-width;
+    border-left-width: 0;
+    border-right-color: @popover-arrow-outer-fallback-color; // IE8 fallback
+    border-right-color: @popover-arrow-outer-color;
+    &:after {
+      content: " ";
+      left: 1px;
+      bottom: -@popover-arrow-width;
+      border-left-width: 0;
+      border-right-color: @popover-arrow-color;
+    }
+  }
+  &.bottom > .arrow {
+    left: 50%;
+    margin-left: -@popover-arrow-outer-width;
+    border-top-width: 0;
+    border-bottom-color: @popover-arrow-outer-fallback-color; // IE8 fallback
+    border-bottom-color: @popover-arrow-outer-color;
+    top: -@popover-arrow-outer-width;
+    &:after {
+      content: " ";
+      top: 1px;
+      margin-left: -@popover-arrow-width;
+      border-top-width: 0;
+      border-bottom-color: @popover-arrow-color;
+    }
+  }
+
+  &.left > .arrow {
+    top: 50%;
+    right: -@popover-arrow-outer-width;
+    margin-top: -@popover-arrow-outer-width;
+    border-right-width: 0;
+    border-left-color: @popover-arrow-outer-fallback-color; // IE8 fallback
+    border-left-color: @popover-arrow-outer-color;
+    &:after {
+      content: " ";
+      right: 1px;
+      border-right-width: 0;
+      border-left-color: @popover-arrow-color;
+      bottom: -@popover-arrow-width;
+    }
+  }
+}
+
+//
+// Tooltips
+// --------------------------------------------------
+.tooltip-inner {
+  padding: 12px 12px;
+}
+
+//
+// Typography
+// --------------------------------------------------
+.page-header {
+  padding: 0;
+  margin: 30px 0 30px;
+  border-bottom: 1px solid #c5cdd4;
+}
+
+//
+// Spectrum Color picker
+// --------------------------------------------------
+.sp-container {
+  background-color: @popover-bg !important;
+  background-clip: padding-box;
+  border: 1px solid @popover-fallback-border-color !important;
+  border: 1px solid @popover-border-color !important;
+  border-radius: @border-radius-large !important;
+}
+.sp-choose {
+  color: @btn-default-color !important;
+  background-color: @btn-default-bg !important;
+  border-color: @btn-default-border !important;
+}
+.sp-choose:focus,
+.sp-choose.focus,
+.sp-choose:active,
+.sp-choose.active,
+.sp-choose:hover {
+  color: @btn-default-color !important;
+  background-color: darken(@btn-default-bg, 10%) !important;
+  border-color: darken(@btn-default-border, 12%) !important;
+}
+//
+// DateRangePicker
+// --------------------------------------------------
+@media screen and (max-width: @screen-xs-max) {
+  .daterangepicker .drp-buttons .drp-selected {
+    display: none !important;
+  }
+}
+//
+// Matrix Field
+// --------------------------------------------------
+.table-matrix {
+  > thead,
+  > tbody,
+  > tfoot {
+    > tr {
+      > th,
+      > td {
+        vertical-align: middle;
+        .checkbox, .radio {
+          margin-top: 0;
+          margin-bottom: 0;
+          input {
+            margin-left: 4px;
+          }
+          label {
+            min-height: 15px;
+          }
+        }
+      }
+    }
+  }
+  > caption {
+    color: @text-color;
+  }
+}
+.custom-control {
+  .table-matrix {
+    .checkbox, .radio {
+      label {
+        min-height: 20px;
+        padding-left: 0;
+        &:before {
+          margin-left: -14px;
+        }
+      }
+    }
+  }
+}
+//
+// RTL
+// --------------------------------------------------
+*[dir="rtl"] {
+  .alert {
+    .glyphicon {
+      margin-left: 10px;
+    }
+  }
+  .close {
+    float: left;
+  }
+  .nav {
+    padding-right: 0;
+  }
+  .dropdown-menu {
+    text-align: right;
+  }
+  .radio-inline,
+  .checkbox-inline {
+    padding-left: 0;
+    padding-right: 20px;
+  }
+  .pull-left {
+    float: right !important;
+  }
+  .pull-right {
+    float: left !important;
+  }
+  .breadcrumb-arrow {
+    > li:not(:first-child) {
+      margin-right: -5px;
+    }
+    > li:before {
+      content: none;
+    }
+    > li:after {
+      padding: 0;
+      content: "";
+    }
+    > li:not(:first-child) span {
+      padding: 0 25px 0 10px;
+    }
+    > li a {
+      border: none;
+    }
+    > li:first-child a {
+      padding: 0 10px 0 25px;
+    }
+    >li a:after {
+      right: -11px;
+      border-left: 10px solid #4c5a66;
+    }
+  }
+}
+@media (min-width: @screen-sm-min) {
+  .float-grid-columns-rtl(sm);
+}

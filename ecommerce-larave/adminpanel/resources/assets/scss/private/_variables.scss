@@ -1,0 +1,128 @@
+// Variables should follow the `$component-state-property-size` formula for
+// consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
+
+// Color system
+
+$white:    #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;  // All Border Color
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;  // All Text Color
+$black:    #000 !default;
+
+$blue:    #479af1 !default;
+$indigo:  #6610f2 !default;
+$purple:  #6f42c1 !default;
+$pink:    #e83e8c !default;
+$red:     #dc3545 !default;
+$orange:  #fd7e14 !default;
+$yellow:  #ffc107 !default;
+$green:   #28a745 !default;
+$teal:    #20c997 !default;
+$cyan:    #17a2b8 !default;
+
+
+
+
+
+
+$primary:       #fff !default;  // Main color or Primary color of the website
+$secondary:   #28B293 !default;  // Main color for buttons
+   
+$primary-dark: $secondary;
+$primary-light: #022e46;
+
+$secondary-dark:  $secondary;
+$secondary-hover: #080808; //icon-hover 
+$success:       $green !default;
+$info:          $blue !default;
+$warning:       $yellow !default;
+$danger:        $red !default;
+$light:         $gray-200 !default;  // For only use background color of the website
+$dark:          $gray-800 !default;
+ 
+   
+// Set a specific jump point for requesting color jumps
+$theme-color-interval:      8% !default;
+
+// The yiq lightness value that determines when the lightness of color changes from "dark" to "light". Acceptable values are between 0 and 255.
+$yiq-contrasted-threshold:  150 !default;
+
+// Customize the light and dark text colors for use in our YIQ color contrast function.
+$yiq-text-dark:             $gray-900 !default;
+$yiq-text-light:            $white !default;
+
+
+$body-bg: #f5f5f5;
+$body-bg-secondary:$gray-400;
+
+
+$body-color: #111;
+$body-color-secondary: $gray-600;
+$box-color:#dbdbdb;
+
+// Links
+//
+// Style anchor elements.
+
+$link-color:                              $gray-900 !default;
+$link-decoration:                         none !default;
+$link-hover-color:                        lighten($link-color, 20%) !default;
+$link-hover-decoration:                   underline !default;
+// Darken percentage for links with `.text-*` class (e.g. `.text-success`)
+$emphasized-link-hover-darken-percentage: 15% !default;
+
+
+$border-width:                1px !default;
+$border-color:                $gray-300  !default;
+
+$border-radius:               0 !default;
+$border-radius-lg:            0 !default;
+$border-radius-sm:            0 !default;
+
+
+$bg-footer: #fff;
+$bg-social: $primary;
+
+@font-face { font-family: 'Montserrat-Regular';
+   
+    src: url('../webfonts/Montserrat-Regular.eot?#iefix&v=4.7.0') format('embedded-opentype'),
+     url('../webfonts/Montserrat-Regular.woff?v=4.7.0') format('woff'), 
+     url('../webfonts/Montserrat-Regular.ttf?v=4.7.0') format('truetype'),
+      url('../webfonts/Montserrat-Regular.svg?v=4.7.0#Montserrat-Regular') format('svg');
+     font-weight: normal; font-style: normal;
+     }
+
+     @font-face { font-family: 'Montserrat-Bold';
+
+        src: url('../webfonts/Montserrat-Bold.eot?#iefix&v=4.7.0') format('embedded-opentype'),
+
+         url('../webfonts/Montserrat-Bold.woff?v=4.7.0') format('woff'), 
+         url('../webfonts/Montserrat-Bold.ttf?v=4.7.0') format('truetype'),
+          url('../webfonts/Montserrat-Bold.svg?v=4.7.0#/Montserrat-Bold') format('svg');
+         font-weight: normal; font-style: normal;
+         }
+
+
+
+// stylelint-disable value-keyword-case
+$font-family-sans-serif:      'Montserrat-Regular', sans-serif !default;
+$font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+$font-family-base:            $font-family-sans-serif !default;
+
+$font-size-base:               0.875rem !default; // Assumes the browser default, typically `16px`
+$font-size-lg:                ($font-size-base + 0.125) !default;
+$font-size-sm:                $font-size-base  !default;
+
+$font-family-base-bold:        'Montserrat-Bold', sans-serif !default;
+
+
+$font-weight-normal:          400 !default;
+$font-weight-semibold:        500 !default;
+$font-weight-bold:          600 !default;
+$font-weight-bolder:          700 !default;

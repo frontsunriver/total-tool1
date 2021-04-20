@@ -1,0 +1,69 @@
+// ....compare....
+
+.aboutus-content-two{
+
+    margin-top: 30px;
+    .profile-div{
+        background-color: white;
+        margin-bottom: 30px;
+        .media-main{
+            .media{
+                .media-body{
+                    h4{
+                        small{
+                            color: $gray-500;
+                            font-size: 12px;
+                        }
+                    }
+                    p{
+                        color: $gray-600;
+                    }
+                }
+            }
+        }
+    }
+   
+  .media-col{
+    justify-content: flex-end;
+    display: flex;
+    align-items: flex-end;
+    border-right: 0.2px solid $border-color;
+  }
+  .product{
+      text-align: center;
+      h2{
+        margin: 0;
+        font-size: $font-size-base;
+      }
+      h5{
+        margin: 0;
+        font-size: 12px;
+        color: $gray-500;
+      }
+    article{
+        padding: 0;
+    }
+  }
+  .iframe-container{
+    margin-bottom: 30px;
+  }
+  .peragraph2{
+    margin-top: 30px;
+  }
+  .accordion-main{
+    margin-bottom: 30px;
+  
+    .accordion-card{
+      margin-top: 30px;
+      .card-header{
+        a{
+          text-decoration: none;
+          .fas{
+            float: right;
+          }
+        }
+      }
+    }
+  }
+  
+}

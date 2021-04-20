@@ -1,0 +1,116 @@
+// ....shop top bar
+
+.top-bar{
+    border: $border-width solid darken($color: $gray-300, $amount: 10%);
+ 
+    label {
+        font-weight: $font-weight-bolder;
+        margin-right: 10px;
+        font-size: 12px;
+    }
+
+    .block{
+        display: flex;
+        align-items: center;
+
+          label {
+        font-weight: $font-weight-bolder;
+        margin: 10px;
+    }
+        .buttons{
+            margin: 0 10px;
+            display: flex;
+            align-items:center;
+            justify-content: center; 
+            a{
+                padding: 5px;
+            }
+
+            .active{
+                color: $secondary;
+            }
+        }
+    }
+    
+    .form-group{
+        position: relative;
+        margin-right: 10px;
+
+        .form-control {
+            
+            padding-top: 0;
+            padding-bottom: 0;
+            padding-right: 17px;
+                border: none;
+                font-size: 12px;
+        }
+        
+        
+    }
+    
+}
+
+@media only screen and (min-width:992px) and (max-width:1199px){
+    
+    .top-bar{
+        
+        .form-inline{
+            .form-group {
+                margin-right: 10px;
+                margin-bottom: 5px;
+                margin-top: 5px;
+            }
+        }
+    }
+}
+@media only screen and (min-width:768px) and (max-width:991px){
+    .top-bar{
+
+        margin-bottom: 15px;
+        .justify-content-center, .justify-content-end{
+            justify-content: flex-start !important;
+        }
+        .block{
+            margin-top: 10px;
+            margin-bottom: 8px;
+        }
+        .form-inline{
+            
+            margin-top: 0;
+            
+            
+        }
+    }
+}
+@media only screen and (max-width:767px){
+    .top-bar{
+        padding-top: 15px;
+        margin-bottom: 15px;
+
+        .block{
+            margin-bottom: 1rem;
+        }
+        .form-inline{
+            
+            
+            .form-group{
+                width: 100%;
+                margin-left: 0 ;
+                margin-right: 0;
+                
+                .form-control{
+                    width: 100%;
+                }
+                .select-control{
+                    width: 100%;
+                }
+
+                span{
+                    width: 100%;
+            display: block;
+            padding-left: 10px;
+                }
+            }
+        }
+    }
+    }

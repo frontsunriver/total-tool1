@@ -1,0 +1,25 @@
+<form data-id="{{= id }}" data-type="{{= type }}" class="form">
+    <div class="popover-content-settings">
+        {{= basicFields }}
+        {{ if (advancedFields) { }}
+        <div>
+            {{= advancedFields }}
+        </div>
+        {{ } }}
+    </div>
+    <hr/>
+    <div class="popover-content-actions">
+        <button id="save" class="btn btn-primary" title="{{= polyglot.t('popover.save') }}">
+            <span class="glyphicon glyphicon-ok"></span> {{= polyglot.t('popover.save') }}
+        </button>
+        <button id="copy" class="btn btn-info" title="{{= polyglot.t('popover.copy') }}">
+            <span class="glyphicon glyphicon-duplicate"></span>
+        </button>
+        <button id="delete" class="btn btn-danger" title="{{= polyglot.t('popover.delete') }}">
+            <span class="glyphicon glyphicon-bin"></span>
+        </button>
+        <button id="cancel" class="btn btn-default" title="{{= polyglot.t('popover.cancel') }}">
+            <span class="glyphicon glyphicon-remove"></span>
+        </button>
+    </div>
+</form>

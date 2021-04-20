@@ -1,0 +1,153 @@
+{
+    "initForm": [
+        {
+            "name": "heading",
+            "title": "heading.title",
+            "fields": {
+                "id": {
+                    "label": "component.id",
+                    "type": "input",
+                    "value": "heading_0"
+                },
+                "text": {
+                    "label": "component.text",
+                    "type": "input",
+                    "value": "Formulario sin título"
+                },
+                "type": {
+                    "label": "component.type",
+                    "type": "select",
+                    "value": [
+                        {
+                            "value": "h1",
+                            "label": "H1",
+                            "selected": false
+                        },
+                        {
+                            "value": "h2",
+                            "label": "H2",
+                            "selected": false
+                        },
+                        {
+                            "value": "h3",
+                            "label": "H3",
+                            "selected": true
+                        },
+                        {
+                            "value": "h4",
+                            "label": "H4",
+                            "selected": false
+                        },
+                        {
+                            "value": "h5",
+                            "label": "H5",
+                            "selected": false
+                        },
+                        {
+                            "value": "h6",
+                            "label": "H6",
+                            "selected": false
+                        }
+                    ]
+                },
+                "cssClass": {
+                    "label": "component.cssClass",
+                    "type": "input",
+                    "value": "legend",
+                    "advanced": true
+                },
+                "containerClass": {
+                    "label": "component.containerClass",
+                    "type": "input",
+                    "value": "",
+                    "advanced": true
+                }
+            },
+            "fresh": false
+        },
+        {
+            "name": "paragraph",
+            "title": "paragraph.title",
+            "fields": {
+                "id": {
+                    "label": "component.id",
+                    "type": "input",
+                    "value": "paragraph_0"
+                },
+                "text": {
+                    "label": "component.text",
+                    "type": "textarea",
+                    "value": "Lo invito a llenar mi formulario. Gracias!"
+                },
+                "cssClass": {
+                    "label": "component.cssClass",
+                    "type": "input",
+                    "value": "",
+                    "advanced": true
+                },
+                "containerClass": {
+                    "label": "component.containerClass",
+                    "type": "input",
+                    "value": "",
+                    "advanced": true
+                }
+            },
+            "fresh": false
+        }
+    ],
+    "settings": {
+        "name": "Formulario sin título",
+        "canvas": "#canvas",
+        "disabledFieldset": false,
+        "layoutSelected": "",
+        "layouts": [
+            {
+                "id": "",
+                "name": "Vertical"
+            },
+            {
+                "id": "form-horizontal",
+                "name": "Horizontal"
+            },
+            {
+                "id": "form-inline",
+                "name": "Inline"
+            }
+        ],
+        "formSteps": {
+            "title": "formSteps.title",
+            "fields": {
+                "id": {
+                    "label": "formSteps.id",
+                    "type": "input",
+                    "value": "formSteps"
+                },
+                "steps": {
+                    "label": "formSteps.steps",
+                    "type": "textarea-split",
+                    "value": []
+                },
+                "progressBar": {
+                    "label": "formSteps.progressBar",
+                    "type": "checkbox",
+                    "value": false
+                },
+                "noTitles": {
+                    "label": "formSteps.noTitles",
+                    "type": "checkbox",
+                    "value": false
+                },
+                "noStages": {
+                    "label": "formSteps.noStages",
+                    "type": "checkbox",
+                    "value": false
+                },
+                "noSteps": {
+                    "label": "formSteps.noSteps",
+                    "type": "checkbox",
+                    "value": false
+                }
+            }
+        }
+    }
+}

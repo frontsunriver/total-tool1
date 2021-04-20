@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="language" content="en"/>
+    <link rel="shortcut icon" type="image/ico" href="./assets/8f121b9a/favicon/favicon.ico"/>
+    <link rel="shortcut icon" type="image/ico" href="./assets/8f121b9a/favicon/favicon_32.ico"/>
+    <link rel="shortcut icon" type="image/ico" href="./assets/8f121b9a/favicon/favicon_48.ico"/>
+    <link rel="shortcut icon" type="image/ico" href="./assets/8f121b9a/favicon/favicon_96.ico"/>
+    <link rel="shortcut icon" type="image/ico" href="./assets/8f121b9a/favicon/favicon_144.ico"/>
+        <link href="./assets/c7fbc653/css/bootstrap.css" rel="stylesheet">
+<link href="./assets/fcacff94/github-gist.css" rel="stylesheet">
+<link href="./assets/8f121b9a/css/fonts.min.css" rel="stylesheet">
+<link href="./assets/8f121b9a/css/bootstrap.min.css" rel="stylesheet">
+<link href="./assets/8f121b9a/css/api.css" rel="stylesheet">
+<link href="./assets/8f121b9a/css/style.css" rel="stylesheet">
+<script src="./assets/e3a17645/jquery.js"></script>
+<script src="./assets/c7fbc653/js/bootstrap.js"></script>
+<script src="./assets/bbf47a67/jssearch.js"></script>    <title>Email Setup - First steps - Easy Forms</title>
+</head>
+<body>
+
+<div class="wrap">
+    <nav id="w358" class="navbar-inverse navbar-fixed-top navbar"><div class="container"><div class="navbar-header"><button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#w358-collapse"><span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span></button><a class="navbar-brand" href="./index.html"><span class="app-name">Easy Forms</span></a></div><div id="w358-collapse" class="collapse navbar-collapse"><ul id="w359" class="navbar-nav nav"><li><a href="./index.html">Documentation</a></li></ul>
+    <div class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+            <input id="searchbox" type="text" class="form-control" placeholder="Search">
+        </div>
+    </div>
+    </div></div></nav>
+    <div id="search-resultbox" style="display: none;" class="modal-content">
+        <ul id="search-results">
+        </ul>
+    </div>
+
+    <div class="container">
+        
+<div class="row">
+    <div class="col-md-2">
+                <div id="navigation" class="list-group"><a class="list-group-item active" href="#navigation-350" data-toggle="collapse" data-parent="#navigation">First steps <b class="caret"></b></a><div id="navigation-350" class="submenu panel-collapse collapse in"><a class="list-group-item" href="./intro-easy-forms.html">About Easy Forms</a>
+<a class="list-group-item" href="./system-requirements.html">Requirements</a>
+<a class="list-group-item" href="./start-installation.html">Installing Easy Forms</a>
+<a class="list-group-item" href="./start-upgrading.html">Upgrading Easy Forms</a>
+<a class="list-group-item" href="./settings.html">Set Up Easy Forms</a>
+<a class="list-group-item" href="./start-customization.html">Customizing Easy Forms</a>
+<a class="list-group-item active" href="./email-setup.html">Email Setup</a>
+<a class="list-group-item" href="./dynamic-content.html">Dynamic Content</a></div>
+<a class="list-group-item" href="#navigation-351" data-toggle="collapse" data-parent="#navigation">Forms <b class="caret"></b></a><div id="navigation-351" class="submenu panel-collapse collapse"><a class="list-group-item" href="./form-manager.html">Form Manager</a>
+<a class="list-group-item" href="./form-builder.html">Form Builder</a>
+<a class="list-group-item" href="./theme-designer.html">Theme Designer</a>
+<a class="list-group-item" href="./rule-builder.html">Rule Builder</a>
+<a class="list-group-item" href="./submission-manager.html">Submission Manager</a>
+<a class="list-group-item" href="./form-report-builder.html">Report Builder</a>
+<a class="list-group-item" href="./form-analytics.html">In-App Analytics</a>
+<a class="list-group-item" href="./form-widget.html">Form Widget</a>
+<a class="list-group-item" href="./form-import-export.html">Import / Export</a></div>
+<a class="list-group-item" href="#navigation-352" data-toggle="collapse" data-parent="#navigation">Templates <b class="caret"></b></a><div id="navigation-352" class="submenu panel-collapse collapse"><a class="list-group-item" href="./template-manager.html">Template Manager</a></div>
+<a class="list-group-item" href="#navigation-353" data-toggle="collapse" data-parent="#navigation">Themes <b class="caret"></b></a><div id="navigation-353" class="submenu panel-collapse collapse"><a class="list-group-item" href="./theme-manager.html">Theme Manager</a></div>
+<a class="list-group-item" href="#navigation-354" data-toggle="collapse" data-parent="#navigation">Users <b class="caret"></b></a><div id="navigation-354" class="submenu panel-collapse collapse"><a class="list-group-item" href="./user-manager.html">User Manager</a>
+<a class="list-group-item" href="./membership.html">Membership</a></div>
+<a class="list-group-item" href="#navigation-355" data-toggle="collapse" data-parent="#navigation">Add-Ons <b class="caret"></b></a><div id="navigation-355" class="submenu panel-collapse collapse"><a class="list-group-item" href="./addon-manager.html">Add-On Manager</a>
+<a class="list-group-item" href="./addon-webhooks.html">WebHooks</a>
+<a class="list-group-item" href="./addon-google-analytics.html">Google Analytics</a></div>
+<a class="list-group-item" href="#navigation-356" data-toggle="collapse" data-parent="#navigation">Premium Add-Ons <b class="caret"></b></a><div id="navigation-356" class="submenu panel-collapse collapse"><a class="list-group-item" href="./addon-acelle-mail.html">Acelle Mail</a>
+<a class="list-group-item" href="./addon-active-campaign.html">Active Campaign</a>
+<a class="list-group-item" href="./addon-adyen.html">Adyen</a>
+<a class="list-group-item" href="./addon-aweber.html">AWeber</a>
+<a class="list-group-item" href="./addon-braintree.html">Braintree</a>
+<a class="list-group-item" href="./addon-campaign-monitor.html">Campaign Monitor</a>
+<a class="list-group-item" href="./addon-cleverreach.html">CleverReach</a>
+<a class="list-group-item" href="./addon-conditional-emails.html">Conditional Emails</a>
+<a class="list-group-item" href="./addon-constant-contact.html">Constant Contact</a>
+<a class="list-group-item" href="./addon-custom-error-messages.html">Custom Error Messages</a>
+<a class="list-group-item" href="./addon-custom-data-validation.html">Data Validation</a>
+<a class="list-group-item" href="./addon-emailoctopus.html">EmailOctopus</a>
+<a class="list-group-item" href="./addon-facebook-login.html">Facebook Login</a>
+<a class="list-group-item" href="./addon-field-encryption.html">Field Encryption</a>
+<a class="list-group-item" href="./addon-google-places-autocomplete.html">Google Places Autocomplete</a>
+<a class="list-group-item" href="./addon-import-submissions.html">Import Submissions</a>
+<a class="list-group-item" href="./addon-insightly.html">Insightly</a>
+<a class="list-group-item" href="./addon-mailchimp.html">MailChimp</a>
+<a class="list-group-item" href="./addon-mailerlite.html">MailerLite</a>
+<a class="list-group-item" href="./addon-mysql.html">MySQL</a>
+<a class="list-group-item" href="./addon-neverbounce.html">NeverBounce</a>
+<a class="list-group-item" href="./addon-nexmo-sms.html">Nexmo SMS</a>
+<a class="list-group-item" href="./addon-paypal.html">PayPal</a>
+<a class="list-group-item" href="./addon-paypal-invoicing.html">PayPal Invoicing</a>
+<a class="list-group-item" href="./addon-pdf.html">PDF</a>
+<a class="list-group-item" href="./addon-plivo.html">Plivo SMS</a>
+<a class="list-group-item" href="./addon-salesforce.html">Salesforce</a>
+<a class="list-group-item" href="./addon-sendinblue.html">SendinBlue</a>
+<a class="list-group-item" href="./addon-stripe.html">Stripe</a>
+<a class="list-group-item" href="./addon-twilio.html">Twilio SMS</a></div>
+<a class="list-group-item" href="#navigation-357" data-toggle="collapse" data-parent="#navigation">Premium Modules <b class="caret"></b></a><div id="navigation-357" class="submenu panel-collapse collapse"><a class="list-group-item" href="./module-subscriptions.html">Subscriptions</a></div></div>    </div>
+    <div class="col-md-9 guide-content" role="main">
+        <h1>Email Setup <span id="email-setup"></span><a href="#email-setup" class="hashlink">&para;</a></h1>
+<div class="toc"><ol><li><a href="#introduction">Introduction</a></li>
+<li><a href="#when-does-easy-forms-send-an-email">When does Easy Forms send an email?</a></li>
+<li><a href="#site-emails">Site Emails</a></li>
+<li><a href="#how-to-set-up-the-email-sending">How to set up the email sending?</a></li>
+<li><a href="#configure-access-to-your-smtp-account">Configure access to your SMTP account</a></li>
+<li><a href="#get-an-smtp-account">Get an SMTP account</a></li>
+<li><a href="#configure-asynchronous-email-notifications">Configure Asynchronous Email Notifications</a></li>
+<li><a href="#sendinblue-integration">Sendinblue Integration</a></li>
+<li><a href="#amazon-ses-integration">Amazon SES Integration</a></li>
+<li><a href="#customize-the-email-from-name-sender-name">Customize the Email From Name (Sender Name)</a></li>
+<li><a href="#send-test-email">Send Test Email</a></li></ol></div>
+<h2>Introduction <span id="introduction"></span><a href="#introduction" class="hashlink">&para;</a></h2><p>This guide will explain several things you should consider when setting up your email account, whether you use your hosting's SMTP server, an external provider such as Gmail, Yahoo Mail or Outlook (Hotmail), or even PHP mail() function.</p>
+<blockquote><p><strong>Note:</strong> <code>@app</code> refers to the application installation path.</p>
+</blockquote>
+<p><img src="images/email-setup.jpg" alt="Easy Forms - Email Setup" /></p>
+<h2>When does Easy Forms send an email? <span id="when-does-easy-forms-send-an-email"></span><a href="#when-does-easy-forms-send-an-email" class="hashlink">&para;</a></h2><p>It´s very important to know when Easy Forms send an email, because it will let you verify the application's correct functioning.</p>
+<p>There are 5 actions or events that cause sending an email:</p>
+<ol>
+<li>When you received a Form Submission and your app need to send confirmations or notifications by email. This is the most common action why emails are sent, as each time a user makes use of your forms, it will be sending emails.</li>
+<li>When a registered user goes to Forgot Password and asks you to send an email with the instructions to recover his password.</li>
+<li>When a registered user accesses his account and change his email address. In this case, an email is sent to the new address to click on a confirmation link.</li>
+<li>When a registered user requests a confirmation email.</li>
+<li>When a user logs correctly (with a valid username and password), but his status is 'Inactive' (his email has not been confirmed); automatically will be sent an email confirmation.</li>
+</ol>
+<h2>Site Emails <span id="site-emails"></span><a href="#site-emails" class="hashlink">&para;</a></h2><p>Easy Forms allows you to set 3 types of emails, each with a different use:</p>
+<ol>
+<li><strong>Admin e-mail</strong>: Administrator's e-mail. Not used as the emails' sender. But, it can be used as notifications Reply-To (When a form is submitted).</li>
+<li><strong>Support e-mail</strong>: Default sender of emails relate with Easy Forms' registered users managing. For example, to reset the password or to confirm an email, Support e-mail will be the sender of these emails. Additionally, it can be used as notifications Reply-To (When a form is submitted).</li>
+<li><strong>No-reply e-mail</strong>: Default sender of sent emails when form's notification and/or confirmations are configured. It's used to send test emails too. And it can be used as notifications Reply-To (When a form is submitted).</li>
+</ol>
+<blockquote><p><strong>Note:</strong> You must keep in mind that when a notification is configured, you can select a Form's Email field as Reply-To, to enable the notifications' recipient to easily reply these emails.</p>
+</blockquote>
+<h2>How to set up the email sending? <span id="how-to-set-up-the-email-sending"></span><a href="#how-to-set-up-the-email-sending" class="hashlink">&para;</a></h2><p>The process to send emails depends on the setting you make. By default, we recommend the SMTP server configuration. However, if your hosting provider does not allow it, you can also send emails with the PHP mail() function.</p>
+<h3>Setting up emails with a SMTP server <span id="setting-up-emails-with-a-smtp-server"></span><a href="#setting-up-emails-with-a-smtp-server" class="hashlink">&para;</a></h3><p>As hosting providers, SMTP providers also have restrictions that can affect the normal operation of Easy Forms. For example, Yahoo Mail requests that the sender of all emails must be the yahoo user. Gmail is less restrictive in this regard. However, you can use any of these services considering the following:</p>
+<ol>
+<li>By default, all emails are sent with the SMTP server Username as sender. But we recommend that both Support e-mail and No-reply e-mail match your SMTP server Username .</li>
+<li>Be careful when typing your password. By default, we hide it. But this is usually the most common reason why emails aren't sent.</li>
+<li>Be patient. Some suppliers will take several minutes to delivery the mail. In our tests, Gmail and Outlook were faster.</li>
+<li>Verify that the SMTP provider has not restricted access from your server. This can happen if for example, you always access your Hotmail account from country X and your hosting is in country Y.</li>
+</ol>
+<p>The steps of the SMTP server settings are detailed in <a href="start-installation.html">the documentation about installing Easy Forms</a>.</p>
+<h3>Set emails with a hosting provider <span id="set-emails-with-a-hosting-provider"></span><a href="#set-emails-with-a-hosting-provider" class="hashlink">&para;</a></h3><p>When we talk about hosting providers, we must understand that there are a variety of services and each with different policies. So you need to start testing the configuration that offers you the best results.</p>
+<p>For this example, we will make reference to Dreamhost, one of the most popular.</p>
+<ol>
+<li>Go to Dreamhost's Control Panel and create an email associated with the domain that hosts Easy Forms. For example, if Easy Forms is hosted on the example.com domain, create three emails: admin@example.com, support@example.com and no-reply@example.com.</li>
+<li>Go to Easy Forms</li>
+<li>Click on your username and then Settings</li>
+<li>Add the 3 emails in the proper fields.</li>
+<li>Click Save</li>
+</ol>
+<blockquote><p><strong>Ready!</strong> Easy Forms can now send e-mails using the PHP mail() function and the Dreamhost's mail server.</p>
+</blockquote>
+<blockquote><p><strong>Note:</strong> Both, the domain and username are for reference only, you might as well use a single e-mail in the three fields.</p>
+</blockquote>
+<blockquote><p><strong>Important!</strong> Keep in mind, set these fields is very important for the proper delivery of emails, particularly Support and Non-Reply.</p>
+</blockquote>
+<h3>Send emails with the PHP mail() function <span id="send-emails-with-the-php-mail-function"></span><a href="#send-emails-with-the-php-mail-function" class="hashlink">&para;</a></h3><p>To send emails with the PHP mail() function you don't need to perform any change, because this is the default option.</p>
+<p>If you want to see where is the default option in the source code, follow the next steps:</p>
+<ol>
+<li>Open the file <code>@app/config/params.php</code></li>
+<li>Verify that the value of <code>App.Mailer.transport</code> must be <code>php</code></li>
+<li>Save the file and upload it to your server.</li>
+</ol>
+<p><strong>Ready!</strong> With this, PHP will send the emails through the mail you've set in your hosting.</p>
+<h2>Configure access to your SMTP account <span id="configure-access-to-your-smtp-account"></span><a href="#configure-access-to-your-smtp-account" class="hashlink">&para;</a></h2><p>Send emails by using the PHP native function - mail() - suffer from many drawbacks in terms of Deliverability. Many anti spam filters end up blocking these emails. To avoid this problem, you must configure an SMTP account in the application to send all mail through it.</p>
+<p>To set up a SMTP account with Easy Forms you must follow these steps:</p>
+<ol>
+<li>Click on your username in the navigation menu.</li>
+<li>Click "<em>Settings</em>".</li>
+<li>In the lower left block, click "<em>Mail Server</em>"</li>
+<li>Choose "<em>SMTP</em>" and fill the fields with information of your SMTP account.</li>
+</ol>
+<blockquote><p><strong>Note:</strong>  If you want to send the emails with the PHP mail() function again, just choose "PHP" again.</p>
+</blockquote>
+<p><img src="images/smtp-server-access.png" alt="Easy Forms - SMTP Server" /></p>
+<h2>Get an SMTP account <span id="get-an-smtp-account"></span><a href="#get-an-smtp-account" class="hashlink">&para;</a></h2><p><strong>To find out Email Server Settings in cPanel</strong>, perform the following steps:</p>
+<ol>
+<li>Go to your <em>cPanel</em></li>
+<li>Find the <em>Mail</em> section and Click <em>Email Accounts</em></li>
+<li>From the list of email accounts locate the email account you require the server settings for.</li>
+<li>Click <em>More</em> followed by <em>Configure Email Client</em>.</li>
+<li>You must use the information under the heading Manual Settings (Non-SSL Settings)</li>
+</ol>
+<p>On the other hand, we have checked the correct operation of Easy Forms with the configuration of the following SMTP servers:</p>
+<blockquote><p><strong>Note:</strong> Please keep in mind that when using any free email account like Gmail, Yahoo Mail or Hotmail, there are limits that apply on the number of emails you are allowed to send daily.</p>
+</blockquote>
+<pre><code class="language-plaintext">Gmail
+- Host: smtp.gmail.com
+- Port: 587
+- Encryption: TLS
+</code></pre>
+<blockquote><p><strong>Important!</strong> You must enable "Allow less secure apps", disable "Two Factor Authentication" and "Unlock Captcha for new devices" on your Google Account (Go to: <a href="https://myaccount.google.com/u/0/security">https://myaccount.google.com/u/0/security</a> and <a href="https://accounts.google.com/displayunlockcaptcha">https://accounts.google.com/displayunlockcaptcha</a>).</p>
+</blockquote>
+<pre><code class="language-plaintext">Outlook (Hotmail)
+- Host: smtp-mail.outlook.com
+- Port: 587
+- Encryptation: TLS
+</code></pre>
+<blockquote><p><strong>Note:</strong> We recommend test the email sending and access your inbox in Outlook, to verify that Easy Forms access has not been restricted (Go to: <a href="https://account.live.com/activity">https://account.live.com/activity</a>)</p>
+</blockquote>
+<pre><code class="language-plaintext">Yahoo Mail
+- Host: smtp.mail.yahoo.com
+- Port: 465
+- Encryptation: ssl
+</code></pre>
+<blockquote><p><strong>Note:</strong> According to our tests the Yahoo Mail delivery is successful, but it can take several minutes.</p>
+</blockquote>
+<h2>Configure Asynchronous Email Notifications <span id="configure-asynchronous-email-notifications"></span><a href="#configure-asynchronous-email-notifications" class="hashlink">&para;</a></h2><p>This feature is only available when you send your emails through an SMTP account, since we have not detected any delay when we use the PHP mail () function.</p>
+<p>To enable asynchronous email notifications you must follow the next steps:</p>
+<ol>
+<li>Click on your username in the navigation menu.</li>
+<li>Click "<em>Settings</em>".</li>
+<li>In the lower left block, click "<em>Mail Settings</em>"</li>
+<li>Choose "<em>SMTP</em>" and fill the fields with information of your SMTP account.</li>
+<li><strong>Enable the Async option</strong></li>
+</ol>
+<p>From now all your emails will be queued, and a Cron Job will be in charge of sending. So if you want to use this feature without delays, be sure to run the application cron every minute.</p>
+<blockquote><p><strong>Important!</strong> Asynchronous Email Notifications are sent by the Cron Job, <a href="start-customization.html#how-to-configure-your-cron-job">so you must enable it first</a>.</p>
+</blockquote>
+<h3>Changing the default Async value <span id="changing-the-default-async-value"></span><a href="#changing-the-default-async-value" class="hashlink">&para;</a></h3><p>By default, the <em>Async</em> option has been disabled. However, if you are a developer, you can change its default value.</p>
+<p>To change the default <em>Async</em> value, just follow the next steps:</p>
+<ol>
+<li>Open the file <code>@app/config/params.php</code>.</li>
+<li>Change the value of <code>'App.Mailer.async'</code> to 1.</li>
+<li>Save the file.</li>
+</ol>
+<blockquote><p><strong>Note</strong>: Default values ​​are overwritten when the Mail Server settings is saved using the user interface.</p>
+</blockquote>
+<h2>Sendinblue Integration <span id="sendinblue-integration"></span><a href="#sendinblue-integration" class="hashlink">&para;</a></h2><p>Would you like to improve email deliverability? Sendinblue is super reliable and has a straightforward set up. Just <a href="https://easyforms.dev/sendinblue">go to your Sendinblue account</a> -&gt; Click your <strong>Username</strong> -&gt; Click <strong>SMTP &amp; API</strong> -&gt; And copy the <strong>v3 Api Key</strong>.</p>
+<p>To use your Sendinblue account to send all the transactional emails (e.g. Order confirmations, e-mail notifications or password reset):</p>
+<ol>
+<li>Click on your username in the navigation menu.</li>
+<li>Click "<em>Settings</em>".</li>
+<li>In the lower left block, click "<em>Mail Settings</em>"</li>
+<li>Choose "Sendinblue" and paste your <strong>v3 Api Key</strong> of Sendinblue account.</li>
+<li>Click "Save"</li>
+</ol>
+<p><img src="images/easy-forms-sendinblue.png" alt="Easy Forms - Email Setup - Sendinblue" /></p>
+<blockquote><p><strong>Note</strong>: The Sendinblue integration will not be able to work until you’ve completed the activation process. In order to activate your account, you’ll need to reach out to Sendinblue’s support team.</p>
+</blockquote>
+<h2>Amazon SES Integration <span id="amazon-ses-integration"></span><a href="#amazon-ses-integration" class="hashlink">&para;</a></h2><p>Amazon Simple Email Service, or Amazon SES, is a powerful tool that’s commonly used for sending emails. To use Amazon SES to send all the transactional emails, follow the next steps:</p>
+<ol>
+<li>Click on your username in the navigation menu.</li>
+<li>Click "<em>Settings</em>".</li>
+<li>In the lower left block, click "<em>Mail Settings</em>"</li>
+<li>Choose "Amazon SES" and enter your <strong>Amazon Key ID</strong>, <strong>Secret Access Key</strong> and <strong>Region</strong> of your Amazon SES account.</li>
+<li>Click "Save"</li>
+</ol>
+<p><img src="images/easy-forms-amazon-ses.png" alt="Easy Forms - Email Setup - Amazon SES" /></p>
+<h2>Customize the Email From Name (Sender Name) <span id="customize-the-email-from-name-sender-name"></span><a href="#customize-the-email-from-name-sender-name" class="hashlink">&para;</a></h2><p>From Name is the default sender name used by the application. If it's blank, we'll use the application name.</p>
+<p>To set up the <em>From Name</em> of all the outgoing emails:</p>
+<ol>
+<li>Click on your username in the navigation menu.</li>
+<li>Click "<em>Settings</em>".</li>
+<li>In the lower left block, click "<em>Mail Server</em>"</li>
+<li>Go to the "<em>From Name</em>" panel and enter a name.</li>
+<li>Click "<em>Save</em>"</li>
+</ol>
+<h2>Send Test Email <span id="send-test-email"></span><a href="#send-test-email" class="hashlink">&para;</a></h2><p>The final step is confirm that your Email Setup is working correctly. To test this out, go to "<em>Send Test Email</em>" panel on <em>Mail Server</em> settings page. Then, enter your email address and click the "<em>Send Email</em>" button.</p>
+<p><img src="images/easy-forms-send-test-email.png" alt="Easy Forms - Email Setup - Send Test Email" /></p>
+        <div class="toplink"><a href="#" class="h1" title="go to top"><span class="glyphicon glyphicon-arrow-up"></a></div>
+    </div>
+</div>
+
+    </div>
+
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <p class="pull-left">&copy; Easy forms 2015 - 2021</p>
+        <p class="pull-right">
+            <small>Page generated on Thu, 08 Apr 2021 01:38:17 +0000</small>
+        </p>
+    </div>
+</footer>
+
+<script>jQuery(function ($) {
+    var shiftWindow = function () { scrollBy(0, -50) };
+    if (location.hash) setTimeout(shiftWindow, 1);
+    window.addEventListener("hashchange", shiftWindow);
+var element = document.createElement("script");
+element.src = "./jssearch.index.js";
+document.body.appendChild(element);
+
+var searchBox = $('#searchbox');
+
+// search when typing in search field
+searchBox.on("keyup", function(event) {
+    var query = $(this).val();
+
+    if (query == '' || event.which == 27) {
+        $('#search-resultbox').hide();
+        return;
+    } else if (event.which == 13) {
+        var selectedLink = $('#search-resultbox a.selected');
+        if (selectedLink.length != 0) {
+            document.location = selectedLink.attr('href');
+            return;
+        }
+    } else if (event.which == 38 || event.which == 40) {
+        $('#search-resultbox').show();
+
+        var selected = $('#search-resultbox a.selected');
+        if (selected.length == 0) {
+            $('#search-results').find('a').first().addClass('selected');
+        } else {
+            var next;
+            if (event.which == 40) {
+                next = selected.parent().next().find('a').first();
+            } else {
+                next = selected.parent().prev().find('a').first();
+            }
+            if (next.length != 0) {
+                var resultbox = $('#search-results');
+                var position = next.position();
+
+//              TODO scrolling is buggy and jumps around
+//                resultbox.scrollTop(Math.floor(position.top));
+//                console.log(position.top);
+
+                selected.removeClass('selected');
+                next.addClass('selected');
+            }
+        }
+
+        return;
+    }
+    $('#search-resultbox').show();
+    $('#search-results').html('<li><span class="no-results">No results</span></li>');
+
+    var result = jssearch.search(query);
+
+    if (result.length > 0) {
+        var i = 0;
+        var resHtml = '';
+
+        for (var key in result) {
+            if (i++ > 20) {
+                break;
+            }
+            resHtml = resHtml +
+            '<li><a href="' + result[key].file.u.substr(3) +'"><span class="title">' + result[key].file.t + '</span>' +
+            '<span class="description">' + result[key].file.d + '</span></a></li>';
+        }
+        $('#search-results').html(resHtml);
+    }
+});
+
+// hide the search results on ESC
+$(document).on("keyup", function(event) { if (event.which == 27) { $('#search-resultbox').hide(); } });
+// hide search results on click to document
+$(document).bind('click', function (e) { $('#search-resultbox').hide(); });
+// except the following:
+searchBox.bind('click', function(e) { e.stopPropagation(); });
+$('#search-resultbox').bind('click', function(e) { e.stopPropagation(); });
+
+});</script></body>
+</html>

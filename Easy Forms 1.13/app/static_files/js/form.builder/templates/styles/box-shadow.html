@@ -1,0 +1,27 @@
+<div class="form-group styles-{{- name }}">
+    <label class="control-label" for="{{- name }}">{{- label }}</label>
+    <input type="text" id="{{- name }}" class="form-control data-list" name="{{- name }}" value="{{- value }}" placeholder="{{- placeholder }}" list="{{- name }}-data-list">
+    <datalist id="{{- name }}-data-list">
+        <option value="none">none</option>
+        {{ _.each(_.range(1, 10, 1), function(a) { var b = a * 2; }}
+        <option value="{{- a }}px {{- b }}px">{{- a }}px {{- b }}px</option>
+        {{ }); }}
+        {{ _.each(_.range(1, 10, 1), function(a) { var b = a * 2; }}
+        <option value="{{- a }}px {{- b }}px #888888">{{- a }}px {{- b }}px #888888</option>
+        {{ }); }}
+        {{ _.each(_.range(1, 10, 1), function(a) { var b = a * 2; }}
+        <option value="{{- a }}px {{- b }}px red">{{- a }}px {{- b }}px red</option>
+        {{ }); }}
+        <option value="1px 1px 5px #aaaaaa">1px 1px 5px #aaaaaa</option>
+        <option value="1px 2px 5px #aaaaaa">1px 2px 5px #aaaaaa</option>
+        <option value="2px 2px 5px #aaaaaa">2px 2px 5px #aaaaaa</option>
+        <option value="3px 3px 5px #aaaaaa">3px 3px 5px #aaaaaa</option>
+        <option value="4px 4px 5px #aaaaaa">4px 4px 5px #aaaaaa</option>
+        <option value="5px 5px 5px #aaaaaa">5px 5px 5px #aaaaaa</option>
+        <option value="6px 6px 5px #aaaaaa">6px 6px 5px #aaaaaa</option>
+        <option value="7px 7px 5px #aaaaaa">7px 7px 5px #aaaaaa</option>
+        <option value="8px 8px 5px #aaaaaa">8px 8px 5px #aaaaaa</option>
+        <option value="9px 9px 5px #aaaaaa">9px 9px 5px #aaaaaa</option>
+        <option value="10px 10px 5px #aaaaaa">10px 10px 5px #aaaaaa</option>
+    </datalist>
+</div>

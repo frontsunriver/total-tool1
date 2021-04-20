@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="language" content="en"/>
+    <link rel="shortcut icon" type="image/ico" href="./assets/8f121b9a/favicon/favicon.ico"/>
+    <link rel="shortcut icon" type="image/ico" href="./assets/8f121b9a/favicon/favicon_32.ico"/>
+    <link rel="shortcut icon" type="image/ico" href="./assets/8f121b9a/favicon/favicon_48.ico"/>
+    <link rel="shortcut icon" type="image/ico" href="./assets/8f121b9a/favicon/favicon_96.ico"/>
+    <link rel="shortcut icon" type="image/ico" href="./assets/8f121b9a/favicon/favicon_144.ico"/>
+        <link href="./assets/c7fbc653/css/bootstrap.css" rel="stylesheet">
+<link href="./assets/fcacff94/github-gist.css" rel="stylesheet">
+<link href="./assets/8f121b9a/css/fonts.min.css" rel="stylesheet">
+<link href="./assets/8f121b9a/css/bootstrap.min.css" rel="stylesheet">
+<link href="./assets/8f121b9a/css/api.css" rel="stylesheet">
+<link href="./assets/8f121b9a/css/style.css" rel="stylesheet">
+<script src="./assets/e3a17645/jquery.js"></script>
+<script src="./assets/c7fbc653/js/bootstrap.js"></script>
+<script src="./assets/bbf47a67/jssearch.js"></script>    <title>Customizing Easy Forms - First steps - Easy Forms</title>
+</head>
+<body>
+
+<div class="wrap">
+    <nav id="w488" class="navbar-inverse navbar-fixed-top navbar"><div class="container"><div class="navbar-header"><button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#w488-collapse"><span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span></button><a class="navbar-brand" href="./index.html"><span class="app-name">Easy Forms</span></a></div><div id="w488-collapse" class="collapse navbar-collapse"><ul id="w489" class="navbar-nav nav"><li><a href="./index.html">Documentation</a></li></ul>
+    <div class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+            <input id="searchbox" type="text" class="form-control" placeholder="Search">
+        </div>
+    </div>
+    </div></div></nav>
+    <div id="search-resultbox" style="display: none;" class="modal-content">
+        <ul id="search-results">
+        </ul>
+    </div>
+
+    <div class="container">
+        
+<div class="row">
+    <div class="col-md-2">
+                <div id="navigation" class="list-group"><a class="list-group-item active" href="#navigation-480" data-toggle="collapse" data-parent="#navigation">First steps <b class="caret"></b></a><div id="navigation-480" class="submenu panel-collapse collapse in"><a class="list-group-item" href="./intro-easy-forms.html">About Easy Forms</a>
+<a class="list-group-item" href="./system-requirements.html">Requirements</a>
+<a class="list-group-item" href="./start-installation.html">Installing Easy Forms</a>
+<a class="list-group-item" href="./start-upgrading.html">Upgrading Easy Forms</a>
+<a class="list-group-item" href="./settings.html">Set Up Easy Forms</a>
+<a class="list-group-item active" href="./start-customization.html">Customizing Easy Forms</a>
+<a class="list-group-item" href="./email-setup.html">Email Setup</a>
+<a class="list-group-item" href="./dynamic-content.html">Dynamic Content</a></div>
+<a class="list-group-item" href="#navigation-481" data-toggle="collapse" data-parent="#navigation">Forms <b class="caret"></b></a><div id="navigation-481" class="submenu panel-collapse collapse"><a class="list-group-item" href="./form-manager.html">Form Manager</a>
+<a class="list-group-item" href="./form-builder.html">Form Builder</a>
+<a class="list-group-item" href="./theme-designer.html">Theme Designer</a>
+<a class="list-group-item" href="./rule-builder.html">Rule Builder</a>
+<a class="list-group-item" href="./submission-manager.html">Submission Manager</a>
+<a class="list-group-item" href="./form-report-builder.html">Report Builder</a>
+<a class="list-group-item" href="./form-analytics.html">In-App Analytics</a>
+<a class="list-group-item" href="./form-widget.html">Form Widget</a>
+<a class="list-group-item" href="./form-import-export.html">Import / Export</a></div>
+<a class="list-group-item" href="#navigation-482" data-toggle="collapse" data-parent="#navigation">Templates <b class="caret"></b></a><div id="navigation-482" class="submenu panel-collapse collapse"><a class="list-group-item" href="./template-manager.html">Template Manager</a></div>
+<a class="list-group-item" href="#navigation-483" data-toggle="collapse" data-parent="#navigation">Themes <b class="caret"></b></a><div id="navigation-483" class="submenu panel-collapse collapse"><a class="list-group-item" href="./theme-manager.html">Theme Manager</a></div>
+<a class="list-group-item" href="#navigation-484" data-toggle="collapse" data-parent="#navigation">Users <b class="caret"></b></a><div id="navigation-484" class="submenu panel-collapse collapse"><a class="list-group-item" href="./user-manager.html">User Manager</a>
+<a class="list-group-item" href="./membership.html">Membership</a></div>
+<a class="list-group-item" href="#navigation-485" data-toggle="collapse" data-parent="#navigation">Add-Ons <b class="caret"></b></a><div id="navigation-485" class="submenu panel-collapse collapse"><a class="list-group-item" href="./addon-manager.html">Add-On Manager</a>
+<a class="list-group-item" href="./addon-webhooks.html">WebHooks</a>
+<a class="list-group-item" href="./addon-google-analytics.html">Google Analytics</a></div>
+<a class="list-group-item" href="#navigation-486" data-toggle="collapse" data-parent="#navigation">Premium Add-Ons <b class="caret"></b></a><div id="navigation-486" class="submenu panel-collapse collapse"><a class="list-group-item" href="./addon-acelle-mail.html">Acelle Mail</a>
+<a class="list-group-item" href="./addon-active-campaign.html">Active Campaign</a>
+<a class="list-group-item" href="./addon-adyen.html">Adyen</a>
+<a class="list-group-item" href="./addon-aweber.html">AWeber</a>
+<a class="list-group-item" href="./addon-braintree.html">Braintree</a>
+<a class="list-group-item" href="./addon-campaign-monitor.html">Campaign Monitor</a>
+<a class="list-group-item" href="./addon-cleverreach.html">CleverReach</a>
+<a class="list-group-item" href="./addon-conditional-emails.html">Conditional Emails</a>
+<a class="list-group-item" href="./addon-constant-contact.html">Constant Contact</a>
+<a class="list-group-item" href="./addon-custom-error-messages.html">Custom Error Messages</a>
+<a class="list-group-item" href="./addon-custom-data-validation.html">Data Validation</a>
+<a class="list-group-item" href="./addon-emailoctopus.html">EmailOctopus</a>
+<a class="list-group-item" href="./addon-facebook-login.html">Facebook Login</a>
+<a class="list-group-item" href="./addon-field-encryption.html">Field Encryption</a>
+<a class="list-group-item" href="./addon-google-places-autocomplete.html">Google Places Autocomplete</a>
+<a class="list-group-item" href="./addon-import-submissions.html">Import Submissions</a>
+<a class="list-group-item" href="./addon-insightly.html">Insightly</a>
+<a class="list-group-item" href="./addon-mailchimp.html">MailChimp</a>
+<a class="list-group-item" href="./addon-mailerlite.html">MailerLite</a>
+<a class="list-group-item" href="./addon-mysql.html">MySQL</a>
+<a class="list-group-item" href="./addon-neverbounce.html">NeverBounce</a>
+<a class="list-group-item" href="./addon-nexmo-sms.html">Nexmo SMS</a>
+<a class="list-group-item" href="./addon-paypal.html">PayPal</a>
+<a class="list-group-item" href="./addon-paypal-invoicing.html">PayPal Invoicing</a>
+<a class="list-group-item" href="./addon-pdf.html">PDF</a>
+<a class="list-group-item" href="./addon-plivo.html">Plivo SMS</a>
+<a class="list-group-item" href="./addon-salesforce.html">Salesforce</a>
+<a class="list-group-item" href="./addon-sendinblue.html">SendinBlue</a>
+<a class="list-group-item" href="./addon-stripe.html">Stripe</a>
+<a class="list-group-item" href="./addon-twilio.html">Twilio SMS</a></div>
+<a class="list-group-item" href="#navigation-487" data-toggle="collapse" data-parent="#navigation">Premium Modules <b class="caret"></b></a><div id="navigation-487" class="submenu panel-collapse collapse"><a class="list-group-item" href="./module-subscriptions.html">Subscriptions</a></div></div>    </div>
+    <div class="col-md-9 guide-content" role="main">
+        <h1>Customizing Easy Forms <span id="customizing-easy-forms"></span><a href="#customizing-easy-forms" class="hashlink">&para;</a></h1>
+<div class="toc"><ol><li><a href="#introduction">Introduction</a></li>
+<li><a href="#changing-the-logo">Changing the logo</a></li>
+<li><a href="#how-to-enable-geolocation">How to enable GeoLocation?</a></li>
+<li><a href="#how-to-configure-your-cron-job">How to configure your Cron Job?</a></li>
+<li><a href="#changing-the-number-of-rows">Changing the number of rows</a></li>
+<li><a href="#limit-access-to-the-login-page-to-specific-ip-addresses">Limit Access to the Login Page to Specific IP Addresses</a></li>
+<li><a href="#how-to-improve-your-session-security">How to improve your Session Security?</a></li>
+<li><a href="#change-date-time-formats">Change Date / Time Formats</a></li>
+<li><a href="#change-language">Change language</a></li>
+<li><a href="#add-a-new-language">Add a new language</a></li>
+<li><a href="#how-to-enable-debug-mode">How to enable DEBUG mode</a></li>
+<li><a href="#how-to-fix-issues-about-file-permissions">How to fix issues about File Permissions</a></li></ol></div>
+<h2>Introduction <span id="introduction"></span><a href="#introduction" class="hashlink">&para;</a></h2><p>Easy Forms is an application developed in object oriented PHP under the MVC pattern. If you have programming skills, it will be easy to customize Easy Forms according to your requirements. However, this guide is intended for users who don't have programming knowledge.</p>
+<blockquote><p><strong>Note:</strong> <code>@app</code> refers to the application root directory.</p>
+</blockquote>
+<h2>Changing the logo <span id="changing-the-logo"></span><a href="#changing-the-logo" class="hashlink">&para;</a></h2><p>The first thing to do to customize your application is change the logo. The logo is not an image but a text that you can modify by simply renaming the application.</p>
+<p>To change the logo you must follow the next steps:</p>
+<ol>
+<li>Click on your username in the navigation menu.</li>
+<li>Click "<em>Settings</em>".</li>
+<li>Change the name to 'My Forms' or the name you prefer, better one short.</li>
+<li>Click "<em>Update</em>".</li>
+</ol>
+<p>But, if you want to replace the logo with an image, just follow the next steps:</p>
+<ol>
+<li>Click on your username in the navigation menu.</li>
+<li>Click "<em>Settings</em>".</li>
+<li>Click the "<em>Browser</em>" button and select your image (Suggested size: Height: 60px, Width: auto).</li>
+<li>Click "<em>Update</em>".</li>
+</ol>
+<p>In both cases, the page will reload and will show a message to let you know that the update has been successful. Now 'My Forms' or your image will appear as the application logo.</p>
+<p><img src="images/changing-logo.jpg" alt="Easy Forms - Changing the logo" /></p>
+<h2>How to enable GeoLocation?  <span id="how-to-enable-geolocation"></span><a href="#how-to-enable-geolocation" class="hashlink">&para;</a></h2><p>Easy Forms allows you to capture the User geolocation based on IP Addresses or in Browser Geolocation (with Google Maps). This guide refers to IP Geolocation.</p>
+<p>To enable IP Geolocation, your must upload the GeoLite2 DB to your server.</p>
+<h4>Upload the GeoLite2 DBs <span id="upload-the-geolite2-dbs"></span><a href="#upload-the-geolite2-dbs" class="hashlink">&para;</a></h4><p>GeoLite2 databases are free IP GeoLocation databases and are needed to collect your users' geographical location. Therefore, you must:</p>
+<ol>
+<li><a href="https://dev.maxmind.com/geoip/geoip2/geolite2/">Download GeoLite2 City and GeoLite2 Country databases</a>.</li>
+<li>Unzip the files and place them in the directory <code>@app/components/analytics/enricher/GeoIP</code>.</li>
+<li>Verify that the files match these paths:<ul>
+<li>@app/components/analytics/enricher/GeoIP/GeoLite2-City.mmdb</li>
+<li>@app/components/analytics/enricher/GeoIP/GeoLite2-Country.mmdb</li>
+</ul>
+</li>
+</ol>
+<p>By default, the application displays its maps in the <a href="submission-manager.html#viewing-a-submission-record">Submission Details page</a> with Leaflet, the leading open-source JavaScript library for mobile-friendly interactive maps. However, you can use Google Maps by adding your Google Maps Api Key to the configuration file.</p>
+<h2>How to configure your Cron Job? <span id="how-to-configure-your-cron-job"></span><a href="#how-to-configure-your-cron-job" class="hashlink">&para;</a></h2><p>To know your cron job command you must follow the next steps:</p>
+<pre><code class="language-plaintext">1. Click on your username in the navigation menu.
+2. Click "Settings".
+3. Click on "System Tools".
+4. Copy the Cron Job command.
+</code></pre>
+<p>To configure the cron job with cPanel, perform the following steps:</p>
+<pre><code class="language-plaintext">1. Go to your cPanel
+2. Click on Cron Jobs
+3. Go to Add New Cron Job section
+4. Select: Common Settings: Once Per Minute (* * * * *)
+5. Paste the Command (of the previous step)
+6. Press Add New Cron Job button
+</code></pre>
+<h2>Changing the number of rows <span id="changing-the-number-of-rows"></span><a href="#changing-the-number-of-rows" class="hashlink">&para;</a></h2><p>The Form Manager displays 5 rows by default, Submission Manager, User Manager and others. You can change this very easily.</p>
+<p>For that:</p>
+<ol>
+<li>Open the file <code>@app/config/params.php</code>.</li>
+<li>Change the value of <code>'GridView.pagination.pageSize'</code> to `10 or the number of rows you want.</li>
+<li>Save the file.</li>
+</ol>
+<p>When you return to the app it will display the number of rows you have defined.</p>
+<p><img src="images/changing-the-number-of-rows.png" alt="Easy Forms - Changing the number of rows" /></p>
+<blockquote><p><strong>Note:</strong> Additionally, each user can set his preferred number of rows. You just need to choose the number of rows below the GridView. The selected value will be stored in your <strong>User Preferences</strong> and will be used instead of the default value.</p>
+</blockquote>
+<h2>Limit Access to the Login Page to Specific IP Addresses <span id="limit-access-to-the-login-page-to-specific-ip-addresses"></span><a href="#limit-access-to-the-login-page-to-specific-ip-addresses" class="hashlink">&para;</a></h2><p>Securing your site is important. After all, it means you are protecting not only your personal information and data, but also any information your users collect on your site.</p>
+<p>To limit the access to the login page to one or multiple static IP addresses:</p>
+<ol>
+<li>Open the following file: <code>@app/config/params.php</code></li>
+<li>Add one or more IP Addresses to the 'App.User.validIps' key</li>
+<li><em>Save</em> the file</li>
+</ol>
+<p>That's it! When an unauthorized visitor tries to access that page, he’ll see an 404 error - Page Not Found.</p>
+<blockquote><p><strong>Note:</strong> If you're not sure which is your IP address, just ask Google. Just enter “What is my IP” and Google will tell you.</p>
+</blockquote>
+<h2>How to improve your Session Security? <span id="how-to-improve-your-session-security"></span><a href="#how-to-improve-your-session-security" class="hashlink">&para;</a></h2><p>You can control when an inactive user session expires. The default session timeout is 20 minutes of inactivity. When the session timeout has been reached, users will be prompted with a dialog that allows them to log out or continue working. If they don’t respond to this prompt, they will be logged out.</p>
+<p>To configure the Timeout value by default, just follow these steps:</p>
+<ol>
+<li>Open the file <code>@app/config/params.php</code>.</li>
+<li>Change the value of <code>'App.User.SessionTimeout.value'</code> to 0 to disable or 7200000 (2 hours).</li>
+<li>Change the value of <code>'App.User.SessionTimeout.warning'</code> to 0 to disable or 60000 (1 minute).</li>
+<li>Save the file.</li>
+</ol>
+<p>Take into account that each user can set up his own session timeout value or disable it if he wants.</p>
+<p>To configure the Timeout value for a user account, just follow these steps:</p>
+<pre><code class="language-plaintext">1. Click on your username in the navigation menu.
+2. Click "Manage Account"
+3. Click "Preferences"
+4. Select a "Timeout value" between 15 minutes and 24 hours
+5. Click Save
+</code></pre>
+<blockquote><p><strong>Note:</strong> Choose a shorter timeout period if your account has sensitive information, and you want to enforce stricter security.</p>
+</blockquote>
+<h2>Change Date / Time Formats <span id="change-date-time-formats"></span><a href="#change-date-time-formats" class="hashlink">&para;</a></h2><p>By default, the application uses a human-readable format such as "1 hour", "5 mins", "2 days". Now you can disable this format to use a date and time format and additionally, you can customize this format for the entire application quickly.</p>
+<p>You can specify date and time formats using the ICU syntax. Also you can use the PHP syntax with a prefix php: to differentiate it from ICU syntax. </p>
+<pre><code class="language-plaintext">For example:
+
+ICU format
+yyyy-MM-dd =&gt; 2021-04-01
+
+PHP format
+php:Y-m-d =&gt; 2021-04-01
+</code></pre>
+<h2>Change language <span id="change-language"></span><a href="#change-language" class="hashlink">&para;</a></h2><p>Easy Forms comes with the English language by default. However, it let each user change the whole application language very easily, allowing them to see it in their own language.</p>
+<h4>Change the application language for a user <span id="change-the-application-language-for-a-user"></span><a href="#change-the-application-language-for-a-user" class="hashlink">&para;</a></h4><ol>
+<li>Go to the <a href="user-manager.html">User Manager</a></li>
+<li>Click on the "Actions" button of the User to update</li>
+<li>Click "Update"</li>
+<li>Change the language to Spanish</li>
+<li>Click "Save"</li>
+</ol>
+<p>From now on, if your user accesses the application, he will see the interface in Spanish.</p>
+<blockquote><p><strong>Note:</strong> Keep in mind that at any moment your user can change the application language. For this, he will only need to update the field Language on his User Profile.</p>
+</blockquote>
+<h4>Change the default application language <span id="change-the-default-application-language"></span><a href="#change-the-default-application-language" class="hashlink">&para;</a></h4><ol>
+<li>Open the configuration file <code>@app/config/web.php</code>.</li>
+<li>Find the line: <code>'language' =&gt; 'en-US’</code>, and replace <code>'en-US'</code> for another language you have translated, to Spanish for example: <code>‘es-ES’</code>.</li>
+</ol>
+<p>When you reload the application you will see that the application default language is Spanish.</p>
+<p><img src="images/dashboard-spanish-ui.png" alt="Easy Forms - Change the default application language" /></p>
+<h2>Add a new language <span id="add-a-new-language"></span><a href="#add-a-new-language" class="hashlink">&para;</a></h2><p>To add a new language to the application, you basically need two things:</p>
+<ol>
+<li>Translate English strings to the new language.</li>
+<li>Add the new language to the list of languages supported by the application.</li>
+</ol>
+<h4>1. Translate strings <span id="1-translate-strings"></span><a href="#1-translate-strings" class="hashlink">&para;</a></h4><p>To translate strings you must do the following:</p>
+<ol>
+<li>Locate the <code>@app/messages</code> folder and create a new folder which name include the ISO language code (in lowercase) and the ISO country code (in uppercase), separated by a hyphen. For example, Brazilian Portuguese, 'pt-BR'.</li>
+<li>Then copy the file app.php from the 'es-ES' folder and paste it into your new folder. Let's say in 'pt-BR'.</li>
+<li>Then translate strings from English to the new language (To continue our example, replace strings in Spanish to Portuguese).</li>
+<li>Save the file and the application will be translated to the new language.</li>
+</ol>
+<h4>2. Add new language to the application <span id="2-add-new-language-to-the-application"></span><a href="#2-add-new-language-to-the-application" class="hashlink">&para;</a></h4><p>To add your new language:</p>
+<ol>
+<li>Open the file @app/helpers/language.php</li>
+<li>Add the line <code>"pt-BR" =&gt; Yii :: t ('app', 'Portuguese'),</code> to <code>suportedLanguage()</code> method.</li>
+<li>Save the file</li>
+</ol>
+<p>Following the example, the method should end like:</p>
+<pre><code class="hljs php language-php"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">supportedLanguages</span><span class="hljs-params">()</span>
+</span>{
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">array</span>(
+        <span class="hljs-string">"en-US"</span> =&gt; Yii::t(<span class="hljs-string">'app'</span>, <span class="hljs-string">'English'</span>),
+        <span class="hljs-string">"es-ES"</span> =&gt; Yii::t(<span class="hljs-string">'app'</span>, <span class="hljs-string">'Spanish'</span>),
+        <span class="hljs-string">"pt-BR"</span> =&gt; Yii::t(<span class="hljs-string">'app'</span>, <span class="hljs-string">'Portuguese'</span>),
+    );
+}
+</code></pre>
+<p>From now on, when you enter the application, you can change the language to portuguese from your User Profile.</p>
+<p><img src="images/add-new-language.png" alt="Easy Forms - Add new language to the application" /></p>
+<blockquote><p><strong>Note:</strong> Keep in mind that the text you type in the source code must be in English.</p>
+</blockquote>
+<p>Additional Step</p>
+<p>As added the 'Portuguese' string to the application, it is recommended to translate this string in both Spanish and Portuguese:</p>
+<ol>
+<li>Open the file <code>@app/messages/es-ES/app.php</code> and add <code>‘Portuguese’ =&gt; ‘Portugués’,</code>.</li>
+<li>Open the file <code>@app/messages/pt-BR/app.php</code> and add <code>‘Portuguese’ =&gt; ‘Português’,</code>.</li>
+</ol>
+<h2>How to enable DEBUG mode <span id="how-to-enable-debug-mode"></span><a href="#how-to-enable-debug-mode" class="hashlink">&para;</a></h2><p>To enable DEBUG mode you must remove the // characters (lines 3 and 4) in the <code>@app/index.php</code> file. Then, you will be able to see the error message and stack trace.</p>
+<blockquote><p><strong>Important!</strong> After fix any issue or make any customization but before deployed to production, you must comment out the same two lines.</p>
+</blockquote>
+<h2>How to fix issues about File Permissions <span id="how-to-fix-issues-about-file-permissions"></span><a href="#how-to-fix-issues-about-file-permissions" class="hashlink">&para;</a></h2><p>For the application's correct operation you must ensure the following folders (including files and sub-folders) have the proper file permissions:</p>
+<ul>
+<li>Runtime directory: <code>chmod -R 0755 @app/runtime</code></li>
+<li>Assets directory: <code>chmod -R 0755 @app/assets</code></li>
+<li>Static Files directory: <code>chmod -R 0755 @app/static_files</code></li>
+<li>Configuration files: <code>chmod -R 0755 @app/config</code></li>
+</ul>
+<p>If web server is not the files owner, but is member of the group that owns the files, you can set the file permissions to 0775. As last resource (only for your local env), you can set your file permissions to 777, just to discard any issue related to the files.</p>
+<p>For example, if you use an FTP client such as Filezilla:</p>
+<pre><code class="language-plaintext">1. Open your FTP client
+2. Right-click on 'runtime' directory and click on 'File permissions...'
+3. Write 755
+4. Check 'Recurse into subdirectories' and 'Apply to all files and directories'
+5. Press ok
+6. Repeat the same steps with the 'assets', 'config' and 'static_files' directories.
+8. Write 755 and Press ok
+</code></pre>
+<blockquote><p><strong>Note:</strong> If you have any issue with file permissions, <a href="https://1.envato.market/easy-forms-support-page">get in touch with our support team</a>, and we will be more than happy to help you.</p>
+</blockquote>
+        <div class="toplink"><a href="#" class="h1" title="go to top"><span class="glyphicon glyphicon-arrow-up"></a></div>
+    </div>
+</div>
+
+    </div>
+
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <p class="pull-left">&copy; Easy forms 2015 - 2021</p>
+        <p class="pull-right">
+            <small>Page generated on Thu, 08 Apr 2021 01:38:17 +0000</small>
+        </p>
+    </div>
+</footer>
+
+<script>jQuery(function ($) {
+    var shiftWindow = function () { scrollBy(0, -50) };
+    if (location.hash) setTimeout(shiftWindow, 1);
+    window.addEventListener("hashchange", shiftWindow);
+var element = document.createElement("script");
+element.src = "./jssearch.index.js";
+document.body.appendChild(element);
+
+var searchBox = $('#searchbox');
+
+// search when typing in search field
+searchBox.on("keyup", function(event) {
+    var query = $(this).val();
+
+    if (query == '' || event.which == 27) {
+        $('#search-resultbox').hide();
+        return;
+    } else if (event.which == 13) {
+        var selectedLink = $('#search-resultbox a.selected');
+        if (selectedLink.length != 0) {
+            document.location = selectedLink.attr('href');
+            return;
+        }
+    } else if (event.which == 38 || event.which == 40) {
+        $('#search-resultbox').show();
+
+        var selected = $('#search-resultbox a.selected');
+        if (selected.length == 0) {
+            $('#search-results').find('a').first().addClass('selected');
+        } else {
+            var next;
+            if (event.which == 40) {
+                next = selected.parent().next().find('a').first();
+            } else {
+                next = selected.parent().prev().find('a').first();
+            }
+            if (next.length != 0) {
+                var resultbox = $('#search-results');
+                var position = next.position();
+
+//              TODO scrolling is buggy and jumps around
+//                resultbox.scrollTop(Math.floor(position.top));
+//                console.log(position.top);
+
+                selected.removeClass('selected');
+                next.addClass('selected');
+            }
+        }
+
+        return;
+    }
+    $('#search-resultbox').show();
+    $('#search-results').html('<li><span class="no-results">No results</span></li>');
+
+    var result = jssearch.search(query);
+
+    if (result.length > 0) {
+        var i = 0;
+        var resHtml = '';
+
+        for (var key in result) {
+            if (i++ > 20) {
+                break;
+            }
+            resHtml = resHtml +
+            '<li><a href="' + result[key].file.u.substr(3) +'"><span class="title">' + result[key].file.t + '</span>' +
+            '<span class="description">' + result[key].file.d + '</span></a></li>';
+        }
+        $('#search-results').html(resHtml);
+    }
+});
+
+// hide the search results on ESC
+$(document).on("keyup", function(event) { if (event.which == 27) { $('#search-resultbox').hide(); } });
+// hide search results on click to document
+$(document).bind('click', function (e) { $('#search-resultbox').hide(); });
+// except the following:
+searchBox.bind('click', function(e) { e.stopPropagation(); });
+$('#search-resultbox').bind('click', function(e) { e.stopPropagation(); });
+
+});</script></body>
+</html>

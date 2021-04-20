@@ -1,0 +1,193 @@
+// ...shop right bar...
+
+$main-menu-bg: #f2f2f2;
+$main-menu-nav-link : #fcfcfc;
+
+.shop-three{
+    .right-menu{
+        padding-top: 30px;
+    }
+}
+.right-menu{
+
+    a[aria-expanded="false"]:after {
+        content: "\f067";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        font-size: 0.8125rem;
+        float: right;
+    }
+    a[aria-expanded="true"]:after {
+        content: "\f068";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        font-size: 0.8125rem;
+        float: right;
+    }
+    .main-manu {
+        display: block;
+        background-color: $main-menu-bg;
+        color: color-yiq($main-menu-bg);
+        border: 1px solid $gray-300;
+        padding: 5px 10px;
+        text-decoration: none;
+        font-family: $font-family-base;
+        font-size: $font-size-base;
+        font-weight: $font-weight-bold;
+
+        img{
+            width: 16px;
+            margin-right: 7px;
+            margin-bottom: 4px;
+        }
+        .fas{
+            float: right;
+            display: block;
+            color:$gray-300;
+            margin-top: 5px;
+        }
+    }
+    .sub-manu{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        .unorder-list{
+            padding: 0;
+            margin-bottom: 0;
+            list-style: none;
+
+            .list-item{
+                a{
+                    display: block;
+                    padding: 0px 20px;
+                    text-decoration: none;
+                    line-height: 25px;
+                    &:hover{
+                        color: $secondary;
+                    }
+                    .fas{
+                        margin-right: 7px;
+                    }
+                }
+            }
+        }
+    }
+
+    h2{
+        font-family: $font-family-base;
+        font-size: $font-size-base;
+        font-weight: $font-weight-bold;
+    }
+    .block{
+        ul{
+            margin-bottom: 0;
+                li{
+                    .form-check{
+                        padding-left: 1.25rem;
+                        .form-check-input{
+                            margin-left: -1.25rem;
+                        }
+                    }
+                }
+        }
+    }
+.color-range-main{
+    border: $border-width solid $gray-300;
+    padding: 20px 15px;
+    margin-top: 30px;
+    h5{
+        font-family: $font-family-base;
+        font-size: $font-size-base;
+        font-weight: $font-weight-bold;
+    }
+    .color-range{
+        ul{
+            list-style: none;
+            margin-bottom: 0;
+            margin-top: 10px;
+            padding-left: 0;
+
+            li{
+                display: inline-block;
+                margin-right: 2px;
+                a{
+                    display: block;
+                    padding: 10px 10px;
+                    
+                }
+                .black{
+                    background-color: #111;
+                }
+                .dark-blue{
+                    background-color: #09057d;
+                }
+                .light-blue{
+                    background-color: #1d18f8;
+                }
+                .choclate{
+                    background-color: #7d0006;
+                }
+
+                .dark-pink{
+                    background-color: #7f057e;
+                }
+                .purple{
+                    background-color: #8017f8;
+                }
+                .red{
+                    background-color: #f90018;
+                }
+                .light-pink{
+                    background-color: #f90080;
+                }
+                .pink{
+                    background-color: #fa13f9;
+                }
+            }
+        
+        }
+    }
+}
+.size-range-main{
+    border: $border-width solid $gray-300;
+    padding: 20px 15px;
+    margin-top: 30px;
+    h5{
+        font-family: $font-family-base;
+        font-size: $font-size-base;
+        font-weight: $font-weight-bold;
+    }
+    .size-range{
+        ul{
+            display: flex;
+            list-style: none;
+            margin: 0;
+            margin-top: 10px;
+            padding: 0;
+            li{
+                a{
+                    padding-top: 3px !important;
+                    margin: 0 2px;
+                    width: 30px;
+                    padding: 0;
+                    height: 30px;
+                }
+                .size-btn{
+                    background-color: #e9ecef;
+                    border-color: darken($color: $gray-300, $amount: 10%);
+                    &:hover{
+                        background-color: $primary;
+                        color: color-yiq($primary);
+                    }
+                }
+            }
+        
+        }
+    }
+}
+
+.img-main{
+    margin-top: 30px;
+    padding-bottom: 30px;
+ 
+}
+}

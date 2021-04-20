@@ -1,0 +1,12 @@
+Release Notes:
+01.14.2020 – Apps Builder version 1.8
+
+- Added: Sourcecode export.
+- Added: Android Studio integration.
+- Added: Export your source code and open in Android Studio.
+- Added: Better documentation.
+- Added: Invite users on your account.
+- Added: AppsBuilder welcome pack.
+- Added: More tutorials.
+- Added: More resources.
+- Added: App showcase

@@ -1,0 +1,770 @@
+body {
+    padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+    padding-bottom: 10px;
+    position: relative;
+    background-color: #EFF3F6;
+}
+.wrap {
+    min-height: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+.wrap > .container {
+    padding: 20px 15px;
+}
+.app-name:before {
+    font-family: 'Glyphicons Regular';
+    font-style: normal;
+    font-weight: normal;
+    vertical-align: -2px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\E151";
+}
+.data-loading {
+    background-image: url(../images/data-loading.gif);
+    background-repeat: no-repeat;
+    background-position: top 15px right 15px;
+}
+
+/* ----------------------------------
+ * Session Timeout
+ * ---------------------------------- */
+#session-timeout-dialog .modal-body {
+    text-align: center;
+}
+#session-timeout-dialog .session-timeout-message {
+    line-height: 32px;
+    margin: 0;
+}
+#session-timeout-dialog .session-time-out-countdown-message {
+    margin:10px 0 20px 0;
+}
+#session-timeout-dialog .session-time-out-icon {
+    font-size: 32px;
+    vertical-align: bottom;
+    margin-right: 10px;
+}
+#session-timeout-dialog {
+
+}
+
+/* ----------------------------------
+ * Select2
+ * ---------------------------------- */
+.select2-container--krajee .select2-selection {
+    box-shadow: none;
+}
+.select2-container--krajee .select2-search--inline input {
+    width: 100% !important;
+}
+
+/* ----------------------------------
+ * KV File Upload
+ * ---------------------------------- */
+.file-actions .file-footer-buttons .kv-file-remove {
+    display: none;
+}
+
+/* ----------------------------------
+ * bootstrap-switch
+ * ---------------------------------- */
+.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-default,
+.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-default {
+
+}
+.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-primary,
+.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-primary {
+    background-color: #009eda !important;
+}
+
+/* ----------------------------------
+ * Autocomplete tool
+ * ---------------------------------- */
+.main .tox .tox-autocompleter .tox-menu {
+    max-width: 30em;
+}
+.main .tox .tox-collection__item-icon {
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    width: 110px;
+    font-size: 12px;
+    font-weight: bold;
+}
+.main .tox .tox-collection__item-label {
+    font-size: 75%;
+    line-height: 18px;
+}
+.main .tox .tox-collection--list .tox-collection__item--active:not(.tox-collection__item--state-disabled) {
+    background-color: #009eda;
+    color: #ffffff;
+}
+.main .textcomplete-dropdown {
+    padding: 5px 0;
+}
+.main .textcomplete-dropdown .textcomplete-item a {
+    font-size: 12px;
+    cursor: pointer;
+    padding: 6px 12px;
+}
+.main .textcomplete-dropdown .textcomplete-item a span {
+    width: 110px;
+    font-weight: bold;
+    text-align: right;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+/* ----------------------------------
+ * Dashboard Page
+ * ---------------------------------- */
+.dashboard-page .panel-counter {
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+    background-color: #475e98;
+    min-height: 132px;
+}
+.dashboard-page .panel-counter-info {
+    padding-top: 2px;
+    color: #edf7fc;
+    display: inline-block;
+}
+.dashboard-page .panel-counter-icon {
+    width: 60px;
+    height: 60px;
+    background-color: rgba(255,255,255,0.2);
+    display: inline-block;
+    float: left;
+    font-size: 30px;
+    line-height: 60px;
+    margin-right: 15px;
+    margin-left: -7.5px;
+    padding-top: 2px;
+    text-align: center;
+    color: #FFFFFF;
+    border-radius: 100%;
+}
+.dashboard-page .panel-counter-title {
+    float: left;
+}
+.dashboard-page .panel-counter-info .counter {
+    color: #fff;
+    display: block;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: left;
+    margin-top: 10px;
+    line-height: 1em;
+}
+.dashboard-page .panel-counter-info .counter-title {
+    text-align: left;
+}
+.dashboard-page .panel-counter-sub h5 {
+    margin: 10px 0 0 0;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.dashboard-page .panel-counter-sub .total-counter {
+    margin-left: 15px;
+}
+.dashboard-page .today-views .panel-counter-icon {
+    padding-left: 3px;
+}
+.dashboard-page .today-submissions .panel-counter-icon i {
+    margin-left: -4px;
+}
+.dashboard-page .today-submission-rate {
+    background-color: #9B59B6;
+}
+.dashboard-page .create-form {
+    background-color: #2ECC71;
+}
+.dashboard-page .create-form a {
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.dashboard-page .create-form h1 {
+    font-size: 56px;
+    margin: 0 0 10px 0;
+    line-height: 1em;
+}
+.dashboard-page .create-form h5 {
+    margin-bottom: 0;
+    line-height: 1em;
+    font-weight: bold;
+}
+
+/* ----------------------------------
+ * Form Index Page
+ * ---------------------------------- */
+.form-index .dropdown-menu .dropdown-header {
+    display: none;
+}
+/* ----------------------------------
+ * Form View Page
+ * ---------------------------------- */
+.form-view .buttons {
+    margin-bottom: 25px;
+}
+.form-view .buttons .btn {
+    margin-bottom: 5px;
+}
+
+/* Small devices (tablets, 768px and up) */
+
+@media only screen and (min-width : 768px) {
+    .form-view .buttons {
+        text-align: center;
+    }
+}
+
+/* ----------------------------------
+ * Form Settings Page
+ * ---------------------------------- */
+
+.form-config-page .tab-content {
+    padding: 10px 30px 30px;
+}
+.form-config-page fieldset {
+    margin-bottom: 10px;
+}
+.form-config-page legend {
+    margin-bottom: 30px;
+    padding-top: 10px;
+    font-size: 19px;
+}
+.form-config-page .hint-block {
+    display: block;
+    margin-top: 5px;
+    color: #737373;
+}
+.form-config-page .form-group .form-group {
+    margin-bottom: 0; /*Fix bug for switchs*/
+}
+.form-config-page .input-group .select2-container--krajee{
+    width: 100% !important;
+}
+.form-config-page iframe {
+    display: block;
+}
+.form-config-page .toogleButton {
+    display: inline-block;
+    color: #FFF;
+}
+.form-config-page .toogleButton:hover {
+    color: #F3F5F7;
+}
+.form-config-page .note-editor.note-frame {
+    border: 0;
+}
+.form-config-page .note-current-color-button i {
+    color: #22272d;
+}
+.form-config-page .rule-builder .rules-group-container {
+    margin-bottom: 5px;
+}
+/* ----------------------------------
+ * Share Page
+ * ---------------------------------- */
+.share-page .tabs-krajee {
+    background-color: #92a1ad;
+    border-radius: 3px;
+}
+.share-page .nav-tabs {
+    background-color: transparent;
+    border-color: #FFFFFF;
+}
+
+.share-page .nav-tabs > li {
+    border: 0;
+}
+.share-page .nav-tabs > li > a {
+    border-radius: 0;
+    margin-right: 0;
+}
+.share-page .nav-tabs > li:first-child > a {
+    border-radius: 3px 0 0 0;
+}
+.share-page .tab-bordered .tab-content {
+    background-color: #FFFFFF;
+    border-color: #FFFFFF;
+    border-radius: 0 3px 3px 0;
+    padding: 20px;
+}
+.share-page .tab-content .pane-title {
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #f3f5f7;
+}
+.share-page .panel-body {
+    border-right: 1px solid #f3f5f7;
+    border-left: 1px solid #f3f5f7;
+}
+.share-page p {
+    font-size: 13px;
+}
+.share-page .form-control {
+    font-size: 12px;
+}
+/* ----------------------------------
+ * Submissions Page
+ * ---------------------------------- */
+/* Small devices (tablets, 768px and up) */
+@media only screen and (min-width : 768px) {
+    .submissions-page .panel .panel-heading {
+        min-height: 55px;
+    }
+    .submissions-page .panel .panel-heading .summary {
+        float: right;
+        text-align: left;
+    }
+}
+.submissions-page .panel .btn-toolbar>.btn-group {
+    max-width: 220px;
+    margin-bottom: 10px;
+}
+/* Small devices (tablets, 768px and up) */
+@media only screen and (min-width : 768px) {
+    .submissions-page .panel .btn-toolbar>.btn-group {
+        margin-bottom: 0;
+        float: none;
+    }
+}
+/* Small devices (tablets, 768px and up) */
+@media only screen and (min-width : 768px) {
+    .submissions-page .panel .btn-toolbar>.input-group {
+        max-width: 200px;
+    }
+}
+.submissions-page .panel #loading {
+    display: none;
+}
+/* Small devices (tablets, 768px and up) */
+@media only screen and (min-width : 768px) {
+    .submissions-page .panel #loading {
+        float: left;
+        margin-right: 5px;
+    }
+}
+.submissions-page .panel .btn-toolbar>.btn-group .btn-for-toggle:first-child {
+    display: block;
+}
+.submissions-page .panel .btn-toolbar>.btn-group .btn-for-toggle:last-child {
+    display: none;
+    margin-left: 0;
+}
+.submissions-page .panel .showHideColumns {
+    padding: 5px 15px;
+}
+.submissions-page .panel .showHideColumns li label {
+    line-height: 18px;
+    font-size: 12px;
+    min-height: 16px;
+}
+.submissions-page .panel .showHideColumns li label:hover {
+    background-color: #f3f5f7;
+}
+/* Medium devices (desktops, 992px and up) */
+@media only screen and (min-width : 992px) {
+    .submissions-page .panel .showHideColumns li label {
+        white-space: nowrap;
+    }
+}
+.submissions-page .panel>.table-responsive {
+    overflow-x: scroll;
+    /*overflow-y: scroll;*/
+}
+.submissions-page .grid-view table tbody .table-cell {
+    padding: 12px;
+    vertical-align: middle;
+    color: #8e9aa6;
+}
+.submissions-page .panel>.table-responsive>.table-list>thead>tr>th,
+.submissions-page .panel>.table-responsive>.table-list>tbody>tr>td,
+.submissions-page .panel>.table-responsive>.table-list>tbody>tr>.table-cell
+{
+    border-left: 0;
+    max-width: 120px;
+    overflow: hidden;
+    white-space: nowrap;
+    word-wrap: break-word;
+    text-overflow: ellipsis;
+    vertical-align: middle;
+    display: table-cell;
+}
+.submissions-page .panel>.table-responsive>.table-list>tbody>tr>.table-cell.view {
+    cursor: pointer;
+}
+.submissions-page .panel>.table-responsive>.table-fullsize>thead>tr>th,
+.submissions-page .panel>.table-responsive>.table-fullsize>tbody>tr>td,
+.submissions-page .panel>.table-responsive>.table-fullsize>tbody>tr>.table-cell
+{
+    max-width: none;
+}
+.submissions-page .panel>.table-responsive>.table-list>thead>tr>th.check,
+.submissions-page .panel>.table-responsive>.table-list>tbody>tr>td.check,
+.submissions-page .panel>.table-responsive>.table-list>tbody>tr>.table-cell.check
+{
+    display: table-cell;
+    vertical-align: baseline;
+    text-align: center;
+    width: 50px;
+    max-width: 50px;
+    min-width: 50px;
+}
+.submissions-page .panel>.table-responsive>.table-list>thead>tr>th.created_at,
+.submissions-page .panel>.table-responsive>.table-list>tbody>tr>td.created_at,
+.submissions-page .panel>.table-responsive>.table-list>tbody>tr>.table-cell.created_at
+{
+    max-width: 185px;
+}
+.submissions-page .panel>.table-responsive>.table-list>thead>tr>th.actions,
+.submissions-page .panel>.table-responsive>.table-list>tbody>tr>td.actions,
+.submissions-page .panel>.table-responsive>.table-list>tbody>tr>.table-cell.actions
+{
+    width: 100px;
+    max-width: 100px;
+    min-width: 100px;
+    text-align: center;
+}
+.submissions-page .panel .table-detail {
+    margin-bottom: 20px;
+}
+.submissions-page .panel .table-detail>tbody>tr>th{
+    width: 30%;
+    text-align: right;
+}
+.submissions-page .panel .table-detail>tbody>tr>td,
+.submissions-page .panel .table-detail>tbody>tr>.table-cell
+{
+    min-width: 70%;
+}
+.submissions-page .panel .table-detail > tbody > tr.info > th{
+    text-align: left;
+    font-size: 1.1em;
+    padding-left: 20px;
+    height: 50px;
+}
+.submissions-page .panel .table-detail tbody td:last-child {
+    padding-right: 12px;
+    white-space: pre-wrap;
+}
+.submissions-page .panel .table-detail > tbody > tr .removeFile {
+    color: #8e9aa6;
+    cursor: pointer;
+}
+.submissions-page .panel .table-detail > tbody > tr .removeFile:hover {
+    color: #dc3023;
+}
+.submissions-page .panel .table-detail #map {
+    height: 300px;
+}
+.submissions-page .panel #range {
+    overflow: hidden;
+}
+@media only screen and (max-width: 481px) {
+    .submissions-page .panel #date-range {
+        font-size: 12px;
+    }
+}
+.submissions-page .commentBox {
+    border: 1px solid #e7ecf0;
+}
+.submissions-page .titleBox {
+    background-color: #edf7fc;
+    padding-left: 10px;
+    border-bottom: 1px solid #e7ecf0;
+    font-weight: bold;
+    height: 50px;
+    line-height: 50px;
+}
+.submissions-page .actionBox {
+    background-color: #f3f5f7;
+    padding: 15px 10px;
+}
+.submissions-page .actionBox .form-group * {
+    width:100%;
+}
+.submissions-page .commentList {
+    padding: 0;
+    list-style: none;
+    max-height: 325px;
+    overflow: auto;
+}
+.submissions-page .commentList .comment {
+    padding: 10px;
+    margin: 0 0 10px 0;
+    border-left: 5px solid #009eda;
+    border-bottom: 1px solid #e7ecf0;
+    border-right: 1px solid #e7ecf0;
+    border-radius: 4px;
+    background-color: #fff;
+    height: 1%;
+    position: relative;
+    -o-box-shadow: rgba(0,0,0,0.15) 0px 0px 1px;
+    box-shadow: rgba(0,0,0,0.15) 0px 0px 1px;
+}
+.submissions-page .commentList .alt {
+    border-left: 5px solid #41ad49;
+}
+.submissions-page .commentList li {
+    margin: 10px 0 0 0;
+}
+.submissions-page .commentList li > div {
+    display:table-cell;
+}
+.submissions-page .commenterImage {
+    width:30px;
+    margin-right:5px;
+    height:100%;
+    float:left;
+}
+.submissions-page .commenterImage img {
+    width:100%;
+    border-radius:50%;
+}
+.submissions-page .commentText {
+    color: #494f57;
+    font-size:12px;
+}
+.submissions-page .commentText p {
+    margin:0;
+}
+.submissions-page .commentText .author,
+.submissions-page .commentText .date {
+    color: #aaa;
+    font-size: 11px;
+}
+.submissions-page .commentText .deleteComment {
+    font-size: 10px;
+    color: #8e9aa6;
+    cursor: pointer;
+}
+.submissions-page .commentText .deleteComment:hover {
+    color: #dc3023;
+}
+
+/* ----------------------------------
+ * Analytics Page
+ * ---------------------------------- */
+
+.analytics-page .dc-chart {
+    float: none;
+    display: inline-block;
+}
+
+/* Extra small devices (phones, less than 768px) */
+
+#conversion-rates {
+    text-align: center;
+    margin-top: 15px;
+}
+
+#conversion-rates ul {
+    list-style: none;
+    display: inline-table;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: #475e98;
+    border-radius: 4px;
+}
+#conversion-rates ul li div {
+    display: block;
+    float: left;
+    width: 25%;
+    height: 86px;
+    padding: 10px 0;
+    position: relative;
+    margin: 0;
+    color: #fff;
+    /*border-right: 1px solid transparent;*/
+}
+#conversion-rates ul li:first-child div {
+    border-top-left-radius: 4px; border-bottom-left-radius: 4px;
+}
+#conversion-rates ul li:last-child div {
+    background-color: #9B59B6;
+    border-top-right-radius: 4px; border-bottom-right-radius: 4px;
+}
+#conversion-rates ul li div h2 {
+    margin: 0;
+    font-size: 24px;
+}
+#conversion-rates ul li div span {
+    font-size: 11px;
+    line-height: 11px;
+}
+#conversion-rates ul li div span.percentage {
+    font-size: 1em;
+}
+#conversion-rates ul li div span.percentage:after {
+    content: "%";
+}
+#conversion-rates ul li div h2 span {
+    font-size: 24px;
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media only screen and (min-width : 992px) {
+    #conversion-rates ul li {
+        display: inline;
+    }
+    #conversion-rates ul li div {
+        height: 80px;
+        padding: 10px 0 0 40px;
+        border: 0;
+    }
+    #conversion-rates ul li div h2 {
+        font-size: 32px;
+    }
+    #conversion-rates ul li div span {
+        font-size: 14px;
+        line-height: 26px;
+    }
+    #conversion-rates ul li div h2 span {
+        font-size: 32px;
+    }
+    #conversion-rates ul li div:after {
+        content: "";
+        border-top: 40px solid transparent;
+        border-bottom: 40px solid transparent;
+        border-left: 40px solid #475e98;
+        position: absolute; right: -40px; top: 0;
+        z-index: 1;
+    }
+    #conversion-rates ul li div:before {
+        content: "";
+        border-top: 40px solid transparent;
+        border-bottom: 40px solid transparent;
+        border-left: 40px solid #000000;
+        position: absolute; left: 0; top: 0;
+    }
+    #conversion-rates ul li:first-child div {
+        border-top-left-radius: 4px; border-bottom-left-radius: 4px;
+    }
+    #conversion-rates ul li:first-child div:before {
+        display: none;
+    }
+    #conversion-rates ul li:last-child div {
+        background-color: #9B59B6;
+        border-top-right-radius: 4px; border-bottom-right-radius: 4px;
+    }
+    #conversion-rates ul li:last-child div:after {
+        display: none;
+    }
+    #conversion-rates ul li div:hover {
+        /*background-color: rgba(71,94,152, 0.8);*/
+    }
+    #conversion-rates ul li div:hover:after {
+        /*border-left-color: rgba(71,94,152, 0.8);*/
+    }
+    #conversion-rates ul li div span.percentage {
+        position: absolute;
+        z-index: 2;
+        top: 25px;
+        right: -15px;
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+    #conversion-rates {
+        margin-top: 0;
+    }
+
+    .analytics-page .row {
+        margin-bottom: 30px;
+    }
+
+}
+
+/* ----------------------------------
+ * Report Page
+ * ---------------------------------- */
+
+.report-page .buttons {
+    float: right;
+    margin-top: -5px;
+}
+.report-page .buttons #enable {
+    display: inline-block;
+}
+.report-page .buttons #disable {
+    display: none;
+}
+.report-page .panel .panel-heading {
+    overflow: hidden;
+}
+.report-page .panel {
+    margin: 0;
+}
+.report-page .panel .panel-heading .summary {
+    float: left;
+}
+.report-page .modal .required-control .control-label:after {
+    content: " *";
+    color: #fc4c5e;
+}
+.report-page .grid-stack-item-content {
+    text-align: center;
+}
+.report-page .editChart, .report-page .deleteChart {
+    display: none;
+}
+.report-page .grid-editable {
+    background: lightgoldenrodyellow;
+}
+.report-page .grid-editable .editChart, .report-page .grid-editable .deleteChart {
+    display: inline-block;
+    color: #FFF;
+}
+.report-page .grid-editable .editChart:hover, .report-page .grid-editable .deleteChart:hover {
+    color: #FFF;
+}
+.report-page .dc-chart {
+    float: none;
+    display: inline-block;
+}
+.report-page .grid-stack-item {
+    max-height: 255px !important;
+}
+
+/* ----------------------------------
+ * Theme Pages
+ * ---------------------------------- */
+
+.theme-create .field-theme-css, .theme-create .field-theme-css .help-block,
+.theme-update .field-theme-css, .theme-update .field-theme-css .help-block
+{
+    margin: 0;
+}
+.theme-create #editor, .theme-update #editor {
+    height: 350px;
+}
+.theme-create iframe, .theme-update iframe {
+    display: block;
+}
+.theme-create .toogleButton, .theme-update .toogleButton {
+    display: inline-block;
+    color: #FFF;
+}
+.theme-create .toogleButton:hover, .theme-update .toogleButton:hover {
+    color: #F3F5F7;
+}
+
+/* ----------------------------------
+ * Settings Performance Page
+ * ---------------------------------- */
+
+.settings-performance p {
+    font-size: 13px;
+}

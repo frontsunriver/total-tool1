@@ -1,0 +1,112 @@
+.contact-content{
+
+    .contact-info{
+        list-style-type: none;
+        padding-left: 0px;
+            li{
+                display: flex;
+                padding-bottom: 37px;
+                a{
+                    font-family: $font-family-base-bold;
+                    line-height: 1.5;
+                }
+                .fas{
+                    color: $secondary;
+                    font-size: 30px;
+                    width: 45px;
+                    display: flex;
+                    align-items: center;
+                }
+                span{
+                    display: block;
+                }
+            } 
+    }
+    .contact-logo{
+        list-style-type: none;
+        padding-left: 0px;
+        border-right: 1px solid #ced4da;
+            li{
+                display: block;
+                justify-content: center;
+                text-align: center;
+                  font-family: $font-family-base-bold;
+                  margin-bottom: 25px;
+
+                .fas{
+                    color: $secondary;
+                    font-size: 30px;
+                    width: 45px;
+                    margin-top: 3px;
+                }
+                span{
+                    display: block;
+                    text-align: left;
+                    font-family: $font-family-base;
+                }
+            } 
+           li:last-child{
+                margin-bottom:0;
+            }
+    }
+   .info{
+       margin: 0;
+       padding-top: 30px;
+   }
+
+    .form-start{
+        form{
+            .input-group{
+                .form-control{
+                    height: calc(2.0625rem + 10px);
+                 
+                }
+
+            }
+            .first-label{
+                margin-top: 0;
+            }
+            label{
+                font-family: $font-family-base-bold;
+                font-size: $font-size-base;
+                margin-top: 30px;
+                margin-bottom: 10px;
+            }
+            textarea{
+                width: 100%;
+                padding: 0px 15px 0px 15px;
+                outline: none;
+                margin-bottom: 30px;
+                border: 1px solid transparent;
+                background-color: transparent;
+                border-bottom: 2px solid $border-color;
+                overflow-x: hidden;
+             
+            }
+            button{
+                font-weight: 600;
+                .fa-location-arrow{
+                    padding-left: 10px;
+                }
+            }
+            
+        }
+        .input-group{
+            .input-group-prepend{
+                .input-group-text{
+                    border-color:$border-color;
+                }
+                
+            }
+            input{
+                outline: none;
+                box-shadow: none;
+                border: 1px solid transparent;
+                background-color: transparent;
+                border-bottom: 2px solid $border-color;
+            }
+        }
+    
+      
+    }
+}

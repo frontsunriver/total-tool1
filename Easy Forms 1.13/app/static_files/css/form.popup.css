@@ -1,0 +1,403 @@
+/**
+ * Container
+ */
+.ef-content {
+    line-height: 0 !important; /* Fix */
+}
+/**
+ * Modal
+ */
+.ef-modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    overflow: hidden;
+    background: rgba(0, 0, 0, .8);
+    transition: transform .2s ease;
+    cursor: pointer;
+    text-align: center;
+}
+.ef-modal * {
+    box-sizing: border-box;
+}
+.ef-modal--noOverlayClose {
+    cursor: default;
+}
+.ef-modal--noClose .ef-modal__close {
+    display: none;
+}
+.ef-modal__close {
+    position: fixed;
+    top: 10px;
+    right: 28px;
+    z-index: 1000;
+    padding: 0;
+    width: 5rem;
+    height: 5rem;
+    border: none;
+    background-color: transparent;
+    color: #f0f0f0;
+    font-size: 6rem;
+    font-family: monospace;
+    line-height: 1;
+    cursor: pointer;
+    transition: color .3s ease;
+}
+.ef-modal__closeLabel {
+    display: none;
+}
+.ef-modal__close:hover {
+    color: #fff;
+}
+.ef-modal-box {
+    position: relative;
+    margin: 120px auto;
+    width: 60%;
+    border-radius: 4px;
+    background: #fff;
+    cursor: auto;
+}
+/**
+ * Body State
+ */
+.ef-enabled {
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+}
+
+.ef-enabled .ef-btn-wrapper {
+    filter: blur(15px);
+}
+/**
+ * Buttons
+ */
+.ef-button {
+    /* Structure */
+    display: inline-block;
+    zoom: 1;
+    line-height: normal;
+    white-space: nowrap;
+    vertical-align: middle;
+    text-align: center;
+    cursor: pointer;
+    -webkit-user-drag: none;
+    user-select: none;
+    box-sizing: border-box;
+}
+/* Firefox: Get rid of the inner focus border */
+.ef-button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+.opera-only :-o-prefocus {
+    word-spacing: -0.43em;
+}
+.ef-button-right-placement, .ef-button-left-placement {
+    position: absolute;
+    top: 20%;
+}
+/**
+ * Button Colors
+ */
+a:hover {
+    color: inherit;
+    text-decoration: none;
+}
+.ef-button {
+    font-family: sans-serif;
+    font-size: 100%;
+    padding: 0.5em 1em;
+    color: #444; /* rgba not supported (IE 8) */
+    color: rgba(0, 0, 0, 0.80); /* rgba supported */
+    border: 1px solid #999;  /*IE 6/7/8*/
+    border: none rgba(0, 0, 0, 0);  /*IE9 + everything else*/
+    background-color: #E6E6E6;
+    text-decoration: none;
+    border-radius: 2px;
+}
+.ef-button:hover,
+.ef-button:focus {
+    /* csslint ignore:start */
+    filter: alpha(opacity=90);
+    /* csslint ignore:end */
+    background-image: linear-gradient(transparent, rgba(0,0,0, 0.05) 40%, rgba(0,0,0, 0.10));
+}
+.ef-button:focus {
+    outline: 0;
+}
+.ef-button-active,
+.ef-button:active {
+    box-shadow: 0 0 0 1px rgba(0,0,0, 0.15) inset, 0 0 6px rgba(0,0,0, 0.20) inset;
+    border-color: #000\9;
+}
+.ef-button[disabled],
+.ef-button-disabled,
+.ef-button-disabled:hover,
+.ef-button-disabled:focus,
+.ef-button-disabled:active {
+    border: none;
+    background-image: none;
+    filter: alpha(opacity=40);
+    opacity: 0.40;
+    cursor: not-allowed;
+    box-shadow: none;
+    pointer-events: none;
+}
+.ef-button-hidden {
+    display: none;
+}
+.ef-button-primary,
+.ef-button-selected,
+a.ef-button-primary,
+a.ef-button-selected {
+    background-color: rgb(0, 120, 231);
+    color: #fff;
+}
+/**
+ * Colored buttons with rounded corners
+ */
+.ef-button-success,
+.ef-button-error,
+.ef-button-warning,
+.ef-button-secondary {
+    color: white;
+    border-radius: 4px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+.ef-button-success {
+    background: rgb(28, 184, 65); /* this is a green */
+}
+.ef-button-error {
+    background: rgb(202, 60, 60); /* this is a maroon */
+}
+.ef-button-warning {
+    background: rgb(223, 117, 20); /* this is an orange */
+}
+.ef-button-secondary {
+    background: rgb(66, 184, 221); /* this is a light blue */
+}
+/**
+ * Button Placements
+ */
+.ef-button-right-placement {
+    right: 0;
+
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    -webkit-transform-origin: right bottom 0;
+    -moz-transform-origin: right bottom 0;
+    -ms-transform-origin: right bottom 0;
+    -o-transform-origin: right bottom 0;
+    transform-origin: right bottom 0;
+}
+.ef-button-left-placement {
+    left: 0;
+
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+    -webkit-transform-origin: left bottom 0;
+    -moz-transform-origin: left bottom 0;
+    -ms-transform-origin: left bottom 0;
+    -o-transform-origin: left bottom 0;
+    transform-origin: left bottom 0;
+}
+.ef-button-bottom-placement {
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+}
+/**
+ * Mobile
+ */
+@media (max-width : 540px) {
+    .ef-modal-box {
+        width: auto;
+        border-radius: 0;
+    }
+    .ef-modal {
+        top: 60px;
+        display: block;
+        width: 100%;
+    }
+    .ef-modal--noClose {
+        top: 0;
+    }
+    .ef-modal--overflow {
+        padding: 0;
+    }
+    .ef-modal__close {
+        top: 0;
+        right: 0;
+        left: 0;
+        display: block;
+        width: 100%;
+        height: 60px;
+        border: none;
+        background-color: #2c3e50;
+        box-shadow: none;
+        color: #fff;
+        line-height: 60px;
+    }
+    .ef-modal__closeLabel {
+        display: inline-block;
+        vertical-align: top;
+        font-size: 1.5rem;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    }
+    .ef-modal__closeIcon {
+        display: inline-block;
+        margin-right: .5rem;
+        vertical-align: top;
+        font-size: 4rem;
+    }
+}
+
+/******
+ * Effects
+ ******/
+
+/**
+ * Common
+ */
+
+.ef-modal {
+    visibility: hidden;
+}
+.ef-modal--open {
+    visibility: visible;
+}
+.ef-modal--overflow {
+    overflow-y: scroll;
+}
+
+/**
+ * Fade in
+ */
+
+.ef-modal.ef-effect-fade-in .ef-modal-box {
+    opacity: 0;
+    transition: opacity 0.3s linear;
+}
+.ef-modal--open.ef-effect-fade-in .ef-modal-box {
+    opacity: 1;
+}
+
+/**
+ * Fade in & Scale
+ */
+
+.ef-modal.ef-effect-fade-in-scale .ef-modal-box {
+    -webkit-transform: scale(0.7);
+    -moz-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    transform: scale(0.7);
+    opacity: 0;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.ef-modal--open.ef-effect-fade-in-scale .ef-modal-box {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+}
+
+/**
+ * Slide In (Top)
+ */
+.ef-modal.ef-effect-slide-in-top .ef-modal-box {
+    -webkit-transform: translateY(-20%);
+    -moz-transform: translateY(-20%);
+    -ms-transform: translateY(-20%);
+    transform: translateY(-20%);
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+    opacity: 0;
+}
+.ef-modal--open.ef-effect-slide-in-top .ef-modal-box {
+    -webkit-transform: translateY(0%);
+    -moz-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    transform: translateY(0%);
+    border-radius: 0 0 3px 3px;
+    opacity: 1;
+}
+
+/**
+ * Slide In (Right)
+ */
+
+.ef-modal.ef-effect-slide-in-right .ef-modal-box {
+    -webkit-transform: translateX(20%);
+    -moz-transform: translateX(20%);
+    -ms-transform: translateX(20%);
+    transform: translateX(20%);
+    opacity: 0;
+    -webkit-transition: all 0.3s cubic-bezier(0.25, 0.5, 0.5, 0.9);
+    -moz-transition: all 0.3s cubic-bezier(0.25, 0.5, 0.5, 0.9);
+    transition: all 0.3s cubic-bezier(0.25, 0.5, 0.5, 0.9);
+}
+.ef-modal--open.ef-effect-slide-in-right .ef-modal-box {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+}
+
+/**
+ * Slide In (Bottom)
+ */
+
+.ef-modal.ef-effect-slide-in-bottom .ef-modal-box {
+    -webkit-transform: translateY(20%);
+    -moz-transform: translateY(20%);
+    -ms-transform: translateY(20%);
+    transform: translateY(20%);
+    opacity: 0;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.ef-modal--open.ef-effect-slide-in-bottom .ef-modal-box {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/**
+ * Slide In (Left)
+ */
+
+.ef-modal.ef-effect-slide-in-left .ef-modal-box {
+    -webkit-transform: translateX(-20%);
+    -moz-transform: translateX(-20%);
+    -ms-transform: translateX(-20%);
+    transform: translateX(-20%);
+    opacity: 0;
+    -webkit-transition: all 0.3s cubic-bezier(0.25, 0.5, 0.5, 0.9);
+    -moz-transition: all 0.3s cubic-bezier(0.25, 0.5, 0.5, 0.9);
+    transition: all 0.3s cubic-bezier(0.25, 0.5, 0.5, 0.9);
+}
+.ef-modal--open.ef-effect-slide-in-left .ef-modal-box {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+}

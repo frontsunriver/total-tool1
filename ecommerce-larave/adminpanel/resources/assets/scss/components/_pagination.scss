@@ -1,0 +1,59 @@
+// ....pagination...
+
+.pagination {
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: 0;
+    padding: 2px 15px;
+    margin-top: 30px;
+    width: 100%;
+    text-align: right;
+
+    div{
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .mainbar-link{
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+        font-weight: 600;
+        text-decoration: none;
+    }
+    .form-group {
+        padding-left: 0;
+        padding-right: 0;
+        .col-form-label {
+            text-align: right;
+        }
+    }
+    .loader-page {
+        display: inline-block;
+        background-color: transparent;
+        margin-bottom: 0;
+        padding: 0;
+        margin-top: 6px;
+        
+        .loader-page-item {
+            font-size: 0.875rem;
+            display: inline-block;
+            border: $border-width solid $border-color;
+            text-align: center;
+            a{
+                text-decoration: none;
+                cursor: pointer;
+                line-height: 12px;
+                padding: 3px 5px;
+                &:hover{
+                    color: $secondary;
+                    background-color: $primary;
+                }
+            }
+            // &:hover{
+            //     background-color: $primary;
+            //     color: $secondary;
+            // }
+        }
+    }
+}

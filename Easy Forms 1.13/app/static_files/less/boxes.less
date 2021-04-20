@@ -1,0 +1,38 @@
+//
+// Boxes
+// --------------------------------------------------
+
+
+// Base class
+.box {
+  margin-bottom: @line-height-computed;
+  background-color: @box-bg;
+  border: 1px solid transparent;
+  border-radius: @box-border-radius;
+
+  // Box header
+  // -------------------------
+  .box-header {
+    margin: 0 0 (@line-height-computed * 1.5);
+    border-bottom: 1px solid @page-header-border-color;
+
+    .box-title {
+      margin-top: 0;
+
+      .box-subtitle {
+        font-weight: @box-subtitle-font-weight;
+      }
+    }
+  }
+
+}
+
+.box-big {
+  padding: @box-big-padding;
+}
+
+.box-light {
+  background-color: @box-light-bg;
+  border-color: @box-light-border-color;
+  .box-shadow(@box-light-box-shadow);
+}

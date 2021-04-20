@@ -1,0 +1,118 @@
+a, .btn-link{
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+
+    &:hover{
+        text-decoration: none;
+        color: $secondary;
+    }
+}
+.btn{
+    padding: 0.6rem 1.8rem;
+
+    &:focus{
+        box-shadow: none !important;
+    }
+}
+
+.btn-secondary{
+	&:hover{
+        background-color:$secondary;
+	}
+	&:before{
+		background-color: darken($secondary, 10%);
+	}
+}
+.btn-primary{
+	&:hover{
+        background-color:$primary;
+	}
+	&:before{
+		background-color: darken($primary, 10%);
+	}
+}
+.btn-light{
+	&:hover{
+        background-color:$light;
+	}
+	&:before{
+		background-color: darken($light, 10%);
+	}
+}
+
+
+
+.swipe-to-top {
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    overflow: hidden;
+  
+}
+.swipe-to-top:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: 50% -100%;
+    transform-origin: 50% -100%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+.swipe-to-top:hover:before, 
+.swipe-to-top:focus:before, 
+.swipe-to-top:active:before {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+}
+
+
+
+
+.btn-google{
+    background-color: $body-color-secondary;
+    color: color-yiq($body-color-secondary);
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+
+    &:hover, &:focus{
+        background-color: darken(#de4e33, 5%);
+        color: color-yiq(darken(#de4e33, 5%));
+    }
+}
+.btn-facebook{
+    background-color: $body-color-secondary;
+    color: color-yiq($body-color-secondary);
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+
+    &:hover, &:focus{
+        background-color: darken(#3a599c, 5%);
+        color: color-yiq(darken(#3a599c, 5%));
+    }
+}
+.btn-twitter{
+    background-color: $body-color-secondary;
+    color: color-yiq($body-color-secondary);
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+
+    &:hover, &:focus{
+        background-color: darken(#1aa9e1, 5%);
+        color: color-yiq(darken(#1aa9e1, 5%));
+    }
+}

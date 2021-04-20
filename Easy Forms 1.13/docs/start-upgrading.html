@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="language" content="en"/>
+    <link rel="shortcut icon" type="image/ico" href="./assets/8f121b9a/favicon/favicon.ico"/>
+    <link rel="shortcut icon" type="image/ico" href="./assets/8f121b9a/favicon/favicon_32.ico"/>
+    <link rel="shortcut icon" type="image/ico" href="./assets/8f121b9a/favicon/favicon_48.ico"/>
+    <link rel="shortcut icon" type="image/ico" href="./assets/8f121b9a/favicon/favicon_96.ico"/>
+    <link rel="shortcut icon" type="image/ico" href="./assets/8f121b9a/favicon/favicon_144.ico"/>
+        <link href="./assets/c7fbc653/css/bootstrap.css" rel="stylesheet">
+<link href="./assets/fcacff94/github-gist.css" rel="stylesheet">
+<link href="./assets/8f121b9a/css/fonts.min.css" rel="stylesheet">
+<link href="./assets/8f121b9a/css/bootstrap.min.css" rel="stylesheet">
+<link href="./assets/8f121b9a/css/api.css" rel="stylesheet">
+<link href="./assets/8f121b9a/css/style.css" rel="stylesheet">
+<script src="./assets/e3a17645/jquery.js"></script>
+<script src="./assets/c7fbc653/js/bootstrap.js"></script>
+<script src="./assets/bbf47a67/jssearch.js"></script>    <title>Upgrading Easy Forms - First steps - Easy Forms</title>
+</head>
+<body>
+
+<div class="wrap">
+    <nav id="w508" class="navbar-inverse navbar-fixed-top navbar"><div class="container"><div class="navbar-header"><button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#w508-collapse"><span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span></button><a class="navbar-brand" href="./index.html"><span class="app-name">Easy Forms</span></a></div><div id="w508-collapse" class="collapse navbar-collapse"><ul id="w509" class="navbar-nav nav"><li><a href="./index.html">Documentation</a></li></ul>
+    <div class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+            <input id="searchbox" type="text" class="form-control" placeholder="Search">
+        </div>
+    </div>
+    </div></div></nav>
+    <div id="search-resultbox" style="display: none;" class="modal-content">
+        <ul id="search-results">
+        </ul>
+    </div>
+
+    <div class="container">
+        
+<div class="row">
+    <div class="col-md-2">
+                <div id="navigation" class="list-group"><a class="list-group-item active" href="#navigation-500" data-toggle="collapse" data-parent="#navigation">First steps <b class="caret"></b></a><div id="navigation-500" class="submenu panel-collapse collapse in"><a class="list-group-item" href="./intro-easy-forms.html">About Easy Forms</a>
+<a class="list-group-item" href="./system-requirements.html">Requirements</a>
+<a class="list-group-item" href="./start-installation.html">Installing Easy Forms</a>
+<a class="list-group-item active" href="./start-upgrading.html">Upgrading Easy Forms</a>
+<a class="list-group-item" href="./settings.html">Set Up Easy Forms</a>
+<a class="list-group-item" href="./start-customization.html">Customizing Easy Forms</a>
+<a class="list-group-item" href="./email-setup.html">Email Setup</a>
+<a class="list-group-item" href="./dynamic-content.html">Dynamic Content</a></div>
+<a class="list-group-item" href="#navigation-501" data-toggle="collapse" data-parent="#navigation">Forms <b class="caret"></b></a><div id="navigation-501" class="submenu panel-collapse collapse"><a class="list-group-item" href="./form-manager.html">Form Manager</a>
+<a class="list-group-item" href="./form-builder.html">Form Builder</a>
+<a class="list-group-item" href="./theme-designer.html">Theme Designer</a>
+<a class="list-group-item" href="./rule-builder.html">Rule Builder</a>
+<a class="list-group-item" href="./submission-manager.html">Submission Manager</a>
+<a class="list-group-item" href="./form-report-builder.html">Report Builder</a>
+<a class="list-group-item" href="./form-analytics.html">In-App Analytics</a>
+<a class="list-group-item" href="./form-widget.html">Form Widget</a>
+<a class="list-group-item" href="./form-import-export.html">Import / Export</a></div>
+<a class="list-group-item" href="#navigation-502" data-toggle="collapse" data-parent="#navigation">Templates <b class="caret"></b></a><div id="navigation-502" class="submenu panel-collapse collapse"><a class="list-group-item" href="./template-manager.html">Template Manager</a></div>
+<a class="list-group-item" href="#navigation-503" data-toggle="collapse" data-parent="#navigation">Themes <b class="caret"></b></a><div id="navigation-503" class="submenu panel-collapse collapse"><a class="list-group-item" href="./theme-manager.html">Theme Manager</a></div>
+<a class="list-group-item" href="#navigation-504" data-toggle="collapse" data-parent="#navigation">Users <b class="caret"></b></a><div id="navigation-504" class="submenu panel-collapse collapse"><a class="list-group-item" href="./user-manager.html">User Manager</a>
+<a class="list-group-item" href="./membership.html">Membership</a></div>
+<a class="list-group-item" href="#navigation-505" data-toggle="collapse" data-parent="#navigation">Add-Ons <b class="caret"></b></a><div id="navigation-505" class="submenu panel-collapse collapse"><a class="list-group-item" href="./addon-manager.html">Add-On Manager</a>
+<a class="list-group-item" href="./addon-webhooks.html">WebHooks</a>
+<a class="list-group-item" href="./addon-google-analytics.html">Google Analytics</a></div>
+<a class="list-group-item" href="#navigation-506" data-toggle="collapse" data-parent="#navigation">Premium Add-Ons <b class="caret"></b></a><div id="navigation-506" class="submenu panel-collapse collapse"><a class="list-group-item" href="./addon-acelle-mail.html">Acelle Mail</a>
+<a class="list-group-item" href="./addon-active-campaign.html">Active Campaign</a>
+<a class="list-group-item" href="./addon-adyen.html">Adyen</a>
+<a class="list-group-item" href="./addon-aweber.html">AWeber</a>
+<a class="list-group-item" href="./addon-braintree.html">Braintree</a>
+<a class="list-group-item" href="./addon-campaign-monitor.html">Campaign Monitor</a>
+<a class="list-group-item" href="./addon-cleverreach.html">CleverReach</a>
+<a class="list-group-item" href="./addon-conditional-emails.html">Conditional Emails</a>
+<a class="list-group-item" href="./addon-constant-contact.html">Constant Contact</a>
+<a class="list-group-item" href="./addon-custom-error-messages.html">Custom Error Messages</a>
+<a class="list-group-item" href="./addon-custom-data-validation.html">Data Validation</a>
+<a class="list-group-item" href="./addon-emailoctopus.html">EmailOctopus</a>
+<a class="list-group-item" href="./addon-facebook-login.html">Facebook Login</a>
+<a class="list-group-item" href="./addon-field-encryption.html">Field Encryption</a>
+<a class="list-group-item" href="./addon-google-places-autocomplete.html">Google Places Autocomplete</a>
+<a class="list-group-item" href="./addon-import-submissions.html">Import Submissions</a>
+<a class="list-group-item" href="./addon-insightly.html">Insightly</a>
+<a class="list-group-item" href="./addon-mailchimp.html">MailChimp</a>
+<a class="list-group-item" href="./addon-mailerlite.html">MailerLite</a>
+<a class="list-group-item" href="./addon-mysql.html">MySQL</a>
+<a class="list-group-item" href="./addon-neverbounce.html">NeverBounce</a>
+<a class="list-group-item" href="./addon-nexmo-sms.html">Nexmo SMS</a>
+<a class="list-group-item" href="./addon-paypal.html">PayPal</a>
+<a class="list-group-item" href="./addon-paypal-invoicing.html">PayPal Invoicing</a>
+<a class="list-group-item" href="./addon-pdf.html">PDF</a>
+<a class="list-group-item" href="./addon-plivo.html">Plivo SMS</a>
+<a class="list-group-item" href="./addon-salesforce.html">Salesforce</a>
+<a class="list-group-item" href="./addon-sendinblue.html">SendinBlue</a>
+<a class="list-group-item" href="./addon-stripe.html">Stripe</a>
+<a class="list-group-item" href="./addon-twilio.html">Twilio SMS</a></div>
+<a class="list-group-item" href="#navigation-507" data-toggle="collapse" data-parent="#navigation">Premium Modules <b class="caret"></b></a><div id="navigation-507" class="submenu panel-collapse collapse"><a class="list-group-item" href="./module-subscriptions.html">Subscriptions</a></div></div>    </div>
+    <div class="col-md-9 guide-content" role="main">
+        <h1>Upgrading Easy Forms <span id="upgrading-easy-forms"></span><a href="#upgrading-easy-forms" class="hashlink">&para;</a></h1>
+<div class="toc"><ol><li><a href="#introduction">Introduction</a></li>
+<li><a href="#upgrade-steps">Upgrade Steps</a></li></ol></div>
+<h2>Introduction <span id="introduction"></span><a href="#introduction" class="hashlink">&para;</a></h2><p>This document describes how to upgrade your Easy Forms application from 1.x to 1.13.</p>
+<p><img src="images/update-script.png" alt="Easy Forms - Update Script" /></p>
+<p>If you encounter errors during this process:</p>
+<ol>
+<li>Note any error messages you see (take a screenshot or copy your logs).</li>
+<li>Restore your site to its previous state, using the file and database backups you created before you started the upgrade process. Do not attempt to do further updates on a site that had upgrade problems.</li>
+<li>Contact us <a href="https://1.envato.market/easy-forms-support-page">via our support page on CodeCanyon</a>.</li>
+</ol>
+<blockquote><p><strong>Note:</strong> All directories mentioned in this document are relative to your Easy Forms installation directory.</p>
+</blockquote>
+<h2>Upgrade Steps <span id="upgrade-steps"></span><a href="#upgrade-steps" class="hashlink">&para;</a></h2><ol>
+<li><strong>Make a full backup</strong> of files, directories, and your database before starting, and save it outside your Easy Forms installation directory.</li>
+<li><strong>Remove all old files</strong> and directories, except the followings:<ul>
+<li><code>config/db.php</code>: Stores the database configuration.</li>
+<li><code>static_files/uploads</code>: Stores files uploaded by your users when they submit their forms. Also, this folder stores the uploaded files by registered users (avatars and themes). All files that are not part of the app should be hosted within this folder.</li>
+<li>Any custom directory or file you added elsewhere.</li>
+</ul>
+</li>
+<li>If you made modifications to files like <code>.htaccess</code> or <code>robots.txt</code> or <code>config/params.php</code>, you will need to re-apply them from your backup, after the new files are in place.</li>
+<li><strong>Upload the latest Easy Forms release</strong> to your Easy Forms directory, except for the following files and directories:<ul>
+<li><code>config/db.php</code></li>
+<li><code>static_files/uploads</code></li>
+<li><strong>Note</strong>: With the following steps you will avoid problems (corrupted files) and reduce the upload time to a couple of minutes.<ol>
+<li>Compress the 'app' folder </li>
+<li>Upload the 'app.zip' file to your server. </li>
+<li>Extract the 'app.zip' file with the cPanel File Manager.</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>Re-apply any modifications to files such as .htaccess or robots.txt or config/params.php.</li>
+<li><p><strong>Run the Update script</strong> by visiting <a href="http://www.example.com/update">http://www.example.com/update</a> (replace www.example.com with your domain name). This will update the database tables. If you are unable to access the update script, do the following:</p>
+<ul>
+<li>Open <code>config/web.php</code> with a text editor.</li>
+<li>Find the line that says:
+ <code>// 'update' =&gt; ['class' =&gt; 'app\modules\update\Module'],</code></li>
+<li>Uncomment this line by removing the ‘//’ characters.
+ <code>'update' =&gt; ['class' =&gt; 'app\modules\update\Module'],</code></li>
+<li>Run the Update script.</li>
+<li>When you finish the update process, comment the same line again.</li>
+</ul>
+</li>
+<li><p>Try to run the update script again and make sure a ‘Page not found’ error message appears.</p>
+</li>
+<li><p><strong>Special Step</strong>: Change folder structure. The "static_files/uploads" folder structure has been updated. Now follows this structure:</p>
+<ul>
+<li><code>app</code>: Stores the uploaded application files.<ul>
+<li><code>site</code>: Stores the uploaded files related to the site.</li>
+</ul>
+</li>
+<li><code>forms</code>: Stores the files uploaded by the Forms. This folder contains an .htaccess file and web.config file that restricts the file access to logged-in users only. <ul>
+<li>Take into account that each form stores its files in a numbered sub-folder, based on the Form ID. For example, the Form with ID: 1, stores the files into the <code>static_files/uploads/forms/1</code> sub-folder.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<p><strong>Note</strong>: To update forms created before v1.11 go to Site Settings -&gt; Performance -&gt; Update Form Builder fields -&gt; Click Update.</p>
+<p><strong>And that’s it!</strong> The upgrade is now complete. Your upgraded Easy Forms application is now ready to use. Enjoy!</p>
+<blockquote><p><strong>Note:</strong> We always suggest updating the app on a test copy of your site before applying it to your live site. Even minor updates can cause your site's behavior change.</p>
+</blockquote>
+        <div class="toplink"><a href="#" class="h1" title="go to top"><span class="glyphicon glyphicon-arrow-up"></a></div>
+    </div>
+</div>
+
+    </div>
+
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <p class="pull-left">&copy; Easy forms 2015 - 2021</p>
+        <p class="pull-right">
+            <small>Page generated on Thu, 08 Apr 2021 01:38:17 +0000</small>
+        </p>
+    </div>
+</footer>
+
+<script>jQuery(function ($) {
+    var shiftWindow = function () { scrollBy(0, -50) };
+    if (location.hash) setTimeout(shiftWindow, 1);
+    window.addEventListener("hashchange", shiftWindow);
+var element = document.createElement("script");
+element.src = "./jssearch.index.js";
+document.body.appendChild(element);
+
+var searchBox = $('#searchbox');
+
+// search when typing in search field
+searchBox.on("keyup", function(event) {
+    var query = $(this).val();
+
+    if (query == '' || event.which == 27) {
+        $('#search-resultbox').hide();
+        return;
+    } else if (event.which == 13) {
+        var selectedLink = $('#search-resultbox a.selected');
+        if (selectedLink.length != 0) {
+            document.location = selectedLink.attr('href');
+            return;
+        }
+    } else if (event.which == 38 || event.which == 40) {
+        $('#search-resultbox').show();
+
+        var selected = $('#search-resultbox a.selected');
+        if (selected.length == 0) {
+            $('#search-results').find('a').first().addClass('selected');
+        } else {
+            var next;
+            if (event.which == 40) {
+                next = selected.parent().next().find('a').first();
+            } else {
+                next = selected.parent().prev().find('a').first();
+            }
+            if (next.length != 0) {
+                var resultbox = $('#search-results');
+                var position = next.position();
+
+//              TODO scrolling is buggy and jumps around
+//                resultbox.scrollTop(Math.floor(position.top));
+//                console.log(position.top);
+
+                selected.removeClass('selected');
+                next.addClass('selected');
+            }
+        }
+
+        return;
+    }
+    $('#search-resultbox').show();
+    $('#search-results').html('<li><span class="no-results">No results</span></li>');
+
+    var result = jssearch.search(query);
+
+    if (result.length > 0) {
+        var i = 0;
+        var resHtml = '';
+
+        for (var key in result) {
+            if (i++ > 20) {
+                break;
+            }
+            resHtml = resHtml +
+            '<li><a href="' + result[key].file.u.substr(3) +'"><span class="title">' + result[key].file.t + '</span>' +
+            '<span class="description">' + result[key].file.d + '</span></a></li>';
+        }
+        $('#search-results').html(resHtml);
+    }
+});
+
+// hide the search results on ESC
+$(document).on("keyup", function(event) { if (event.which == 27) { $('#search-resultbox').hide(); } });
+// hide search results on click to document
+$(document).bind('click', function (e) { $('#search-resultbox').hide(); });
+// except the following:
+searchBox.bind('click', function(e) { e.stopPropagation(); });
+$('#search-resultbox').bind('click', function(e) { e.stopPropagation(); });
+
+});</script></body>
+</html>

@@ -1,0 +1,18 @@
+{{ if (field.containerClass) { }}<!-- Button -->
+<div class="{{= field.containerClass }}">
+    {{ if (field.buttonText) {  } }} {{ if (field.label) { }}<div class="form-action">
+        <label {{ if (field.labelClass) { }} class="{{= field.labelClass }}"{{ } }} for="{{= field.id }}">{{= field.label }}</label>
+        {{ if ( field.inputType !== "image" ) { }}<button type="{{= field.inputType }}" id="{{= field.id }}" name="{{= field.id }}"{{ if (field.cssClass) { }} class="{{= field.cssClass }}"{{ } }}{{ if(field.readOnly) { }} readOnly{{ } }}{{ if(field.disabled) { }} disabled{{ } }}>{{= field.buttonText }}</button>{{ } else { }}<input type="image" src="{{= field.src }}" id="{{= field.id }}" name="{{= field.id }}"{{ if (field.cssClass) { }} class="{{= field.cssClass }}"{{ } }}{{ if(field.readOnly) { }} readOnly{{ } }}{{ if(field.disabled) { }} disabled{{ } }}>{{ } }}
+    </div>
+    {{ } else { }}<div class="form-action">
+        {{ if ( field.inputType !== "image" ) { }}<button type="{{= field.inputType }}" id="{{= field.id }}" name="{{= field.id }}"{{ if (field.cssClass) { }} class="{{= field.cssClass }}"{{ } }}{{ if(field.readOnly) { }} readOnly{{ } }}{{ if(field.disabled) { }} disabled{{ } }}>{{= field.buttonText }}</button>{{ } else { }}<input type="image" src="{{= field.src }}" id="{{= field.id }}" name="{{= field.id }}"{{ if (field.cssClass) { }} class="{{= field.cssClass }}"{{ } }}{{ if(field.readOnly) { }} readOnly {{ } }}{{ if(field.disabled) { }} disabled{{ } }}>{{ } }}
+    </div>{{ } }}
+</div>{{ } else { }}<!-- Button -->
+{{ if (field.buttonText) {  } }} {{ if (field.label) { }}<div class="form-action">
+    <label {{ if (field.labelClass) { }} class="{{= field.labelClass }}"{{ } }} for="{{= field.id }}">{{= field.label }}</label>
+    {{ if ( field.inputType !== "image" ) { }}<button type="{{= field.inputType }}" id="{{= field.id }}" name="{{= field.id }}"{{ if (field.cssClass) { }} class="{{= field.cssClass }}"{{ } }}{{ if(field.readOnly) { }} readOnly{{ } }}{{ if(field.disabled) { }} disabled{{ } }}>{{= field.buttonText }}</button>{{ } else { }}<input type="image" src="{{= field.src }}" id="{{= field.id }}" name="{{= field.id }}"{{ if (field.cssClass) { }} class="{{= field.cssClass }}"{{ } }}{{ if(field.readOnly) { }} readOnly{{ } }}{{ if(field.disabled) { }} disabled{{ } }}>{{ } }}
+</div>
+{{ } else { }}<div class="form-action">
+    {{ if ( field.inputType !== "image" ) { }}<button type="{{= field.inputType }}" id="{{= field.id }}" name="{{= field.id }}"{{ if (field.cssClass) { }} class="{{= field.cssClass }}"{{ } }}{{ if(field.readOnly) { }} readOnly{{ } }}{{ if(field.disabled) { }} disabled{{ } }}>{{= field.buttonText }}</button>{{ } else { }}<input type="image" src="{{= field.src }}" id="{{= field.id }}" name="{{= field.id }}"{{ if (field.cssClass) { }} class="{{= field.cssClass }}"{{ } }}{{ if(field.readOnly) { }} readOnly {{ } }}{{ if(field.disabled) { }} disabled{{ } }}>{{ } }}
+</div>
+{{ } }}{{ } }}

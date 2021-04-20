@@ -1,0 +1,151 @@
+.contact-two-content{
+    padding-bottom: 30px;
+    .contact-main{
+        
+        padding-top: 30px;
+        .contact-logo{
+            list-style-type: none;
+            padding-left: 0px;
+            border-right: 1px solid #ced4da;
+                li{
+                    display: block;
+                    margin-bottom: 30px;
+                    height:50px;
+                    justify-content: center;
+                    text-align: center;
+                    .fas{
+                        color: $secondary;
+                        font-size: 30px;
+                        width: 45px;
+                    }
+                    span{
+                        display: block;
+                        text-align: left;
+                        font-size: 12px;
+                    }
+                } 
+               li:last-child{
+                    margin-bottom:0;
+                }
+        }
+        .contact-info{
+            list-style-type: none;
+            padding-left: 0px;
+                li{
+                    display:flex;
+                    align-items: center;
+                    margin-bottom: 30px;
+                    height: 50px;
+                    .fas{
+                        color: $secondary;
+                        font-size: 30px;
+                        width: 45px;
+                    }
+                    span{
+                        display: block;
+                        text-align: left;
+                        font-size: 12px;
+                    }
+                } 
+                li:last-child{
+                    margin-bottom:0;
+                }
+        }
+    }
+  
+    
+    .socials {
+        display: block;
+        padding-bottom: 30px;
+        .list {
+            display: block;
+            padding-left: 0;
+            margin-bottom: 0;
+            margin-top:30px;
+            li{
+                display: inline-block;
+                padding-right:0;
+                margin-right:0;
+                a {
+                    background-color: $primary;
+                    color: color-yiq($primary);
+                    font-size: $font-size-lg;
+                    width: 30px;
+                    height: 30px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-decoration: none;
+                    border-radius: $border-radius;
+                    border: $border-width solid $border-color;
+    
+                    &:hover
+                        {
+                        background-color: $secondary;
+                        color: color-yiq($secondary);
+                        border-color: $secondary;
+                    }
+                }
+            }
+        }   
+    }
+
+    .form-start{
+        padding-top: 30px;
+        form{
+            background-color: white;
+            padding: 15px;
+            border: $border-width solid #ced4da;
+            .input-group{
+                .form-control{
+                    height: calc(2.0625rem + 10px);
+                    padding-left: 0;    
+                }
+
+            }
+            .first-label{
+                margin-top: 0;
+            }
+            label{
+                font-size: 12px;
+                font-weight: 600;
+                margin-top: 25px;
+                margin-bottom: 5px;
+            }
+            textarea{
+                width: 100%;
+                padding: 0px 15px 0px 15px;
+                outline: none;
+                margin-bottom: 30px;
+                border-color: $border-color;
+            }
+            button{
+                font-weight: 600;
+                .fa-location-arrow{
+                    padding-left: 10px;
+                }
+            }
+            
+        }
+        .input-group{
+            .input-group-prepend{
+                .input-group-text{
+                    background-color: white;
+                    border-right: 0;
+                    .fas{
+                        color: #a3a8ad;
+                    }
+                }
+                
+            }
+            input{
+                border-left: 0;
+                outline: none;
+                box-shadow: none;
+                border-color:$border-color;
+            }
+        }
+    
+      
+    }
+}

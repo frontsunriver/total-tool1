@@ -1,0 +1,127 @@
+ //....................carousel section...............
+ .carousel-content{
+    .carousel-control-prev, .carousel-control-next{
+        overflow: hidden;
+        outline: none;
+        height: 38px ;
+        width: 38px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $body-bg-secondary;
+        border: 1px solid $body-bg-secondary;
+        transform: translateX(0px);
+        -webkit-transform: translateX(0px);
+        transition: 1.2s;
+        opacity: 0;
+        top: 45%;
+        z-index: 10;
+        &::after{
+            background-color: darken($secondary, 10%);
+            opacity: 0;
+           
+        }
+       
+        &::before{
+            font-family: "revicons";
+            font-size: 15px;
+            display: block;
+            line-height: 110px;
+            text-align: center;
+            transform: translateX(0px);
+            -webkit-transform: translateX(0px);
+            transition: all 0.4s;
+            -webkit-transition: all 0.4s;
+        }
+      
+    }
+ .carousel-control-prev, .carousel-control-next{
+    &:after {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        -webkit-transform: scaleY(0);
+        transform: scaleY(0);
+        -webkit-transform-origin: 50% -100%;
+        transform-origin: 50% -100%;
+        -webkit-transition-property: transform;
+        transition-property: transform;
+        -webkit-transition-duration: 0.4s;
+        transition-duration: 0.4s;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
+     
+    }
+    .carousel-control-next, .carousel-control-prev:hover:after, 
+    .carousel-control-next, .carousel-control-prev:focus:after, 
+    .carousel-control-next, .carousel-control-prev:active:after {
+        -webkit-transform: scaleY(1);
+        transform: scaleY(1);
+        opacity: 1;
+    }  
+ }
+   
+    .carousel-control-next{
+        right: 0px;
+        transform: translateX(0px) ;
+        -webkit-transform: translateX(0px) ;
+        &::before{
+            content: "→";
+            font-family: "revicons";
+            line-height: 36px;
+            font-size: 30px;
+            font-weight: 100;
+        }     
+    }
+    .carousel-control-prev{
+      left: 0px;
+      transform: translateX(0px) ;
+      -webkit-transform: translateX(0px) ;
+        &::before{
+            content: "←";
+            font-family: "revicons";
+            line-height: 36px;
+            font-size: 30px;
+            font-weight: 100;
+        }
+   
+
+      
+    }
+    .carousel-indicators .active{
+        background-color: $secondary;
+    }
+
+    .group-banners{
+        .banner-image:nth-child(2) {
+           
+            margin-bottom: 0;
+        }
+    }
+   .carousel.slide{
+    &:hover {
+      
+        .carousel-control-prev{
+            transform: translateX(30px);
+            -webkit-transform: translateX(30px);
+            transition: 0.4s;
+            opacity: 1;
+            border: none;
+        }
+        .carousel-control-next{
+            transform: translateX(-30px) ;
+            -webkit-transform: translateX(-30px) ;
+            transition: 0.4s;
+            opacity: 1;
+            border: none;
+        }
+    }
+   }
+}

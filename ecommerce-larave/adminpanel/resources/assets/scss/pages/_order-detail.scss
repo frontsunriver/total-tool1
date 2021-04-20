@@ -1,0 +1,122 @@
+// ....order....
+
+.order-two-content{
+    margin-bottom: 30px;
+    .navbar-nav{
+        .nav-item{
+            .nav-link{
+                .fas{
+                    margin-right: 10px;
+                    font-size: 16px;
+                    float: left;
+                }
+            }
+        }
+        
+    }
+  
+    .tag-color{
+        color: $secondary;
+        font-size: 20px
+    }
+    .tag-s{
+        font-size: 20px;
+    }
+
+    .media-main{
+        background-color: white;
+     
+    }
+    .table{
+        background-color: white;
+       
+        th{
+            border-top: none;
+            vertical-align: middle;
+        }
+        
+    }
+    .items{
+        tr{
+            th{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            td.item-detail-left{
+				justify-content:flex-start;
+			}
+            td{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .order-img{
+                    border:$border-width solid $gray-400;
+                }
+                .text-body{
+                    h4{
+                        font-size: 1rem;
+                    font-weight: 600;
+                    }
+                    
+                }
+                .qtypluscart{
+                    display: grid;
+                    a{
+                        display: grid;
+                    }
+                    .fas{
+                        border:  $border-width solid $gray-400;
+                        padding: 2px 4px;
+                        font-size: 9px;
+                    }
+                }
+                
+                .input-group{
+                    display: flex;
+                  justify-content: center;
+                  width: 50%;
+                  .form-control{
+                        width: 50%;
+                        text-align : center;
+                    }    
+                }
+            }
+            
+        }
+    }
+    .order-id{
+        tbody{
+            tr{
+                .pending{
+                    p{
+                        background-color: $primary;
+                        color: white;
+                        margin: 0;
+                        padding: 0 5px;
+                        width: 80px;
+                        text-align: center;
+                    
+                    }
+                   
+                }
+                .address{
+                    text-align: left;
+                  
+                }
+                td{
+                    border-top: none;
+                    font-size: 13px;
+                    padding-left: 20px;
+                 
+                }
+            }
+        }
+    }
+    .comments-area{
+        background-color: $white;
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+}
+              

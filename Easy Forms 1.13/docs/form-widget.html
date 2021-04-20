@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="language" content="en"/>
+    <link rel="shortcut icon" type="image/ico" href="./assets/8f121b9a/favicon/favicon.ico"/>
+    <link rel="shortcut icon" type="image/ico" href="./assets/8f121b9a/favicon/favicon_32.ico"/>
+    <link rel="shortcut icon" type="image/ico" href="./assets/8f121b9a/favicon/favicon_48.ico"/>
+    <link rel="shortcut icon" type="image/ico" href="./assets/8f121b9a/favicon/favicon_96.ico"/>
+    <link rel="shortcut icon" type="image/ico" href="./assets/8f121b9a/favicon/favicon_144.ico"/>
+        <link href="./assets/c7fbc653/css/bootstrap.css" rel="stylesheet">
+<link href="./assets/fcacff94/github-gist.css" rel="stylesheet">
+<link href="./assets/8f121b9a/css/fonts.min.css" rel="stylesheet">
+<link href="./assets/8f121b9a/css/bootstrap.min.css" rel="stylesheet">
+<link href="./assets/8f121b9a/css/api.css" rel="stylesheet">
+<link href="./assets/8f121b9a/css/style.css" rel="stylesheet">
+<script src="./assets/e3a17645/jquery.js"></script>
+<script src="./assets/c7fbc653/js/bootstrap.js"></script>
+<script src="./assets/bbf47a67/jssearch.js"></script>    <title>Form Widget - Forms - Easy Forms</title>
+</head>
+<body>
+
+<div class="wrap">
+    <nav id="w418" class="navbar-inverse navbar-fixed-top navbar"><div class="container"><div class="navbar-header"><button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#w418-collapse"><span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span></button><a class="navbar-brand" href="./index.html"><span class="app-name">Easy Forms</span></a></div><div id="w418-collapse" class="collapse navbar-collapse"><ul id="w419" class="navbar-nav nav"><li><a href="./index.html">Documentation</a></li></ul>
+    <div class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+            <input id="searchbox" type="text" class="form-control" placeholder="Search">
+        </div>
+    </div>
+    </div></div></nav>
+    <div id="search-resultbox" style="display: none;" class="modal-content">
+        <ul id="search-results">
+        </ul>
+    </div>
+
+    <div class="container">
+        
+<div class="row">
+    <div class="col-md-2">
+                <div id="navigation" class="list-group"><a class="list-group-item" href="#navigation-410" data-toggle="collapse" data-parent="#navigation">First steps <b class="caret"></b></a><div id="navigation-410" class="submenu panel-collapse collapse"><a class="list-group-item" href="./intro-easy-forms.html">About Easy Forms</a>
+<a class="list-group-item" href="./system-requirements.html">Requirements</a>
+<a class="list-group-item" href="./start-installation.html">Installing Easy Forms</a>
+<a class="list-group-item" href="./start-upgrading.html">Upgrading Easy Forms</a>
+<a class="list-group-item" href="./settings.html">Set Up Easy Forms</a>
+<a class="list-group-item" href="./start-customization.html">Customizing Easy Forms</a>
+<a class="list-group-item" href="./email-setup.html">Email Setup</a>
+<a class="list-group-item" href="./dynamic-content.html">Dynamic Content</a></div>
+<a class="list-group-item active" href="#navigation-411" data-toggle="collapse" data-parent="#navigation">Forms <b class="caret"></b></a><div id="navigation-411" class="submenu panel-collapse collapse in"><a class="list-group-item" href="./form-manager.html">Form Manager</a>
+<a class="list-group-item" href="./form-builder.html">Form Builder</a>
+<a class="list-group-item" href="./theme-designer.html">Theme Designer</a>
+<a class="list-group-item" href="./rule-builder.html">Rule Builder</a>
+<a class="list-group-item" href="./submission-manager.html">Submission Manager</a>
+<a class="list-group-item" href="./form-report-builder.html">Report Builder</a>
+<a class="list-group-item" href="./form-analytics.html">In-App Analytics</a>
+<a class="list-group-item active" href="./form-widget.html">Form Widget</a>
+<a class="list-group-item" href="./form-import-export.html">Import / Export</a></div>
+<a class="list-group-item" href="#navigation-412" data-toggle="collapse" data-parent="#navigation">Templates <b class="caret"></b></a><div id="navigation-412" class="submenu panel-collapse collapse"><a class="list-group-item" href="./template-manager.html">Template Manager</a></div>
+<a class="list-group-item" href="#navigation-413" data-toggle="collapse" data-parent="#navigation">Themes <b class="caret"></b></a><div id="navigation-413" class="submenu panel-collapse collapse"><a class="list-group-item" href="./theme-manager.html">Theme Manager</a></div>
+<a class="list-group-item" href="#navigation-414" data-toggle="collapse" data-parent="#navigation">Users <b class="caret"></b></a><div id="navigation-414" class="submenu panel-collapse collapse"><a class="list-group-item" href="./user-manager.html">User Manager</a>
+<a class="list-group-item" href="./membership.html">Membership</a></div>
+<a class="list-group-item" href="#navigation-415" data-toggle="collapse" data-parent="#navigation">Add-Ons <b class="caret"></b></a><div id="navigation-415" class="submenu panel-collapse collapse"><a class="list-group-item" href="./addon-manager.html">Add-On Manager</a>
+<a class="list-group-item" href="./addon-webhooks.html">WebHooks</a>
+<a class="list-group-item" href="./addon-google-analytics.html">Google Analytics</a></div>
+<a class="list-group-item" href="#navigation-416" data-toggle="collapse" data-parent="#navigation">Premium Add-Ons <b class="caret"></b></a><div id="navigation-416" class="submenu panel-collapse collapse"><a class="list-group-item" href="./addon-acelle-mail.html">Acelle Mail</a>
+<a class="list-group-item" href="./addon-active-campaign.html">Active Campaign</a>
+<a class="list-group-item" href="./addon-adyen.html">Adyen</a>
+<a class="list-group-item" href="./addon-aweber.html">AWeber</a>
+<a class="list-group-item" href="./addon-braintree.html">Braintree</a>
+<a class="list-group-item" href="./addon-campaign-monitor.html">Campaign Monitor</a>
+<a class="list-group-item" href="./addon-cleverreach.html">CleverReach</a>
+<a class="list-group-item" href="./addon-conditional-emails.html">Conditional Emails</a>
+<a class="list-group-item" href="./addon-constant-contact.html">Constant Contact</a>
+<a class="list-group-item" href="./addon-custom-error-messages.html">Custom Error Messages</a>
+<a class="list-group-item" href="./addon-custom-data-validation.html">Data Validation</a>
+<a class="list-group-item" href="./addon-emailoctopus.html">EmailOctopus</a>
+<a class="list-group-item" href="./addon-facebook-login.html">Facebook Login</a>
+<a class="list-group-item" href="./addon-field-encryption.html">Field Encryption</a>
+<a class="list-group-item" href="./addon-google-places-autocomplete.html">Google Places Autocomplete</a>
+<a class="list-group-item" href="./addon-import-submissions.html">Import Submissions</a>
+<a class="list-group-item" href="./addon-insightly.html">Insightly</a>
+<a class="list-group-item" href="./addon-mailchimp.html">MailChimp</a>
+<a class="list-group-item" href="./addon-mailerlite.html">MailerLite</a>
+<a class="list-group-item" href="./addon-mysql.html">MySQL</a>
+<a class="list-group-item" href="./addon-neverbounce.html">NeverBounce</a>
+<a class="list-group-item" href="./addon-nexmo-sms.html">Nexmo SMS</a>
+<a class="list-group-item" href="./addon-paypal.html">PayPal</a>
+<a class="list-group-item" href="./addon-paypal-invoicing.html">PayPal Invoicing</a>
+<a class="list-group-item" href="./addon-pdf.html">PDF</a>
+<a class="list-group-item" href="./addon-plivo.html">Plivo SMS</a>
+<a class="list-group-item" href="./addon-salesforce.html">Salesforce</a>
+<a class="list-group-item" href="./addon-sendinblue.html">SendinBlue</a>
+<a class="list-group-item" href="./addon-stripe.html">Stripe</a>
+<a class="list-group-item" href="./addon-twilio.html">Twilio SMS</a></div>
+<a class="list-group-item" href="#navigation-417" data-toggle="collapse" data-parent="#navigation">Premium Modules <b class="caret"></b></a><div id="navigation-417" class="submenu panel-collapse collapse"><a class="list-group-item" href="./module-subscriptions.html">Subscriptions</a></div></div>    </div>
+    <div class="col-md-9 guide-content" role="main">
+        <h1>Form Widget (Embed Code) <span id="form-widget-embed-code"></span><a href="#form-widget-embed-code" class="hashlink">&para;</a></h1>
+<div class="toc"><ol><li><a href="#introduction">Introduction</a></li>
+<li><a href="#which-form-embed-code-should-i-use">Which Form Embed Code Should I Use?</a></li>
+<li><a href="#how-to-populate-a-field-with-a-querystring">How to populate a Field with a Querystring?</a></li>
+<li><a href="#how-to-listen-postmessages-sent-by-the-form-widget">How to listen postMessages sent by the Form Widget</a></li>
+<li><a href="#form-widget-setting">Form Widget Setting</a></li>
+<li><a href="#interacting-with-the-form-via-javascript">Interacting with the Form via JavaScript</a></li></ol></div>
+<h2>Introduction <span id="introduction"></span><a href="#introduction" class="hashlink">&para;</a></h2><p>Embed code are a few lines of html and javascript that you can use to embed an Easy Forms’ form into your own website. This is the easiest way to display a form on your site and the method least susceptible to errors. Also, one of the most important things about the form widget is that every time you make a change to your form in the form builder, the embedded form will automatically update.</p>
+<p>The Form Widget has been designed to work on any web page. Our Form Widget basically creates an iFrame on the fly, and the form will be loaded in it. Then, since it creates the iFrame, it can also resize it and that means there's no need to update the code every time you make some change. Also, when you keep a form inside an iFrame, you also prevent it from conflicting with existing JavaScript or CSS elements on your page.</p>
+<h2>Which Form Embed Code Should I Use? <span id="which-form-embed-code-should-i-use"></span><a href="#which-form-embed-code-should-i-use" class="hashlink">&para;</a></h2><p>Right now Easy Forms offers two options for publishing a form in your web site:</p>
+<ol>
+<li><strong>Embed with Design</strong>: Lets you publish the form with the theme that has been applied to the form.</li>
+<li><strong>Embed without design</strong>: Lets you publish the form without any theme, even if you have applied one to your form.</li>
+</ol>
+<p>Usually, the first option is the one you should use.</p>
+<h2>How to populate a Field with a Querystring? <span id="how-to-populate-a-field-with-a-querystring"></span><a href="#how-to-populate-a-field-with-a-querystring" class="hashlink">&para;</a></h2><p>You can populate a field with URL parameters. Just make sure to use the Field ID or Field Alias as the parameter key, then the value assigned to this parameter will appear in the field.</p>
+<h2>How to listen postMessages sent by the Form Widget <span id="how-to-listen-postmessages-sent-by-the-form-widget"></span><a href="#how-to-listen-postmessages-sent-by-the-form-widget" class="hashlink">&para;</a></h2><p>To be able to listen to the messages sent by the Form Widget, you simply have to add an event listener to your web page. For example, if you need to know a submission ID from your own webpage, you can add this code bellow the pasted embed code:</p>
+<pre><code class="hljs javascript language-js"><span class="hljs-built_in">window</span>.addEventListener(<span class="hljs-string">"message"</span>, receiveMessage, <span class="hljs-literal">false</span>);
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">receiveMessage</span>(<span class="hljs-params">event</span>) </span>{
+    <span class="hljs-keyword">if</span> (event.data) {
+        <span class="hljs-keyword">var</span> data = <span class="hljs-built_in">JSON</span>.parse(event.data);
+        <span class="hljs-keyword">if</span> (<span class="hljs-keyword">typeof</span> data.action !== <span class="hljs-string">"undefined"</span> &amp;&amp; data.action === <span class="hljs-string">"success"</span>) {
+            <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Submission saved with ID"</span>, data.data.id);
+        }
+    }
+}
+</code></pre>
+<h2>Form Widget Setting <span id="form-widget-setting"></span><a href="#form-widget-setting" class="hashlink">&para;</a></h2><p>The Form Widget (embed code) has two parts:</p>
+<ol>
+<li>An HTML code that displays the default content if the user accesses the form when JavaScript is disabled in his browser. By default, a link to your form within a DIV element is displayed.</li>
+<li>A Javascript code that is responsible for displaying the form and initialize the Form Tracker (if Analytics is enabled).</li>
+</ol>
+<p>The form widget allows you to set some options of the form on the fly:</p>
+<ul>
+<li><strong>Id</strong>: Form's ID in the application. For example: <code>'id': 132</code></li>
+<li><strong>Sid</strong>: Submission ID. Use this option to edit a form submission previously collected. To find the Submission ID, <a href="submission-manager.html#viewing-a-submission-record">go to the Submission Manager</a>. For example: <code>'sid': 964</code></li>
+<li><strong>Container</strong>: ID of the HTML element where the form's iframe will be inserted. By default, points to the DIV ID that contains the link to the form. For example: <code>'container': 'c132'</code></li>
+<li><strong>Width</strong>: Specifies the width of the form's iframe. For example: <code>'width': '100%'</code></li>
+<li><strong>Height</strong>: Specifies the height of the form's iframe. Usually, the embed code comes set with a value in pixels. This value is calculated by the Form Builder at the time of its creation. For example: <code>'height': '846px'</code></li>
+<li><strong>Auto Resize</strong>: By default, is enabled. Indicates whether the iframe can automatically resize to the real height of the form. For example, when validation messages are shown. If set to false, the form does not resize and its height will be defined in the "height" option. For example: <code>'autoResize': !0</code></li>
+<li><strong>Theme</strong>: By default, is enabled. Is a integer value (1 or 0) that lets you enable or disable a theme on the fly. For example: <code>'theme': 1</code></li>
+<li><strong>Custom</strong> JS: By default, is enabled. Is a integer value (1 or 0) that lets you enable or disable the loading of external javascript files on the fly. For example: <code>'customJS': 1</code></li>
+<li><strong>Record</strong>: By default, is enabled. Is a integer value (1 or 0) that lets you enable or disable the Form Tracker on the fly. For example: <code>'record': 1</code></li>
+<li><strong>Form</strong>: Specifies the path to the form's embed. It contains no parameters.</li>
+<li><strong>addToOffsetTop</strong>: By default, is 0. Add or subtract a number of pixels to OffsetTop before calculating the form location. This allows correct the form location when html elements on the website (like a header) have the CSS property: "fixed". For example: <code>'addToOffsetTop': '-60'</code></li>
+<li><strong>Default Values</strong>: If you want to pre-fill form fields with default values, you can use this option. Default Values ​​is a JSON object where your key is the id of the form field and its value is the content of the field. For example:</li>
+</ul>
+<pre><code class="language-plaintext">'defaultValues': {
+    'text_0': 'This is my default value'
+}
+</code></pre>
+<p>Note that fields of type checkbox and radio button are selected by using boolean values. For example:</p>
+<pre><code class="language-plaintext">'defaultValues': {
+    'text_0': 'This is my default value',
+    'checkbox_0': true
+}
+</code></pre>
+<h2>Interacting with the Form via JavaScript <span id="interacting-with-the-form-via-javascript"></span><a href="#interacting-with-the-form-via-javascript" class="hashlink">&para;</a></h2><p>The Form Widget contains many features and options that can be configured inside an external JavaScript File.</p>
+<blockquote><p><strong>Note:</strong> To load a JavaScript File you must go to Forms -&gt; Actions -&gt; Settings -&gt; UI Settings.</p>
+</blockquote>
+<p>By default, a jQuery object is available. So you can interact with the Form in a very simple way by using the following lines of code:</p>
+<pre><code class="hljs javascript language-js">$( <span class="hljs-built_in">document</span> ).ready(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-comment">// Here we can interact with the Form</span>
+});
+</code></pre>
+<h3>The Form element <span id="the-form-element"></span><a href="#the-form-element" class="hashlink">&para;</a></h3><p>The Form element - <em>formEl</em> - is a jQuery object to which you can access for get information and/or manipulate it directly. For example, we're going to know the high of our form with the following lines of code:</p>
+<pre><code class="hljs javascript language-js">$( <span class="hljs-built_in">document</span> ).ready(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'The form height is'</span>, formEl.height());
+});
+</code></pre>
+<h3>Listening for Events <span id="listening-for-events"></span><a href="#listening-for-events" class="hashlink">&para;</a></h3><p>Certain events are triggered when the Form does something. </p>
+<ul>
+<li><strong>view</strong>: This event will be triggered when a form has been viewed.</li>
+<li><strong>fill</strong>: This event will be triggered the first time you interact with the form. For example, by fill a text field or select a radio button.</li>
+<li><strong>error</strong>: This event will be triggered when the Server threw a validation error.</li>
+<li><strong>success</strong>: This event will be triggered when the Form has been submitted successfully.</li>
+<li><strong>nextStep</strong>: This event will be triggered each time you progress to the next step in a multi-step form.</li>
+<li><strong>previousStep</strong>: This event will be triggered each time you go back one step in a multi-step form.</li>
+</ul>
+<p>A very basic example for detecting when a form fail would be:</p>
+<pre><code class="hljs javascript language-js">$( <span class="hljs-built_in">document</span> ).ready(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+    formEl.on(<span class="hljs-string">'error'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">event</span>) </span>{
+        <span class="hljs-comment">/* Track a server validation error  */</span>  
+        <span class="hljs-comment">/* What happens here would be dependent on your analytics product! */</span>
+    });
+});
+</code></pre>
+<h3>The Event Handlers: previousStep and nextStep <span id="the-event-handlers-previousstep-and-nextstep"></span><a href="#the-event-handlers-previousstep-and-nextstep" class="hashlink">&para;</a></h3><p>In addition to the events, Easy Forms offers two event handlers that allow you to go backward and forward a page on a Multi-Step form ready to use using JavaScript. For example, now we're going to see how to forward a page without pressing the button "Next" using the auto-advance feature.</p>
+<h3>Auto-Advance in Multi-Step Forms <span id="auto-advance-in-multi-step-forms"></span><a href="#auto-advance-in-multi-step-forms" class="hashlink">&para;</a></h3><p>By default, when you create a Multi-Step Form, two navigation buttons are added automatically: "Previous" and "Next" at the bottom of the form. These buttons allow you to navigate through the form until you reach the last page where usually the Submit button is placed.</p>
+<blockquote><p><strong>Note:</strong> Easy Forms lets you add multiple Submit buttons on different pages or parts of the form.</p>
+</blockquote>
+<p>However, in certain use cases you can may want to advance directly to the next page without pressing any buttons. For this we will make use of the “nextStep” event handler.</p>
+<blockquote><p><strong>Note:</strong> Some use cases in which this feature is useful are surveys and/or tests where is not allowed to change response and lets to complete the survey as soon as possible.</p>
+</blockquote>
+<p>For example, with the following lines of code, we are going to tell our Form that each time a radio button is selected, the form will forward to the next page:</p>
+<pre><code class="hljs javascript language-js">$( <span class="hljs-built_in">document</span> ).ready(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+    $(<span class="hljs-string">'input[type=radio]'</span>).on(<span class="hljs-string">'change'</span>, nextStep);
+});
+</code></pre>
+<p>Finally, if you want to hide the navigation buttons you can add the following lines in the CSS Theme assigned to your form:</p>
+<pre><code class="hljs css language-css"><span class="hljs-class">.previous</span>, <span class="hljs-class">.next</span> <span class="hljs-rules">{
+    <span class="hljs-rule"><span class="hljs-attribute">display</span>:<span class="hljs-value"> none <span class="hljs-important">!important</span></span></span>;
+}</span>
+</code></pre>
+<h3>Upload Multiple JavaScript and CSS files in our Form <span id="upload-multiple-javascript-and-css-files-in-our-form"></span><a href="#upload-multiple-javascript-and-css-files-in-our-form" class="hashlink">&para;</a></h3><p>By having the jQuery object, we can make use of jQuery.when().done() to load multiple javascript objects and make use of them once they are ready to use. Let’s see the following example.</p>
+<h3>Display a jQuery UI DatePicker in a Date field <span id="display-a-jquery-ui-datepicker-in-a-date-field"></span><a href="#display-a-jquery-ui-datepicker-in-a-date-field" class="hashlink">&para;</a></h3><p>For example, with the following lines of code we will show a  jQuery UI DatePicker in the Date fields of the form:</p>
+<pre><code class="hljs javascript language-js">$( <span class="hljs-built_in">document</span> ).ready(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+    $.when(
+        $(<span class="hljs-string">'head'</span>).append(<span class="hljs-string">'&lt;link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" type="text/css" /&gt;'</span>),
+        $.getScript( <span class="hljs-string">"//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"</span> ),
+        $.Deferred(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"> deferred </span>)</span>{
+            $( deferred.resolve );
+        })
+    ).done(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+        $(<span class="hljs-string">'body'</span>).css(<span class="hljs-string">'padding-bottom'</span>, <span class="hljs-string">'200px'</span>); <span class="hljs-comment">// Padding for show the datepicker</span>
+        $(<span class="hljs-string">'input[type=date]'</span>).each(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+            $(<span class="hljs-keyword">this</span>).attr(<span class="hljs-string">'type'</span>, <span class="hljs-string">'text'</span>).after(
+                $(<span class="hljs-keyword">this</span>).clone().attr(<span class="hljs-string">'id'</span>, <span class="hljs-keyword">this</span>.id + <span class="hljs-string">'_alt'</span>).attr(<span class="hljs-string">'name'</span>, <span class="hljs-keyword">this</span>.id + <span class="hljs-string">'_alt'</span>)
+                    .datepicker({
+                        <span class="hljs-comment">// Consistent format with the HTML5 picker</span>
+                        dateFormat: <span class="hljs-string">'mm/dd/yy'</span>,
+                        changeMonth: <span class="hljs-literal">true</span>,
+                        changeYear: <span class="hljs-literal">true</span>,
+                        altField: <span class="hljs-keyword">this</span>,
+                        altFormat: <span class="hljs-string">"yy-mm-dd"</span>
+                    })
+            )
+            .hide();
+        });
+    });
+});
+</code></pre>
+<p>As you can see:</p>
+<ul>
+<li>We're loading 2 files within the function <em>when()</em>: <em>jquery-ui.css</em> and <em>jquery-ui.min.js</em>.</li>
+<li>We have inserted a function that will run when the previous two files are loaded on the page within the function <em>done()</em>.</li>
+<li>The function basically runs 3 Instructions:<ol>
+<li>Find all fields of type "<em>date</em>" and convert each field "<em>date</em>" in "<em>text</em>".</li>
+<li>Clone each Date field in a Text field that displays the DatePicker.</li>
+<li>Hides the Date field, because its value will be established automatically by the DatePicker, by the attributes: <em>altField</em> and <em>altFormat</em>.</li>
+</ol>
+</li>
+</ul>
+        <div class="toplink"><a href="#" class="h1" title="go to top"><span class="glyphicon glyphicon-arrow-up"></a></div>
+    </div>
+</div>
+
+    </div>
+
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <p class="pull-left">&copy; Easy forms 2015 - 2021</p>
+        <p class="pull-right">
+            <small>Page generated on Thu, 08 Apr 2021 01:38:17 +0000</small>
+        </p>
+    </div>
+</footer>
+
+<script>jQuery(function ($) {
+    var shiftWindow = function () { scrollBy(0, -50) };
+    if (location.hash) setTimeout(shiftWindow, 1);
+    window.addEventListener("hashchange", shiftWindow);
+var element = document.createElement("script");
+element.src = "./jssearch.index.js";
+document.body.appendChild(element);
+
+var searchBox = $('#searchbox');
+
+// search when typing in search field
+searchBox.on("keyup", function(event) {
+    var query = $(this).val();
+
+    if (query == '' || event.which == 27) {
+        $('#search-resultbox').hide();
+        return;
+    } else if (event.which == 13) {
+        var selectedLink = $('#search-resultbox a.selected');
+        if (selectedLink.length != 0) {
+            document.location = selectedLink.attr('href');
+            return;
+        }
+    } else if (event.which == 38 || event.which == 40) {
+        $('#search-resultbox').show();
+
+        var selected = $('#search-resultbox a.selected');
+        if (selected.length == 0) {
+            $('#search-results').find('a').first().addClass('selected');
+        } else {
+            var next;
+            if (event.which == 40) {
+                next = selected.parent().next().find('a').first();
+            } else {
+                next = selected.parent().prev().find('a').first();
+            }
+            if (next.length != 0) {
+                var resultbox = $('#search-results');
+                var position = next.position();
+
+//              TODO scrolling is buggy and jumps around
+//                resultbox.scrollTop(Math.floor(position.top));
+//                console.log(position.top);
+
+                selected.removeClass('selected');
+                next.addClass('selected');
+            }
+        }
+
+        return;
+    }
+    $('#search-resultbox').show();
+    $('#search-results').html('<li><span class="no-results">No results</span></li>');
+
+    var result = jssearch.search(query);
+
+    if (result.length > 0) {
+        var i = 0;
+        var resHtml = '';
+
+        for (var key in result) {
+            if (i++ > 20) {
+                break;
+            }
+            resHtml = resHtml +
+            '<li><a href="' + result[key].file.u.substr(3) +'"><span class="title">' + result[key].file.t + '</span>' +
+            '<span class="description">' + result[key].file.d + '</span></a></li>';
+        }
+        $('#search-results').html(resHtml);
+    }
+});
+
+// hide the search results on ESC
+$(document).on("keyup", function(event) { if (event.which == 27) { $('#search-resultbox').hide(); } });
+// hide search results on click to document
+$(document).bind('click', function (e) { $('#search-resultbox').hide(); });
+// except the following:
+searchBox.bind('click', function(e) { e.stopPropagation(); });
+$('#search-resultbox').bind('click', function(e) { e.stopPropagation(); });
+
+});</script></body>
+</html>

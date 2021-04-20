@@ -1,0 +1,11 @@
+<div class="form-group styles-{{- name }}">
+    <label class="control-label" for="{{- name }}">{{- label }}</label>
+    <input type="text" id="{{- name }}" class="form-control data-list" name="{{- name }}" value="{{- value }}" placeholder="{{- placeholder }}" list="{{- name }}-data-list">
+    <datalist id="{{- name }}-data-list">
+        <option value="inherit">inherit</option>
+        <option value="auto">auto</option>
+        {{ _.each(_.range(100, 0, -1), function(number) { }}
+        <option value="{{- number }}%">{{- number }}%</option>
+        {{ }); }}
+    </datalist>
+</div>

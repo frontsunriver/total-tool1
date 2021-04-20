@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="language" content="en"/>
+    <link rel="shortcut icon" type="image/ico" href="./assets/8f121b9a/favicon/favicon.ico"/>
+    <link rel="shortcut icon" type="image/ico" href="./assets/8f121b9a/favicon/favicon_32.ico"/>
+    <link rel="shortcut icon" type="image/ico" href="./assets/8f121b9a/favicon/favicon_48.ico"/>
+    <link rel="shortcut icon" type="image/ico" href="./assets/8f121b9a/favicon/favicon_96.ico"/>
+    <link rel="shortcut icon" type="image/ico" href="./assets/8f121b9a/favicon/favicon_144.ico"/>
+        <link href="./assets/c7fbc653/css/bootstrap.css" rel="stylesheet">
+<link href="./assets/fcacff94/github-gist.css" rel="stylesheet">
+<link href="./assets/8f121b9a/css/fonts.min.css" rel="stylesheet">
+<link href="./assets/8f121b9a/css/bootstrap.min.css" rel="stylesheet">
+<link href="./assets/8f121b9a/css/api.css" rel="stylesheet">
+<link href="./assets/8f121b9a/css/style.css" rel="stylesheet">
+<script src="./assets/e3a17645/jquery.js"></script>
+<script src="./assets/c7fbc653/js/bootstrap.js"></script>
+<script src="./assets/bbf47a67/jssearch.js"></script>    <title>Submission Manager - Forms - Easy Forms</title>
+</head>
+<body>
+
+<div class="wrap">
+    <nav id="w518" class="navbar-inverse navbar-fixed-top navbar"><div class="container"><div class="navbar-header"><button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#w518-collapse"><span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span></button><a class="navbar-brand" href="./index.html"><span class="app-name">Easy Forms</span></a></div><div id="w518-collapse" class="collapse navbar-collapse"><ul id="w519" class="navbar-nav nav"><li><a href="./index.html">Documentation</a></li></ul>
+    <div class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+            <input id="searchbox" type="text" class="form-control" placeholder="Search">
+        </div>
+    </div>
+    </div></div></nav>
+    <div id="search-resultbox" style="display: none;" class="modal-content">
+        <ul id="search-results">
+        </ul>
+    </div>
+
+    <div class="container">
+        
+<div class="row">
+    <div class="col-md-2">
+                <div id="navigation" class="list-group"><a class="list-group-item" href="#navigation-510" data-toggle="collapse" data-parent="#navigation">First steps <b class="caret"></b></a><div id="navigation-510" class="submenu panel-collapse collapse"><a class="list-group-item" href="./intro-easy-forms.html">About Easy Forms</a>
+<a class="list-group-item" href="./system-requirements.html">Requirements</a>
+<a class="list-group-item" href="./start-installation.html">Installing Easy Forms</a>
+<a class="list-group-item" href="./start-upgrading.html">Upgrading Easy Forms</a>
+<a class="list-group-item" href="./settings.html">Set Up Easy Forms</a>
+<a class="list-group-item" href="./start-customization.html">Customizing Easy Forms</a>
+<a class="list-group-item" href="./email-setup.html">Email Setup</a>
+<a class="list-group-item" href="./dynamic-content.html">Dynamic Content</a></div>
+<a class="list-group-item active" href="#navigation-511" data-toggle="collapse" data-parent="#navigation">Forms <b class="caret"></b></a><div id="navigation-511" class="submenu panel-collapse collapse in"><a class="list-group-item" href="./form-manager.html">Form Manager</a>
+<a class="list-group-item" href="./form-builder.html">Form Builder</a>
+<a class="list-group-item" href="./theme-designer.html">Theme Designer</a>
+<a class="list-group-item" href="./rule-builder.html">Rule Builder</a>
+<a class="list-group-item active" href="./submission-manager.html">Submission Manager</a>
+<a class="list-group-item" href="./form-report-builder.html">Report Builder</a>
+<a class="list-group-item" href="./form-analytics.html">In-App Analytics</a>
+<a class="list-group-item" href="./form-widget.html">Form Widget</a>
+<a class="list-group-item" href="./form-import-export.html">Import / Export</a></div>
+<a class="list-group-item" href="#navigation-512" data-toggle="collapse" data-parent="#navigation">Templates <b class="caret"></b></a><div id="navigation-512" class="submenu panel-collapse collapse"><a class="list-group-item" href="./template-manager.html">Template Manager</a></div>
+<a class="list-group-item" href="#navigation-513" data-toggle="collapse" data-parent="#navigation">Themes <b class="caret"></b></a><div id="navigation-513" class="submenu panel-collapse collapse"><a class="list-group-item" href="./theme-manager.html">Theme Manager</a></div>
+<a class="list-group-item" href="#navigation-514" data-toggle="collapse" data-parent="#navigation">Users <b class="caret"></b></a><div id="navigation-514" class="submenu panel-collapse collapse"><a class="list-group-item" href="./user-manager.html">User Manager</a>
+<a class="list-group-item" href="./membership.html">Membership</a></div>
+<a class="list-group-item" href="#navigation-515" data-toggle="collapse" data-parent="#navigation">Add-Ons <b class="caret"></b></a><div id="navigation-515" class="submenu panel-collapse collapse"><a class="list-group-item" href="./addon-manager.html">Add-On Manager</a>
+<a class="list-group-item" href="./addon-webhooks.html">WebHooks</a>
+<a class="list-group-item" href="./addon-google-analytics.html">Google Analytics</a></div>
+<a class="list-group-item" href="#navigation-516" data-toggle="collapse" data-parent="#navigation">Premium Add-Ons <b class="caret"></b></a><div id="navigation-516" class="submenu panel-collapse collapse"><a class="list-group-item" href="./addon-acelle-mail.html">Acelle Mail</a>
+<a class="list-group-item" href="./addon-active-campaign.html">Active Campaign</a>
+<a class="list-group-item" href="./addon-adyen.html">Adyen</a>
+<a class="list-group-item" href="./addon-aweber.html">AWeber</a>
+<a class="list-group-item" href="./addon-braintree.html">Braintree</a>
+<a class="list-group-item" href="./addon-campaign-monitor.html">Campaign Monitor</a>
+<a class="list-group-item" href="./addon-cleverreach.html">CleverReach</a>
+<a class="list-group-item" href="./addon-conditional-emails.html">Conditional Emails</a>
+<a class="list-group-item" href="./addon-constant-contact.html">Constant Contact</a>
+<a class="list-group-item" href="./addon-custom-error-messages.html">Custom Error Messages</a>
+<a class="list-group-item" href="./addon-custom-data-validation.html">Data Validation</a>
+<a class="list-group-item" href="./addon-emailoctopus.html">EmailOctopus</a>
+<a class="list-group-item" href="./addon-facebook-login.html">Facebook Login</a>
+<a class="list-group-item" href="./addon-field-encryption.html">Field Encryption</a>
+<a class="list-group-item" href="./addon-google-places-autocomplete.html">Google Places Autocomplete</a>
+<a class="list-group-item" href="./addon-import-submissions.html">Import Submissions</a>
+<a class="list-group-item" href="./addon-insightly.html">Insightly</a>
+<a class="list-group-item" href="./addon-mailchimp.html">MailChimp</a>
+<a class="list-group-item" href="./addon-mailerlite.html">MailerLite</a>
+<a class="list-group-item" href="./addon-mysql.html">MySQL</a>
+<a class="list-group-item" href="./addon-neverbounce.html">NeverBounce</a>
+<a class="list-group-item" href="./addon-nexmo-sms.html">Nexmo SMS</a>
+<a class="list-group-item" href="./addon-paypal.html">PayPal</a>
+<a class="list-group-item" href="./addon-paypal-invoicing.html">PayPal Invoicing</a>
+<a class="list-group-item" href="./addon-pdf.html">PDF</a>
+<a class="list-group-item" href="./addon-plivo.html">Plivo SMS</a>
+<a class="list-group-item" href="./addon-salesforce.html">Salesforce</a>
+<a class="list-group-item" href="./addon-sendinblue.html">SendinBlue</a>
+<a class="list-group-item" href="./addon-stripe.html">Stripe</a>
+<a class="list-group-item" href="./addon-twilio.html">Twilio SMS</a></div>
+<a class="list-group-item" href="#navigation-517" data-toggle="collapse" data-parent="#navigation">Premium Modules <b class="caret"></b></a><div id="navigation-517" class="submenu panel-collapse collapse"><a class="list-group-item" href="./module-subscriptions.html">Subscriptions</a></div></div>    </div>
+    <div class="col-md-9 guide-content" role="main">
+        <h1>Submission Manager <span id="submission-manager"></span><a href="#submission-manager" class="hashlink">&para;</a></h1>
+<div class="toc"><ol><li><a href="#introduction">Introduction</a></li>
+<li><a href="#viewing-a-submission-record">Viewing a Submission Record</a></li>
+<li><a href="#editing-a-submission">Editing a Submission</a></li>
+<li><a href="#create-a-submission">Create a Submission</a></li>
+<li><a href="#deleting-submissions">Deleting Submissions</a></li>
+<li><a href="#printing-a-submission">Printing a Submission</a></li>
+<li><a href="#filtering-submissions">Filtering Submissions</a></li>
+<li><a href="#exporting-submissions">Exporting Submissions</a></li>
+<li><a href="#searching-submissions">Searching Submissions</a></li>
+<li><a href="#file-management">File Management</a></li>
+<li><a href="#resend-a-notification-or-confirmation-email">Resend a Notification or Confirmation Email</a></li></ol></div>
+<h2>Introduction <span id="introduction"></span><a href="#introduction" class="hashlink">&para;</a></h2><p>Submission Manager let you create, view, edit and delete data collected by your forms. To access the Submission Manager, you must go to Form Manager and click on the form name. From there click on Submission (Paper Airplane icon). Now you can check, edit or delete your submissions.</p>
+<p><img src="images/submission-manager.png" alt="Submission Management" /></p>
+<p>The Submission Manager, unlike other managers of the application, offers more features to adapt flexibly to the data collected by your forms. By default, it will display the first 4 fields to keep a perfect compatibility with the GridView. Then, you can use the tool to set up what columns to show or hide.</p>
+<p>These are some Submission Manager features you should consider:</p>
+<ul>
+<li><strong>Navigation</strong>: The Submission Manager displays submissions in tabular form. In the table upper cell, the form field label will be displayed and then the submission data corresponding to that field. Submissions have been sorted by creation date (when they were sent). You can sort your submissions by clicking on the cell "Submitted". Also, the number of submissions displayed per page has been defined according to the number of rows for the entire application, default is five. To view more submissions, you can use the Next and Previous buttons to go forward or backward.</li>
+<li><p><strong>Show / Hide columns</strong>: You will see a button with a Table icon to the search box right. If you hover the mouse over it, the message "Show / Hide Columns" appears. If you click on this button, a list with the name of each column will be displayed, remove the check of any column name, and the column will be hidden, check to the same name, and the column will be displayed. The only thing to keep in mind at this point is that you cannot hide the "Checkbox", "Submitted" and "Actions" columns. Also, they must show at least two fields. If your form has many fields, use this feature to organize your manager to your preference. Take into account that the selected configuration will be saved in your <strong>User Preferences</strong>, so you will see the same configuration on any browser or used device.</p>
+<p>  <img src="images/submission-manager-show-hide-columns.gif" alt="Submission Management - Show / Hide Columns" /></p>
+</li>
+<li><strong>Resize columns</strong>: If your form has a lot of fields, display them all can make the data look too close together. Use this option to expand the width of the columns to a predefined minimum. You should note that Easy Forms has a responsive design, so those fields that exceed the width of the page will be hidden. To view them you will be able to scroll horizontally.</li>
+<li><strong>Reset the Manager</strong>: If you have made modifications in the manager, for example, hiding columns. You can return to the default view by clicking on the "Reset" button.</li>
+<li><strong>New submissions</strong>: Submissions with the "new" label next to the date are those unread. Once you enter to read the submission, the label "new" will disappear.</li>
+<li><strong>Bulk actions</strong>: If you need, you can "delete" or "mark as read" or "mark as unread" multiple submissions at a time. For this, check the checkbox of each submission to modify and then click the top right button (Checkbox Checked Icon). It will show a menu with two options: Delete, Mark as Read and Mark as Unread. Click on the required action. You should note that to eliminate submissions, a popup will appear asking you to confirm your decision to delete. When you click OK, submissions will be deleted. This action cannot be undone.</li>
+</ul>
+<h2>Viewing a Submission Record <span id="viewing-a-submission-record"></span><a href="#viewing-a-submission-record" class="hashlink">&para;</a></h2><p>When you click an entry in the Submission Manager, a vertical table with all information collected will be displayed. By default, this entry is for view-only. To edit the entry, continue reading until you find the "Editing a Submission" section.</p>
+<p>Submission information has been divided in three sections:</p>
+<ol>
+<li><strong>Submission Details</strong>: Shows the information collected by your form fields.</li>
+<li><strong>Sender Information</strong>: Shows sender information collected by the application. Including the country, city, geolocation map, ip address, user agent, landing page, referrer url. An icon will appear to indicate if the geolocation information has been obtained with the user's consent.</li>
+<li><strong>Additional Information</strong>: Displays the Hash ID of the Form Submission. If Submissions are editable (See: <a href="form-manager.html#1-form-settings">Form Settings</a>), a link to the form page to edit this entry will appear. You can share this link with your end-users to allow the edition. Also, in this section you can see the date when the Submission has been sent or updated and if it was made by a logged-in users, his username will appear.</li>
+</ol>
+<p><img src="images/submission-manager-view-record.png" alt="Submission Management - View Record" /></p>
+<blockquote class="note"><p><strong>Note: </strong>Leave a comment about the submission. Comments can only be viewed in the Submission Manager—they aren't included in exports.</p>
+</blockquote>
+<h2>Editing a Submission <span id="editing-a-submission"></span><a href="#editing-a-submission" class="hashlink">&para;</a></h2><p>To edit a Submission, go to the Submission Manager. Then, perform the following steps:</p>
+<ol>
+<li>Click on the submission to edit.</li>
+<li>You will see the Submission Information and at the right top see the "<em>Edit</em>" (pencil icon) button.</li>
+<li>Click the <em>Edit</em> button.</li>
+<li>The vertical table will become a similar form than the one you have created.</li>
+<li>Make the changes you need</li>
+<li>Submit the Form</li>
+</ol>
+<p><img src="images/submission-manager-edit-record.png" alt="Submission Management - Edit record" /></p>
+<blockquote><p><strong>Note:</strong> Keep in mind that when you edit an item, the data related to that submission will be overwritten permanently.</p>
+</blockquote>
+<h2>Create a Submission <span id="create-a-submission"></span><a href="#create-a-submission" class="hashlink">&para;</a></h2><p>To edit a submission, go to the Submission Manager. Then, perform the following steps:</p>
+<ol>
+<li>Click the <strong>Add submission</strong> button (icon with the plus sign)</li>
+<li>You will see a similar form than the one you have created.</li>
+<li>Make the changes you need</li>
+<li>Submit the Form</li>
+<li>The new Submission will appear in the Submission Manager.</li>
+</ol>
+<h2>Deleting Submissions <span id="deleting-submissions"></span><a href="#deleting-submissions" class="hashlink">&para;</a></h2><p>To delete a submission, go to the Submission Manager. Then, perform the following steps:</p>
+<ol>
+<li>Click on the submission you want to delete</li>
+<li>Click on the <em>Delete</em> red button (trash can icon) at the top right.</li>
+<li>A pop-up will appear asking you to confirm your decision to delete the submission.</li>
+<li>Click OK.</li>
+</ol>
+<blockquote><p><strong>Note:</strong> Keep in mind that when you delete an item, the data related to that submission (including attachments) will be removed permanently.</p>
+</blockquote>
+<h2>Printing a Submission <span id="printing-a-submission"></span><a href="#printing-a-submission" class="hashlink">&para;</a></h2><p>To print a Submission, go to the Submission Manager. Then, perform the following steps:</p>
+<ol>
+<li>Click on the submission to print.</li>
+<li>You will see the Submission Information and at the right top see the "Print" (printer icon) button.</li>
+<li>Click the <em>Print</em> button.</li>
+<li>The page preview to print will be displayed in black and white with submission details</li>
+<li>Make the changes you prefer in the printer dialog window</li>
+<li>Click on 'print'</li>
+</ol>
+<h2>Filtering Submissions <span id="filtering-submissions"></span><a href="#filtering-submissions" class="hashlink">&para;</a></h2><p><img src="images/filtering-submissions.png" alt="Submission Management - Filtering Submissions" /></p>
+<p>To filter the data collected by the form you must select the Date Range and click the "Filter" button.</p>
+<h2>Exporting Submissions <span id="exporting-submissions"></span><a href="#exporting-submissions" class="hashlink">&para;</a></h2><p><img src="images/exporting-submissions.png" alt="Submission Management - Exporting Submissions" /></p>
+<p>To export the data collected by the form you must select the Date Range and click the "Export" button.</p>
+<p>Then select the format of the file to be generated:</p>
+<ul>
+<li>Export as CSV</li>
+<li>Export as MS Excel</li>
+</ul>
+<h2>Searching Submissions <span id="searching-submissions"></span><a href="#searching-submissions" class="hashlink">&para;</a></h2><p>To search, enter the search criteria in the search box located at the top of the Submission Manager. The search engine will return all instances of the word found in all the collected fields.</p>
+<p>Also, you can find a submission by its ID or Custom Number. To find a specific submission, use the key "id" followed by the colon and the ID, or you can use the key "#" followed by the colon, and the Number. For example, id:123 or #:ORDER-123.</p>
+<p><img src="images/submission-manager-search-record.png" alt="Search record" /></p>
+<h2>File Management <span id="file-management"></span><a href="#file-management" class="hashlink">&para;</a></h2><p><img src="images/file-management.png" alt="Submission Management - File Management" /></p>
+<p>You can manage files sent with your forms. Basically file management allows to:</p>
+<ul>
+<li>View sent files associated with the field used (label).</li>
+<li>Upload files when creating Form Submissions using the Submission Manager.</li>
+<li>Update uploaded files.</li>
+<li>Delete files</li>
+</ul>
+<blockquote><p><strong>Important!</strong> When trying to update a Submission file made before the upgrade to version 1.3.6, older files will appear at the bottom of the list of uploaded files. You can remove them when you consider appropriate.</p>
+</blockquote>
+<h2>Resend a Notification or Confirmation Email <span id="resend-a-notification-or-confirmation-email"></span><a href="#resend-a-notification-or-confirmation-email" class="hashlink">&para;</a></h2><p>If your form has been configured to send confirmations or notifications by email, an Email button will appear in the Submission Details page. To resend any of these emails, just click on them and confirm you want to send.</p>
+<p><img src="images/submission-management-resend-emails.jpg" alt="Submission Management - Resend emails" /></p>
+        <div class="toplink"><a href="#" class="h1" title="go to top"><span class="glyphicon glyphicon-arrow-up"></a></div>
+    </div>
+</div>
+
+    </div>
+
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <p class="pull-left">&copy; Easy forms 2015 - 2021</p>
+        <p class="pull-right">
+            <small>Page generated on Thu, 08 Apr 2021 01:38:17 +0000</small>
+        </p>
+    </div>
+</footer>
+
+<script>jQuery(function ($) {
+    var shiftWindow = function () { scrollBy(0, -50) };
+    if (location.hash) setTimeout(shiftWindow, 1);
+    window.addEventListener("hashchange", shiftWindow);
+var element = document.createElement("script");
+element.src = "./jssearch.index.js";
+document.body.appendChild(element);
+
+var searchBox = $('#searchbox');
+
+// search when typing in search field
+searchBox.on("keyup", function(event) {
+    var query = $(this).val();
+
+    if (query == '' || event.which == 27) {
+        $('#search-resultbox').hide();
+        return;
+    } else if (event.which == 13) {
+        var selectedLink = $('#search-resultbox a.selected');
+        if (selectedLink.length != 0) {
+            document.location = selectedLink.attr('href');
+            return;
+        }
+    } else if (event.which == 38 || event.which == 40) {
+        $('#search-resultbox').show();
+
+        var selected = $('#search-resultbox a.selected');
+        if (selected.length == 0) {
+            $('#search-results').find('a').first().addClass('selected');
+        } else {
+            var next;
+            if (event.which == 40) {
+                next = selected.parent().next().find('a').first();
+            } else {
+                next = selected.parent().prev().find('a').first();
+            }
+            if (next.length != 0) {
+                var resultbox = $('#search-results');
+                var position = next.position();
+
+//              TODO scrolling is buggy and jumps around
+//                resultbox.scrollTop(Math.floor(position.top));
+//                console.log(position.top);
+
+                selected.removeClass('selected');
+                next.addClass('selected');
+            }
+        }
+
+        return;
+    }
+    $('#search-resultbox').show();
+    $('#search-results').html('<li><span class="no-results">No results</span></li>');
+
+    var result = jssearch.search(query);
+
+    if (result.length > 0) {
+        var i = 0;
+        var resHtml = '';
+
+        for (var key in result) {
+            if (i++ > 20) {
+                break;
+            }
+            resHtml = resHtml +
+            '<li><a href="' + result[key].file.u.substr(3) +'"><span class="title">' + result[key].file.t + '</span>' +
+            '<span class="description">' + result[key].file.d + '</span></a></li>';
+        }
+        $('#search-results').html(resHtml);
+    }
+});
+
+// hide the search results on ESC
+$(document).on("keyup", function(event) { if (event.which == 27) { $('#search-resultbox').hide(); } });
+// hide search results on click to document
+$(document).bind('click', function (e) { $('#search-resultbox').hide(); });
+// except the following:
+searchBox.bind('click', function(e) { e.stopPropagation(); });
+$('#search-resultbox').bind('click', function(e) { e.stopPropagation(); });
+
+});</script></body>
+</html>

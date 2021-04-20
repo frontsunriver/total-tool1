@@ -1,0 +1,112 @@
+{
+  "name": "baluart/easyforms",
+  "description": "A web application that helps anybody build amazing online forms.",
+  "version": "1.13",
+  "homepage": "https://easyforms.dev/",
+  "type": "project",
+  "license": "proprietary",
+  "support": {
+    "email": "support@baluart.com",
+    "issues": "https://support.easyforms.dev",
+    "docs": "https://docs.easyforms.dev/",
+    "rss": "https://support.easyforms.dev/feed"
+  },
+  "require": {
+    "php": ">=5.6",
+    "ext-curl": "*",
+    "ext-dom": "*",
+    "ext-intl": "*",
+    "ext-json": "*",
+    "ext-libxml": "*",
+    "ext-mbstring": "*",
+    "ext-pdo": "*",
+    "ext-zip": "*",
+    "yiisoft/yii2": "~2.0",
+    "yiisoft/yii2-authclient": "~2.2",
+    "yiisoft/yii2-bootstrap": "~2.0",
+    "yiisoft/yii2-httpclient": "~2.0",
+    "yiisoft/yii2-jui": "~2.0",
+    "yiisoft/yii2-swiftmailer": "~2.0.0",
+    "2amigos/2fa-library": "^1.0",
+    "2amigos/yii2-flysystem-component": "^1.0",
+    "2amigos/yii2-selectize-widget": "^1.1",
+    "2amigos/yii2-usuario": "1.5.1",
+    "2amigos/qrcode-library": "^1.1",
+    "piwik/device-detector": "~3.12",
+    "matomo/network": "~2.0",
+    "matomo/referrer-spam-blacklist": "~3.0",
+    "snowplow/referer-parser": "dev-master",
+    "geoip2/geoip2": "~2.0",
+    "giggsey/libphonenumber-for-php": "~8.12",
+    "faisalman/simple-excel-php" : "~0.3",
+    "nesbot/carbon": "~1.21",
+    "kartik-v/yii2-krajee-base": "~2.0",
+    "kartik-v/yii2-widget-activeform": "~1.0",
+    "kartik-v/yii2-helpers": "~1.0",
+    "kartik-v/yii2-grid": "~3.0",
+    "kartik-v/yii2-builder": "~1.0",
+    "kartik-v/yii2-widget-select2": "~2.0",
+    "kartik-v/yii2-widget-switchinput": "~1.0",
+    "kartik-v/yii2-widget-datetimepicker": "~1.0",
+    "kartik-v/yii2-widget-colorinput": "~1.0",
+    "kartik-v/yii2-widget-sidenav": "~1.0",
+    "kartik-v/yii2-widget-depdrop": "~1.0",
+    "kartik-v/yii2-widget-fileinput": "~1.0",
+    "kartik-v/yii2-widget-datepicker": "~1.0",
+    "kartik-v/yii2-date-range": "~1.0",
+    "kartik-v/yii2-detail-view": "~1.0",
+    "kartik-v/yii2-datecontrol": "~1.0",
+    "kartik-v/yii2-slider": "~1.0",
+    "kartik-v/yii2-dialog": "~1.0",
+    "intervention/image": "~2.0",
+    "paypal/paypal-checkout-sdk": "~1.0",
+    "adyen/php-api-library": "~6.0.0",
+    "liquid/liquid": "^1.4",
+    "stripe/stripe-php": "^7.72"
+  },
+  "require-dev": {
+    "yiisoft/yii2-debug": "~2.1",
+    "yiisoft/yii2-gii": "~2.1"
+  },
+  "config": {
+    "process-timeout": 1800,
+    "fxp-asset": {
+      "enabled": false
+    }
+  },
+  "scripts": {
+    "post-install-cmd": [
+      "yii\\composer\\Installer::postInstall"
+    ],
+    "post-create-project-cmd": [
+      "yii\\composer\\Installer::postCreateProject",
+      "yii\\composer\\Installer::postInstall"
+    ]
+  },
+  "extra": {
+    "yii\\composer\\Installer::postCreateProject": {
+      "setPermission": [
+        {
+          "runtime": "0755",
+          "assets": "0755",
+          "static_files": "0755",
+          "yii": "0755"
+        }
+      ],
+      "generateCookieValidationKey": [
+        "config/web.php"
+      ]
+    },
+    "yii\\composer\\Installer::postInstall": {
+      "generateCookieValidationKey": [
+        "config/web.php"
+      ]
+    }
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://asset-packagist.org"
+    }
+  ]
+}
