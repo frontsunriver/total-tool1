@@ -35,8 +35,7 @@ I look forward to your reply.
 
 
 url: https://dev-new.bmobi.net/
-username: test.dev @ gmail.com
-password; Pass1234!!
+
 
 These are my MERN-Stack web sites I built last year.
 https://www.eventhi.io/
